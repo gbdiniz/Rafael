@@ -16,7 +16,7 @@ Gabriel is the only user. Rafael is his personal secretary. Gabriel opens the ap
 
 ## Product Purpose
 
-Rafael is a personal secretary who starts the conversation. The first time Gabriel enters, Rafael only greets him. On later visits Rafael tells him the appointments he still has, then Gabriel can ask about his tasks and tell Rafael to add or remove a task or an appointment. v1 succeeds when that visit works, on desktop web and as an installed PWA. v1 speaks while Gabriel is in the app. Reminders that arrive while he is away wait until that conversation is trustworthy.
+Rafael is a personal secretary who starts the conversation. The first time Gabriel enters, Rafael only greets him. On later visits Rafael tells him today’s appointments and any earlier appointment that was never removed, then Gabriel can ask about his tasks and tell Rafael to create, change, or remove a task or an appointment. v1 succeeds when that visit works, on desktop web and as an installed PWA. v1 speaks while Gabriel is in the app. Reminders that arrive while he is away wait until that conversation is trustworthy.
 
 ## Positioning
 
@@ -24,7 +24,7 @@ Rafael is the one who starts. The app is not only a voice recorder and not an in
 
 ## Operating Context
 
-Gabriel opens the conversation in a browser or from a phone home-screen icon (PWA). Rafael speaks immediately: a greeting on the first visit, the remaining appointments on every visit after that. Gabriel clicks to talk and clicks again to stop. The browser records that turn. Laravel requires his session. A Whisper-compatible API transcribes. The audio file is deleted. Rafael answers from the stored tasks, or repeats an add or a removal and waits for a yes. Authenticated routes cover the conversation, the records, and audio upload. PWA install, the microphone, and speech output require HTTPS.
+Gabriel opens the conversation in a browser or from a phone home-screen icon (PWA). Rafael speaks immediately: a greeting on the first visit, today’s appointments and any earlier appointment that was never removed on every visit after that. Gabriel clicks to talk and clicks again to stop. The browser records that turn. Laravel requires his session. A Whisper-compatible API transcribes. The audio file is deleted. Rafael answers from the stored tasks and appointments, or repeats a create, change, or removal and waits for a yes. Authenticated routes cover the conversation, the records, and audio upload. PWA install, the microphone, and speech output require HTTPS.
 
 ## Capabilities and Constraints
 
@@ -33,9 +33,9 @@ v1 includes:
 - One Laravel session login.
 - Rafael speaks first when the page opens.
 - First visit: a greeting only. No appointment briefing and no task list.
-- Later visits: he tells the appointments Gabriel still has, then waits.
-- Questions about Gabriel’s tasks, answered from those records.
-- Add and remove a task or an appointment, saved only after Rafael repeats the change and Gabriel agrees.
+- Later visits: he tells today’s appointments and any earlier appointment that was never removed, then waits.
+- Questions about Gabriel’s tasks and appointments, answered from those records.
+- Create, change, or remove a task or an appointment. A change can rewrite the title, the time, and the type. When the type flips, the time changes role. If a task has no due date and would become an appointment, he asks for a start time first. If more than one record matches, he names them and waits. The change is saved only after he repeats it and Gabriel agrees. A no leaves the record as it was.
 - PWA plus in-page click-to-talk capture (MediaRecorder).
 - Server transcription, then deletion of the audio. The product memory is the transcript and the structured record. Raw audio stays out of backups by default. Rafael’s spoken replies are not stored as audio.
 - Appointment start time, so he can recite it. Task due date is optional.
@@ -67,7 +67,7 @@ The home is the conversation. Rafael speaks when the page opens. The bars icon i
 
 ## Evidence on Hand
 
-The product picture lives in `README.md`. The short map for builders is `docs/project-description.md`.
+The product picture lives in `README.md`. The short map for builders is `docs/project-description.md`. The stories are in `docs/user-stories.md`.
 
 The repo has no logo, photography, testimonials, case studies, pricing, or customer proof. Future work must not invent them, and must not present away-from-app reminders, extra users, or calendar sync as behavior v1 already has.
 
@@ -75,8 +75,8 @@ The repo has no logo, photography, testimonials, case studies, pricing, or custo
 
 1. Rafael starts. Opening the app is his turn.
 2. The first visit is a greeting. He does not recite an empty day.
-3. Returning visits start with the appointments he still has. Tasks are answered when Gabriel asks.
-4. Voice is a draft. He repeats an add or a removal and waits for a yes.
+3. Returning visits start with today’s appointments and any earlier appointment that was never removed. Tasks are answered when Gabriel asks.
+4. Voice is a draft. He repeats a create, change, or removal and waits for a yes.
 5. Questions stay on Gabriel’s records.
 6. Audio is not a memory. Transcribe, delete the file, keep the transcript and the structured record.
 7. Rafael owns reminders when they exist. Calendar export can be a later door.

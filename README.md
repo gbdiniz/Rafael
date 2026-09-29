@@ -8,7 +8,7 @@ The technical map is in [docs/project-description.md](docs/project-description.m
 
 A conversation with your secretary.
 
-Rafael speaks first. The first time, he only greets you. After that, he tells you the appointments you still have, then waits. You ask about your tasks. You tell him to create, change, or remove an appointment or a task, and he repeats the change before it is saved.
+Rafael speaks first. The first time, he only greets you. After that, he tells you today’s appointments and any earlier appointment you never removed, then waits. You ask about your tasks. You tell him to create, change, or remove an appointment or a task, and he repeats the change before it is saved.
 
 He speaks Portuguese, and you answer in Portuguese. The app is for one person. There is no public signup and no sharing.
 
@@ -19,7 +19,7 @@ It is not a silent recorder, not a list you scan before he has spoken, and not a
 You open the site and Rafael starts.
 
 - The first time, he greets you and waits.
-- On later visits, he tells you the appointments you still have, then waits.
+- On later visits, he tells you today’s appointments and any earlier appointment you never removed, then waits.
 - You click to talk, and click again to stop.
 - You can ask about your tasks. He answers from what he has stored.
 - You can tell him to create, change, or remove an appointment or a task. He repeats it and waits for a yes. Only then does he save the change.
@@ -37,7 +37,7 @@ You open the site and Rafael starts.
 ## How to use
 
 1. Open the app and listen. The first time, he only says hello.
-2. On the next visits, listen to the appointments he still has for you.
+2. On the next visits, listen to today’s appointments and any earlier one you never removed.
 3. Click the control to speak. Click it again when you are done.
 4. Ask about a task, or tell him to create, change, or remove an appointment or a task.
 5. If he is changing something, wait until he repeats it, then agree. That agreement is what saves it.

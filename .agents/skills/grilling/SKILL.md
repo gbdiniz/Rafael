@@ -5,21 +5,17 @@ description: Grill the user relentlessly about a plan, decision, or idea. Use wh
 
 Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.
 
-Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.
+Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round, each question with a recommended answer. Then wait for the user's answers before the next round.
 
-Format a round like so:
+Ask the round with the AskQuestion tool. Do not type the questions as a chat list. One call carries every frontier question.
 
-```
-❓ **Q1** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
+- `id` is a short stable slug.
+- `prompt` is the question title and the body. Do not repeat the options inside the prompt.
+- `options` has at least two choices. Put the recommended answer first and end its label with `(Recommended)`.
+- Set `allow_multiple` only when more than one option can be true at once.
+- The user can always add their own answer. Do not add an "Other" option yourself.
 
-➡️ <your recommended answer>
-
----
-
-❓ **Q2** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
-
-➡️ <your recommended answer>
-```
+Wait for the tool result. Do not continue the round in prose while it is open.
 
 Each round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.
 
