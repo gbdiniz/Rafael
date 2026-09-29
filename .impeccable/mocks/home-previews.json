@@ -1,0 +1,43 @@
+{
+  "title": "Home previews",
+  "question": "Three looks for the same home. Malote is the locked brief. Space and neumorphism are the two new previews.",
+  "options": [
+    {
+      "id": "malote",
+      "label": "Malote",
+      "kicker": "LOCKED BRIEF",
+      "lineage": "A messenger pouch of onion-skin slips",
+      "thesis": "You hold the blank slip to dictate, then clip it into the day’s pouch or tear it up.",
+      "palette": ["#3f4a3c", "#dce8ee", "#1a1a1a", "#1e4d8c", "#5c3d7a"],
+      "materials": ["olive canvas", "onion-skin paper", "rubber stamp", "bulldog clip"],
+      "viewport": "Portrait. Pronto stamped on the flap, seven timed slips, and a Segurar slip flush at the bottom.",
+      "risk": "The stack gets hard to scan if the slips overlap enough to hide a line.",
+      "comp": ".impeccable/mocks/malote-home.png"
+    },
+    {
+      "id": "space",
+      "label": "Espaço",
+      "kicker": "PREVIEW",
+      "lineage": "A dark instrument panel in a quiet starfield",
+      "thesis": "The day is seven instrument rows, and Segurar is a cyan plate you hold.",
+      "palette": ["#070b14", "#121826", "#f4f7fb", "#e6b15a", "#7ee0ff"],
+      "materials": ["matte instrument panels", "cold cyan plate"],
+      "viewport": "Portrait. Rafael and Pronto on a thin bar, seven dark rows, a Segurar plate flush at the bottom.",
+      "risk": "Reads as a generic dark app if the starfield and the cyan plate are the only space cues.",
+      "comp": ".impeccable/mocks/space-home.png"
+    },
+    {
+      "id": "neumorphism",
+      "label": "Neumorfismo",
+      "kicker": "PREVIEW",
+      "lineage": "Soft extruded gray, one light from the top left",
+      "thesis": "Every row is a pressed well, and Segurar is a raised pill in the same gray.",
+      "palette": ["#e4e9f0", "#d5dce6", "#243041"],
+      "materials": ["soft extrusion", "inset wells", "raised pill"],
+      "viewport": "Portrait. A raised Rafael bar, seven inset rows, and a raised Segurar pill.",
+      "risk": "The wells disappear if the shadows get too faint and the type loses contrast.",
+      "comp": ".impeccable/mocks/neumorphism-home.png"
+    }
+  ],
+  "buildPath": { "value": "comp", "toggle": true }
+}

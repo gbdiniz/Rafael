@@ -1,0 +1,19 @@
+{
+  "title": "Malote",
+  "question": "Preview of the locked home. The blank slip is Segurar.",
+  "options": [
+    {
+      "id": "malote",
+      "label": "Malote",
+      "kicker": "PREVIEW",
+      "lineage": "A messenger pouch of onion-skin slips",
+      "thesis": "You hold the blank slip to dictate, then clip it into the day’s pouch or tear it up.",
+      "palette": ["#3f4a3c", "#dce8ee", "#1a1a1a", "#1e4d8c", "#5c3d7a"],
+      "materials": ["olive canvas", "onion-skin paper", "rubber stamp", "bulldog clip"],
+      "viewport": "Portrait. Pronto stamped on the flap, seven timed slips, and a Segurar slip flush at the bottom.",
+      "risk": "The stack gets hard to scan if the slips overlap enough to hide a line.",
+      "comp": ".impeccable/mocks/malote-home.png"
+    }
+  ],
+  "buildPath": { "value": "comp", "toggle": true }
+}
