@@ -1,0 +1,75 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-09-29T02:59:45.237Z",
+  "comp": ".impeccable/mocks/home-bars.png",
+  "warnings": [],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 390,
+    "height": 844
+  },
+  "aspect": 0.4621,
+  "orientation": "portrait",
+  "palette": [
+    {
+      "hex": "#080808",
+      "coverage": 0.9939
+    },
+    {
+      "hex": "#d8f8f8",
+      "coverage": 0.0061
+    }
+  ],
+  "bands": [],
+  "regions": [
+    {
+      "id": "bars",
+      "kind": "control",
+      "note": "Five rounded ice bars, the unlabeled hold-to-talk control, centered on the void.",
+      "grid": null,
+      "box": {
+        "x": 0.3872,
+        "y": 0.4479,
+        "w": 0.2256,
+        "h": 0.1043
+      },
+      "px": {
+        "x": 151,
+        "y": 378,
+        "w": 88,
+        "h": 88
+      },
+      "aspect": 1,
+      "palette": [
+        {
+          "hex": "#080808",
+          "coverage": 0.7411
+        },
+        {
+          "hex": "#d8f8f8",
+          "coverage": 0.2489
+        },
+        {
+          "hex": "#586868",
+          "coverage": 0.0067
+        },
+        {
+          "hex": "#b8c8d8",
+          "coverage": 0.0033
+        }
+      ],
+      "detail": {
+        "energy": 10.6031
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    }
+  ],
+  "compSha256": "8f7199189ebf26632ec3b368da82a8544888f8afab0e2e92d1edc86aba83c30e",
+  "regionsSource": {
+    "path": ".impeccable/build/regions.json",
+    "sha256": "529d0f32ee559000cfa5bc0aaf3695d19286046c267d030e729b1875204d8f6c"
+  }
+}

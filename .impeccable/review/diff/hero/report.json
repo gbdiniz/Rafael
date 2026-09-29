@@ -1,0 +1,102 @@
+{
+  "tool": "comp-diff",
+  "version": 1,
+  "createdAt": "2026-09-29T03:22:08.098Z",
+  "label": "hero",
+  "comp": ".impeccable/mocks/home-bars.png",
+  "build": ".impeccable/review/hero-repro.png",
+  "spec": ".impeccable/build/spec.json",
+  "compSize": "390x844",
+  "buildSize": "390x844",
+  "align": "top",
+  "overall": 0.9908,
+  "verdict": "match",
+  "scores": {
+    "overall": 0.9908,
+    "structure": 0.9996,
+    "color": 0.9998,
+    "colorIntersection": 0.9994,
+    "paletteMatch": 1,
+    "detail": 0.9641,
+    "detailRaw": 0.9641,
+    "detailAdded": 0,
+    "bands": 1
+  },
+  "palette": {
+    "comp": [
+      {
+        "hex": "#080808",
+        "coverage": 0.9939
+      },
+      {
+        "hex": "#d8f8f8",
+        "coverage": 0.0061
+      }
+    ],
+    "build": [
+      {
+        "hex": "#080808",
+        "coverage": 0.9944
+      },
+      {
+        "hex": "#d8f8f8",
+        "coverage": 0.0056
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "bars",
+      "x": 0.3872,
+      "y": 0.4479,
+      "w": 0.2256,
+      "h": 0.1043,
+      "kind": "control",
+      "score": {
+        "overall": 0.9269,
+        "structure": 0.911,
+        "color": 0.9665,
+        "colorIntersection": 0.921,
+        "paletteMatch": 0.991,
+        "detail": 0.8933,
+        "detailRaw": 0.8933,
+        "detailAdded": 0,
+        "bands": 1
+      },
+      "verdict": "match",
+      "inkBox": {
+        "comp": {
+          "x": 6,
+          "y": 10,
+          "w": 75,
+          "h": 69
+        },
+        "build": {
+          "x": 6,
+          "y": 10,
+          "w": 74,
+          "h": 68
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "match"
+    }
+  ],
+  "files": {
+    "sideBySide": "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/hero/side-by-side.png",
+    "heatmap": "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/hero/heatmap.png",
+    "regionFiles": [
+      "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/hero/regions/bars.png"
+    ]
+  },
+  "interpretation": "hero-gate",
+  "measurementsAvailable": true,
+  "gate": {
+    "ok": true,
+    "reasons": [],
+    "advisories": [],
+    "unscopedReasons": []
+  },
+  "rawReport": ".impeccable/review/diff/hero/raw-report.json"
+}

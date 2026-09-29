@@ -1,0 +1,154 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-09-29T02:59:21.302Z",
+  "comp": ".impeccable/mocks/home-bars.png",
+  "direction": null,
+  "breakpoint": "390x844",
+  "artifact": "public/index.html",
+  "phase": "responsive",
+  "phases": {
+    "comps": {
+      "status": "skipped",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [
+        {
+          "at": "2026-09-29T02:59:21.302Z",
+          "text": "started with an approved comp; the comp round happened before this state (surface round or manual)"
+        }
+      ],
+      "gate": null,
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-09-29T02:59:21.302Z",
+      "closedAt": "2026-09-29T02:59:55.403Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "1 regions, 0 plates, 0 text regions measured",
+        "at": "2026-09-29T02:59:55.403Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "closed",
+      "openedAt": "2026-09-29T02:59:55.403Z",
+      "closedAt": "2026-09-29T03:00:01.062Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no plates owed",
+        "at": "2026-09-29T03:00:01.062Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "closed",
+      "openedAt": "2026-09-29T03:00:01.062Z",
+      "closedAt": "2026-09-29T03:22:08.249Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "hero 99% (match)",
+        "score": 0.9908,
+        "verdict": "match",
+        "report": ".impeccable/review/diff/hero/report.json",
+        "sideBySide": "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/hero/side-by-side.png",
+        "regionVerdicts": {
+          "bars": "match"
+        },
+        "at": "2026-09-29T03:22:08.249Z"
+      },
+      "forced": null,
+      "readingsSeen": {},
+      "records": 2,
+      "history": [
+        {
+          "at": "2026-09-29T03:22:08.249Z",
+          "score": 0.9908,
+          "worstIds": [],
+          "blockingReasons": [],
+          "regionVerdicts": {
+            "bars": "match"
+          },
+          "artifactHash": "00f52742fd3f"
+        }
+      ]
+    },
+    "sections": {
+      "status": "closed",
+      "openedAt": "2026-09-29T03:22:08.249Z",
+      "closedAt": "2026-09-29T03:22:16.738Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-09-29T03:22:16.738Z"
+      },
+      "forced": null
+    },
+    "motion": {
+      "status": "closed",
+      "openedAt": "2026-09-29T03:22:16.738Z",
+      "closedAt": "2026-09-29T03:22:16.747Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-09-29T03:22:16.747Z"
+      },
+      "forced": null
+    },
+    "responsive": {
+      "status": "open",
+      "openedAt": "2026-09-29T03:22:16.747Z",
+      "closedAt": null,
+      "attempts": 4,
+      "notes": [],
+      "gate": {
+        "ok": false,
+        "reasons": [
+          "the desktop capture (1440x900; the top 390x844 rows scaled to the comp's width are compared, a full-page capture is fine) scores 39% against the comp, under 65%: the first viewport does not survive a common desktop width. The hero passed at 390x844; the layout must hold from ~1280 up, not only at the comp's exact width (grid columns in fr / minmax, not fixed px that overflow and wrap).",
+          "at desktop width, region bars is missing"
+        ],
+        "regionReasons": {
+          "bars": [
+            "at desktop width, region bars is missing"
+          ]
+        },
+        "summary": "desktop 39% (missing)",
+        "score": 0.3876,
+        "report": ".impeccable/review/diff/desktop/report.json",
+        "sideBySide": "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/desktop/side-by-side.png",
+        "at": "2026-09-29T03:29:15.296Z"
+      },
+      "forced": null
+    },
+    "review": {
+      "status": "open",
+      "openedAt": "2026-09-29T03:23:27.119Z",
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": null,
+  "plates": {},
+  "responsiveInputSha256": "40833c93d30ff2ae4a3317fda33d8414f088014c204265a308e8e5bdb4bb8d06"
+}

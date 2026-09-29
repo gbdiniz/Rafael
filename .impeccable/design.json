@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T03:28:23Z",
+  "title": "Design System: Rafael",
+  "extensions": {
+    "colorMeta": {
+      "void": {
+        "role": "neutral",
+        "displayName": "Void",
+        "canonical": "oklch(8.2% 0.012 250)",
+        "tonalRamp": [
+          "oklch(8% 0.012 250)",
+          "oklch(18% 0.014 250)",
+          "oklch(28% 0.016 250)",
+          "oklch(40% 0.018 250)",
+          "oklch(52% 0.02 250)",
+          "oklch(65% 0.018 250)",
+          "oklch(78% 0.014 250)",
+          "oklch(92% 0.01 250)"
+        ]
+      },
+      "ice": {
+        "role": "primary",
+        "displayName": "Ice",
+        "canonical": "oklch(94% 0.035 220)",
+        "tonalRamp": [
+          "oklch(22% 0.04 220)",
+          "oklch(34% 0.045 220)",
+          "oklch(46% 0.05 220)",
+          "oklch(58% 0.048 220)",
+          "oklch(70% 0.045 220)",
+          "oklch(82% 0.04 220)",
+          "oklch(90% 0.035 220)",
+          "oklch(96% 0.025 220)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "body": {
+        "displayName": "Body",
+        "purpose": "Mic-denial recovery line only; idle home has no body copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Mic-denial title (Sem microfone); weight 560."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-bars",
+        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "Hold-to-talk bar pulse easing."
+      },
+      {
+        "name": "bar-side",
+        "value": "520ms / 560ms reverse; scaleY(1.45) at 50%",
+        "purpose": "Outer bars (1 and 5) while recording."
+      },
+      {
+        "name": "bar-mid",
+        "value": "380ms / 420ms reverse; scaleY(0.62) at 50%",
+        "purpose": "Near-center bars (2 and 4) while recording."
+      },
+      {
+        "name": "bar-center",
+        "value": "460ms; scaleY(0.8) at 50%",
+        "purpose": "Center bar (3) while recording."
+      },
+      {
+        "name": "reduced-recording",
+        "value": "animation: none; opacity: 0.55",
+        "purpose": "Recording affordance when prefers-reduced-motion is set."
+      }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Talk Bars",
+      "kind": "custom",
+      "refersTo": "talk-bars",
+      "description": "Unlabeled 88px click-to-talk control: five ice bars on void.",
+      "html": "<button type=\"button\" class=\"ds-talk\" aria-label=\"Falar com Rafael\" aria-pressed=\"false\"><span class=\"ds-bars\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i></span></button>",
+      "css": ".ds-talk { width: 88px; height: 88px; padding: 0; border: 0; background: transparent; color: #d8f4ff; cursor: pointer; display: grid; place-items: center; } .ds-talk:focus-visible { outline: 2px solid #d8f4ff; outline-offset: 10px; } .ds-bars { position: relative; width: 88px; height: 88px; } .ds-bars i { position: absolute; width: 10px; border-radius: 5px; background: currentColor; transform-origin: center; } .ds-bars i:nth-child(1) { left: 6px; top: 34px; height: 20px; } .ds-bars i:nth-child(2) { left: 22px; top: 22px; height: 44px; } .ds-bars i:nth-child(3) { left: 38px; top: 10px; height: 68px; } .ds-bars i:nth-child(4) { left: 54px; top: 22px; height: 44px; } .ds-bars i:nth-child(5) { left: 70px; top: 34px; height: 20px; }"
+    },
+    {
+      "name": "Talk Bars Recording",
+      "kind": "custom",
+      "refersTo": "talk-bars-recording",
+      "description": "Hold state: bars pulse with staggered scaleY loops.",
+      "html": "<button type=\"button\" class=\"ds-talk ds-talk-recording\" aria-label=\"Parar\" aria-pressed=\"true\"><span class=\"ds-bars\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i></span></button>",
+      "css": ".ds-talk { width: 88px; height: 88px; padding: 0; border: 0; background: transparent; color: #d8f4ff; cursor: pointer; display: grid; place-items: center; } .ds-talk:focus-visible { outline: 2px solid #d8f4ff; outline-offset: 10px; } .ds-bars { position: relative; width: 88px; height: 88px; } .ds-bars i { position: absolute; width: 10px; border-radius: 5px; background: currentColor; transform-origin: center; } .ds-bars i:nth-child(1) { left: 6px; top: 34px; height: 20px; } .ds-bars i:nth-child(2) { left: 22px; top: 22px; height: 44px; } .ds-bars i:nth-child(3) { left: 38px; top: 10px; height: 68px; } .ds-bars i:nth-child(4) { left: 54px; top: 22px; height: 44px; } .ds-bars i:nth-child(5) { left: 70px; top: 34px; height: 20px; } .ds-talk-recording .ds-bars i:nth-child(1) { animation: ds-bar-side 520ms cubic-bezier(0.2, 0.8, 0.2, 1) infinite; } .ds-talk-recording .ds-bars i:nth-child(2) { animation: ds-bar-mid 380ms cubic-bezier(0.2, 0.8, 0.2, 1) infinite; } .ds-talk-recording .ds-bars i:nth-child(3) { animation: ds-bar-center 460ms cubic-bezier(0.2, 0.8, 0.2, 1) infinite; } .ds-talk-recording .ds-bars i:nth-child(4) { animation: ds-bar-mid 420ms cubic-bezier(0.2, 0.8, 0.2, 1) infinite reverse; } .ds-talk-recording .ds-bars i:nth-child(5) { animation: ds-bar-side 560ms cubic-bezier(0.2, 0.8, 0.2, 1) infinite reverse; } @keyframes ds-bar-side { 50% { transform: scaleY(1.45); } } @keyframes ds-bar-mid { 50% { transform: scaleY(0.62); } } @keyframes ds-bar-center { 50% { transform: scaleY(0.8); } } @media (prefers-reduced-motion: reduce) { .ds-talk-recording .ds-bars i { animation: none; opacity: 0.55; } }"
+    },
+    {
+      "name": "Mic Denial",
+      "kind": "custom",
+      "refersTo": "mic-fail-title",
+      "description": "pt-BR failure: title and recovery centered under the control.",
+      "html": "<p class=\"ds-fail\"><strong>Sem microfone</strong><span>Permita o microfone para falar com Rafael.</span></p>",
+      "css": ".ds-fail { margin: 0; text-align: center; font-family: system-ui, sans-serif; font-size: 16px; line-height: 1.4; color: #d8f4ff; } .ds-fail strong { display: block; font-weight: 560; margin-bottom: 4px; } .ds-fail span { display: block; font-weight: 400; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ice Void",
+    "overview": "Rafael’s visual world is a near-black field and one ice-cyan mark. The home is the talk: five rounded bars sit alone in the center of the void. There is no wordmark, no inbox list, no holographic ring, and no labeled button. Presence is the bars; everything else is absence.\n\nDensity is extreme sparsity. The palette is two values. Motion lives only inside the bars while Rafael is listening. Failure is plain pt-BR type under the control — named, recoverable, then gone again. The aesthetic philosophy is refusal: if it is not the talk, it does not appear.",
+    "keyCharacteristics": [
+      "Full-bleed void field (#05070c) with no texture, gradient, or second surface",
+      "One 88×88 ice control: five symmetric rounded bars (#d8f4ff)",
+      "Idle control unlabeled; aria-label only",
+      "A click starts the bars; another click returns them to rest",
+      "Mic denial is centered ice type below the control — no toast, modal, or chrome"
+    ],
+    "rules": [
+      {
+        "name": "The Two-Value Rule",
+        "body": "Only void and ice. No third fill, tint wash, or brand accent on this world’s surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ice-Is-Signal Rule",
+        "body": "Ice appears only as the control, its focus ring, selection, or failure copy. It is never decorative ornament.",
+        "section": "colors"
+      },
+      {
+        "name": "The Silent Idle Rule",
+        "body": "No visible type on the idle home. Copy appears only for mic denial.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bars-Are-Brand Rule",
+        "body": "Do not invent a display face or wordmark for the home. The five bars carry identity.",
+        "section": "typography"
+      },
+      {
+        "name": "The Centered Hold Rule",
+        "body": "The 88px bars remain the sole visual anchor at every viewport; do not pin them to corners or grow them with breakpoints.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Field Rule",
+        "body": "No shadows, glows, or ring frames. Recording state is bar motion, not elevation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Five-Bar Silhouette Rule",
+        "body": "The talk control is this exact five-bar geometry. Do not substitute a mic glyph, waveform ring, or labeled pill.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep the home as void + one unlabeled 88px ice bars control.",
+      "Do use ice for bars, focus, selection, and mic-failure copy only.",
+      "Do animate bars on click and stop on the next click; honor prefers-reduced-motion.",
+      "Do show pt-BR denial as title + recovery under the control when the mic is blocked."
+    ],
+    "donts": [
+      "Don't put the inbox list, date, logo, or wordmark on the home.",
+      "Don't wrap the bars in a holographic ring, glow, or second frame.",
+      "Don't add a visible idle label, badge, or kicker on the control.",
+      "Don't introduce a third brand color or a card/panel surface on this field."
+    ]
+  }
+}

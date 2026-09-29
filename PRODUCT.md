@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Laravel (app, session auth, storage, queued transcription, and later notifications), Livewire (inbox, confirm card, categories), Alpine.js (hold-to-talk and local capture state), Tailwind CSS, GSAP for capture and confirm motion, HTML/CSS/JS with no SPA framework, an installable PWA (manifest and service worker), and a Whisper-compatible speech-to-text API. Confirmed for this greenfield app.
+Laravel (app, session auth, storage, queued transcription, and later notifications), Livewire (inbox, confirm card, categories), Alpine.js (click-to-talk and local capture state), Tailwind CSS, GSAP for capture and confirm motion, HTML/CSS/JS with no SPA framework, an installable PWA (manifest and service worker), and a Whisper-compatible speech-to-text API. Confirmed for this greenfield app.
 
 ## Users
 
@@ -16,22 +16,22 @@ Gabriel is the only user. Rafael is his personal tool. He reaches for it when so
 
 ## Product Purpose
 
-Rafael is a personal secretary. Speech becomes a confirmed appointment or task in a category Gabriel owns. The app’s promise is that it reminds him. v1 succeeds when he can log in, hold to talk, confirm an appointment or task in a category, and see it in the list, on desktop web and as an installed PWA. v1 captures and lists. Reminders wait until that inbox is trustworthy.
+Rafael is a personal secretary. Speech becomes a confirmed appointment or task in a category Gabriel owns. The app’s promise is that it reminds him. v1 succeeds when he can log in, click to talk, confirm an appointment or task in a category, and see it in the list, on desktop web and as an installed PWA. v1 captures and lists. Reminders wait until that inbox is trustworthy.
 
 ## Positioning
 
-Voice is a draft. The confirm card is the commit, so a reminder never starts from an unreviewed transcript. One utterance becomes one record: a clock time defaults to an appointment, anything else defaults to a task, and Gabriel can flip the type before saving. Rafael keeps the records. A calendar export can be a later door. The product is a single-user web app with a press-and-hold capture, not an always-on microphone.
+Voice is a draft. The confirm card is the commit, so a reminder never starts from an unreviewed transcript. One utterance becomes one record: a clock time defaults to an appointment, anything else defaults to a task, and Gabriel can flip the type before saving. Rafael keeps the records. A calendar export can be a later door. The product is a single-user web app with a click to start and a click to stop, not an always-on microphone.
 
 ## Operating Context
 
-Gabriel opens the capture page in a browser or from a phone home-screen icon (PWA). He holds the capture control. The browser records audio. Laravel requires his session. A Whisper-compatible API transcribes. The audio file is deleted. A confirm card asks him to check title, type, category, and time before the record joins the inbox. Categories are his. A few suggestions on first use are allowed, and none are mandatory. Authenticated routes cover capture, the list, and audio upload. PWA install and the microphone require HTTPS.
+Gabriel opens the capture page in a browser or from a phone home-screen icon (PWA). He clicks the capture control to start, and clicks again to stop. The browser records audio. Laravel requires his session. A Whisper-compatible API transcribes. The audio file is deleted. A confirm card asks him to check title, type, category, and time before the record joins the inbox. Categories are his. A few suggestions on first use are allowed, and none are mandatory. Authenticated routes cover capture, the list, and audio upload. PWA install and the microphone require HTTPS.
 
 ## Capabilities and Constraints
 
 v1 includes:
 
 - One Laravel session login.
-- PWA plus in-page hold-to-talk capture (MediaRecorder).
+- PWA plus in-page click-to-talk capture (MediaRecorder).
 - Server transcription, then deletion of the audio. The product memory is the transcript and the structured record. Raw audio stays out of backups by default.
 - Confirm card: edit title, type (appointment or task), category (create inline), and time. Save or discard.
 - Inbox list with a category filter.

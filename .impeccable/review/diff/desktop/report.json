@@ -1,0 +1,104 @@
+{
+  "tool": "comp-diff",
+  "version": 1,
+  "createdAt": "2026-09-29T03:29:15.250Z",
+  "label": "desktop",
+  "comp": ".impeccable/mocks/home-bars.png",
+  "build": ".impeccable/review/desktop.png",
+  "spec": ".impeccable/build/spec.json",
+  "compSize": "390x844",
+  "buildSize": "1440x900",
+  "align": "top",
+  "overall": 0.3876,
+  "verdict": "missing",
+  "scores": {
+    "overall": 0.3876,
+    "structure": 0.3151,
+    "color": 0.7493,
+    "colorIntersection": 0.2888,
+    "paletteMatch": 0.9973,
+    "detail": 0,
+    "detailRaw": 0,
+    "detailAdded": 0.1458,
+    "bands": 0.6
+  },
+  "palette": {
+    "comp": [
+      {
+        "hex": "#080808",
+        "coverage": 0.9939
+      },
+      {
+        "hex": "#d8f8f8",
+        "coverage": 0.0061
+      }
+    ],
+    "build": [
+      {
+        "hex": "#f8f8f8",
+        "coverage": 0.7096
+      },
+      {
+        "hex": "#080808",
+        "coverage": 0.2904
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "bars",
+      "x": 0.3872,
+      "y": 0.4479,
+      "w": 0.2256,
+      "h": 0.1043,
+      "kind": "control",
+      "score": {
+        "overall": 0.1321,
+        "structure": 0.2232,
+        "color": 0.0904,
+        "colorIntersection": 0,
+        "paletteMatch": 0.139,
+        "detail": 0,
+        "detailRaw": 0,
+        "detailAdded": 0,
+        "bands": 0.4
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 6,
+          "y": 10,
+          "w": 75,
+          "h": 69
+        },
+        "build": null
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "at desktop width, region bars is missing"
+      ],
+      "rawVerdict": "missing"
+    }
+  ],
+  "files": {
+    "sideBySide": "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/desktop/side-by-side.png",
+    "heatmap": "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/desktop/heatmap.png",
+    "regionFiles": [
+      "/media/dev/Arquivos/Projetos/Laravel/Rafael/.impeccable/review/diff/desktop/regions/bars.png"
+    ]
+  },
+  "interpretation": "responsive-gate",
+  "measurementsAvailable": true,
+  "gate": {
+    "ok": false,
+    "reasons": [
+      "the desktop capture (1440x900; the top 390x844 rows scaled to the comp's width are compared, a full-page capture is fine) scores 39% against the comp, under 65%: the first viewport does not survive a common desktop width. The hero passed at 390x844; the layout must hold from ~1280 up, not only at the comp's exact width (grid columns in fr / minmax, not fixed px that overflow and wrap).",
+      "at desktop width, region bars is missing"
+    ],
+    "advisories": [],
+    "unscopedReasons": [
+      "the desktop capture (1440x900; the top 390x844 rows scaled to the comp's width are compared, a full-page capture is fine) scores 39% against the comp, under 65%: the first viewport does not survive a common desktop width. The hero passed at 390x844; the layout must hold from ~1280 up, not only at the comp's exact width (grid columns in fr / minmax, not fixed px that overflow and wrap)."
+    ]
+  },
+  "rawReport": ".impeccable/review/diff/desktop/raw-report.json"
+}
