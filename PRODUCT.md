@@ -67,7 +67,7 @@ The home is the conversation. Rafael speaks when the page opens. The bars icon i
 
 ## Evidence on Hand
 
-The product picture lives in `docs/rafael.md`. `README.md` points at that picture.
+The product picture lives in `README.md`. The short map for builders is `docs/project-description.md`.
 
 The repo has no logo, photography, testimonials, case studies, pricing, or customer proof. Future work must not invent them, and must not present away-from-app reminders, extra users, or calendar sync as behavior v1 already has.
 
