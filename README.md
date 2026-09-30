@@ -2,7 +2,7 @@
 
 Rafael is your personal secretary on the web. He reminds you of your appointments and tasks. You can ask him about them, and tell him to create, change, or remove them.
 
-The technical map is in [docs/project-description.md](docs/project-description.md). Cache and the queue need Redis on `127.0.0.1:6379` and the PHP Redis extension (`ext-redis`). Sessions stay in the database.
+The technical map is in [docs/project-description.md](docs/project-description.md). The app runs on **MySQL**. Cache and the queue need Redis on `127.0.0.1:6379` and the PHP Redis extension (`ext-redis`). Sessions stay in the database.
 
 ## What it is
 

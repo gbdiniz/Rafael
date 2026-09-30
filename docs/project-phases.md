@@ -22,7 +22,7 @@ Read the skill that matches the change before writing code. There is no existing
 - **Boundaries.** Whisper, speech synthesis, and turn interpretation are contracts, bound in `AppServiceProvider`. Constructor-inject them. Everything else stays concrete.
 - **HTTP.** A guest on a browser route is redirected to login. The audio upload uses a form request with array rules. One user, so no policy matrix.
 - **Eloquent.** Local scopes for on-the-books, today, and missed. Every list has an explicit `orderBy`, with `id` as the tie-breaker. Cast `kind` and `status` with backed enums. `$fillable` only for attributes the app mass-assigns. Do not set `$guarded = []`.
-- **Migrations.** `php artisan make:migration`. `foreignId()->constrained()` plus the schema delete behavior (`restrictOnDelete` on `user_id`, `nullOnDelete` on `last_voice_turn_id`). Do not add a second index on a column the foreign key already indexes. Do not edit the shipped Laravel migrations.
+- **Migrations.** `php artisan make:migration`. `foreignId()->constrained()` plus the schema delete behavior (`restrictOnDelete` on `user_id`, `nullOnDelete` on `last_voice_turn_id`). Do not add a second index on a column the foreign key already indexes. Do not edit the shipped Laravel migrations. Runtime database is **MySQL**; Pest keeps SQLite `:memory:` in `phpunit.xml`.
 - **Jobs.** Transcription is `ShouldQueue`. `$timeout` stays under Redis `retry_after`. Back off transient transcriber failures only. `failed()` marks the turn `failed` and deletes the audio. A missing turn returns without recreating the row.
 - **HTTP client.** The transcriber sets `connectTimeout()` and `timeout()`, and retries only transient failures.
 - **Schedule.** The prune command is `daily()->withoutOverlapping()`.
@@ -43,7 +43,7 @@ Pest. Create files with `php artisan make:test --pest {name}` and `--unit` for a
 - Freeze time with `travelTo()`. Do not call `Carbon::setTestNow()`. Fakes go inside the test, not in `beforeEach()`. `Storage::fake('local')`. `Http::preventStrayRequests()` and fake the exact transcriber URL. `Queue::fake([TranscribeVoiceTurn::class])` only when the test asserts dispatch; job tests run the job. Mock a contract with `use function Pest\Laravel\mock`.
 - Do not test an enum cast by echoing it, and do not test a foreign-key engine rule the app never exercises.
 - Do not delete `tests/Feature/ExampleTest.php`. Rewrite it in place when `/` stops being the welcome page.
-- `phpunit.xml` keeps cache `array`, queue `sync`, and session `array`. Do not assert that those drivers are Redis.
+- `phpunit.xml` keeps cache `array`, queue `sync`, session `array`, and database `sqlite` `:memory:`. Do not assert that runtime drivers are Redis or MySQL.
 
 ---
 
@@ -53,7 +53,7 @@ Already in the skeleton. Do not redo these migrations.
 
 ### Phase 1.1 — Laravel app boots
 
-- [x] Laravel 13 app, Vite, Tailwind 4, SQLite default. `GET /` still returns the welcome view.
+- [x] Laravel 13 app, Vite, Tailwind 4, MySQL runtime. `GET /` still returns the welcome view.
 
 **Feature tests (already present):**
 
@@ -115,7 +115,7 @@ Migration order: alter `users`, then `voice_turns`, then `records`.
 - `it('refuses to delete a user whose only record is soft-deleted')`
 - `it('updates record and voice turn user ids when the user id changes')`
 
-A rejected delete throws `QueryException` and leaves the user and the child rows in place. An id change on the user is followed by `records.user_id` and `voice_turns.user_id`.
+A rejected delete throws `QueryException` and leaves the user and the child rows in place. An id change on the user is followed by `records.user_id` and `voice_turns.user_id`. Pest runs these against SQLite `:memory:`; migrations must declare the same rules MySQL enforces at runtime.
 
 ### Phase 2.2 — Enums and models
 

@@ -12,7 +12,7 @@ The schema has three layers:
 | **Books** | One table of records (`records`): each row is an appointment or a task. Type can change; the single datetime column changes meaning with the type. |
 | **Speech pipeline** | One table of user voice turns (`voice_turns`): upload, queued transcription, transcript text, then deletion of the audio file. |
 
-Runtime split: **sessions stay in SQL** (`SESSION_DRIVER=database`) so login and the Livewire yes-draft survive a Redis flush. **Cache and the queue use Redis** (`CACHE_STORE=redis`, `QUEUE_CONNECTION=redis`, `REDIS_CLIENT=phpredis`). Failed jobs still land in SQL (`failed_jobs`). Laravel’s `jobs`, `job_batches`, `cache`, and `cache_locks` tables remain in the default migrations but are **not** the v1 runtime path. Redis is an external process (default `127.0.0.1:6379`); this repo does not ship Compose for it. The Pest suite, via `phpunit.xml`, uses `array` cache, `sync` queue, and `array` sessions and does not need Redis.
+Runtime split: **sessions stay in SQL** (`SESSION_DRIVER=database`) so login and the Livewire yes-draft survive a Redis flush. **Cache and the queue use Redis** (`CACHE_STORE=redis`, `QUEUE_CONNECTION=redis`, `REDIS_CLIENT=phpredis`). Failed jobs still land in SQL (`failed_jobs`). Laravel’s `jobs`, `job_batches`, `cache`, and `cache_locks` tables remain in the default migrations but are **not** the v1 runtime path. Redis is an external process (default `127.0.0.1:6379`); this repo does not ship Compose for it. **The application database is MySQL** (`DB_CONNECTION=mysql` in `.env.example`). The Pest suite uses SQLite `:memory:` via `phpunit.xml` for speed; migrations must stay valid on both. The Pest suite uses `array` cache, `sync` queue, and `array` sessions and does not need Redis.
 
 v1 does **not** model away-from-app notifications, completion, snooze, recurrence, calendar export, sharing, or extra users. Those are documented as later work so this schema is not padded with unused tables.
 
@@ -26,6 +26,12 @@ v1 does **not** model away-from-app notifications, completion, snooze, recurrenc
 - `id` bigint unsigned primary key on application tables.
 - Foreign keys named `{model}_id`.
 - Eloquent-friendly `foreignId()->constrained()` relationships.
+
+### Database engine
+
+- **Runtime:** MySQL (`.env.example` sets `DB_CONNECTION=mysql`). Sessions, users, records, voice turns, and `failed_jobs` live here.
+- **Tests:** Pest uses SQLite `:memory:` through `phpunit.xml`. Keep migrations compatible with both drivers.
+- **Foreign keys:** declare every relationship in migrations so MySQL and SQLite both enforce restrict, null-on-delete, and cascade-on-update.
 
 ### Referential integrity
 
@@ -55,7 +61,7 @@ v1 does **not** model away-from-app notifications, completion, snooze, recurrenc
 
 ### Enum and status handling
 
-- Small closed vocabularies use PHP backed string enums and `string` columns (readable in SQLite dumps and logs).
+- Small closed vocabularies use PHP backed string enums and `string` columns (readable in dumps and logs).
 - Do not use integer enums unless a later requirement forces it.
 
 ### Indexing
@@ -123,7 +129,7 @@ Remaining architectural notes (still needed for the schema, not open product que
 | A10 | Questions that do not mutate the books still create `voice_turns` rows (transcript for that ask). They do not create records. | Same upload/transcribe/delete path as mutations. |
 | A11 | No `roles`, `permissions`, `notifications`, or `revisions` tables in v1. | Out of documented v1 scope. |
 | A12 | Laravel `email_verified_at` remains on `users` but is unused. No MustVerifyEmail. | Avoid fighting the default User model; the product never mentions verification. |
-| A14 | Default database is SQLite as in `.env.example`; types below must remain SQLite- and MySQL-safe. | Hosting is undecided. |
+| A14 | Runtime database is MySQL; Pest uses SQLite `:memory:` in `phpunit.xml`. Migrations must work on both. | Confirmed for this project. |
 | A15 | Seeding the single user is an application/ops concern, not a schema table. | `DatabaseSeeder` currently creates `test@example.com`, which is **not** the production identity. |
 
 ---
@@ -286,7 +292,7 @@ No `belongsToMany`. No morphs.
 (kind = 'task') OR (kind = 'appointment' AND scheduled_at IS NOT NULL)
 ```
 
-Enforce in the migration if the driver supports check constraints (SQLite and modern MySQL/MariaDB do).
+Enforce in the migration. MySQL 8+ and SQLite both support check constraints when enabled.
 
 ---
 
