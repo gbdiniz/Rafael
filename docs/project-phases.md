@@ -99,10 +99,10 @@ Migration order: alter `users`, then `voice_turns`, then `records`.
 
 ### Phase 2.1 — User calendar columns
 
-- [ ] Add `users.timezone` (string 64, default `America/Sao_Paulo`) and `users.conversation_opened_at` (nullable timestamp).
-- [ ] Leave `email_verified_at` unused. Do not enable `MustVerifyEmail`.
-- [ ] Do not update timezone from the browser. Mirror the default in config.
-- [ ] `UserFactory` defaults `timezone` to `America/Sao_Paulo`.
+- [x] Add `users.timezone` (string 64, default `America/Sao_Paulo`) and `users.conversation_opened_at` (nullable timestamp).
+- [x] Leave `email_verified_at` unused. Do not enable `MustVerifyEmail`.
+- [x] Do not update timezone from the browser. Mirror the default in config.
+- [x] `UserFactory` defaults `timezone` to `America/Sao_Paulo`.
 
 **Stories:** US-02, US-03. **Schema:** `users`.
 
@@ -119,11 +119,11 @@ A rejected delete throws `QueryException` and leaves the user and the child rows
 
 ### Phase 2.2 — Enums and models
 
-- [ ] Backed string enums `RecordKind` (`appointment`, `task`) and `VoiceTurnStatus` (`uploaded`, `transcribing`, `completed`, `failed`).
-- [ ] One `Record` model and one `VoiceTurn` model. No `Appointment` or `Task` model.
-- [ ] Relationships with return types: `User::records()`, `User::voiceTurns()`, `Record::user()`, `Record::lastVoiceTurn()`, `VoiceTurn::user()`, `VoiceTurn::records()`.
-- [ ] Local scopes on `Record`: `appointments`, `tasks`, and briefing scopes that take the user timezone and a frozen now. Soft deletes already hide removed rows.
-- [ ] Factory states: `Record::factory()->appointment()`, `->task()`, `->withoutDueDate()`, `->deleted()`. `VoiceTurn::factory()->uploaded()`, `->completed()`, `->failed()`.
+- [x] Backed string enums `RecordKind` (`appointment`, `task`) and `VoiceTurnStatus` (`uploaded`, `transcribing`, `completed`, `failed`).
+- [x] One `Record` model and one `VoiceTurn` model. No `Appointment` or `Task` model.
+- [x] Relationships with return types: `User::records()`, `User::voiceTurns()`, `Record::user()`, `Record::lastVoiceTurn()`, `VoiceTurn::user()`, `VoiceTurn::records()`.
+- [x] Local scopes on `Record`: `appointments`, `tasks`, and briefing scopes that take the user timezone and a frozen now. Soft deletes already hide removed rows.
+- [x] Factory states: `Record::factory()->appointment()`, `->task()`, `->withoutDueDate()`, `->deleted()`. `VoiceTurn::factory()->uploaded()`, `->completed()`, `->failed()`.
 
 **Schema:** §7, §10.
 
@@ -131,8 +131,8 @@ A rejected delete throws `QueryException` and leaves the user and the child rows
 
 ### Phase 2.3 — `voice_turns`
 
-- [ ] Migration, model, factory. Columns and the non-foreign indexes from the schema (`uuid` unique, status default `uploaded`, locale default `pt-BR`, `created_at` indexed for the prune).
-- [ ] `user_id` uses `foreignId()->constrained()->restrictOnDelete()->cascadeOnUpdate()`. No extra index on `user_id`.
+- [x] Migration, model, factory. Columns and the non-foreign indexes from the schema (`uuid` unique, status default `uploaded`, locale default `pt-BR`, `created_at` indexed for the prune).
+- [x] `user_id` uses `foreignId()->constrained()->restrictOnDelete()->cascadeOnUpdate()`. No extra index on `user_id`.
 
 **Schema:** `voice_turns`.
 
@@ -147,11 +147,11 @@ A missing user throws `QueryException` and inserts no turn. Deleting the turn nu
 
 ### Phase 2.4 — `records`
 
-- [ ] Migration, `Record` with `SoftDeletes`, factory. `kind`, `title`, nullable `scheduled_at`, required `last_transcript`, nullable `last_voice_turn_id`.
-- [ ] Check: an appointment requires `scheduled_at`; a task may omit it.
-- [ ] `user_id` `restrictOnDelete()->cascadeOnUpdate()`. `last_voice_turn_id` `nullOnDelete()->cascadeOnUpdate()`.
-- [ ] Composite index `(user_id, kind, deleted_at, scheduled_at)`. Add `(user_id, deleted_at)` only if a real query needs it after that composite. No unique index on `title`.
-- [ ] The action sets `user_id` from the authenticated user. Do not mass-assign it from the request.
+- [x] Migration, `Record` with `SoftDeletes`, factory. `kind`, `title`, nullable `scheduled_at`, required `last_transcript`, nullable `last_voice_turn_id`.
+- [x] Check: an appointment requires `scheduled_at`; a task may omit it.
+- [x] `user_id` `restrictOnDelete()->cascadeOnUpdate()`. `last_voice_turn_id` `nullOnDelete()->cascadeOnUpdate()`.
+- [x] Composite index `(user_id, kind, deleted_at, scheduled_at)`. Add `(user_id, deleted_at)` only if a real query needs it after that composite. No unique index on `title`.
+- [x] The action sets `user_id` from the authenticated user. Do not mass-assign it from the request.
 
 **Schema:** `records`.
 
@@ -171,8 +171,8 @@ The delete-turn case is the behavior prune and the job rely on. `assertModelExis
 
 ### Phase 2.5 — Local day
 
-- [ ] One class the briefing scope uses: local today and “before today” from `users.timezone`, compared with UTC `scheduled_at`.
-- [ ] A date with no clock time becomes midnight in that timezone, then UTC. No date column.
+- [x] One class the briefing scope uses: local today and “before today” from `users.timezone`, compared with UTC `scheduled_at`.
+- [x] A date with no clock time becomes midnight in that timezone, then UTC. No date column.
 
 **Stories:** US-03. **Schema:** `scheduled_at` decision.
 
