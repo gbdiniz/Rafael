@@ -19,7 +19,7 @@ Read the skill that matches the change before writing code. There is no existing
 
 - **Actions.** Create, change, remove, briefing, and answer are action classes with `handle()`. The Livewire page calls the action. No repository layer.
 - **Livewire 4.** The conversation is a full-page multi-file component: `php artisan make:livewire pages::conversation --mfc` creates `resources/views/pages/⚡conversation/conversation.php` and `conversation.blade.php`. Register it with `Route::livewire('/', 'pages::conversation')`. Do not use `--class`. `config/livewire.php` sets `make_command.type` to `mfc` and `make_command.emoji` to `true`. `AuthScreen`, `SecretaryTurn`, and `TalkControl` are Blade or Alpine pieces inside that page, not extra Livewire components. Alpine ships with Livewire 4: do not add an Alpine package. The recorder island is `wire:ignore` so a morph cannot destroy a recording. Lists use `wire:key`. Show `wire:loading` while a turn is transcribing. Validate inside the page action the same way a form request would.
-- **Boundaries.** Whisper, speech synthesis, and turn interpretation are contracts, bound in `AppServiceProvider`. Constructor-inject them. Everything else stays concrete.
+- **Boundaries.** Whisper runs in the separate [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) repo. Rafael only implements the `Transcriber` HTTP client; do not add Docker or Nginx for Whisper inside this repo. Speech synthesis and turn interpretation are contracts, bound in `AppServiceProvider`. Constructor-inject them. Everything else stays concrete.
 - **HTTP.** A guest on a browser route is redirected to login. The audio upload uses a form request with array rules. One user, so no policy matrix.
 - **Eloquent.** Local scopes for on-the-books, today, and missed. Every list has an explicit `orderBy`, with `id` as the tie-breaker. Cast `kind` and `status` with backed enums. `$fillable` only for attributes the app mass-assigns. Do not set `$guarded = []`.
 - **Migrations.** `php artisan make:migration`. `foreignId()->constrained()` plus the schema delete behavior (`restrictOnDelete` on `user_id`, `nullOnDelete` on `last_voice_turn_id`). Do not add a second index on a column the foreign key already indexes. Do not edit the shipped Laravel migrations. Runtime database is **MySQL**; Pest keeps SQLite `:memory:` in `phpunit.xml`.
@@ -351,6 +351,15 @@ Use `Storage::fake('local')` and `Queue::fake([TranscribeVoiceTurn::class])`. `a
 
 - `it('does not store a reply file when transcription completes')`
 
+### Phase 5.7 — Rafael-Whisper (self-hosted transcriber)
+
+- [ ] Deploy [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) on the Debian transcription server. Follow that repo’s [`docs/deployment.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/deployment.md).
+- [ ] Rafael production `.env`: `TRANSCRIBER_URL`, `TRANSCRIBER_API_KEY`, `TRANSCRIBER_MODEL=base`. Leave `OPENAI_API_KEY` empty.
+- [ ] `config/rafael.php` reads `TRANSCRIBER_API_KEY` for the bearer token sent to Rafael-Whisper.
+- [ ] End-to-end: a voice turn reaches `completed` with a transcript via the self-hosted API. See Rafael-Whisper [`docs/verification.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/verification.md).
+
+**Ops docs:** Rafael-Whisper [`docs/rafael-integration.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/rafael-integration.md).
+
 ---
 
 ## Phase 6 — Questions stay on the books
@@ -574,7 +583,7 @@ Do not implement these while building Phases 2–10. No feature tests until a la
 | US-01 Log in | 3.1, 3.2 |
 | US-02 First greeting | 2.1, 4.2 |
 | US-03 Today and missed | 2.4, 2.5, 4.3 |
-| US-04 Click to talk | 5.1–5.6 |
+| US-04 Click to talk | 5.1–5.7 |
 | US-05 Ask about tasks and appointments | 6.1–6.3 |
 | US-06 Clear failure | 8.1–8.3 |
 | US-07 Create after yes | 7.1, 7.2 |

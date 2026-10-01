@@ -46,8 +46,8 @@ it('does not call an unfaked host during transcription', function () {
     Http::preventStrayRequests();
 
     config([
-        'rafael.transcriber.api_key' => 'test-openai-key',
-        'rafael.transcriber.model' => 'whisper-1',
+        'rafael.transcriber.api_key' => 'test-transcriber-key',
+        'rafael.transcriber.model' => 'base',
     ]);
 
     $user = User::factory()->create();
@@ -72,8 +72,8 @@ it('does not call an unfaked host during transcription', function () {
         );
 
         return $request->url() === config('rafael.transcriber.url')
-            && $request->hasHeader('Authorization', 'Bearer test-openai-key')
-            && $fields->get('model') === 'whisper-1'
+            && $request->hasHeader('Authorization', 'Bearer test-transcriber-key')
+            && $fields->get('model') === 'base'
             && $fields->get('language') === 'pt';
     });
 });

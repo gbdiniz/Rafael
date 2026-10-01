@@ -54,8 +54,8 @@ return [
 
     'transcriber' => [
         'url' => env('TRANSCRIBER_URL', 'http://localhost/transcribe'),
-        'api_key' => env('OPENAI_API_KEY'),
-        'model' => env('TRANSCRIBER_MODEL', 'whisper-1'),
+        'api_key' => env('TRANSCRIBER_API_KEY'),
+        'model' => env('TRANSCRIBER_MODEL', 'base'),
         'connect_timeout' => 5,
         'timeout' => 60,
     ],

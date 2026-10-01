@@ -24,7 +24,7 @@ Web only. No SPA framework. No native shell in this phase.
 - **GSAP** — motion while he speaks and while the user records. GSAP owns that motion; Livewire owns data. A Livewire morph must not destroy an in-flight recording, so the recorder island stays in Alpine
 - **HTML / CSS / JS** — no SPA framework
 - **PWA** — manifest and service worker. A phone home-screen icon opens the same conversation. HTTPS is required for the PWA, the microphone, and speech output
-- **Whisper-compatible API** — server-side speech-to-text. The provider, and how the Laravel job is queued, are undecided
+- **Whisper-compatible API** — server-side speech-to-text via the separate [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) repo (self-hosted faster-whisper). Rafael queues transcription on Redis.
 - **Speech synthesis** — Rafael’s voice, server audio or the browser. The provider is undecided
 
 Components in the kit:
