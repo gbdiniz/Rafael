@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-Rafael is a single-user personal secretary. Gabriel signs in, Rafael speaks first, and the durable product memory is **structured records** plus **transcripts of the spoken turns that created or changed them**. Audio files are temporary. Rafael’s spoken replies are session output, not stored audio.
+Rafael is a single-user personal secretary. The user signs in, Rafael speaks first, and the durable product memory is **structured records** plus **transcripts of the spoken turns that created or changed them**. Audio files are temporary. Rafael’s spoken replies are session output, not stored audio.
 
 The schema has three layers:
 
@@ -48,7 +48,7 @@ v1 does **not** model away-from-app notifications, completion, snooze, recurrenc
 ### Timestamps
 
 - Application tables use `created_at` and `updated_at`.
-- Domain datetimes that represent Gabriel’s calendar (`scheduled_at`, `conversation_opened_at`) are stored as UTC and interpreted in `users.timezone`.
+- Domain datetimes that represent the user’s calendar (`scheduled_at`, `conversation_opened_at`) are stored as UTC and interpreted in `users.timezone`.
 
 ### Soft deletes
 
@@ -104,13 +104,13 @@ Confirmed by README, product, project description, and user stories (not assumpt
 - Type can flip; the time changes role; a task without a due date cannot become an appointment until a start time exists.
 - Create / change / remove persist only after a spoken yes.
 - First visit is a greeting; later visits brief today’s appointments and missed (unremoved, start before today) appointments.
-- A day is Gabriel’s local calendar day.
+- A day is the user’s local calendar day.
 - Audio is transcribed then deleted; replies are not kept as audio.
 - Away-from-app reminders, complete, snooze, recurrence, search, extra users, and calendar export are after v1.
 
 Closed product/architecture decisions (no longer open):
 
-- `scheduled_at` is a UTC datetime. If Gabriel names only a date, store midnight in `users.timezone`, then convert to UTC.
+- `scheduled_at` is a UTC datetime. If the user names only a date, store midnight in `users.timezone`, then convert to UTC.
 - `users.timezone` is seeded as `America/Sao_Paulo` and is **not** updated from the browser in v1.
 - Record removal is **soft delete**.
 - Yes-drafts live in the SQL session (Livewire). A table so a proposal survives refresh is a **future** feature.
@@ -130,7 +130,7 @@ Remaining architectural notes (still needed for the schema, not open product que
 | A11 | No `roles`, `permissions`, `notifications`, or `revisions` tables in v1. | Out of documented v1 scope. |
 | A12 | Laravel `email_verified_at` remains on `users` but is unused. No MustVerifyEmail. | Avoid fighting the default User model; the product never mentions verification. |
 | A14 | Runtime database is MySQL; Pest uses SQLite `:memory:` in `phpunit.xml`. Migrations must work on both. | Confirmed for this project. |
-| A15 | Seeding the single user is an application/ops concern, not a schema table. | `DatabaseSeeder` currently creates `test@example.com`, which is **not** the production identity. |
+| A15 | Seeding the account is an application/ops concern, not a schema table. | `DatabaseSeeder` reads `ADMIN_*` env via `config('rafael.admin')` and fails if any value is missing. Login uses `Auth::attempt()` against whatever row exists in `users`. |
 
 ---
 
@@ -192,7 +192,7 @@ The only account that can open Rafael. Owns every record and every voice turn. A
 | Column | Type | Nullable | Default | Description |
 |---|---|---:|---|---|
 | id | bigint unsigned | No | auto increment | Primary key |
-| name | string | No | — | Display name (Gabriel in production) |
+| name | string | No | — | Display name |
 | email | string | No | — | Login identifier; unique |
 | email_verified_at | timestamp | Yes | null | Laravel default; unused in v1 |
 | password | string | No | — | Hashed password |
@@ -484,7 +484,7 @@ Laravel default, including unique `uuid`. Existing composite index `(connection,
 
 **Business Rules**
 
-- Surface a safe failure to Gabriel via `voice_turns.status = failed` and `error_message`, not by reading this table in the UI.
+- Surface a safe failure to the user via `voice_turns.status = failed` and `error_message`, not by reading this table in the UI.
 
 ---
 
@@ -603,7 +603,7 @@ If `last_voice_turn_id` is added in a follow-up migration, `records` could be cr
 
 ## 12. Existing Implementation vs Proposed Schema
 
-The repo is a Laravel 13 skeleton. Domain schema is not implemented. Default `APP_LOCALE` / seeder identity do not match the product (pt-BR, Gabriel) but that is not a table conflict.
+The repo is a Laravel 13 skeleton. Domain schema is partially implemented. Default `APP_LOCALE` may not match the product (pt-BR) but that is not a table conflict.
 
 | Area | Status | Detail |
 |---|---|---|
@@ -620,7 +620,7 @@ The repo is a Laravel 13 skeleton. Domain schema is not implemented. Default `AP
 | `voice_turns` | Missing | Entire speech pipeline persistence |
 | `app/Models` besides User | Missing | Only `User` exists |
 | Enums, actions, DTOs, custom validation, services | Missing | No domain code |
-| `UserFactory` / `DatabaseSeeder` | Inconsistent with requirements | Factory is generic; seeder creates `Test User` / `test@example.com`, not the single production login. Schema still uses `users`; seed data is a later concern |
+| `UserFactory` / `DatabaseSeeder` | Partially implemented | Factory is generic. Seeder should create one user from `ADMIN_*` via `config('rafael.admin')` and fail when env is incomplete. Login resolves users through the standard guard, not seeder config. |
 | Notifications / push tables | Missing (correct) | After v1 |
 | Separate `appointments` / `tasks` tables | Missing (correct) | Do not add; they would fight US-08 |
 | `composer.json` | Partially implemented | Requires `ext-redis`; no Livewire yet (out of schema scope) |

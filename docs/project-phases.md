@@ -191,8 +191,9 @@ Depends on Phase 2.1. **US-01.**
 ### Phase 3.1 — Session login, no signup
 
 - [ ] Login route and Blade `AuthScreen`. No registration route and no signup link.
-- [ ] The web cannot create users.
-- [ ] Replace the seeder’s `Test User` / `test@example.com` with one local account named Gabriel. The password comes from config fed by the environment, not from a committed secret.
+- [ ] The web cannot create users (no signup route or controller).
+- [ ] Standard Laravel session login: guest submits email and password; `Auth::attempt()` resolves the account from `users`. No special single-user lookup at login time. Any valid row may sign in.
+- [ ] `DatabaseSeeder` creates the initial user from `config('rafael.admin')`, fed by `ADMIN_NAME`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD` in `.env`. Hash the password in the seeder. Fail the seed command with a clear error when any of the three is missing. Login code does not read these vars.
 - [ ] Tailwind v4 on the login view: kit tokens in `@theme`, `gap` for stacking.
 
 **Feature tests:** `tests/Feature/Auth/LoginTest.php`
@@ -203,7 +204,7 @@ Depends on Phase 2.1. **US-01.**
 - `it('returns not found for the registration url')`
 - `it('does not offer signup on the login screen')`
 
-Assert `assertNotFound()` for the missing registration URL. Assert the Portuguese validation message when the credentials are wrong.
+Create the user inside each test with `UserFactory`. Do not depend on seeded admin identity or `ADMIN_*` env vars. Assert `assertNotFound()` for the missing registration URL. Assert the Portuguese validation message when the credentials are wrong.
 
 ### Phase 3.2 — Authenticated doors
 
