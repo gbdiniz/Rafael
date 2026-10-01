@@ -190,11 +190,11 @@ Depends on Phase 2.1. **US-01.**
 
 ### Phase 3.1 — Session login, no signup
 
-- [ ] Login route and Blade `AuthScreen`. No registration route and no signup link.
-- [ ] The web cannot create users (no signup route or controller).
-- [ ] Standard Laravel session login: guest submits email and password; `Auth::attempt()` resolves the account from `users`. No special single-user lookup at login time. Any valid row may sign in.
-- [ ] `DatabaseSeeder` creates the initial user from `config('rafael.admin')`, fed by `ADMIN_NAME`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD` in `.env`. Hash the password in the seeder. Fail the seed command with a clear error when any of the three is missing. Login code does not read these vars.
-- [ ] Tailwind v4 on the login view: kit tokens in `@theme`, `gap` for stacking.
+- [x] Login route and Blade `AuthScreen`. No registration route and no signup link.
+- [x] The web cannot create users (no signup route or controller).
+- [x] Standard Laravel session login: guest submits email and password; `Auth::attempt()` resolves the account from `users`. No special single-user lookup at login time. Any valid row may sign in.
+- [x] `DatabaseSeeder` creates the initial user from `config('rafael.admin')`, fed by `ADMIN_NAME`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD` in `.env`. Hash the password in the seeder. Fail the seed command with a clear error when any of the three is missing. Login code does not read these vars.
+- [x] Tailwind v4 on the login view: kit tokens in `@theme`, `gap` for stacking.
 
 **Feature tests:** `tests/Feature/Auth/LoginTest.php`
 
@@ -208,8 +208,8 @@ Create the user inside each test with `UserFactory`. Do not depend on seeded adm
 
 ### Phase 3.2 — Authenticated doors
 
-- [ ] `/`, record reads, and audio upload use the `auth` middleware.
-- [ ] Guests are redirected to the named login route.
+- [x] `/`, record reads, and audio upload use the `auth` middleware.
+- [x] Guests are redirected to the named login route.
 
 **Feature tests:** `tests/Feature/Auth/AuthenticatedRoutesTest.php`
 

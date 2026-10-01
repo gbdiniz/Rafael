@@ -1,5 +1,5 @@
 <?php
 
 it('returns a successful response', function () {
-    $this->get('/')->assertOk();
+    $this->get(route('login'))->assertOk();
 });
