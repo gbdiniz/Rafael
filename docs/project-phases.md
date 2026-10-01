@@ -18,7 +18,7 @@ Read the skill that matches the change before writing code. There is no existing
 | Tailwind on a Blade or Livewire view | `.agents/skills/tailwindcss-development` |
 
 - **Actions.** Create, change, remove, briefing, and answer are action classes with `handle()`. The Livewire page calls the action. No repository layer.
-- **Livewire 4.** The conversation is one full-page single-file component: `php artisan make:livewire pages::conversation`, which creates `resources/views/pages/⚡conversation.blade.php`. Register it with `Route::livewire()`. Do not use `--class` or `--mfc`. There is no `config/livewire.php` yet, so keep the default ⚡ filename prefix. `AuthScreen`, `SecretaryTurn`, and `TalkControl` are Blade or Alpine pieces inside that page, not extra Livewire components. Alpine ships with Livewire 4: do not add an Alpine package. The recorder island is `wire:ignore` so a morph cannot destroy a recording. Lists use `wire:key`. Show `wire:loading` while a turn is transcribing. Validate inside the page action the same way a form request would.
+- **Livewire 4.** The conversation is a full-page multi-file component: `php artisan make:livewire pages::conversation --mfc` creates `resources/views/pages/⚡conversation/conversation.php` and `conversation.blade.php`. Register it with `Route::livewire('/', 'pages::conversation')`. Do not use `--class`. `config/livewire.php` sets `make_command.type` to `mfc` and `make_command.emoji` to `true`. `AuthScreen`, `SecretaryTurn`, and `TalkControl` are Blade or Alpine pieces inside that page, not extra Livewire components. Alpine ships with Livewire 4: do not add an Alpine package. The recorder island is `wire:ignore` so a morph cannot destroy a recording. Lists use `wire:key`. Show `wire:loading` while a turn is transcribing. Validate inside the page action the same way a form request would.
 - **Boundaries.** Whisper, speech synthesis, and turn interpretation are contracts, bound in `AppServiceProvider`. Constructor-inject them. Everything else stays concrete.
 - **HTTP.** A guest on a browser route is redirected to login. The audio upload uses a form request with array rules. One user, so no policy matrix.
 - **Eloquent.** Local scopes for on-the-books, today, and missed. Every list has an explicit `orderBy`, with `id` as the tie-breaker. Cast `kind` and `status` with backed enums. `$fillable` only for attributes the app mass-assigns. Do not set `$guarded = []`.
@@ -85,7 +85,7 @@ Rewrite this test in Phase 4.1. Do not delete the file.
 
 - [x] `livewire/livewire` ^4.4, `pestphp/pest` ^5, and `pestphp/pest-plugin-laravel` are required.
 - [x] `tests/Pest.php` binds the Laravel test case and `LazilyRefreshDatabase` for feature tests. `tests/Feature/ExampleTest.php` and `tests/Unit/ExampleTest.php` are Pest `it()` files.
-- [ ] No Livewire page exists yet. That work is Phase 4.
+- [x] The conversation page is `pages::conversation` (MFC under `resources/views/pages/⚡conversation/`). See Phase 4.
 
 **Feature tests:** none beyond Phase 1.1.
 
@@ -227,11 +227,11 @@ Depends on Phase 2 and Phase 3. **US-02, US-03.** No inbox list.
 
 ### Phase 4.1 — Conversation is home
 
-- [ ] `php artisan make:livewire pages::conversation` and `Route::livewire()` for `/`. Remove the welcome view from that route.
-- [ ] Rewrite `tests/Feature/ExampleTest.php` in place so it no longer expects the welcome page to return ok.
-- [ ] `SecretaryTurn` is a Blade component rendered by the page. `TalkControl` arrives in Phase 5.
-- [ ] Copy is pt-BR. Set this surface’s locale to `pt_BR`.
-- [ ] Order any record query with an explicit column plus `id`.
+- [x] `php artisan make:livewire pages::conversation --mfc` and `Route::livewire('/', 'pages::conversation')` for `/`. Remove the welcome view from that route.
+- [x] Rewrite `tests/Feature/ExampleTest.php` in place so it no longer expects the welcome page to return ok.
+- [x] `SecretaryTurn` is a Blade component rendered by the page. `TalkControl` arrives in Phase 5.
+- [x] Copy is pt-BR. Set this surface’s locale to `pt_BR`.
+- [x] Order any record query with an explicit column plus `id`.
 
 **Feature tests:** `tests/Feature/Conversation/HomeTest.php` via `Livewire::test('pages::conversation')`
 
@@ -241,8 +241,8 @@ Depends on Phase 2 and Phase 3. **US-02, US-03.** No inbox list.
 
 ### Phase 4.2 — First visit is a greeting
 
-- [ ] `OpenConversation` action: when `conversation_opened_at` is null, the turn is a greeting only (no appointments, no tasks, no product tour), then it sets `conversation_opened_at` once.
-- [ ] A later visit does not clear that timestamp and does not greet as a first visit.
+- [x] `OpenConversation` action: when `conversation_opened_at` is null, the turn is a greeting only (no appointments, no tasks, no product tour), then it sets `conversation_opened_at` once.
+- [x] A later visit does not clear that timestamp and does not greet as a first visit.
 
 **Feature tests:** `tests/Feature/Conversation/FirstVisitTest.php`
 
@@ -255,9 +255,9 @@ Depends on Phase 2 and Phase 3. **US-02, US-03.** No inbox list.
 
 ### Phase 4.3 — Today and what is still hanging
 
-- [ ] `Briefing` action uses the Phase 2.5 scopes. After the first visit it includes every on-the-books appointment whose start falls on local today, including times already passed, and every on-the-books appointment whose start is before local today.
-- [ ] It omits future days, tasks, and soft-deleted appointments.
-- [ ] He waits after the briefing. An empty day does not recite tasks.
+- [x] `Briefing` action uses the Phase 2.5 scopes. After the first visit it includes every on-the-books appointment whose start falls on local today, including times already passed, and every on-the-books appointment whose start is before local today.
+- [x] It omits future days, tasks, and soft-deleted appointments.
+- [x] He waits after the briefing. An empty day does not recite tasks.
 
 **Feature tests:** `tests/Feature/Conversation/BriefingTest.php`. Each test calls `travelTo()` and uses factory states.
 
@@ -277,10 +277,10 @@ Depends on Phase 3.2 and Phase 2.3. **US-04.** Alpine, already bundled with Live
 
 ### Phase 5.1 — Talk control
 
-- [ ] Alpine `TalkControl` inside the page: first click starts, second click stops. The bars show listening.
-- [ ] `mouseleave` and blur do not stop a recording.
-- [ ] The recorder island is `wire:ignore`.
-- [ ] Tailwind v4 utilities only. No Material 3.
+- [x] Alpine `TalkControl` inside the page: first click starts, second click stops. The bars show listening.
+- [x] `mouseleave` and blur do not stop a recording.
+- [x] The recorder island is `wire:ignore`.
+- [x] Tailwind v4 utilities only. No Material 3.
 
 Pest cannot drive `MediaRecorder`. These tests assert the server-rendered contract.
 
@@ -293,10 +293,10 @@ Pest cannot drive `MediaRecorder`. These tests assert the server-rendered contra
 
 ### Phase 5.2 — Authenticated upload
 
-- [ ] `StoreVoiceTurnRequest` validates the audio (required file, allowed mime types, max size) with array rules.
-- [ ] `StoreVoiceTurn` creates a `voice_turns` row in `uploaded` and stores the file on the private `local` disk. The public disk never receives the bytes.
-- [ ] Dispatch `TranscribeVoiceTurn` for that turn only. The upload does not create a `records` row.
-- [ ] The page shows `wire:loading` while that turn is in flight.
+- [x] `StoreVoiceTurnRequest` validates the audio (required file, allowed mime types, max size) with array rules.
+- [x] `StoreVoiceTurn` creates a `voice_turns` row in `uploaded` and stores the file on the private `local` disk. The public disk never receives the bytes.
+- [x] Dispatch `TranscribeVoiceTurn` for that turn only. The upload does not create a `records` row.
+- [x] The page shows `wire:loading` while that turn is in flight.
 
 **Feature tests:** `tests/Feature/Voice/AudioUploadTest.php`
 
@@ -310,9 +310,9 @@ Use `Storage::fake('local')` and `Queue::fake([TranscribeVoiceTurn::class])`. `a
 
 ### Phase 5.3 — Transcribe, then delete the file
 
-- [ ] `Transcriber` contract, bound to an HTTP implementation with connect and response timeouts. Tests bind a fake.
-- [ ] `TranscribeVoiceTurn`: `$timeout` under `retry_after`, `$tries` and `$backoff` for transient failures only.
-- [ ] Success sets `completed`, stores `transcript`, deletes the file, nulls `audio_path` and `disk`, sets `audio_deleted_at`.
+- [x] `Transcriber` contract, bound to an HTTP implementation with connect and response timeouts. Tests bind a fake.
+- [x] `TranscribeVoiceTurn`: `$timeout` under `retry_after`, `$tries` and `$backoff` for transient failures only.
+- [x] Success sets `completed`, stores `transcript`, deletes the file, nulls `audio_path` and `disk`, sets `audio_deleted_at`.
 
 **Feature tests:** `tests/Feature/Jobs/TranscribeVoiceTurnTest.php`. Run the job. Do not `Queue::fake` it.
 
@@ -323,8 +323,8 @@ Use `Storage::fake('local')` and `Queue::fake([TranscribeVoiceTurn::class])`. `a
 
 ### Phase 5.4 — Transcription failure
 
-- [ ] A permanent failure and `failed()` after retries set `status` to `failed`, a short `error_message`, and still delete the file.
-- [ ] The conversation reads that failure from the turn. It does not read `failed_jobs`.
+- [x] A permanent failure and `failed()` after retries set `status` to `failed`, a short `error_message`, and still delete the file.
+- [x] The conversation reads that failure from the turn. It does not read `failed_jobs`.
 
 **Feature tests:** `tests/Feature/Jobs/TranscribeVoiceTurnTest.php`
 
@@ -337,7 +337,7 @@ Use `Storage::fake('local')` and `Queue::fake([TranscribeVoiceTurn::class])`. `a
 
 ### Phase 5.5 — Missing turn
 
-- [ ] If the row is gone when the job runs, `handle()` returns. It does not insert a turn and does not throw.
+- [x] If the row is gone when the job runs, `handle()` returns. It does not insert a turn and does not throw.
 
 **Feature tests:**
 
@@ -345,7 +345,7 @@ Use `Storage::fake('local')` and `Queue::fake([TranscribeVoiceTurn::class])`. `a
 
 ### Phase 5.6 — Replies are not audio files
 
-- [ ] Nothing in the success path writes a reply file or a reply row.
+- [x] Nothing in the success path writes a reply file or a reply row.
 
 **Feature tests:** `tests/Feature/Voice/ReplyAudioTest.php`
 

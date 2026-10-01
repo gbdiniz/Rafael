@@ -11,7 +11,7 @@ Route::middleware('guest')->group(function (): void {
 });
 
 Route::middleware('auth')->group(function (): void {
-    Route::view('/', 'conversation')->name('conversation');
+    Route::livewire('/', 'pages::conversation')->name('conversation');
     Route::get('records', RecordController::class)->name('records.index');
     Route::post('voice-turns', [VoiceTurnController::class, 'store'])->name('voice-turns.store');
 });

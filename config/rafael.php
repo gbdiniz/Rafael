@@ -29,4 +29,35 @@ return [
         'password' => env('ADMIN_PASSWORD'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Voice Turn Upload
+    |--------------------------------------------------------------------------
+    */
+
+    'voice_turn' => [
+        'allowed_mimes' => [
+            'audio/webm',
+            'audio/ogg',
+            'audio/mp4',
+            'audio/mpeg',
+            'video/webm',
+        ],
+        'max_kilobytes' => 10240,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Transcriber
+    |--------------------------------------------------------------------------
+    */
+
+    'transcriber' => [
+        'url' => env('TRANSCRIBER_URL', 'http://localhost/transcribe'),
+        'api_key' => env('OPENAI_API_KEY'),
+        'model' => env('TRANSCRIBER_MODEL', 'whisper-1'),
+        'connect_timeout' => 5,
+        'timeout' => 60,
+    ],
+
 ];

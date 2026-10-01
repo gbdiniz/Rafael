@@ -2,13 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\Voice\StoreVoiceTurn;
+use App\Http\Requests\StoreVoiceTurnRequest;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class VoiceTurnController extends Controller
 {
-    public function store(Request $request): JsonResponse
+    public function store(StoreVoiceTurnRequest $request, StoreVoiceTurn $storeVoiceTurn): JsonResponse
     {
-        return response()->json(['message' => 'Not implemented'], 501);
+        $voiceTurn = $storeVoiceTurn->handle(
+            $request->user(),
+            $request->file('audio'),
+        );
+
+        return response()->json([
+            'uuid' => $voiceTurn->uuid,
+        ]);
     }
 }

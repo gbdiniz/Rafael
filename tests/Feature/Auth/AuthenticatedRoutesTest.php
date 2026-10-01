@@ -18,5 +18,5 @@ it('opens the conversation for a signed-in user', function () {
     $this->actingAs($user)
         ->get(route('conversation'))
         ->assertOk()
-        ->assertSee('Conversa');
+        ->assertSee('Olá.');
 });
