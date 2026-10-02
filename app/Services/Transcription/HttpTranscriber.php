@@ -31,11 +31,8 @@ class HttpTranscriber implements Transcriber
         }
 
         $response = $this->client()
-            ->attach('file', $contents, basename($turn->audio_path))
-            ->post(config('rafael.transcriber.url'), [
-                'model' => config('rafael.transcriber.model'),
-                'language' => $this->transcriptionLanguage($turn),
-            ]);
+            ->attach('audio_file', $contents, basename($turn->audio_path))
+            ->post($this->transcriptionUrl($turn));
 
         if ($response->failed()) {
             $this->throwForFailedResponse($response);
@@ -81,6 +78,20 @@ class HttpTranscriber implements Transcriber
         return str($turn->locale)->before('-')->lower()->toString();
     }
 
+    private function transcriptionUrl(VoiceTurn $turn): string
+    {
+        $baseUrl = config('rafael.transcriber.url');
+        $query = http_build_query([
+            'output' => 'json',
+            'task' => 'transcribe',
+            'language' => $this->transcriptionLanguage($turn),
+        ]);
+
+        $separator = str_contains($baseUrl, '?') ? '&' : '?';
+
+        return $baseUrl.$separator.$query;
+    }
+
     private function throwForFailedResponse(Response $response): never
     {
         $apiMessage = $response->json('error.message');
@@ -94,6 +105,10 @@ class HttpTranscriber implements Transcriber
 
         if ($response->status() === 401) {
             throw new PermanentTranscriptionException('Chave da API de transcrição inválida.');
+        }
+
+        if ($response->status() === 404) {
+            throw new PermanentTranscriptionException('URL de transcrição inválida. Use TRANSCRIBER_URL terminando em /asr.');
         }
 
         if ($response->status() === 429 && $apiCode === 'insufficient_quota') {

@@ -15,6 +15,8 @@ new class extends Component
 
     public ?string $turnError = null;
 
+    public ?string $lastTranscript = null;
+
     public function mount(OpenConversation $openConversation, Briefing $briefing): void
     {
         App::setLocale('pt_BR');
@@ -34,6 +36,7 @@ new class extends Component
     {
         $this->trackingTurnUuid = $uuid;
         $this->turnError = null;
+        $this->lastTranscript = null;
         $this->refreshTurnStatus();
     }
 
@@ -62,6 +65,7 @@ new class extends Component
         }
 
         if ($turn->status === VoiceTurnStatus::Completed) {
+            $this->lastTranscript = $turn->transcript;
             $this->trackingTurnUuid = null;
         }
     }

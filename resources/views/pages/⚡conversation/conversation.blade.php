@@ -3,6 +3,10 @@
         <p class="max-w-md text-center text-sm text-ice/80">{{ $turnError }}</p>
     @endif
 
+    @if ($lastTranscript)
+        <p class="max-w-md text-center text-sm text-ice/90">{{ $lastTranscript }}</p>
+    @endif
+
     <x-secretary-turn :message="$message" />
 
     <div
@@ -11,9 +15,9 @@
         @endif
         class="flex flex-col items-center gap-3"
     >
-        <div wire:loading wire:target="refreshTurnStatus,trackVoiceTurn" class="text-sm text-ice/70">
-            Transcrevendo...
-        </div>
+        @if ($trackingTurnUuid)
+            <p class="text-sm text-ice/70">Transcrevendo...</p>
+        @endif
 
         <x-talk-control />
     </div>

@@ -39,7 +39,7 @@ class Briefing
         }
 
         if ($parts === []) {
-            return 'Nada nos livros por hoje.';
+            return 'Fala ai! Nenhum comprimisso hoje.';
         }
 
         return implode(' ', $parts);

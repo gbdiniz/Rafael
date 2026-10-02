@@ -53,7 +53,7 @@ return [
     */
 
     'transcriber' => [
-        'url' => env('TRANSCRIBER_URL', 'http://localhost/transcribe'),
+        'url' => env('TRANSCRIBER_URL', 'http://127.0.0.1:9000/asr'),
         'api_key' => env('TRANSCRIBER_API_KEY'),
         'model' => env('TRANSCRIBER_MODEL', 'base'),
         'connect_timeout' => 5,

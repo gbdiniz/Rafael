@@ -61,7 +61,7 @@ it('does not call an unfaked host during transcription', function () {
     ]);
 
     Http::fake([
-        config('rafael.transcriber.url') => Http::response(['text' => 'transcrição pronta']),
+        config('rafael.transcriber.url').'*' => Http::response(['text' => 'transcrição pronta']),
     ]);
 
     (new TranscribeVoiceTurn($voiceTurn))->handle(app(Transcriber::class));
@@ -71,10 +71,11 @@ it('does not call an unfaked host during transcription', function () {
             fn (array $field) => [$field['name'] => $field['contents']],
         );
 
-        return $request->url() === config('rafael.transcriber.url')
+        return str_starts_with($request->url(), config('rafael.transcriber.url'))
+            && str_contains($request->url(), 'output=json')
+            && str_contains($request->url(), 'language=pt')
             && $request->hasHeader('Authorization', 'Bearer test-transcriber-key')
-            && $fields->get('model') === 'base'
-            && $fields->get('language') === 'pt';
+            && $fields->has('audio_file');
     });
 });
 
