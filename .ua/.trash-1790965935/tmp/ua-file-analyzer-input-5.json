@@ -1,0 +1,42 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": "app/Actions/Voice/StoreVoiceTurn.php", "language": "php", "sizeLines": 31, "fileCategory": "code"},
+    {"path": "app/Models/VoiceTurn.php", "language": "php", "sizeLines": 57, "fileCategory": "code"},
+    {"path": "app/VoiceTurnStatus.php", "language": "php", "sizeLines": 11, "fileCategory": "code"},
+    {"path": "database/factories/VoiceTurnFactory.php", "language": "php", "sizeLines": 68, "fileCategory": "code"},
+    {"path": "tests/Feature/Models/VoiceTurnTest.php", "language": "php", "sizeLines": 65, "fileCategory": "code"},
+    {"path": "tests/Feature/Voice/AudioUploadTest.php", "language": "php", "sizeLines": 102, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "app/Actions/Voice/StoreVoiceTurn.php": [
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "app/Models/VoiceTurn.php": [
+      "app/VoiceTurnStatus.php",
+      "database/factories/VoiceTurnFactory.php"
+    ],
+    "app/VoiceTurnStatus.php": [],
+    "database/factories/VoiceTurnFactory.php": [
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "tests/Feature/Models/VoiceTurnTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "tests/Feature/Voice/AudioUploadTest.php": [
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ]
+  }
+}

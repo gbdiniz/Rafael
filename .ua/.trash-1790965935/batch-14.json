@@ -1,0 +1,354 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": "Environment variable template for Laravel runtime settings, including MySQL database, Redis cache/queue, session storage, admin credentials, and Whisper-compatible transcription API endpoints.",
+      "tags": ["configuration", "environment", "security", "deployment"],
+      "complexity": "moderate",
+      "languageNotes": "Defines Rafael-specific variables (ADMIN_*, TRANSCRIBER_*) alongside standard Laravel env keys."
+    },
+    {
+      "id": "config:.mcp.json",
+      "type": "config",
+      "name": ".mcp.json",
+      "filePath": ".mcp.json",
+      "summary": "MCP server configuration that registers the Laravel Boost MCP server via the artisan boost:mcp command for AI agent tooling.",
+      "tags": ["configuration", "mcp", "ai-tooling", "laravel-boost"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Primary AI agent guidelines for the Rafael Laravel app, covering Laravel Boost tools, PHP conventions, Livewire patterns, Pint formatting, and Pest testing workflows.",
+      "tags": ["documentation", "ai-guidelines", "laravel-boost", "development"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "Bootstrap instructions for Claude agents working in this repo, covering PHP/Composer prerequisites and Laravel Boost installation before reading AGENTS.md.",
+      "tags": ["documentation", "ai-guidelines", "setup", "laravel-boost"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Design system specification for Rafael's void-and-ice visual language, defining colors, typography, talk-bar components, mic-denial states, and layout rules.",
+      "tags": ["documentation", "design-system", "ui", "components"],
+      "complexity": "moderate",
+      "languageNotes": "Front matter encodes design tokens as structured YAML consumed by Impeccable tooling."
+    },
+    {
+      "id": "document:PRODUCT.md",
+      "type": "document",
+      "name": "PRODUCT.md",
+      "filePath": "PRODUCT.md",
+      "summary": "Product definition for Rafael as a single-user personal secretary PWA with voice-first conversation, appointment briefings, draft-and-confirm record changes, and queued transcription.",
+      "tags": ["documentation", "product-spec", "voice-ui", "pwa"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project overview explaining Rafael's secretary concept, voice interaction flow, core product principles, and setup requirements including MySQL and Redis.",
+      "tags": ["documentation", "entry-point", "overview", "voice-ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:boost.json",
+      "type": "config",
+      "name": "boost.json",
+      "filePath": "boost.json",
+      "summary": "Laravel Boost installation manifest enabling MCP, guidelines, and domain skills for Cursor, Claude Code, and Codex agents.",
+      "tags": ["configuration", "laravel-boost", "ai-tooling", "skills"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:composer.json",
+      "type": "config",
+      "name": "composer.json",
+      "filePath": "composer.json",
+      "summary": "PHP dependency and autoload manifest for Laravel 13, Livewire 4, Redis extension, Pest testing, and Composer scripts for setup, dev, and test workflows.",
+      "tags": ["configuration", "php", "dependencies", "build-system"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Frontend build configuration using Vite 8, Tailwind CSS 4, Laravel Vite plugin, and GSAP for talk-control animations.",
+      "tags": ["configuration", "frontend", "vite", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:phpunit.xml",
+      "type": "config",
+      "name": "phpunit.xml",
+      "filePath": "phpunit.xml",
+      "summary": "PHPUnit test runner configuration defining Unit and Feature test suites with in-memory SQLite and isolated testing environment variables.",
+      "tags": ["configuration", "testing", "phpunit", "ci-cd"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:skills-lock.json",
+      "type": "config",
+      "name": "skills-lock.json",
+      "filePath": "skills-lock.json",
+      "summary": "Version-locked registry of installed AI agent skills with source paths and content hashes for reproducible skill resolution.",
+      "tags": ["configuration", "ai-tooling", "skills", "version-lock"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:.env.example",
+      "target": "file:config/database.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.env.example",
+      "target": "file:config/cache.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.env.example",
+      "target": "file:config/queue.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.env.example",
+      "target": "file:config/session.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.env.example",
+      "target": "file:config/rafael.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.env.example",
+      "target": "file:app/Services/Transcription/HttpTranscriber.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.mcp.json",
+      "target": "file:artisan",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.mcp.json",
+      "target": "config:boost.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CLAUDE.md",
+      "target": "document:AGENTS.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CLAUDE.md",
+      "target": "config:composer.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:AGENTS.md",
+      "target": "file:app/Providers/AppServiceProvider.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:AGENTS.md",
+      "target": "file:tests/Pest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:DESIGN.md",
+      "target": "file:resources/views/components/talk-control.blade.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:DESIGN.md",
+      "target": "file:resources/js/talk-control.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:PRODUCT.md",
+      "target": "file:resources/views/pages/⚡conversation/conversation.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:PRODUCT.md",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:PRODUCT.md",
+      "target": "document:DESIGN.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:PRODUCT.md",
+      "target": "document:README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:public/index.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:docs/project-description.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:boost.json",
+      "target": "document:AGENTS.md",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:boost.json",
+      "target": "config:.mcp.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:boost.json",
+      "target": "config:skills-lock.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:composer.json",
+      "target": "file:public/index.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:composer.json",
+      "target": "file:tests/TestCase.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:composer.json",
+      "target": "config:.env.example",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:composer.json",
+      "target": "config:package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:composer.json",
+      "target": "config:phpunit.xml",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:vite.config.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:resources/js/app.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:resources/js/talk-control.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:phpunit.xml",
+      "target": "file:tests/Pest.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:phpunit.xml",
+      "target": "file:tests/Feature/Conversation/HomeTest.php",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:phpunit.xml",
+      "target": "file:tests/Unit/ExampleTest.php",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

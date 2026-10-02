@@ -1,0 +1,198 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 24,
+      "sections": [
+        {
+          "heading": "Impeccable Asset Producer",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "Core Rule",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Decision Comps",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Review handoff",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Input Contract",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "The job",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Output Contract",
+          "level": 2,
+          "line": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/documenter.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 24,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "Impeccable Documenter",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "Input Contract",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Output Contract",
+          "level": 2,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 38,
+      "nonEmptyLines": 23,
+      "sections": [
+        {
+          "heading": "Impeccable Finish Reviewer",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "Input Contract",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Checks, in order",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Disposition",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Output Contract",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Verdict Pass",
+          "level": 2,
+          "line": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 92,
+      "nonEmptyLines": 66,
+      "sections": [
+        {
+          "heading": "Impeccable Manual Edit Applier",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "Input Contract",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Entry Atomicity",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Checks",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Output Contract",
+          "level": 2,
+          "line": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    }
+  ]
+}

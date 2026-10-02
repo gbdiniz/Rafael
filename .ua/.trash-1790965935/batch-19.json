@@ -1,0 +1,424 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/laravel-best-practices/SKILL.md",
+      "summary": "Claude agent skill indexing Laravel best-practice rule files, emphasizing codebase consistency before applying patterns to controllers, models, jobs, and queries.",
+      "tags": ["documentation", "laravel", "best-practices", "agent-skill", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/livewire-development/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/livewire-development/SKILL.md",
+      "summary": "Comprehensive Livewire 4 development guide covering component formats, directives, Alpine integration, configuration, testing, and migration notes from Livewire 3.",
+      "tags": ["documentation", "livewire", "frontend", "agent-skill", "development"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/livewire-development/reference/javascript-hooks.md",
+      "type": "document",
+      "name": "javascript-hooks.md",
+      "filePath": ".claude/skills/livewire-development/reference/javascript-hooks.md",
+      "summary": "Reference for Livewire 4 JavaScript interceptor APIs covering message/request hooks, component-scoped interceptors, and magic properties.",
+      "tags": ["documentation", "livewire", "javascript", "reference", "hooks"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/tailwindcss-development/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/tailwindcss-development/SKILL.md",
+      "summary": "Tailwind CSS v4 development skill documenting CSS-first configuration, import syntax, replaced utilities, spacing conventions, and dark mode patterns.",
+      "tags": ["documentation", "tailwindcss", "frontend", "agent-skill", "styling"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/testing-best-practices/SKILL.md",
+      "summary": "Testing best-practices skill indexing rule files for assertions, isolation, naming, endpoint tests, and security-focused test guidance in Pest/Laravel.",
+      "tags": ["documentation", "testing", "pest", "agent-skill", "quality"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.cursor/settings.json",
+      "type": "config",
+      "name": "settings.json",
+      "filePath": ".cursor/settings.json",
+      "summary": "Cursor IDE workspace settings enabling the Figma plugin for design-to-code workflows within the editor.",
+      "tags": ["configuration", "cursor", "figma", "editor", "plugins"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.gitattributes",
+      "type": "file",
+      "name": ".gitattributes",
+      "filePath": ".gitattributes",
+      "summary": "Git attributes enforcing LF line endings, language-specific diff drivers for Blade/PHP/CSS, and export-ignore rules for packaging.",
+      "tags": ["git", "configuration", "line-endings", "diff", "packaging"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".impeccable/config.json",
+      "summary": "Impeccable build configuration pointing the design toolchain at the comp build path for mock comparison workflows.",
+      "tags": ["configuration", "impeccable", "design", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/design.json",
+      "type": "config",
+      "name": "design.json",
+      "filePath": ".impeccable/design.json",
+      "summary": "Canonical Impeccable design system for Rafael defining void/ice color tokens, component specs, and narrative design metadata.",
+      "tags": ["configuration", "design-system", "impeccable", "tokens", "ui"],
+      "complexity": "moderate",
+      "languageNotes": "Structured JSON schema with tonal color ramps in OKLCH and component-level design contracts."
+    },
+    {
+      "id": "config:.impeccable/questions/b92faafe.answer.json",
+      "type": "config",
+      "name": "b92faafe.answer.json",
+      "filePath": ".impeccable/questions/b92faafe.answer.json",
+      "summary": "Stored Impeccable decision answer capturing the chosen design option, steer direction, comp reference, and build path for the home surface.",
+      "tags": ["configuration", "impeccable", "decision", "design", "workflow"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/questions/b92faafe.state.json",
+      "type": "config",
+      "name": "b92faafe.state.json",
+      "filePath": ".impeccable/questions/b92faafe.state.json",
+      "summary": "Runtime state for an Impeccable live-browser session tracking process ID, port, URL, heartbeat, and claim timestamp.",
+      "tags": ["configuration", "impeccable", "live-browser", "session", "runtime"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/review/diff/desktop/raw-report.json",
+      "type": "config",
+      "name": "raw-report.json",
+      "filePath": ".impeccable/review/diff/desktop/raw-report.json",
+      "summary": "Raw Impeccable comp-diff report for the desktop viewport comparing mock comp against built screenshot with structure, color, and region scores.",
+      "tags": ["configuration", "impeccable", "review", "visual-diff", "desktop"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.impeccable/review/diff/desktop/report.json",
+      "type": "config",
+      "name": "report.json",
+      "filePath": ".impeccable/review/diff/desktop/report.json",
+      "summary": "Processed desktop finish-review report wrapping raw diff scores with interpretation, measurement availability, quality gate, and raw report reference.",
+      "tags": ["configuration", "impeccable", "review", "quality-gate", "desktop"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.impeccable/review/diff/hero/raw-report.json",
+      "type": "config",
+      "name": "raw-report.json",
+      "filePath": ".impeccable/review/diff/hero/raw-report.json",
+      "summary": "Raw Impeccable comp-diff report for the hero viewport measuring alignment between approved comp and built home hero region.",
+      "tags": ["configuration", "impeccable", "review", "visual-diff", "hero"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.impeccable/review/diff/hero/report.json",
+      "type": "config",
+      "name": "report.json",
+      "filePath": ".impeccable/review/diff/hero/report.json",
+      "summary": "Processed hero finish-review report aggregating raw diff metrics with verdict interpretation and pass/fail gate for the home hero surface.",
+      "tags": ["configuration", "impeccable", "review", "quality-gate", "hero"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.impeccable/surfaces/home.md",
+      "type": "document",
+      "name": "home.md",
+      "filePath": ".impeccable/surfaces/home.md",
+      "summary": "Impeccable direction contract for the home surface defining click-to-talk UX, void background, ice bars control, and Portuguese microphone-denied messaging.",
+      "tags": ["documentation", "impeccable", "design-contract", "home", "ux"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.npmrc",
+      "type": "file",
+      "name": ".npmrc",
+      "filePath": ".npmrc",
+      "summary": "npm configuration disabling install scripts while keeping security audits enabled for frontend dependency management.",
+      "tags": ["configuration", "npm", "security", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".ua/config.json",
+      "summary": "Understand-Anything plugin settings specifying English output language and disabled auto-update for knowledge graph generation.",
+      "tags": ["configuration", "understand-anything", "knowledge-graph", "tooling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:artisan",
+      "type": "file",
+      "name": "artisan",
+      "filePath": "artisan",
+      "summary": "Laravel CLI entry script that bootstraps the application container and dispatches Artisan console commands.",
+      "tags": ["entry-point", "cli", "laravel", "console"],
+      "complexity": "simple",
+      "languageNotes": "Thin PHP bootstrap delegating to Application::handleCommand after loading bootstrap/app.php."
+    },
+    {
+      "id": "file:bootstrap/app.php",
+      "type": "file",
+      "name": "app.php",
+      "filePath": "bootstrap/app.php",
+      "summary": "Laravel 11 application bootstrap configuring web/console routing, guest/user redirects to login and conversation, and JSON exception rendering for API routes.",
+      "tags": ["entry-point", "bootstrap", "middleware", "routing", "laravel"],
+      "complexity": "simple",
+      "languageNotes": "Uses Application::configure fluent API with closure-based middleware and exception customization."
+    },
+    {
+      "id": "file:config/app.php",
+      "type": "file",
+      "name": "app.php",
+      "filePath": "config/app.php",
+      "summary": "Core Laravel application configuration defining app name, environment, debug mode, timezone, locale, encryption key, and service provider aliases.",
+      "tags": ["configuration", "laravel", "application", "locale", "providers"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/cache.php",
+      "type": "file",
+      "name": "cache.php",
+      "filePath": "config/cache.php",
+      "summary": "Cache store configuration defining default driver, Redis/database/file store connections, and cache key prefix for the application.",
+      "tags": ["configuration", "laravel", "caching", "redis", "performance"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/database.php",
+      "type": "file",
+      "name": "database.php",
+      "filePath": "config/database.php",
+      "summary": "Database configuration specifying default connection, SQLite/MySQL/PostgreSQL connection parameters, migration paths, and Redis client settings.",
+      "tags": ["configuration", "laravel", "database", "eloquent", "connections"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/filesystems.php",
+      "type": "file",
+      "name": "filesystems.php",
+      "filePath": "config/filesystems.php",
+      "summary": "Filesystem disk configuration for local, public, and S3 storage used by voice audio uploads and Laravel file operations.",
+      "tags": ["configuration", "laravel", "storage", "filesystem", "uploads"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:config/livewire.php",
+      "type": "file",
+      "name": "livewire.php",
+      "filePath": "config/livewire.php",
+      "summary": "Livewire 4 configuration mapping component locations and namespaces to views directories, plus wire-model, navigate, and asset settings.",
+      "tags": ["configuration", "livewire", "components", "views", "frontend"],
+      "complexity": "complex",
+      "languageNotes": "Extensive Livewire 4 options including component_locations, component_namespaces, and page layout defaults."
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "file:bootstrap/app.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "file:config/app.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "file:config/database.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/livewire-development/SKILL.md",
+      "target": "file:config/livewire.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/livewire-development/SKILL.md",
+      "target": "document:.claude/skills/livewire-development/reference/javascript-hooks.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/livewire-development/reference/javascript-hooks.md",
+      "target": "file:config/livewire.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/tailwindcss-development/SKILL.md",
+      "target": "file:config/livewire.php",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "target": "file:bootstrap/app.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.cursor/settings.json",
+      "target": "config:.impeccable/design.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/config.json",
+      "target": "config:.impeccable/design.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/design.json",
+      "target": "document:.impeccable/surfaces/home.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/questions/b92faafe.answer.json",
+      "target": "document:.impeccable/surfaces/home.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/review/diff/desktop/report.json",
+      "target": "config:.impeccable/review/diff/desktop/raw-report.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/review/diff/desktop/report.json",
+      "target": "document:.impeccable/surfaces/home.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/review/diff/desktop/report.json",
+      "target": "config:.impeccable/design.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/review/diff/hero/report.json",
+      "target": "config:.impeccable/review/diff/hero/raw-report.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/review/diff/hero/report.json",
+      "target": "document:.impeccable/surfaces/home.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.impeccable/surfaces/home.md",
+      "target": "file:resources/views/pages/⚡conversation/conversation.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:.npmrc",
+      "target": "config:package.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:artisan",
+      "target": "file:bootstrap/app.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:bootstrap/app.php",
+      "target": "file:routes/web.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:bootstrap/app.php",
+      "target": "file:routes/console.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/app.php",
+      "target": "file:bootstrap/app.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/cache.php",
+      "target": "file:bootstrap/app.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/database.php",
+      "target": "file:app/Models/User.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/filesystems.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/livewire.php",
+      "target": "file:resources/views/pages/⚡conversation/conversation.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'document:.agents/skills/impeccable/reference/doctor.md' has no edges (orphan)",
+    "Node 'document:.agents/skills/impeccable/reference/onboard.md' has no edges (orphan)",
+    "Node 'config:.agents/skills/grill-me/agents/openai.yaml' has no edges (orphan)",
+    "Node 'config:.agents/skills/grilling/agents/openai.yaml' has no edges (orphan)",
+    "Node 'config:.agents/skills/impeccable/scripts/data/font-index-failures.json' has no edges (orphan)",
+    "Node 'config:.agents/skills/impeccable/scripts/data/font-index.json' has no edges (orphan)",
+    "Node 'document:.agents/skills/tailwindcss-development/SKILL.md' has no edges (orphan)",
+    "Node 'document:.agents/skills/testing-best-practices/SKILL.md' has no edges (orphan)",
+    "Node 'file:.gitattributes' has no edges (orphan)",
+    "Node 'config:.impeccable/questions/b92faafe.state.json' has no edges (orphan)",
+    "Node 'config:.ua/config.json' has no edges (orphan)",
+    "Node 'document:public/robots.txt' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 319,
+    "totalEdges": 609,
+    "totalLayers": 8,
+    "tourSteps": 11,
+    "nodeTypes": {
+      "file": 94,
+      "class": 24,
+      "function": 25,
+      "config": 38,
+      "document": 128,
+      "table": 10
+    },
+    "edgeTypes": {
+      "imports": 90,
+      "contains": 49,
+      "exports": 25,
+      "calls": 18,
+      "configures": 35,
+      "tested_by": 40,
+      "implements": 1,
+      "depends_on": 41,
+      "inherits": 3,
+      "related": 152,
+      "documents": 136,
+      "triggers": 3,
+      "routes": 1,
+      "migrates": 11,
+      "defines_schema": 4
+    }
+  }
+}

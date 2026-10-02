@@ -1,0 +1,135 @@
+{
+  "nodes": [
+    {
+      "id": "config:.impeccable/mocks/decision/assigned-r2.png.json",
+      "type": "config",
+      "name": "assigned-r2.png.json",
+      "filePath": ".impeccable/mocks/decision/assigned-r2.png.json",
+      "summary": "Image-generation config with a portrait prompt and 9:16 aspect for the bolder reroll comp of the assigned Relógio de ponto (wall time clock) visual world.",
+      "tags": ["configuration", "design-mocks", "impeccable", "image-prompt", "reroll-variant"],
+      "complexity": "simple",
+      "languageNotes": "Single-line JSON bundling an image prompt and aspect ratio for mock comp generation."
+    },
+    {
+      "id": "config:.impeccable/mocks/decision/assigned.png.json",
+      "type": "config",
+      "name": "assigned.png.json",
+      "filePath": ".impeccable/mocks/decision/assigned.png.json",
+      "summary": "Image-generation config defining the portrait comp prompt for the Tecla de falar feature-phone assigned visual world with phase band, timed rows, and three-key deck.",
+      "tags": ["configuration", "design-mocks", "impeccable", "image-prompt", "visual-world"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/mocks/decision/canon.png.json",
+      "type": "config",
+      "name": "canon.png.json",
+      "filePath": ".impeccable/mocks/decision/canon.png.json",
+      "summary": "Image-generation config for the category-standard reference comp showing a conventional voice inbox with Rafael header, circular Segurar control, and plain daily list.",
+      "tags": ["configuration", "design-mocks", "impeccable", "image-prompt", "canon-baseline"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/mocks/decision/model-pick-r2.png.json",
+      "type": "config",
+      "name": "model-pick-r2.png.json",
+      "filePath": ".impeccable/mocks/decision/model-pick-r2.png.json",
+      "summary": "Image-generation config with prompt and aspect for the bolder reroll comp of Impeccable's Espeto de recados desk-spike model-pick visual world.",
+      "tags": ["configuration", "design-mocks", "impeccable", "image-prompt", "reroll-variant"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/mocks/decision/model-pick.png.json",
+      "type": "config",
+      "name": "model-pick.png.json",
+      "filePath": ".impeccable/mocks/decision/model-pick.png.json",
+      "summary": "Image-generation config defining the apartment intercom Interfone model-pick comp with ruled log, hold button, and engraved Anotar/Rasgar keys.",
+      "tags": ["configuration", "design-mocks", "impeccable", "image-prompt", "visual-world"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/mocks/decision/payload-r2.json",
+      "type": "config",
+      "name": "payload-r2.json",
+      "filePath": ".impeccable/mocks/decision/payload-r2.json",
+      "summary": "Full Impeccable decision-screen mock payload for a bolder reroll round pairing Relógio de ponto and Espeto de recados options with declined challengers, reroll registers, and shared canon card metadata.",
+      "tags": ["configuration", "design-mocks", "impeccable", "decision-ui", "reroll-variant"],
+      "complexity": "moderate",
+      "languageNotes": "Structured JSON with title, question, option array (assigned, model-pick, challengers), reroll/buildPath flags, and canonCard block."
+    },
+    {
+      "id": "config:.impeccable/mocks/decision/payload.json",
+      "type": "config",
+      "name": "payload.json",
+      "filePath": ".impeccable/mocks/decision/payload.json",
+      "summary": "Full Impeccable decision-screen mock payload presenting visual world choices—assigned Tecla de falar handset, Interfone model pick, six declined challengers, and a category-standard canon baseline—for Rafael's home screen design.",
+      "tags": ["configuration", "design-mocks", "impeccable", "decision-ui", "visual-world"],
+      "complexity": "moderate",
+      "languageNotes": "Each option embeds palette, materials, viewport, risk, and comp path fields consumed by the Impeccable decision flow."
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:.impeccable/mocks/decision/payload.json",
+      "target": "config:.impeccable/mocks/decision/assigned.png.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/payload.json",
+      "target": "config:.impeccable/mocks/decision/model-pick.png.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/payload.json",
+      "target": "config:.impeccable/mocks/decision/canon.png.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/payload-r2.json",
+      "target": "config:.impeccable/mocks/decision/assigned-r2.png.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/payload-r2.json",
+      "target": "config:.impeccable/mocks/decision/model-pick-r2.png.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/payload-r2.json",
+      "target": "config:.impeccable/mocks/decision/canon.png.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/payload.json",
+      "target": "config:.impeccable/mocks/decision/payload-r2.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/assigned.png.json",
+      "target": "config:.impeccable/mocks/decision/assigned-r2.png.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/mocks/decision/model-pick.png.json",
+      "target": "config:.impeccable/mocks/decision/model-pick-r2.png.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": "app/Http/Controllers/Auth/LoginController.php", "language": "php", "sizeLines": 36, "fileCategory": "code"},
+    {"path": "app/Http/Controllers/Controller.php", "language": "php", "sizeLines": 8, "fileCategory": "code"},
+    {"path": "app/Http/Controllers/RecordController.php", "language": "php", "sizeLines": 16, "fileCategory": "code"},
+    {"path": "app/Http/Controllers/VoiceTurnController.php", "language": "php", "sizeLines": 22, "fileCategory": "code"},
+    {"path": "app/Http/Requests/Auth/LoginRequest.php", "language": "php", "sizeLines": 39, "fileCategory": "code"},
+    {"path": "app/Http/Requests/StoreVoiceTurnRequest.php", "language": "php", "sizeLines": 31, "fileCategory": "code"},
+    {"path": "routes/web.php", "language": "php", "sizeLines": 17, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "app/Http/Controllers/Auth/LoginController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Http/Requests/Auth/LoginRequest.php"
+    ],
+    "app/Http/Controllers/Controller.php": [],
+    "app/Http/Controllers/RecordController.php": [],
+    "app/Http/Controllers/VoiceTurnController.php": [
+      "app/Actions/Voice/StoreVoiceTurn.php",
+      "app/Http/Requests/StoreVoiceTurnRequest.php"
+    ],
+    "app/Http/Requests/Auth/LoginRequest.php": [],
+    "app/Http/Requests/StoreVoiceTurnRequest.php": [],
+    "routes/web.php": [
+      "app/Http/Controllers/Auth/LoginController.php",
+      "app/Http/Controllers/RecordController.php",
+      "app/Http/Controllers/VoiceTurnController.php"
+    ]
+  }
+}

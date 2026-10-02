@@ -1,0 +1,69 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": "app/Actions/Conversation/Briefing.php", "language": "php", "sizeLines": 47, "fileCategory": "code"},
+    {"path": "app/Actions/Conversation/OpenConversation.php", "language": "php", "sizeLines": 18, "fileCategory": "code"},
+    {"path": "app/Models/User.php", "language": "php", "sizeLines": 48, "fileCategory": "code"},
+    {"path": "config/auth.php", "language": "php", "sizeLines": 117, "fileCategory": "code"},
+    {"path": "database/factories/UserFactory.php", "language": "php", "sizeLines": 47, "fileCategory": "code"},
+    {"path": "database/seeders/DatabaseSeeder.php", "language": "php", "sizeLines": 33, "fileCategory": "code"},
+    {"path": "resources/views/pages/⚡conversation/conversation.php", "language": "php", "sizeLines": 72, "fileCategory": "code"},
+    {"path": "tests/Feature/Auth/AuthenticatedRoutesTest.php", "language": "php", "sizeLines": 22, "fileCategory": "code"},
+    {"path": "tests/Feature/Auth/LoginTest.php", "language": "php", "sizeLines": 53, "fileCategory": "code"},
+    {"path": "tests/Feature/Conversation/HomeTest.php", "language": "php", "sizeLines": 34, "fileCategory": "code"},
+    {"path": "tests/Feature/Conversation/TranscriptionFailureTest.php", "language": "php", "sizeLines": 20, "fileCategory": "code"},
+    {"path": "tests/Feature/Conversation/TranscriptionSuccessTest.php", "language": "php", "sizeLines": 21, "fileCategory": "code"},
+    {"path": "tests/Feature/ExampleTest.php", "language": "php", "sizeLines": 12, "fileCategory": "code"},
+    {"path": "tests/Feature/Voice/TalkControlTest.php", "language": "php", "sizeLines": 39, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "app/Actions/Conversation/Briefing.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php"
+    ],
+    "app/Actions/Conversation/OpenConversation.php": [
+      "app/Models/User.php"
+    ],
+    "app/Models/User.php": [
+      "database/factories/UserFactory.php"
+    ],
+    "config/auth.php": [
+      "app/Models/User.php"
+    ],
+    "database/factories/UserFactory.php": [
+      "app/Models/User.php"
+    ],
+    "database/seeders/DatabaseSeeder.php": [
+      "app/Models/User.php"
+    ],
+    "resources/views/pages/⚡conversation/conversation.php": [
+      "app/Actions/Conversation/Briefing.php",
+      "app/Actions/Conversation/OpenConversation.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "tests/Feature/Auth/AuthenticatedRoutesTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Auth/LoginTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Conversation/HomeTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Conversation/TranscriptionFailureTest.php": [
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "tests/Feature/Conversation/TranscriptionSuccessTest.php": [
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "tests/Feature/ExampleTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Voice/TalkControlTest.php": [
+      "app/Models/User.php"
+    ]
+  }
+}

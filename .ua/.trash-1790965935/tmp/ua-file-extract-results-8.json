@@ -1,0 +1,1262 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 18,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 18,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 18
+    }
+  },
+  "results": [
+    {
+      "path": ".agents/skills/impeccable/reference/hooks.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 113,
+      "nonEmptyLines": 76,
+      "sections": [
+        {
+          "heading": "$impeccable hooks",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Routing",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Flow",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Triage findings",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Constraints",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "Failure modes",
+          "level": 2,
+          "line": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/init.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 131,
+      "nonEmptyLines": 79,
+      "sections": [
+        {
+          "heading": "Init flow",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Step 1: Load current state",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 2: Explore the project",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Step 3: Interview for product truth",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "What belongs here",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "What does not belong here",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "Step 4: Write PRODUCT.md",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Completion gate",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "Step 5: Record workflow defaults",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "Step 6: Wrap up or resume",
+          "level": 2,
+          "line": 120
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/ios.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 51,
+      "nonEmptyLines": 33,
+      "sections": [
+        {
+          "heading": "iOS platform",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The iOS slop test",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Layout & structure",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Touch targets",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Color & materials",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Components & controls",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Motion",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Verifying the build",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/layout.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 84,
+      "nonEmptyLines": 60,
+      "sections": [
+        {
+          "heading": "Visitor mode",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Two isolated assessments",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Set the spatial thesis",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Apply",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Verify",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Live-mode signature params",
+          "level": 2,
+          "line": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live-setup.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 104,
+      "nonEmptyLines": 72,
+      "sections": [
+        {
+          "heading": "Write the config",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Config drift",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "CSP detection (first-time only)",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Consent prompt (use this phrasing)",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "append-arrays",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "append-string",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 327,
+      "nonEmptyLines": 211,
+      "sections": [
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "The contract (read once)",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Poll loop",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Start",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Recovery commands",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Handle `generate`",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Insert mode branch",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Replace mode (default)",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "1. Read the screenshot (if present)",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "2. Wrap the element",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "3. Load the action's reference",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "4. Plan three variants: identity first, then mode, then axes",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "Phase A: Extract the identity (non-skippable)",
+          "level": 4,
+          "line": 143
+        },
+        {
+          "heading": "Phase B: Pick mode (default vs departure)",
+          "level": 4,
+          "line": 147
+        },
+        {
+          "heading": "Phase C: Plan three variants",
+          "level": 4,
+          "line": 151
+        },
+        {
+          "heading": "Phase D: Squint test",
+          "level": 4,
+          "line": 159
+        },
+        {
+          "heading": "5. Apply the freeform prompt (if present)",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "6. Deliver variants",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "7. Parameters (composition-sized, 0-4 per variant)",
+          "level": 3,
+          "line": 218
+        },
+        {
+          "heading": "8. Signal done",
+          "level": 3,
+          "line": 244
+        },
+        {
+          "heading": "Aborting an in-flight session",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "Handle fallback",
+          "level": 2,
+          "line": 256
+        },
+        {
+          "heading": "Handle `accept`",
+          "level": 2,
+          "line": 265
+        },
+        {
+          "heading": "Required after accept (carbonize)",
+          "level": 3,
+          "line": 277
+        },
+        {
+          "heading": "Handle `discard`",
+          "level": 2,
+          "line": 289
+        },
+        {
+          "heading": "Handle `steer`",
+          "level": 2,
+          "line": 293
+        },
+        {
+          "heading": "Handle `prefetch`",
+          "level": 2,
+          "line": 297
+        },
+        {
+          "heading": "Handle `manual_edit_apply`",
+          "level": 2,
+          "line": 301
+        },
+        {
+          "heading": "Exit",
+          "level": 2,
+          "line": 313
+        },
+        {
+          "heading": "Cleanup",
+          "level": 2,
+          "line": 317
+        },
+        {
+          "heading": "First-time setup",
+          "level": 2,
+          "line": 325
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 31
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/new-work.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 152,
+      "nonEmptyLines": 87,
+      "sections": [
+        {
+          "heading": "New visual work",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Decide what is already true",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "2. Ask what will change the work",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "3. Choose the right amount of invention",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Extend an existing surface",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Create a whole surface inside an established world",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Create or replace the visual world",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "4. Commit the world",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "5. Record the decision",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "6. Build with full commitment",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Comp-led: the comp is a measured contract",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "Code-led",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Both paths",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "7. Inspect and finish",
+          "level": 2,
+          "line": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/onboard.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 234,
+      "nonEmptyLines": 179,
+      "sections": [
+        {
+          "heading": "Assess Onboarding Needs",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Onboarding Principles",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Show, Don't Tell",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "Make It Optional (When Possible)",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Time to Value",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Context Over Ceremony",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Respect User Intelligence",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Design Onboarding Experiences",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Initial Product Onboarding",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Feature Discovery & Adoption",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Guided Tours & Walkthroughs",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Interactive Tutorials",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Documentation & Help",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "Empty State Design",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "What Will Be Here",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "Why It Matters",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "How to Get Started",
+          "level": 3,
+          "line": 178
+        },
+        {
+          "heading": "Visual Interest",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "Contextual Help",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Implementation Patterns",
+          "level": 2,
+          "line": 194
+        },
+        {
+          "heading": "Technical approaches:",
+          "level": 3,
+          "line": 196
+        },
+        {
+          "heading": "Verify Onboarding Quality",
+          "level": 2,
+          "line": 223
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/operate.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 61,
+      "nonEmptyLines": 40,
+      "sections": [
+        {
+          "heading": "Operate mode depth (and Read notes)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The product slop test",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Color",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Layout",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Components",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Motion",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Product constraints",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Product permissions",
+          "level": 2,
+          "line": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/optimize.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 258,
+      "nonEmptyLines": 211,
+      "sections": [
+        {
+          "heading": "Assess Performance Issues",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Optimization Strategy",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Loading Performance",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Rendering Performance",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Animation Performance",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "React/Framework Optimization",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Network Optimization",
+          "level": 3,
+          "line": 169
+        },
+        {
+          "heading": "Core Web Vitals Optimization",
+          "level": 2,
+          "line": 190
+        },
+        {
+          "heading": "Largest Contentful Paint (LCP < 2.5s)",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Interaction to Next Paint (INP < 200ms)",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "Cumulative Layout Shift (CLS < 0.1)",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "Performance Monitoring",
+          "level": 2,
+          "line": 219
+        },
+        {
+          "heading": "Verify Improvements",
+          "level": 2,
+          "line": 247
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/overdrive.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 127,
+      "nonEmptyLines": 87,
+      "sections": [
+        {
+          "heading": "Propose Before Building",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "Iterate with Browser Automation",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "Assess What \"Extraordinary\" Means Here",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "For visual/marketing surfaces",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "For functional UI",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "For performance-critical UI",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "For data-heavy interfaces",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "The Toolkit",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Make transitions feel cinematic",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Tie animation to scroll position",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Render beyond CSS",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Make data feel alive",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Animate complex properties",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Push performance boundaries",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Interact with the device",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Implement with Discipline",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Progressive enhancement is non-negotiable",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "Performance rules",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "Polish is the difference",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Verify the Result",
+          "level": 2,
+          "line": 120
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/polish.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 105,
+      "nonEmptyLines": 69,
+      "sections": [
+        {
+          "heading": "1. Establish the system",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "2. Gather the evidence",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "3. Triage",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "4. Polish the whole path",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Flow and hierarchy",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "Layout and type",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Color, imagery, and icons",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Interaction and state",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "Content and code",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "5. Verify and finish",
+          "level": 2,
+          "line": 85
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/quieter.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 99,
+      "nonEmptyLines": 72,
+      "sections": [
+        {
+          "heading": "Visitor mode",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Assess Current State",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Plan Refinement",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Refine the Design",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Color Refinement",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Visual Weight Reduction",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Simplification",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Motion Reduction",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "Composition Refinement",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Verify Quality",
+          "level": 2,
+          "line": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/region-map.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 20,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "Region map",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Containment and repetition",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/routing.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 24,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "Command guidance",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Workflow questions",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "No-argument routing: the context-aware menu",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/shape.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 59,
+      "nonEmptyLines": 38,
+      "sections": [
+        {
+          "heading": "Shape",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Phase 1: Discovery interview",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Cadence",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Round 1: purpose, people, and outcome",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Round 2: material, behavior, and boundaries",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Phase 2: Resolve the design direction",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Phase 3: Write the brief",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Confirm and stop",
+          "level": 2,
+          "line": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/typeset.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 80,
+      "nonEmptyLines": 56,
+      "sections": [
+        {
+          "heading": "Visitor mode",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Two isolated assessments",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Set the system",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Apply",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "Verify",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Live-mode signature params",
+          "level": 2,
+          "line": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/visualize.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "Visualize: Direction Comps & Asset Production",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Generate three compositional options",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "One approval point",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "After approval: the comp becomes a spec",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Plates and provenance",
+          "level": 2,
+          "line": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,651 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 14,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 14,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "app/Actions/Conversation/Briefing.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "handle",
+          "startLine": 11,
+          "endLine": 46,
+          "params": [
+            "$user",
+            "$now"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Briefing",
+          "startLine": 9,
+          "endLine": 47,
+          "methods": [
+            "handle"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Briefing",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()\n            ->scheduledBeforeLocalDay($timezone, $now)\n            ->orderBy('scheduled_at')\n            ->orderBy('id')->get",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()\n            ->scheduledBeforeLocalDay($timezone, $now)\n            ->orderBy('scheduled_at')->orderBy",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()\n            ->scheduledBeforeLocalDay($timezone, $now)->orderBy",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()->scheduledBeforeLocalDay",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)->onTheBooks",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()->where",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()\n            ->scheduledOnLocalDay($timezone, $now)\n            ->orderBy('scheduled_at')\n            ->orderBy('id')->get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()\n            ->scheduledOnLocalDay($timezone, $now)\n            ->orderBy('scheduled_at')->orderBy",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()\n            ->scheduledOnLocalDay($timezone, $now)->orderBy",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)\n            ->onTheBooks()->scheduledOnLocalDay",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()\n            ->where('user_id', $user->id)->onTheBooks",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query()->where",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handle",
+          "callee": "Record::query",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handle",
+          "callee": "$missedAppointments->isNotEmpty",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "$missedAppointments->pluck('title')->join",
+          "lineNumber": 34
+        },
+        {
+          "caller": "handle",
+          "callee": "$missedAppointments->pluck",
+          "lineNumber": 34
+        },
+        {
+          "caller": "handle",
+          "callee": "$todaysAppointments->isNotEmpty",
+          "lineNumber": 37
+        },
+        {
+          "caller": "handle",
+          "callee": "$todaysAppointments->pluck('title')->join",
+          "lineNumber": 38
+        },
+        {
+          "caller": "handle",
+          "callee": "$todaysAppointments->pluck",
+          "lineNumber": 38
+        },
+        {
+          "caller": "handle",
+          "callee": "implode",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Actions/Conversation/OpenConversation.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "handle",
+          "startLine": 9,
+          "endLine": 17,
+          "params": [
+            "$user"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OpenConversation",
+          "startLine": 7,
+          "endLine": 18,
+          "methods": [
+            "handle"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OpenConversation",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handle",
+          "callee": "now",
+          "lineNumber": 12
+        },
+        {
+          "caller": "handle",
+          "callee": "$user->save",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/User.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "casts",
+          "startLine": 24,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "records",
+          "startLine": 36,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "voiceTurns",
+          "startLine": 44,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "User",
+          "startLine": 14,
+          "endLine": 48,
+          "methods": [
+            "casts",
+            "records",
+            "voiceTurns"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "User",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "records",
+          "callee": "$this->hasMany",
+          "lineNumber": 38
+        },
+        {
+          "caller": "voiceTurns",
+          "callee": "$this->hasMany",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "config/auth.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 103,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/factories/UserFactory.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "definition",
+          "startLine": 25,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "unverified",
+          "startLine": 41,
+          "endLine": 46,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserFactory",
+          "startLine": 13,
+          "endLine": 47,
+          "methods": [
+            "definition",
+            "unverified"
+          ],
+          "properties": [
+            "password"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserFactory",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "definition",
+          "callee": "fake()->name",
+          "lineNumber": 28
+        },
+        {
+          "caller": "definition",
+          "callee": "fake",
+          "lineNumber": 28
+        },
+        {
+          "caller": "definition",
+          "callee": "fake()->unique()->safeEmail",
+          "lineNumber": 29
+        },
+        {
+          "caller": "definition",
+          "callee": "fake()->unique",
+          "lineNumber": 29
+        },
+        {
+          "caller": "definition",
+          "callee": "fake",
+          "lineNumber": 29
+        },
+        {
+          "caller": "definition",
+          "callee": "now",
+          "lineNumber": 30
+        },
+        {
+          "caller": "definition",
+          "callee": "Hash::make",
+          "lineNumber": 31
+        },
+        {
+          "caller": "definition",
+          "callee": "Str::random",
+          "lineNumber": 32
+        },
+        {
+          "caller": "definition",
+          "callee": "config",
+          "lineNumber": 33
+        },
+        {
+          "caller": "unverified",
+          "callee": "$this->state",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeders/DatabaseSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 17,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DatabaseSeeder",
+          "startLine": 10,
+          "endLine": 33,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DatabaseSeeder",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "config",
+          "lineNumber": 19
+        },
+        {
+          "caller": "run",
+          "callee": "config",
+          "lineNumber": 20
+        },
+        {
+          "caller": "run",
+          "callee": "config",
+          "lineNumber": 21
+        },
+        {
+          "caller": "run",
+          "callee": "blank",
+          "lineNumber": 23
+        },
+        {
+          "caller": "run",
+          "callee": "blank",
+          "lineNumber": 23
+        },
+        {
+          "caller": "run",
+          "callee": "blank",
+          "lineNumber": 23
+        },
+        {
+          "caller": "run",
+          "callee": "User::factory()->create",
+          "lineNumber": 27
+        },
+        {
+          "caller": "run",
+          "callee": "User::factory",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "resources/views/pages/⚡conversation/conversation.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 54,
+      "callGraph": [
+        {
+          "caller": "mount",
+          "callee": "App::setLocale",
+          "lineNumber": 22
+        },
+        {
+          "caller": "mount",
+          "callee": "auth()->user",
+          "lineNumber": 24
+        },
+        {
+          "caller": "mount",
+          "callee": "auth",
+          "lineNumber": 24
+        },
+        {
+          "caller": "mount",
+          "callee": "$openConversation->handle",
+          "lineNumber": 27
+        },
+        {
+          "caller": "mount",
+          "callee": "$briefing->handle",
+          "lineNumber": 32
+        },
+        {
+          "caller": "mount",
+          "callee": "now",
+          "lineNumber": 32
+        },
+        {
+          "caller": "trackVoiceTurn",
+          "callee": "$this->refreshTurnStatus",
+          "lineNumber": 40
+        },
+        {
+          "caller": "refreshTurnStatus",
+          "callee": "VoiceTurn::query()\n            ->where('user_id', auth()->id())\n            ->where('uuid', $this->trackingTurnUuid)->first",
+          "lineNumber": 49
+        },
+        {
+          "caller": "refreshTurnStatus",
+          "callee": "VoiceTurn::query()\n            ->where('user_id', auth()->id())->where",
+          "lineNumber": 49
+        },
+        {
+          "caller": "refreshTurnStatus",
+          "callee": "VoiceTurn::query()->where",
+          "lineNumber": 49
+        },
+        {
+          "caller": "refreshTurnStatus",
+          "callee": "VoiceTurn::query",
+          "lineNumber": 49
+        },
+        {
+          "caller": "refreshTurnStatus",
+          "callee": "auth()->id",
+          "lineNumber": 50
+        },
+        {
+          "caller": "refreshTurnStatus",
+          "callee": "auth",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Auth/LoginTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 43,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Conversation/HomeTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/ExampleTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Voice/TalkControlTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 30,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

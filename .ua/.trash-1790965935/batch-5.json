@@ -1,0 +1,384 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "type": "file",
+      "name": "StoreVoiceTurn.php",
+      "filePath": "app/Actions/Voice/StoreVoiceTurn.php",
+      "summary": "Action that persists an uploaded audio file, creates a VoiceTurn record in Uploaded status, and dispatches asynchronous transcription.",
+      "tags": ["service", "voice", "upload", "action"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:app/Actions/Voice/StoreVoiceTurn.php:StoreVoiceTurn",
+      "type": "class",
+      "name": "StoreVoiceTurn",
+      "filePath": "app/Actions/Voice/StoreVoiceTurn.php",
+      "lineRange": [12, 31],
+      "summary": "Single-purpose action class invoked by the voice upload controller to store audio and enqueue transcription.",
+      "tags": ["service", "voice", "action"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Actions/Voice/StoreVoiceTurn.php:handle",
+      "type": "function",
+      "name": "handle",
+      "filePath": "app/Actions/Voice/StoreVoiceTurn.php",
+      "lineRange": [14, 30],
+      "summary": "Stores the uploaded WebM file on the local disk, creates a VoiceTurn for the user, and dispatches TranscribeVoiceTurn.",
+      "tags": ["voice", "upload", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Models/VoiceTurn.php",
+      "type": "file",
+      "name": "VoiceTurn.php",
+      "filePath": "app/Models/VoiceTurn.php",
+      "summary": "Eloquent model representing a single voice interaction turn with status, audio path, transcript, and relationships to User and Record.",
+      "tags": ["data-model", "voice", "eloquent"],
+      "complexity": "moderate",
+      "languageNotes": "Uses PHP 8 attributes for fillable fields and casts the status column to the VoiceTurnStatus backed enum."
+    },
+    {
+      "id": "class:app/Models/VoiceTurn.php:VoiceTurn",
+      "type": "class",
+      "name": "VoiceTurn",
+      "filePath": "app/Models/VoiceTurn.php",
+      "lineRange": [13, 57],
+      "summary": "Core domain model for voice turns, linking users to transcripts and records created from conversation.",
+      "tags": ["data-model", "voice", "eloquent"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/VoiceTurnStatus.php",
+      "type": "file",
+      "name": "VoiceTurnStatus.php",
+      "filePath": "app/VoiceTurnStatus.php",
+      "summary": "Backed string enum defining the lifecycle states of a voice turn from upload through transcription completion or failure.",
+      "tags": ["type-definition", "voice", "enum"],
+      "complexity": "simple",
+      "languageNotes": "PHP backed enum with string values: uploaded, transcribing, completed, and failed."
+    },
+    {
+      "id": "file:database/factories/VoiceTurnFactory.php",
+      "type": "file",
+      "name": "VoiceTurnFactory.php",
+      "filePath": "database/factories/VoiceTurnFactory.php",
+      "summary": "Eloquent factory for VoiceTurn with default uploaded state and convenience states for completed and failed transcription outcomes.",
+      "tags": ["factory", "test-data", "voice"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:database/factories/VoiceTurnFactory.php:VoiceTurnFactory",
+      "type": "class",
+      "name": "VoiceTurnFactory",
+      "filePath": "database/factories/VoiceTurnFactory.php",
+      "lineRange": [14, 68],
+      "summary": "Factory class generating VoiceTurn test fixtures with state helpers for uploaded, completed, and failed turns.",
+      "tags": ["factory", "test-data", "voice"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:database/factories/VoiceTurnFactory.php:definition",
+      "type": "function",
+      "name": "definition",
+      "filePath": "database/factories/VoiceTurnFactory.php",
+      "lineRange": [21, 36],
+      "summary": "Returns default VoiceTurn attributes including a related user, UUID, uploaded status, and local audio path.",
+      "tags": ["factory", "test-data"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:database/factories/VoiceTurnFactory.php:completed",
+      "type": "function",
+      "name": "completed",
+      "filePath": "database/factories/VoiceTurnFactory.php",
+      "lineRange": [46, 55],
+      "summary": "Factory state modifier producing a completed turn with transcript and cleared audio storage fields.",
+      "tags": ["factory", "test-data", "voice"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:database/factories/VoiceTurnFactory.php:failed",
+      "type": "function",
+      "name": "failed",
+      "filePath": "database/factories/VoiceTurnFactory.php",
+      "lineRange": [57, 67],
+      "summary": "Factory state modifier producing a failed turn with an error message and deleted audio metadata.",
+      "tags": ["factory", "test-data", "voice"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "type": "file",
+      "name": "VoiceTurnTest.php",
+      "filePath": "tests/Feature/Models/VoiceTurnTest.php",
+      "summary": "Feature tests validating VoiceTurn UUID uniqueness, foreign key constraints, and record link behavior on deletion.",
+      "tags": ["test", "voice", "data-model"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "type": "file",
+      "name": "AudioUploadTest.php",
+      "filePath": "tests/Feature/Voice/AudioUploadTest.php",
+      "summary": "HTTP feature tests for the voice-turn upload endpoint covering storage, validation, transcription dispatch, and record isolation.",
+      "tags": ["test", "voice", "api-handler"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Models/VoiceTurn.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Models/VoiceTurn.php",
+      "target": "file:database/factories/VoiceTurnFactory.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "target": "file:app/Models/Record.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "target": "file:app/Models/Record.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "class:app/Actions/Voice/StoreVoiceTurn.php:StoreVoiceTurn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "function:app/Actions/Voice/StoreVoiceTurn.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Models/VoiceTurn.php",
+      "target": "class:app/Models/VoiceTurn.php:VoiceTurn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "class:database/factories/VoiceTurnFactory.php:VoiceTurnFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "function:database/factories/VoiceTurnFactory.php:definition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "function:database/factories/VoiceTurnFactory.php:completed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "function:database/factories/VoiceTurnFactory.php:failed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "class:app/Actions/Voice/StoreVoiceTurn.php:StoreVoiceTurn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Models/VoiceTurn.php",
+      "target": "class:app/Models/VoiceTurn.php:VoiceTurn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "class:database/factories/VoiceTurnFactory.php:VoiceTurnFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Actions/Voice/StoreVoiceTurn.php:handle",
+      "target": "class:app/Jobs/TranscribeVoiceTurn.php:TranscribeVoiceTurn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "target": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/VoiceTurn.php",
+      "target": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/VoiceTurn.php",
+      "target": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/VoiceTurnStatus.php",
+      "target": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/VoiceTurnStatus.php",
+      "target": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:database/factories/VoiceTurnFactory.php",
+      "target": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

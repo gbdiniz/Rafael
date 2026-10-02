@@ -1,0 +1,629 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Actions/Conversation/Briefing.php",
+      "type": "file",
+      "name": "Briefing.php",
+      "filePath": "app/Actions/Conversation/Briefing.php",
+      "summary": "Action class that builds a Portuguese briefing message summarizing missed and today's appointments for a user based on their timezone.",
+      "tags": ["service", "conversation", "appointment-briefing", "eloquent"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Actions/Conversation/Briefing.php:Briefing",
+      "type": "class",
+      "name": "Briefing",
+      "filePath": "app/Actions/Conversation/Briefing.php",
+      "lineRange": [9, 47],
+      "summary": "Single-purpose action that queries scheduled records and formats a conversational greeting with pending and same-day appointments.",
+      "tags": ["service", "action", "conversation", "data-model"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Actions/Conversation/Briefing.php:handle",
+      "type": "function",
+      "name": "handle",
+      "filePath": "app/Actions/Conversation/Briefing.php",
+      "lineRange": [11, 46],
+      "summary": "Loads missed and today-on-the-books records for the user, then returns a Portuguese summary string or a default greeting when none exist.",
+      "tags": ["service", "query", "formatting", "conversation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Actions/Conversation/OpenConversation.php",
+      "type": "file",
+      "name": "OpenConversation.php",
+      "filePath": "app/Actions/Conversation/OpenConversation.php",
+      "summary": "Action that marks a user's first conversation visit by setting conversation_opened_at and returning the initial greeting.",
+      "tags": ["service", "conversation", "onboarding", "user-state"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:app/Actions/Conversation/OpenConversation.php:OpenConversation",
+      "type": "class",
+      "name": "OpenConversation",
+      "filePath": "app/Actions/Conversation/OpenConversation.php",
+      "lineRange": [7, 18],
+      "summary": "Handles the first-time conversation open flow by persisting conversation_opened_at on the authenticated user.",
+      "tags": ["service", "action", "onboarding", "conversation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Actions/Conversation/OpenConversation.php:handle",
+      "type": "function",
+      "name": "handle",
+      "filePath": "app/Actions/Conversation/OpenConversation.php",
+      "lineRange": [9, 17],
+      "summary": "Sets the user's conversation_opened_at timestamp on first visit and returns the Olá greeting.",
+      "tags": ["service", "onboarding", "persistence", "conversation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Models/User.php",
+      "type": "file",
+      "name": "User.php",
+      "filePath": "app/Models/User.php",
+      "summary": "Eloquent authenticatable model representing the secretary's single user, with timezone support and relationships to records and voice turns.",
+      "tags": ["data-model", "authentication", "eloquent", "factory"],
+      "complexity": "moderate",
+      "languageNotes": "Uses PHP 8 attribute-based fillable/hidden declarations and typed HasMany relationship methods."
+    },
+    {
+      "id": "class:app/Models/User.php:User",
+      "type": "class",
+      "name": "User",
+      "filePath": "app/Models/User.php",
+      "lineRange": [14, 48],
+      "summary": "Core user entity extending Laravel Authenticatable with datetime casts, records(), and voiceTurns() relationships.",
+      "tags": ["data-model", "authentication", "eloquent", "relationships"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/auth.php",
+      "type": "file",
+      "name": "auth.php",
+      "filePath": "config/auth.php",
+      "summary": "Laravel authentication configuration defining guards, password brokers, and the Eloquent user provider backed by the User model.",
+      "tags": ["configuration", "authentication", "security", "session"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/factories/UserFactory.php",
+      "type": "file",
+      "name": "UserFactory.php",
+      "filePath": "database/factories/UserFactory.php",
+      "summary": "Model factory for generating test and seed users with hashed passwords, timezone defaults, and an unverified state.",
+      "tags": ["factory", "test-data", "authentication", "seeding"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:database/factories/UserFactory.php:UserFactory",
+      "type": "class",
+      "name": "UserFactory",
+      "filePath": "database/factories/UserFactory.php",
+      "lineRange": [13, 47],
+      "summary": "Factory class producing User instances with faker data, default timezone from config, and a reusable unverified state.",
+      "tags": ["factory", "test-data", "faker", "state"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:database/factories/UserFactory.php:definition",
+      "type": "function",
+      "name": "definition",
+      "filePath": "database/factories/UserFactory.php",
+      "lineRange": [25, 36],
+      "summary": "Returns default attribute values for a new User including name, email, hashed password, remember token, and timezone.",
+      "tags": ["factory", "faker", "defaults", "test-data"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:database/seeders/DatabaseSeeder.php",
+      "type": "file",
+      "name": "DatabaseSeeder.php",
+      "filePath": "database/seeders/DatabaseSeeder.php",
+      "summary": "Application seeder that creates the admin user from rafael config values, failing fast when credentials are missing.",
+      "tags": ["seeding", "admin", "bootstrap", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:database/seeders/DatabaseSeeder.php:DatabaseSeeder",
+      "type": "class",
+      "name": "DatabaseSeeder",
+      "filePath": "database/seeders/DatabaseSeeder.php",
+      "lineRange": [10, 33],
+      "summary": "Seeder entry point that validates admin config and creates the initial User via the factory.",
+      "tags": ["seeding", "bootstrap", "admin", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:database/seeders/DatabaseSeeder.php:run",
+      "type": "function",
+      "name": "run",
+      "filePath": "database/seeders/DatabaseSeeder.php",
+      "lineRange": [17, 32],
+      "summary": "Reads admin credentials from config, throws if any are blank, then creates the admin User record.",
+      "tags": ["seeding", "bootstrap", "validation", "factory"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:resources/views/pages/⚡conversation/conversation.php",
+      "type": "file",
+      "name": "conversation.php",
+      "filePath": "resources/views/pages/⚡conversation/conversation.php",
+      "summary": "Livewire full-page component for the voice conversation UI, orchestrating first-visit greeting, daily briefing, and voice turn status polling.",
+      "tags": ["component", "livewire", "conversation", "voice-ui"],
+      "complexity": "moderate",
+      "languageNotes": "Anonymous Livewire Component class defined inline with public state for message, turn tracking, and transcription results."
+    },
+    {
+      "id": "function:resources/views/pages/⚡conversation/conversation.php:mount",
+      "type": "function",
+      "name": "mount",
+      "filePath": "resources/views/pages/⚡conversation/conversation.php",
+      "lineRange": [20, 33],
+      "summary": "Initializes locale to pt_BR and sets the greeting via OpenConversation on first visit or Briefing on subsequent visits.",
+      "tags": ["component", "livewire", "initialization", "conversation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:resources/views/pages/⚡conversation/conversation.php:refreshTurnStatus",
+      "type": "function",
+      "name": "refreshTurnStatus",
+      "filePath": "resources/views/pages/⚡conversation/conversation.php",
+      "lineRange": [43, 71],
+      "summary": "Polls the tracked VoiceTurn by UUID and updates UI state when transcription completes or fails.",
+      "tags": ["component", "livewire", "voice-turn", "polling"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "type": "file",
+      "name": "AuthenticatedRoutesTest.php",
+      "filePath": "tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "summary": "Feature tests verifying authenticated users can access protected routes and guests are redirected appropriately.",
+      "tags": ["test", "authentication", "routing", "authorization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Feature/Auth/LoginTest.php",
+      "type": "file",
+      "name": "LoginTest.php",
+      "filePath": "tests/Feature/Auth/LoginTest.php",
+      "summary": "Feature tests covering login screen rendering, successful authentication redirect, invalid credentials, and disabled registration.",
+      "tags": ["test", "authentication", "login", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Conversation/HomeTest.php",
+      "type": "file",
+      "name": "HomeTest.php",
+      "filePath": "tests/Feature/Conversation/HomeTest.php",
+      "summary": "Livewire feature tests asserting the conversation page replaces the welcome screen and renders Portuguese copy without record lists.",
+      "tags": ["test", "livewire", "conversation", "localization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "type": "file",
+      "name": "TranscriptionFailureTest.php",
+      "filePath": "tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "summary": "Feature test verifying failed voice turn transcription errors are surfaced on the conversation Livewire component.",
+      "tags": ["test", "livewire", "transcription", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "type": "file",
+      "name": "TranscriptionSuccessTest.php",
+      "filePath": "tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "summary": "Feature test verifying successful voice turn transcription results appear on the conversation Livewire component.",
+      "tags": ["test", "livewire", "transcription", "voice-turn"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Feature/ExampleTest.php",
+      "type": "file",
+      "name": "ExampleTest.php",
+      "filePath": "tests/Feature/ExampleTest.php",
+      "summary": "Placeholder feature test asserting the application root returns a successful HTTP response for authenticated context.",
+      "tags": ["test", "smoke-test", "http", "example"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Feature/Voice/TalkControlTest.php",
+      "type": "file",
+      "name": "TalkControlTest.php",
+      "filePath": "tests/Feature/Voice/TalkControlTest.php",
+      "summary": "Livewire feature tests validating talk-control DOM attributes for toggle clicks, mouseleave behavior, wire:ignore, and listening state markers.",
+      "tags": ["test", "livewire", "voice-ui", "talk-control"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Actions/Conversation/Briefing.php",
+      "target": "file:app/Models/Record.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Actions/Conversation/Briefing.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Actions/Conversation/OpenConversation.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:database/factories/UserFactory.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:config/auth.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/factories/UserFactory.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/seeders/DatabaseSeeder.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:app/Actions/Conversation/Briefing.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:app/Actions/Conversation/OpenConversation.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Auth/LoginTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Conversation/HomeTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/ExampleTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/TalkControlTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Actions/Conversation/Briefing.php",
+      "target": "class:app/Actions/Conversation/Briefing.php:Briefing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Actions/Conversation/Briefing.php",
+      "target": "function:app/Actions/Conversation/Briefing.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Actions/Conversation/OpenConversation.php",
+      "target": "class:app/Actions/Conversation/OpenConversation.php:OpenConversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Actions/Conversation/OpenConversation.php",
+      "target": "function:app/Actions/Conversation/OpenConversation.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "class:app/Models/User.php:User",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/factories/UserFactory.php",
+      "target": "class:database/factories/UserFactory.php:UserFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/factories/UserFactory.php",
+      "target": "function:database/factories/UserFactory.php:definition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/seeders/DatabaseSeeder.php",
+      "target": "class:database/seeders/DatabaseSeeder.php:DatabaseSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:database/seeders/DatabaseSeeder.php",
+      "target": "function:database/seeders/DatabaseSeeder.php:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "function:resources/views/pages/⚡conversation/conversation.php:mount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "function:resources/views/pages/⚡conversation/conversation.php:refreshTurnStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Actions/Conversation/Briefing.php",
+      "target": "class:app/Actions/Conversation/Briefing.php:Briefing",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Actions/Conversation/OpenConversation.php",
+      "target": "class:app/Actions/Conversation/OpenConversation.php:OpenConversation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "class:app/Models/User.php:User",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/factories/UserFactory.php",
+      "target": "class:database/factories/UserFactory.php:UserFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/seeders/DatabaseSeeder.php",
+      "target": "class:database/seeders/DatabaseSeeder.php:DatabaseSeeder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Actions/Conversation/Briefing.php:handle",
+      "target": "class:app/Models/Record.php:Record",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:resources/views/pages/⚡conversation/conversation.php:mount",
+      "target": "function:app/Actions/Conversation/OpenConversation.php:handle",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:resources/views/pages/⚡conversation/conversation.php:mount",
+      "target": "function:app/Actions/Conversation/Briefing.php:handle",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:resources/views/pages/⚡conversation/conversation.php:refreshTurnStatus",
+      "target": "class:app/Models/VoiceTurn.php:VoiceTurn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:database/seeders/DatabaseSeeder.php:run",
+      "target": "class:app/Models/User.php:User",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:config/auth.php",
+      "target": "file:app/Models/User.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:tests/Feature/Auth/LoginTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:tests/Feature/Conversation/HomeTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:tests/Feature/ExampleTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:tests/Feature/Voice/TalkControlTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Actions/Conversation/Briefing.php",
+      "target": "file:tests/Feature/Conversation/BriefingTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Actions/Conversation/OpenConversation.php",
+      "target": "file:tests/Feature/Conversation/FirstVisitTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:tests/Feature/Conversation/HomeTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.php",
+      "target": "file:tests/Feature/Voice/TalkControlTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

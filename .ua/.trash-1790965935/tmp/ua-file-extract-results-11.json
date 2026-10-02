@@ -1,0 +1,398 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 9,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 9
+    }
+  },
+  "results": [
+    {
+      "path": ".agents/skills/testing-best-practices/rules/assertions.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 64,
+      "nonEmptyLines": 41,
+      "sections": [
+        {
+          "heading": "Assertions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Arrange, Act, Assert",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "How to Find the Correct Assertion",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Named Response Assertions",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Format Expectations",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Assert a Known Value",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Assert the Complete Result",
+          "level": 2,
+          "line": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 29,
+      "sections": [
+        {
+          "heading": "Endpoint Tests",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "How to Write the Test",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Endpoint Coverage",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Tenant Isolation",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Test Authorization at the Policy Level",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Testing Validation",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Which Layer Owns Which Case",
+          "level": 3,
+          "line": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/finding-features.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 37,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "How to Find Test Framework Features",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Built-in Laravel Assertion Methods",
+          "level": 2,
+          "line": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/isolation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 52,
+      "nonEmptyLines": 34,
+      "sections": [
+        {
+          "heading": "Fakes, Mocks, and Determinism",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "How to Isolate a Dependency",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Framework Fakes",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Mocking",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Outbound HTTP Testing",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Time and Randomness",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Database",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/naming.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 45,
+      "nonEmptyLines": 29,
+      "sections": [
+        {
+          "heading": "Naming and Structure",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "File Layout",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Test Function",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Naming Tests",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Grouping",
+          "level": 2,
+          "line": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/performance.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 58,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "Test Suite Performance",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Test Environment",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Global Fakes",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "How to Run the Suite in Parallel",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "How to Run Fewer Tests",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "How to Split Tests Across CI",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "How to Find a Slow Test",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Common Errors",
+          "level": 2,
+          "line": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/review.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 44,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "Reviewing Tests",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Test Value",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Names and Structure",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Coverage",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Data and Determinism",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Assertions",
+          "level": 2,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/security.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "Security Tests",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/test-data.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 56,
+      "nonEmptyLines": 40,
+      "sections": [
+        {
+          "heading": "Factories and Test Data",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Each Test Makes Its Own Data",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Record Construction",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Datasets",
+          "level": 2,
+          "line": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

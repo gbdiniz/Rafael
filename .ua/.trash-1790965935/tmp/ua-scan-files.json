@@ -1,0 +1,1595 @@
+{
+  "scriptCompleted": true,
+  "contentDigest": "25a3feb6adda7433e7e319ed5f219fadcf70324c89af2a270ed903d7b141d945",
+  "files": [
+    {
+      "path": ".agents/skills/grill-me/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/grill-me/agents/openai.yaml",
+      "language": "yaml",
+      "sizeLines": 5,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/grilling/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/grilling/agents/openai.yaml",
+      "language": "yaml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "language": "toml",
+      "sizeLines": 46,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "language": "toml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "language": "toml",
+      "sizeLines": 41,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "language": "toml",
+      "sizeLines": 95,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/openai.yaml",
+      "language": "yaml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.md",
+      "language": "markdown",
+      "sizeLines": 318,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.native.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/android.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/animate.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.native.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/bolder.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/clarify.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/colorize.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/component-review.md",
+      "language": "markdown",
+      "sizeLines": 71,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft-floor.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/critique.md",
+      "language": "markdown",
+      "sizeLines": 828,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/documenter.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/delight.md",
+      "language": "markdown",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/distill.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/doctor.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/document.md",
+      "language": "markdown",
+      "sizeLines": 416,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/extract.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/generate.md",
+      "language": "markdown",
+      "sizeLines": 101,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/harden.md",
+      "language": "markdown",
+      "sizeLines": 345,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/hooks.md",
+      "language": "markdown",
+      "sizeLines": 113,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/init.md",
+      "language": "markdown",
+      "sizeLines": 131,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/ios.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/layout.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live-setup.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live.md",
+      "language": "markdown",
+      "sizeLines": 327,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/new-work.md",
+      "language": "markdown",
+      "sizeLines": 152,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/onboard.md",
+      "language": "markdown",
+      "sizeLines": 234,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/operate.md",
+      "language": "markdown",
+      "sizeLines": 61,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/optimize.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/overdrive.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/polish.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/quieter.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/region-map.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/routing.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/shape.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/typeset.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/visualize.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/VERSION",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/command-metadata.json",
+      "language": "json",
+      "sizeLines": 98,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/data/font-index-failures.json",
+      "language": "json",
+      "sizeLines": 120,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/data/font-index.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/impeccable",
+      "language": "unknown",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/impeccable.cmd",
+      "language": "batch",
+      "sizeLines": 214,
+      "fileCategory": "script"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-dom.js",
+      "language": "javascript",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "language": "javascript",
+      "sizeLines": 242,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-session.js",
+      "language": "javascript",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser.js",
+      "language": "javascript",
+      "sizeLines": 13510,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/infer-conventions/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/infer-conventions/references/checklist.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/architecture.md",
+      "language": "markdown",
+      "sizeLines": 219,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/blade-views.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/caching.md",
+      "language": "markdown",
+      "sizeLines": 100,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/collections.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/config.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/db-performance.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/eloquent.md",
+      "language": "markdown",
+      "sizeLines": 158,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/error-handling.md",
+      "language": "markdown",
+      "sizeLines": 77,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/events-notifications.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/http-client.md",
+      "language": "markdown",
+      "sizeLines": 157,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/mail.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/migrations.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "language": "markdown",
+      "sizeLines": 117,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/routing.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/scheduling.md",
+      "language": "markdown",
+      "sizeLines": 61,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/security.md",
+      "language": "markdown",
+      "sizeLines": 156,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/style.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/laravel-best-practices/rules/validation.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/livewire-development/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 164,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/livewire-development/reference/javascript-hooks.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/tailwindcss-development/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/assertions.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/finding-features.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/isolation.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/naming.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/performance.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/review.md",
+      "language": "markdown",
+      "sizeLines": 44,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/security.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/testing-best-practices/rules/test-data.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/infer-conventions/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/infer-conventions/references/checklist.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/advanced-queries.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/architecture.md",
+      "language": "markdown",
+      "sizeLines": 219,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/blade-views.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/caching.md",
+      "language": "markdown",
+      "sizeLines": 100,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/collections.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/config.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/db-performance.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/eloquent.md",
+      "language": "markdown",
+      "sizeLines": 158,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/error-handling.md",
+      "language": "markdown",
+      "sizeLines": 77,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/events-notifications.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/http-client.md",
+      "language": "markdown",
+      "sizeLines": 157,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/mail.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/migrations.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/queue-jobs.md",
+      "language": "markdown",
+      "sizeLines": 117,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/routing.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/scheduling.md",
+      "language": "markdown",
+      "sizeLines": 61,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/security.md",
+      "language": "markdown",
+      "sizeLines": 156,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/style.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/laravel-best-practices/rules/validation.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/livewire-development/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 164,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/livewire-development/reference/javascript-hooks.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/tailwindcss-development/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/assertions.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/finding-features.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/isolation.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/naming.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/performance.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/review.md",
+      "language": "markdown",
+      "sizeLines": 44,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/security.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/rules/test-data.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/settings.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 73,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".impeccable/config.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/design.json",
+      "language": "json",
+      "sizeLines": 164,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/decision/assigned-r2.png.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/decision/assigned.png.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/decision/canon.png.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/decision/model-pick-r2.png.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/decision/model-pick.png.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/decision/payload-r2.json",
+      "language": "json",
+      "sizeLines": 135,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/decision/payload.json",
+      "language": "json",
+      "sizeLines": 135,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/home-bars.png.json",
+      "language": "json",
+      "sizeLines": 5,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/home-previews.json",
+      "language": "json",
+      "sizeLines": 43,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/malote-home.png.json",
+      "language": "json",
+      "sizeLines": 5,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/mocks/malote-preview.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/questions/b92faafe.answer.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/questions/b92faafe.state.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/review/diff/desktop/raw-report.json",
+      "language": "json",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/review/diff/desktop/report.json",
+      "language": "json",
+      "sizeLines": 103,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/review/diff/hero/raw-report.json",
+      "language": "json",
+      "sizeLines": 89,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/review/diff/hero/report.json",
+      "language": "json",
+      "sizeLines": 101,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".impeccable/surfaces/home.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".mcp.json",
+      "language": "json",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".npmrc",
+      "language": "unknown",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 169,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "sizeLines": 154,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "PRODUCT.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "app/Actions/Conversation/Briefing.php",
+      "language": "php",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Actions/Conversation/OpenConversation.php",
+      "language": "php",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Actions/Voice/StoreVoiceTurn.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Contracts/Transcriber.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Exceptions/PermanentTranscriptionException.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Exceptions/TransientTranscriptionException.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Auth/LoginController.php",
+      "language": "php",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Controller.php",
+      "language": "php",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/RecordController.php",
+      "language": "php",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/VoiceTurnController.php",
+      "language": "php",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Requests/Auth/LoginRequest.php",
+      "language": "php",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Requests/StoreVoiceTurnRequest.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Jobs/TranscribeVoiceTurn.php",
+      "language": "php",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/Record.php",
+      "language": "php",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/User.php",
+      "language": "php",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/VoiceTurn.php",
+      "language": "php",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Providers/AppServiceProvider.php",
+      "language": "php",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/RecordKind.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Records/LocalDay.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Services/Transcription/HttpTranscriber.php",
+      "language": "php",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/VoiceTurnStatus.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "artisan",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "boost.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "bootstrap/app.php",
+      "language": "php",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/providers.php",
+      "language": "php",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "composer.json",
+      "language": "json",
+      "sizeLines": 90,
+      "fileCategory": "config"
+    },
+    {
+      "path": "config/app.php",
+      "language": "php",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/auth.php",
+      "language": "php",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/cache.php",
+      "language": "php",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/database.php",
+      "language": "php",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/filesystems.php",
+      "language": "php",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/livewire.php",
+      "language": "php",
+      "sizeLines": 282,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/logging.php",
+      "language": "php",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/mail.php",
+      "language": "php",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/queue.php",
+      "language": "php",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/rafael.php",
+      "language": "php",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/services.php",
+      "language": "php",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/session.php",
+      "language": "php",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/factories/RecordFactory.php",
+      "language": "php",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/factories/UserFactory.php",
+      "language": "php",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/factories/VoiceTurnFactory.php",
+      "language": "php",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "language": "php",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "language": "php",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "language": "php",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "language": "php",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/2026_09_30_141335_create_records_table.php",
+      "language": "php",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/seeders/DatabaseSeeder.php",
+      "language": "php",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/database-schema.md",
+      "language": "markdown",
+      "sizeLines": 666,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/project-description.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/project-phases.md",
+      "language": "markdown",
+      "sizeLines": 594,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/prompts/database-schema-prompt.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/prompts/generate-phases.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/user-stories.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "lang/pt_BR/auth.php",
+      "language": "php",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "phpunit.xml",
+      "language": "xml",
+      "sizeLines": 36,
+      "fileCategory": "config"
+    },
+    {
+      "path": "public/.htaccess",
+      "language": "unknown",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/index.php",
+      "language": "php",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/robots.txt",
+      "language": "txt",
+      "sizeLines": 2,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "public_old/index.html",
+      "language": "html",
+      "sizeLines": 176,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "resources/css/app.css",
+      "language": "css",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "resources/js/app.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/js/talk-control.js",
+      "language": "javascript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/login.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/auth-screen.blade.php",
+      "language": "php",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/layouts/guest.blade.php",
+      "language": "php",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/secretary-turn.blade.php",
+      "language": "php",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/talk-control.blade.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/app.blade.php",
+      "language": "php",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/pages/⚡conversation/conversation.blade.php",
+      "language": "php",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/pages/⚡conversation/conversation.php",
+      "language": "php",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/welcome.blade.php",
+      "language": "php",
+      "sizeLines": 223,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/console.php",
+      "language": "php",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/web.php",
+      "language": "php",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "skills-lock.json",
+      "language": "json",
+      "sizeLines": 107,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "language": "php",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/LoginTest.php",
+      "language": "php",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Conversation/BriefingTest.php",
+      "language": "php",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Conversation/FirstVisitTest.php",
+      "language": "php",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Conversation/HomeTest.php",
+      "language": "php",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "language": "php",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "language": "php",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/ExampleTest.php",
+      "language": "php",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "language": "php",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Models/RecordTest.php",
+      "language": "php",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Models/UserTest.php",
+      "language": "php",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Models/VoiceTurnTest.php",
+      "language": "php",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Records/LocalDayTest.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Voice/AudioUploadTest.php",
+      "language": "php",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Voice/ReplyAudioTest.php",
+      "language": "php",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Voice/TalkControlTest.php",
+      "language": "php",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Pest.php",
+      "language": "php",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/TestCase.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Unit/ExampleTest.php",
+      "language": "php",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "vite.config.js",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 260,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "failures": [],
+  "stats": {
+    "filesScanned": 260,
+    "byCategory": {
+      "docs": 128,
+      "config": 38,
+      "code": 91,
+      "script": 1,
+      "markup": 2
+    },
+    "byLanguage": {
+      "markdown": 127,
+      "yaml": 3,
+      "toml": 4,
+      "unknown": 6,
+      "json": 29,
+      "batch": 1,
+      "javascript": 8,
+      "config": 1,
+      "php": 77,
+      "xml": 1,
+      "txt": 1,
+      "html": 1,
+      "css": 1
+    }
+  }
+}

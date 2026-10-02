@@ -1,0 +1,183 @@
+{
+  "nodes": [
+    {
+      "id": "document:.agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "type": "document",
+      "name": "asset-producer.md",
+      "filePath": ".agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "summary": "Degraded inline fallback for the Impeccable Asset Producer agent, defining how to produce raster plates from an approved comp spec without redesigning or inventing new art direction.",
+      "tags": ["documentation", "asset-production", "impeccable-skill", "degraded-mode", "agent-role"],
+      "complexity": "moderate",
+      "languageNotes": "Auto-generated from agent definitions for harnesses that cannot spawn subagents; instructs the parent to run the role inline."
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+      "type": "document",
+      "name": "documenter.md",
+      "filePath": ".agents/skills/impeccable/reference/degraded/documenter.md",
+      "summary": "Degraded inline fallback for the Impeccable Documenter agent, prescribing post-build capture of DESIGN.md and its sidecar from shipped code rather than planned intent.",
+      "tags": ["documentation", "design-system", "impeccable-skill", "degraded-mode", "agent-role"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "type": "document",
+      "name": "finish-reviewer.md",
+      "filePath": ".agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "summary": "Degraded inline fallback for the Impeccable Finish Reviewer, defining the final quality gate with ordered checks for evidence, persistence, fidelity, ceiling, contract truth, and craft-floor compliance.",
+      "tags": ["documentation", "quality-review", "impeccable-skill", "degraded-mode", "agent-role"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "type": "document",
+      "name": "manual-edit-applier.md",
+      "filePath": ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "summary": "Degraded inline fallback for the Manual Edit Applier agent, governing how leased live manual_edit_apply events are applied to source files with per-entry atomicity and JSON-only responses.",
+      "tags": ["documentation", "live-editing", "impeccable-skill", "degraded-mode", "agent-role"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "target": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "target": "document:.agents/skills/impeccable/reference/component-review.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "target": "file:.agents/skills/impeccable/scripts/impeccable",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "target": "document:.agents/skills/impeccable/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+      "target": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+      "target": "document:.agents/skills/impeccable/reference/document.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+      "target": "document:DESIGN.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+      "target": "document:PRODUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+      "target": "document:.agents/skills/impeccable/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "document:.agents/skills/impeccable/reference/craft-floor.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "document:.agents/skills/impeccable/reference/ios.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "document:.agents/skills/impeccable/reference/android.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "document:PRODUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "config:.impeccable/review/diff/hero/report.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "config:.impeccable/review/diff/desktop/report.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "target": "document:.agents/skills/impeccable/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "target": "config:.agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "target": "file:.agents/skills/impeccable/scripts/impeccable",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "target": "document:.agents/skills/impeccable/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

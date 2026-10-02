@@ -1,0 +1,27 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": "resources/views/components/secretary-turn.blade.php", "language": "php", "sizeLines": 5, "fileCategory": "code"},
+    {"path": "resources/views/components/talk-control.blade.php", "language": "php", "sizeLines": 35, "fileCategory": "code"},
+    {"path": "resources/views/layouts/app.blade.php", "language": "php", "sizeLines": 12, "fileCategory": "code"},
+    {"path": "resources/views/pages/⚡conversation/conversation.blade.php", "language": "php", "sizeLines": 24, "fileCategory": "code"},
+    {"path": "resources/views/welcome.blade.php", "language": "php", "sizeLines": 223, "fileCategory": "code"},
+    {"path": "routes/console.php", "language": "php", "sizeLines": 8, "fileCategory": "code"},
+    {"path": "tests/Pest.php", "language": "php", "sizeLines": 18, "fileCategory": "code"},
+    {"path": "tests/TestCase.php", "language": "php", "sizeLines": 10, "fileCategory": "code"},
+    {"path": "tests/Unit/ExampleTest.php", "language": "php", "sizeLines": 5, "fileCategory": "code"},
+    {"path": "vite.config.js", "language": "javascript", "sizeLines": 24, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "resources/views/components/secretary-turn.blade.php": [],
+    "resources/views/components/talk-control.blade.php": [],
+    "resources/views/layouts/app.blade.php": [],
+    "resources/views/pages/⚡conversation/conversation.blade.php": [],
+    "resources/views/welcome.blade.php": [],
+    "routes/console.php": [],
+    "tests/Pest.php": [],
+    "tests/TestCase.php": [],
+    "tests/Unit/ExampleTest.php": [],
+    "vite.config.js": []
+  }
+}

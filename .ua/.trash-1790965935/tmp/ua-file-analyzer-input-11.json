@@ -1,0 +1,25 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": ".agents/skills/testing-best-practices/rules/assertions.md", "language": "markdown", "sizeLines": 64, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/endpoint-tests.md", "language": "markdown", "sizeLines": 47, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/finding-features.md", "language": "markdown", "sizeLines": 37, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/isolation.md", "language": "markdown", "sizeLines": 52, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/naming.md", "language": "markdown", "sizeLines": 45, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/performance.md", "language": "markdown", "sizeLines": 58, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/review.md", "language": "markdown", "sizeLines": 44, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/security.md", "language": "markdown", "sizeLines": 27, "fileCategory": "docs"},
+    {"path": ".agents/skills/testing-best-practices/rules/test-data.md", "language": "markdown", "sizeLines": 56, "fileCategory": "docs"}
+  ],
+  "batchImportData": {
+    ".agents/skills/testing-best-practices/rules/assertions.md": [],
+    ".agents/skills/testing-best-practices/rules/endpoint-tests.md": [],
+    ".agents/skills/testing-best-practices/rules/finding-features.md": [],
+    ".agents/skills/testing-best-practices/rules/isolation.md": [],
+    ".agents/skills/testing-best-practices/rules/naming.md": [],
+    ".agents/skills/testing-best-practices/rules/performance.md": [],
+    ".agents/skills/testing-best-practices/rules/review.md": [],
+    ".agents/skills/testing-best-practices/rules/security.md": [],
+    ".agents/skills/testing-best-practices/rules/test-data.md": []
+  }
+}

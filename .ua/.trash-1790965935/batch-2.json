@@ -1,0 +1,640 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Contracts/Transcriber.php",
+      "type": "file",
+      "name": "Transcriber.php",
+      "filePath": "app/Contracts/Transcriber.php",
+      "summary": "Defines the Transcriber contract that abstracts voice-to-text conversion for VoiceTurn records, exposing a single transcribe method.",
+      "tags": ["type-definition", "service", "transcription", "contract"],
+      "complexity": "simple",
+      "languageNotes": "PHP interface used for dependency injection of transcription backends."
+    },
+    {
+      "id": "class:app/Contracts/Transcriber.php:Transcriber",
+      "type": "class",
+      "name": "Transcriber",
+      "filePath": "app/Contracts/Transcriber.php",
+      "lineRange": [7, 10],
+      "summary": "Interface contract requiring implementors to transcribe a VoiceTurn audio recording into text.",
+      "tags": ["type-definition", "service", "transcription", "contract"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "type": "file",
+      "name": "PermanentTranscriptionException.php",
+      "filePath": "app/Exceptions/PermanentTranscriptionException.php",
+      "summary": "Custom exception signaling unrecoverable transcription failures such as invalid audio or client errors that should not be retried.",
+      "tags": ["validation", "transcription", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:app/Exceptions/PermanentTranscriptionException.php:PermanentTranscriptionException",
+      "type": "class",
+      "name": "PermanentTranscriptionException",
+      "filePath": "app/Exceptions/PermanentTranscriptionException.php",
+      "lineRange": [7, 10],
+      "summary": "Exception type thrown when a transcription error is permanent and the job should fail without further retries.",
+      "tags": ["validation", "transcription", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Exceptions/TransientTranscriptionException.php",
+      "type": "file",
+      "name": "TransientTranscriptionException.php",
+      "filePath": "app/Exceptions/TransientTranscriptionException.php",
+      "summary": "Custom exception for recoverable transcription failures such as network timeouts or upstream server errors that may succeed on retry.",
+      "tags": ["validation", "transcription", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:app/Exceptions/TransientTranscriptionException.php:TransientTranscriptionException",
+      "type": "class",
+      "name": "TransientTranscriptionException",
+      "filePath": "app/Exceptions/TransientTranscriptionException.php",
+      "lineRange": [7, 10],
+      "summary": "Exception type indicating a temporary transcription failure where the queue job may be retried.",
+      "tags": ["validation", "transcription", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "file",
+      "name": "TranscribeVoiceTurn.php",
+      "filePath": "app/Jobs/TranscribeVoiceTurn.php",
+      "summary": "Queued job that transcribes a VoiceTurn via the Transcriber contract, updates turn status, cleans up audio storage, and handles permanent versus transient failures.",
+      "tags": ["service", "transcription", "event-handler", "queue-jobs"],
+      "complexity": "moderate",
+      "languageNotes": "Laravel ShouldQueue job with configurable timeout, tries, and backoff."
+    },
+    {
+      "id": "class:app/Jobs/TranscribeVoiceTurn.php:TranscribeVoiceTurn",
+      "type": "class",
+      "name": "TranscribeVoiceTurn",
+      "filePath": "app/Jobs/TranscribeVoiceTurn.php",
+      "lineRange": [16, 98],
+      "summary": "Queue job dispatched after audio upload to run transcription asynchronously and persist the resulting transcript on the VoiceTurn.",
+      "tags": ["service", "transcription", "event-handler", "queue-jobs"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Jobs/TranscribeVoiceTurn.php:handle",
+      "type": "function",
+      "name": "handle",
+      "filePath": "app/Jobs/TranscribeVoiceTurn.php",
+      "lineRange": [31, 71],
+      "summary": "Loads the VoiceTurn, marks it processing, invokes the Transcriber, stores the transcript on success, and routes exceptions to permanent or transient failure handling.",
+      "tags": ["service", "transcription", "event-handler"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Jobs/TranscribeVoiceTurn.php:failed",
+      "type": "function",
+      "name": "failed",
+      "filePath": "app/Jobs/TranscribeVoiceTurn.php",
+      "lineRange": [73, 82],
+      "summary": "Laravel queue failure hook that marks the VoiceTurn as failed when all retry attempts are exhausted.",
+      "tags": ["event-handler", "transcription", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Jobs/TranscribeVoiceTurn.php:markFailed",
+      "type": "function",
+      "name": "markFailed",
+      "filePath": "app/Jobs/TranscribeVoiceTurn.php",
+      "lineRange": [84, 97],
+      "summary": "Deletes stored audio, updates the VoiceTurn status to failed, and records a truncated error message with a failure timestamp.",
+      "tags": ["utility", "transcription", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Providers/AppServiceProvider.php",
+      "type": "file",
+      "name": "AppServiceProvider.php",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "summary": "Laravel service provider that binds the Transcriber contract to the HttpTranscriber HTTP implementation in the container.",
+      "tags": ["singleton", "service", "transcription", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "type": "class",
+      "name": "AppServiceProvider",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "lineRange": [9, 26],
+      "summary": "Application service provider registering dependency-injection bindings for core services including the transcription backend.",
+      "tags": ["singleton", "service", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Services/Transcription/HttpTranscriber.php",
+      "type": "file",
+      "name": "HttpTranscriber.php",
+      "filePath": "app/Services/Transcription/HttpTranscriber.php",
+      "summary": "HTTP-based Transcriber implementation that uploads VoiceTurn audio to an external API, maps HTTP errors to permanent or transient exceptions, and returns the transcript text.",
+      "tags": ["service", "transcription", "api-handler", "http-client"],
+      "complexity": "moderate",
+      "languageNotes": "Uses Laravel Http client with Rafael config for timeouts, base URL, and API token."
+    },
+    {
+      "id": "class:app/Services/Transcription/HttpTranscriber.php:HttpTranscriber",
+      "type": "class",
+      "name": "HttpTranscriber",
+      "filePath": "app/Services/Transcription/HttpTranscriber.php",
+      "lineRange": [18, 133],
+      "summary": "Concrete Transcriber that posts audio files to a remote transcription endpoint and normalizes API failures into domain exceptions.",
+      "tags": ["service", "transcription", "api-handler"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Services/Transcription/HttpTranscriber.php:transcribe",
+      "type": "function",
+      "name": "transcribe",
+      "filePath": "app/Services/Transcription/HttpTranscriber.php",
+      "lineRange": [20, 60],
+      "summary": "Reads audio from storage, posts it to the transcription API with locale parameters, and returns the transcript string from the JSON response.",
+      "tags": ["service", "transcription", "api-handler"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Services/Transcription/HttpTranscriber.php:client",
+      "type": "function",
+      "name": "client",
+      "filePath": "app/Services/Transcription/HttpTranscriber.php",
+      "lineRange": [62, 74],
+      "summary": "Builds a configured Laravel HTTP client with connect and request timeouts and optional bearer token authentication from Rafael config.",
+      "tags": ["utility", "http-client", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Services/Transcription/HttpTranscriber.php:transcriptionUrl",
+      "type": "function",
+      "name": "transcriptionUrl",
+      "filePath": "app/Services/Transcription/HttpTranscriber.php",
+      "lineRange": [81, 93],
+      "summary": "Constructs the full transcription API URL with language query parameters derived from the VoiceTurn locale.",
+      "tags": ["utility", "transcription", "api-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Services/Transcription/HttpTranscriber.php:throwForFailedResponse",
+      "type": "function",
+      "name": "throwForFailedResponse",
+      "filePath": "app/Services/Transcription/HttpTranscriber.php",
+      "lineRange": [95, 127],
+      "summary": "Maps HTTP response status codes and API error bodies to PermanentTranscriptionException or TransientTranscriptionException with user-facing messages.",
+      "tags": ["validation", "error-handling", "transcription"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:bootstrap/providers.php",
+      "type": "file",
+      "name": "providers.php",
+      "filePath": "bootstrap/providers.php",
+      "summary": "Bootstrap file that registers application service providers, including AppServiceProvider, for Laravel container setup.",
+      "tags": ["entry-point", "configuration", "bootstrap"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "type": "file",
+      "name": "TranscribeVoiceTurnTest.php",
+      "filePath": "tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "summary": "Feature tests covering TranscribeVoiceTurn job success, permanent and transient failure paths, retry behavior, and audio cleanup.",
+      "tags": ["test", "transcription", "queue-jobs"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "type": "file",
+      "name": "ReplyAudioTest.php",
+      "filePath": "tests/Feature/Voice/ReplyAudioTest.php",
+      "summary": "Feature test verifying that reply audio playback triggers the TranscribeVoiceTurn job and updates the VoiceTurn after transcription.",
+      "tags": ["test", "transcription", "voice"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Contracts/Transcriber.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:app/Contracts/Transcriber.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:app/Exceptions/TransientTranscriptionException.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "file:app/Contracts/Transcriber.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "file:app/Services/Transcription/HttpTranscriber.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "file:app/Contracts/Transcriber.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "file:app/Exceptions/TransientTranscriptionException.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:bootstrap/providers.php",
+      "target": "file:app/Providers/AppServiceProvider.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "target": "file:app/Contracts/Transcriber.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "target": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "target": "file:app/Contracts/Transcriber.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/Contracts/Transcriber.php",
+      "target": "class:app/Contracts/Transcriber.php:Transcriber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Contracts/Transcriber.php",
+      "target": "class:app/Contracts/Transcriber.php:Transcriber",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "target": "class:app/Exceptions/PermanentTranscriptionException.php:PermanentTranscriptionException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "target": "class:app/Exceptions/PermanentTranscriptionException.php:PermanentTranscriptionException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Exceptions/TransientTranscriptionException.php",
+      "target": "class:app/Exceptions/TransientTranscriptionException.php:TransientTranscriptionException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Exceptions/TransientTranscriptionException.php",
+      "target": "class:app/Exceptions/TransientTranscriptionException.php:TransientTranscriptionException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "class:app/Jobs/TranscribeVoiceTurn.php:TranscribeVoiceTurn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "function:app/Jobs/TranscribeVoiceTurn.php:handle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "function:app/Jobs/TranscribeVoiceTurn.php:failed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "function:app/Jobs/TranscribeVoiceTurn.php:markFailed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "class:app/Jobs/TranscribeVoiceTurn.php:TranscribeVoiceTurn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "class:app/Services/Transcription/HttpTranscriber.php:HttpTranscriber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "function:app/Services/Transcription/HttpTranscriber.php:transcribe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "function:app/Services/Transcription/HttpTranscriber.php:client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "function:app/Services/Transcription/HttpTranscriber.php:transcriptionUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "function:app/Services/Transcription/HttpTranscriber.php:throwForFailedResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "class:app/Services/Transcription/HttpTranscriber.php:HttpTranscriber",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:app/Services/Transcription/HttpTranscriber.php:HttpTranscriber",
+      "target": "class:app/Contracts/Transcriber.php:Transcriber",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "function:app/Jobs/TranscribeVoiceTurn.php:handle",
+      "target": "class:app/Contracts/Transcriber.php:Transcriber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Jobs/TranscribeVoiceTurn.php:handle",
+      "target": "class:app/Models/VoiceTurn.php:VoiceTurn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Jobs/TranscribeVoiceTurn.php:handle",
+      "target": "function:app/Jobs/TranscribeVoiceTurn.php:markFailed",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Jobs/TranscribeVoiceTurn.php:failed",
+      "target": "function:app/Jobs/TranscribeVoiceTurn.php:markFailed",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Services/Transcription/HttpTranscriber.php:transcribe",
+      "target": "function:app/Services/Transcription/HttpTranscriber.php:client",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Services/Transcription/HttpTranscriber.php:transcribe",
+      "target": "function:app/Services/Transcription/HttpTranscriber.php:transcriptionUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Services/Transcription/HttpTranscriber.php:transcribe",
+      "target": "function:app/Services/Transcription/HttpTranscriber.php:throwForFailedResponse",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Services/Transcription/HttpTranscriber.php:transcribe",
+      "target": "class:app/Models/VoiceTurn.php:VoiceTurn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Services/Transcription/HttpTranscriber.php:throwForFailedResponse",
+      "target": "class:app/Exceptions/PermanentTranscriptionException.php:PermanentTranscriptionException",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/Services/Transcription/HttpTranscriber.php:throwForFailedResponse",
+      "target": "class:app/Exceptions/TransientTranscriptionException.php:TransientTranscriptionException",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "class:app/Services/Transcription/HttpTranscriber.php:HttpTranscriber",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "target": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Contracts/Transcriber.php",
+      "target": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Contracts/Transcriber.php",
+      "target": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Services/Transcription/HttpTranscriber.php",
+      "target": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "target": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,584 @@
+{
+  "nodes": [
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "type": "document",
+      "name": "advanced-queries.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "summary": "Agent skill rule covering advanced Eloquent query patterns including subquery relationships, conditional aggregates, whereHas optimization, composite indexes, and correlated subqueries for ordering.",
+      "tags": ["documentation", "eloquent", "database", "query-optimization", "laravel"],
+      "complexity": "moderate",
+      "languageNotes": "Each section pairs a technique with before/after PHP examples for measurable query design."
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+      "type": "document",
+      "name": "architecture.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/architecture.md",
+      "summary": "Agent skill rule defining application architecture conventions: action classes, dependency injection, contracts, atomic locks, defer/post-response work, Context, Concurrency, and framework conventions.",
+      "tags": ["documentation", "architecture", "dependency-injection", "laravel", "development"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/blade-views.md",
+      "type": "document",
+      "name": "blade-views.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/blade-views.md",
+      "summary": "Agent skill rule for Blade and view layer practices including component attribute merging, @pushOnce scripts, view composers, fragment rendering, and @aware parent props.",
+      "tags": ["documentation", "blade", "views", "components", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/caching.md",
+      "type": "document",
+      "name": "caching.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/caching.md",
+      "summary": "Agent skill rule documenting Laravel cache strategies: remember, flexible stale-while-revalidate, memo, tags, atomic add, once() memoization, and production failover stores.",
+      "tags": ["documentation", "caching", "performance", "laravel", "configuration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/collections.md",
+      "type": "document",
+      "name": "collections.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/collections.md",
+      "summary": "Agent skill rule for Laravel collection usage covering higher-order messages, cursor vs lazy iteration, lazyById updates, toQuery bulk ops, and CollectedBy custom collections.",
+      "tags": ["documentation", "collections", "performance", "laravel", "data-processing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/config.md",
+      "type": "document",
+      "name": "config.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/config.md",
+      "summary": "Agent skill rule for configuration management: env vars only in config files, production secret protection, App::environment checks, and naming repeated domain values.",
+      "tags": ["documentation", "configuration", "security", "laravel", "environment"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+      "type": "document",
+      "name": "db-performance.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/db-performance.md",
+      "summary": "Agent skill rule for database performance covering eager loading, lazy-load prevention, column selection, incremental processing, indexing, withCount, and keeping queries out of Blade.",
+      "tags": ["documentation", "database", "performance", "eloquent", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/eloquent.md",
+      "type": "document",
+      "name": "eloquent.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/eloquent.md",
+      "summary": "Agent skill rule for Eloquent modeling practices: relationship types, local/global scopes, attribute casts, date casting, whereBelongsTo, and keeping queries model-aware.",
+      "tags": ["documentation", "eloquent", "data-model", "laravel", "orm"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/error-handling.md",
+      "type": "document",
+      "name": "error-handling.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/error-handling.md",
+      "summary": "Agent skill rule for exception handling: report/render configuration, dontReport lists, throttling, deduplication, JSON API rendering, and exception context.",
+      "tags": ["documentation", "error-handling", "exceptions", "api", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/events-notifications.md",
+      "type": "document",
+      "name": "events-notifications.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/events-notifications.md",
+      "summary": "Agent skill rule for events and notifications covering discovery, cached discovery, ShouldDispatchAfterCommit, queued notifications, channel queues, on-demand recipients, and locale preferences.",
+      "tags": ["documentation", "events", "notifications", "queues", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/http-client.md",
+      "type": "document",
+      "name": "http-client.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/http-client.md",
+      "summary": "Agent skill rule for Laravel HTTP client usage: explicit timeouts, safe retries, explicit error handling, request pooling, and Http::fake in tests.",
+      "tags": ["documentation", "http-client", "integration", "testing", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/mail.md",
+      "type": "document",
+      "name": "mail.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/mail.md",
+      "summary": "Agent skill rule for mail delivery covering queued mail, after-commit dispatch, delivery mode assertions, Markdown mailables, and separating content from delivery tests.",
+      "tags": ["documentation", "mail", "queues", "testing", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/migrations.md",
+      "type": "document",
+      "name": "migrations.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/migrations.md",
+      "summary": "Agent skill rule for database migrations: Artisan generation, foreign keys, immutability of deployed migrations, index design, staged changes, defaults, honest rollbacks, and focused migrations.",
+      "tags": ["documentation", "migrations", "database", "deployment", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "type": "document",
+      "name": "queue-jobs.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "summary": "Agent skill rule for queue and job reliability: reservation timeouts, backoff, unique jobs, terminal failure handling, rate limiting, batching, retry limits, and Horizon.",
+      "tags": ["documentation", "queues", "jobs", "reliability", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/routing.md",
+      "type": "document",
+      "name": "routing.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/routing.md",
+      "summary": "Agent skill rule for routing and controllers covering implicit binding, scoped nested bindings, resource routes, resource-oriented controllers, and HTTP-focused controller design.",
+      "tags": ["documentation", "routing", "controllers", "api-handler", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/scheduling.md",
+      "type": "document",
+      "name": "scheduling.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/scheduling.md",
+      "summary": "Agent skill rule for task scheduling: withoutOverlapping, onOneServer, background execution, environment restrictions, grouped configuration, and bounded task work.",
+      "tags": ["documentation", "scheduling", "cron", "deployment", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/security.md",
+      "type": "document",
+      "name": "security.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/security.md",
+      "summary": "Agent skill rule for Laravel security covering mass assignment, authorization, query binding, output escaping, CSRF, rate limiting, upload validation, secrets, dependency audits, and encryption.",
+      "tags": ["documentation", "security", "authorization", "validation", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/style.md",
+      "type": "document",
+      "name": "style.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/style.md",
+      "summary": "Agent skill rule for code style and conventions: naming, idiomatic syntax, utility helpers, maintainable presentation code, and comments that explain why.",
+      "tags": ["documentation", "style", "conventions", "development", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/rules/validation.md",
+      "type": "document",
+      "name": "validation.md",
+      "filePath": ".agents/skills/laravel-best-practices/rules/validation.md",
+      "summary": "Agent skill rule for validation and forms: Form Request extraction, readable rules, validated-only data, conditional rules, and cross-field validation ordering.",
+      "tags": ["documentation", "validation", "form-requests", "security", "laravel"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/eloquent.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "target": "file:app/Models/Record.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/style.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+      "target": "file:app/Actions/Conversation/Briefing.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+      "target": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+      "target": "file:app/Providers/AppServiceProvider.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/blade-views.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/blade-views.md",
+      "target": "file:resources/views/components/talk-control.blade.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/blade-views.md",
+      "target": "file:resources/views/pages/⚡conversation/conversation.blade.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/caching.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/caching.md",
+      "target": "file:config/cache.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/collections.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/collections.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/config.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/config.md",
+      "target": "file:config/rafael.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/config.md",
+      "target": "file:config/app.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/eloquent.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+      "target": "file:app/Models/Record.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/eloquent.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/eloquent.md",
+      "target": "file:app/Models/User.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/eloquent.md",
+      "target": "file:app/Models/Record.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/error-handling.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/error-handling.md",
+      "target": "file:app/Exceptions/PermanentTranscriptionException.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/error-handling.md",
+      "target": "file:app/Exceptions/TransientTranscriptionException.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/error-handling.md",
+      "target": "file:bootstrap/app.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/events-notifications.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/events-notifications.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/http-client.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/http-client.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/http-client.md",
+      "target": "file:app/Services/Transcription/HttpTranscriber.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/mail.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/mail.md",
+      "target": "file:config/mail.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/migrations.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/migrations.md",
+      "target": "file:database/migrations/2026_09_30_141335_create_records_table.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/migrations.md",
+      "target": "file:database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "target": "file:config/queue.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/routing.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/routing.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/validation.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/routing.md",
+      "target": "file:routes/web.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/routing.md",
+      "target": "file:app/Http/Controllers/VoiceTurnController.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/scheduling.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/scheduling.md",
+      "target": "file:routes/console.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/security.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/security.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/validation.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/security.md",
+      "target": "file:app/Http/Controllers/Auth/LoginController.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/security.md",
+      "target": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/style.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/style.md",
+      "target": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/validation.md",
+      "target": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/validation.md",
+      "target": "file:app/Http/Requests/StoreVoiceTurnRequest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/laravel-best-practices/rules/validation.md",
+      "target": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

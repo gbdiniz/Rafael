@@ -1,0 +1,1075 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [
+    "phpunit.xml"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 11,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 11
+    }
+  },
+  "results": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "fileCategory": "config",
+      "totalLines": 73,
+      "nonEmptyLines": 57,
+      "definitions": [
+        {
+          "name": "APP_NAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 1
+        },
+        {
+          "name": "APP_ENV",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 2,
+          "endLine": 2
+        },
+        {
+          "name": "APP_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 3,
+          "endLine": 3
+        },
+        {
+          "name": "APP_DEBUG",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 4,
+          "endLine": 4
+        },
+        {
+          "name": "APP_URL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "name": "APP_LOCALE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "name": "APP_FALLBACK_LOCALE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 8,
+          "endLine": 8
+        },
+        {
+          "name": "APP_FAKER_LOCALE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 9,
+          "endLine": 9
+        },
+        {
+          "name": "APP_MAINTENANCE_DRIVER",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 11,
+          "endLine": 11
+        },
+        {
+          "name": "BCRYPT_ROUNDS",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "LOG_CHANNEL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "name": "LOG_STACK",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 19,
+          "endLine": 19
+        },
+        {
+          "name": "LOG_DEPRECATIONS_CHANNEL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 20,
+          "endLine": 20
+        },
+        {
+          "name": "LOG_LEVEL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 21,
+          "endLine": 21
+        },
+        {
+          "name": "DB_CONNECTION",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 23,
+          "endLine": 23
+        },
+        {
+          "name": "DB_HOST",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 24,
+          "endLine": 24
+        },
+        {
+          "name": "DB_PORT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 25,
+          "endLine": 25
+        },
+        {
+          "name": "DB_DATABASE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 26,
+          "endLine": 26
+        },
+        {
+          "name": "DB_USERNAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 27,
+          "endLine": 27
+        },
+        {
+          "name": "DB_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 28,
+          "endLine": 28
+        },
+        {
+          "name": "SESSION_DRIVER",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 30,
+          "endLine": 30
+        },
+        {
+          "name": "SESSION_LIFETIME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 31,
+          "endLine": 31
+        },
+        {
+          "name": "SESSION_ENCRYPT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 32,
+          "endLine": 32
+        },
+        {
+          "name": "SESSION_PATH",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 33,
+          "endLine": 33
+        },
+        {
+          "name": "SESSION_DOMAIN",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 34,
+          "endLine": 34
+        },
+        {
+          "name": "BROADCAST_CONNECTION",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 36,
+          "endLine": 36
+        },
+        {
+          "name": "FILESYSTEM_DISK",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 37,
+          "endLine": 37
+        },
+        {
+          "name": "QUEUE_CONNECTION",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 38,
+          "endLine": 38
+        },
+        {
+          "name": "CACHE_STORE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 40,
+          "endLine": 40
+        },
+        {
+          "name": "MEMCACHED_HOST",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 43,
+          "endLine": 43
+        },
+        {
+          "name": "REDIS_CLIENT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 45,
+          "endLine": 45
+        },
+        {
+          "name": "REDIS_HOST",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 46,
+          "endLine": 46
+        },
+        {
+          "name": "REDIS_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 47,
+          "endLine": 47
+        },
+        {
+          "name": "REDIS_PORT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 48,
+          "endLine": 48
+        },
+        {
+          "name": "MAIL_MAILER",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 50,
+          "endLine": 50
+        },
+        {
+          "name": "MAIL_SCHEME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 51,
+          "endLine": 51
+        },
+        {
+          "name": "MAIL_HOST",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 52,
+          "endLine": 52
+        },
+        {
+          "name": "MAIL_PORT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 53,
+          "endLine": 53
+        },
+        {
+          "name": "MAIL_USERNAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 54,
+          "endLine": 54
+        },
+        {
+          "name": "MAIL_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 55,
+          "endLine": 55
+        },
+        {
+          "name": "MAIL_FROM_ADDRESS",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 56,
+          "endLine": 56
+        },
+        {
+          "name": "MAIL_FROM_NAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 57,
+          "endLine": 57
+        },
+        {
+          "name": "AWS_ACCESS_KEY_ID",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 59,
+          "endLine": 59
+        },
+        {
+          "name": "AWS_SECRET_ACCESS_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 60,
+          "endLine": 60
+        },
+        {
+          "name": "AWS_DEFAULT_REGION",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 61,
+          "endLine": 61
+        },
+        {
+          "name": "AWS_BUCKET",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 62,
+          "endLine": 62
+        },
+        {
+          "name": "AWS_USE_PATH_STYLE_ENDPOINT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 63,
+          "endLine": 63
+        },
+        {
+          "name": "VITE_APP_NAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 65,
+          "endLine": 65
+        },
+        {
+          "name": "ADMIN_NAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 67,
+          "endLine": 67
+        },
+        {
+          "name": "ADMIN_EMAIL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 68,
+          "endLine": 68
+        },
+        {
+          "name": "ADMIN_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 69,
+          "endLine": 69
+        },
+        {
+          "name": "TRANSCRIBER_URL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 71,
+          "endLine": 71
+        },
+        {
+          "name": "TRANSCRIBER_API_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 72,
+          "endLine": 72
+        },
+        {
+          "name": "TRANSCRIBER_MODEL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 73,
+          "endLine": 73
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 54
+      }
+    },
+    {
+      "path": ".mcp.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "mcpServers",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 169,
+      "nonEmptyLines": 105,
+      "sections": [
+        {
+          "heading": "Laravel Boost Guidelines",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "Foundational Context",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Skills Activation",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Conventions",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Verification Scripts",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Application Structure & Architecture",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Frontend Bundling",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Documentation Files",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Replies",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Laravel Boost",
+          "level": 1,
+          "line": 49
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Searching Documentation (IMPORTANT)",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Search Syntax",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Project Rules",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Artisan",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "Tinker",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "PHP",
+          "level": 1,
+          "line": 92
+        },
+        {
+          "heading": "Deployment",
+          "level": 1,
+          "line": 103
+        },
+        {
+          "heading": "Do Things the Laravel Way",
+          "level": 1,
+          "line": 110
+        },
+        {
+          "heading": "Model Creation",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "APIs & Eloquent Resources",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "URL Generation",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Testing",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Vite Error",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "Livewire",
+          "level": 1,
+          "line": 140
+        },
+        {
+          "heading": "Laravel Pint Code Formatter",
+          "level": 1,
+          "line": 148
+        },
+        {
+          "heading": "Pest",
+          "level": 1,
+          "line": 155
+        },
+        {
+          "heading": "Running Tests",
+          "level": 2,
+          "line": 162
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 28
+      }
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "Laravel Application",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Agent Setup",
+          "level": 2,
+          "line": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 154,
+      "nonEmptyLines": 118,
+      "sections": [
+        {
+          "heading": "Design System: Rafael",
+          "level": 1,
+          "line": 51
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Colors",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Primary",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Neutral",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Named Rules",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Hierarchy",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Named Rules",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Layout",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "Named Rules",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "Elevation & Depth",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "Named Rules",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "Shapes",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "Named Rules",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Components",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "Talk Bars (signature)",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "Mic Denial",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Do's and Don'ts",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "Do:",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "Don't:",
+          "level": 3,
+          "line": 150
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": "PRODUCT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 82,
+      "nonEmptyLines": 53,
+      "sections": [
+        {
+          "heading": "Product",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Platform",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Stack",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Users",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Product Purpose",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Positioning",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Operating Context",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Capabilities and Constraints",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Brand Commitments",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Evidence on Hand",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Product Principles",
+          "level": 2,
+          "line": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 29,
+      "sections": [
+        {
+          "heading": "Rafael",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What it is",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "How it works",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Principles",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "How to use",
+          "level": 2,
+          "line": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "boost.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 19,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "agents",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "cloud",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "guidelines",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "mcp",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "nightwatch",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "sail",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "skills",
+          "level": 1,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "composer.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 90,
+      "nonEmptyLines": 90,
+      "sections": [
+        {
+          "heading": "$schema",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "keywords",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "require",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "require-dev",
+          "level": 1,
+          "line": 15
+        },
+        {
+          "heading": "autoload",
+          "level": 1,
+          "line": 26
+        },
+        {
+          "heading": "autoload-dev",
+          "level": 1,
+          "line": 33
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "extra",
+          "level": 1,
+          "line": 74
+        },
+        {
+          "heading": "config",
+          "level": 1,
+          "line": 79
+        },
+        {
+          "heading": "minimum-stability",
+          "level": 1,
+          "line": 88
+        },
+        {
+          "heading": "prefer-stable",
+          "level": 1,
+          "line": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 22,
+      "nonEmptyLines": 22,
+      "sections": [
+        {
+          "heading": "$schema",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "optionalDependencies",
+          "level": 1,
+          "line": 16
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "skills-lock.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 107,
+      "nonEmptyLines": 107,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "skills",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}

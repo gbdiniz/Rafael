@@ -1,0 +1,398 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 260,
+    "filesWithImports": 37,
+    "totalEdges": 90
+  },
+  "failures": [],
+  "importMap": {
+    ".agents/skills/grill-me/SKILL.md": [],
+    ".agents/skills/grill-me/agents/openai.yaml": [],
+    ".agents/skills/grilling/SKILL.md": [],
+    ".agents/skills/grilling/agents/openai.yaml": [],
+    ".agents/skills/impeccable/SKILL.md": [],
+    ".agents/skills/impeccable/agents/impeccable_asset_producer.toml": [],
+    ".agents/skills/impeccable/agents/impeccable_documenter.toml": [],
+    ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml": [],
+    ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml": [],
+    ".agents/skills/impeccable/agents/openai.yaml": [],
+    ".agents/skills/impeccable/reference/adapt.md": [],
+    ".agents/skills/impeccable/reference/adapt.native.md": [],
+    ".agents/skills/impeccable/reference/android.md": [],
+    ".agents/skills/impeccable/reference/animate.md": [],
+    ".agents/skills/impeccable/reference/audit.md": [],
+    ".agents/skills/impeccable/reference/audit.native.md": [],
+    ".agents/skills/impeccable/reference/bolder.md": [],
+    ".agents/skills/impeccable/reference/clarify.md": [],
+    ".agents/skills/impeccable/reference/colorize.md": [],
+    ".agents/skills/impeccable/reference/component-review.md": [],
+    ".agents/skills/impeccable/reference/craft-floor.md": [],
+    ".agents/skills/impeccable/reference/craft.md": [],
+    ".agents/skills/impeccable/reference/critique.md": [],
+    ".agents/skills/impeccable/reference/degraded/asset-producer.md": [],
+    ".agents/skills/impeccable/reference/degraded/documenter.md": [],
+    ".agents/skills/impeccable/reference/degraded/finish-reviewer.md": [],
+    ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md": [],
+    ".agents/skills/impeccable/reference/delight.md": [],
+    ".agents/skills/impeccable/reference/distill.md": [],
+    ".agents/skills/impeccable/reference/doctor.md": [],
+    ".agents/skills/impeccable/reference/document.md": [],
+    ".agents/skills/impeccable/reference/extract.md": [],
+    ".agents/skills/impeccable/reference/generate.md": [],
+    ".agents/skills/impeccable/reference/harden.md": [],
+    ".agents/skills/impeccable/reference/hooks.md": [],
+    ".agents/skills/impeccable/reference/init.md": [],
+    ".agents/skills/impeccable/reference/ios.md": [],
+    ".agents/skills/impeccable/reference/layout.md": [],
+    ".agents/skills/impeccable/reference/live-setup.md": [],
+    ".agents/skills/impeccable/reference/live.md": [],
+    ".agents/skills/impeccable/reference/new-work.md": [],
+    ".agents/skills/impeccable/reference/onboard.md": [],
+    ".agents/skills/impeccable/reference/operate.md": [],
+    ".agents/skills/impeccable/reference/optimize.md": [],
+    ".agents/skills/impeccable/reference/overdrive.md": [],
+    ".agents/skills/impeccable/reference/polish.md": [],
+    ".agents/skills/impeccable/reference/quieter.md": [],
+    ".agents/skills/impeccable/reference/region-map.md": [],
+    ".agents/skills/impeccable/reference/routing.md": [],
+    ".agents/skills/impeccable/reference/shape.md": [],
+    ".agents/skills/impeccable/reference/typeset.md": [],
+    ".agents/skills/impeccable/reference/visualize.md": [],
+    ".agents/skills/impeccable/scripts/VERSION": [],
+    ".agents/skills/impeccable/scripts/command-metadata.json": [],
+    ".agents/skills/impeccable/scripts/data/font-index-failures.json": [],
+    ".agents/skills/impeccable/scripts/data/font-index.json": [],
+    ".agents/skills/impeccable/scripts/impeccable": [],
+    ".agents/skills/impeccable/scripts/impeccable.cmd": [],
+    ".agents/skills/impeccable/scripts/live-browser-dom.js": [],
+    ".agents/skills/impeccable/scripts/live-browser-ignores.js": [],
+    ".agents/skills/impeccable/scripts/live-browser-session.js": [],
+    ".agents/skills/impeccable/scripts/live-browser.js": [],
+    ".agents/skills/impeccable/scripts/modern-screenshot.umd.js": [],
+    ".agents/skills/infer-conventions/SKILL.md": [],
+    ".agents/skills/infer-conventions/references/checklist.md": [],
+    ".agents/skills/laravel-best-practices/SKILL.md": [],
+    ".agents/skills/laravel-best-practices/rules/advanced-queries.md": [],
+    ".agents/skills/laravel-best-practices/rules/architecture.md": [],
+    ".agents/skills/laravel-best-practices/rules/blade-views.md": [],
+    ".agents/skills/laravel-best-practices/rules/caching.md": [],
+    ".agents/skills/laravel-best-practices/rules/collections.md": [],
+    ".agents/skills/laravel-best-practices/rules/config.md": [],
+    ".agents/skills/laravel-best-practices/rules/db-performance.md": [],
+    ".agents/skills/laravel-best-practices/rules/eloquent.md": [],
+    ".agents/skills/laravel-best-practices/rules/error-handling.md": [],
+    ".agents/skills/laravel-best-practices/rules/events-notifications.md": [],
+    ".agents/skills/laravel-best-practices/rules/http-client.md": [],
+    ".agents/skills/laravel-best-practices/rules/mail.md": [],
+    ".agents/skills/laravel-best-practices/rules/migrations.md": [],
+    ".agents/skills/laravel-best-practices/rules/queue-jobs.md": [],
+    ".agents/skills/laravel-best-practices/rules/routing.md": [],
+    ".agents/skills/laravel-best-practices/rules/scheduling.md": [],
+    ".agents/skills/laravel-best-practices/rules/security.md": [],
+    ".agents/skills/laravel-best-practices/rules/style.md": [],
+    ".agents/skills/laravel-best-practices/rules/validation.md": [],
+    ".agents/skills/livewire-development/SKILL.md": [],
+    ".agents/skills/livewire-development/reference/javascript-hooks.md": [],
+    ".agents/skills/tailwindcss-development/SKILL.md": [],
+    ".agents/skills/testing-best-practices/SKILL.md": [],
+    ".agents/skills/testing-best-practices/rules/assertions.md": [],
+    ".agents/skills/testing-best-practices/rules/endpoint-tests.md": [],
+    ".agents/skills/testing-best-practices/rules/finding-features.md": [],
+    ".agents/skills/testing-best-practices/rules/isolation.md": [],
+    ".agents/skills/testing-best-practices/rules/naming.md": [],
+    ".agents/skills/testing-best-practices/rules/performance.md": [],
+    ".agents/skills/testing-best-practices/rules/review.md": [],
+    ".agents/skills/testing-best-practices/rules/security.md": [],
+    ".agents/skills/testing-best-practices/rules/test-data.md": [],
+    ".claude/skills/infer-conventions/SKILL.md": [],
+    ".claude/skills/infer-conventions/references/checklist.md": [],
+    ".claude/skills/laravel-best-practices/SKILL.md": [],
+    ".claude/skills/laravel-best-practices/rules/advanced-queries.md": [],
+    ".claude/skills/laravel-best-practices/rules/architecture.md": [],
+    ".claude/skills/laravel-best-practices/rules/blade-views.md": [],
+    ".claude/skills/laravel-best-practices/rules/caching.md": [],
+    ".claude/skills/laravel-best-practices/rules/collections.md": [],
+    ".claude/skills/laravel-best-practices/rules/config.md": [],
+    ".claude/skills/laravel-best-practices/rules/db-performance.md": [],
+    ".claude/skills/laravel-best-practices/rules/eloquent.md": [],
+    ".claude/skills/laravel-best-practices/rules/error-handling.md": [],
+    ".claude/skills/laravel-best-practices/rules/events-notifications.md": [],
+    ".claude/skills/laravel-best-practices/rules/http-client.md": [],
+    ".claude/skills/laravel-best-practices/rules/mail.md": [],
+    ".claude/skills/laravel-best-practices/rules/migrations.md": [],
+    ".claude/skills/laravel-best-practices/rules/queue-jobs.md": [],
+    ".claude/skills/laravel-best-practices/rules/routing.md": [],
+    ".claude/skills/laravel-best-practices/rules/scheduling.md": [],
+    ".claude/skills/laravel-best-practices/rules/security.md": [],
+    ".claude/skills/laravel-best-practices/rules/style.md": [],
+    ".claude/skills/laravel-best-practices/rules/validation.md": [],
+    ".claude/skills/livewire-development/SKILL.md": [],
+    ".claude/skills/livewire-development/reference/javascript-hooks.md": [],
+    ".claude/skills/tailwindcss-development/SKILL.md": [],
+    ".claude/skills/testing-best-practices/SKILL.md": [],
+    ".claude/skills/testing-best-practices/rules/assertions.md": [],
+    ".claude/skills/testing-best-practices/rules/endpoint-tests.md": [],
+    ".claude/skills/testing-best-practices/rules/finding-features.md": [],
+    ".claude/skills/testing-best-practices/rules/isolation.md": [],
+    ".claude/skills/testing-best-practices/rules/naming.md": [],
+    ".claude/skills/testing-best-practices/rules/performance.md": [],
+    ".claude/skills/testing-best-practices/rules/review.md": [],
+    ".claude/skills/testing-best-practices/rules/security.md": [],
+    ".claude/skills/testing-best-practices/rules/test-data.md": [],
+    ".cursor/settings.json": [],
+    ".env.example": [],
+    ".gitattributes": [],
+    ".impeccable/config.json": [],
+    ".impeccable/design.json": [],
+    ".impeccable/mocks/decision/assigned-r2.png.json": [],
+    ".impeccable/mocks/decision/assigned.png.json": [],
+    ".impeccable/mocks/decision/canon.png.json": [],
+    ".impeccable/mocks/decision/model-pick-r2.png.json": [],
+    ".impeccable/mocks/decision/model-pick.png.json": [],
+    ".impeccable/mocks/decision/payload-r2.json": [],
+    ".impeccable/mocks/decision/payload.json": [],
+    ".impeccable/mocks/home-bars.png.json": [],
+    ".impeccable/mocks/home-previews.json": [],
+    ".impeccable/mocks/malote-home.png.json": [],
+    ".impeccable/mocks/malote-preview.json": [],
+    ".impeccable/questions/b92faafe.answer.json": [],
+    ".impeccable/questions/b92faafe.state.json": [],
+    ".impeccable/review/diff/desktop/raw-report.json": [],
+    ".impeccable/review/diff/desktop/report.json": [],
+    ".impeccable/review/diff/hero/raw-report.json": [],
+    ".impeccable/review/diff/hero/report.json": [],
+    ".impeccable/surfaces/home.md": [],
+    ".mcp.json": [],
+    ".npmrc": [],
+    ".ua/config.json": [],
+    "AGENTS.md": [],
+    "CLAUDE.md": [],
+    "DESIGN.md": [],
+    "PRODUCT.md": [],
+    "README.md": [],
+    "app/Actions/Conversation/Briefing.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php"
+    ],
+    "app/Actions/Conversation/OpenConversation.php": [
+      "app/Models/User.php"
+    ],
+    "app/Actions/Voice/StoreVoiceTurn.php": [
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "app/Contracts/Transcriber.php": [
+      "app/Models/VoiceTurn.php"
+    ],
+    "app/Exceptions/PermanentTranscriptionException.php": [],
+    "app/Exceptions/TransientTranscriptionException.php": [],
+    "app/Http/Controllers/Auth/LoginController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Http/Requests/Auth/LoginRequest.php"
+    ],
+    "app/Http/Controllers/Controller.php": [],
+    "app/Http/Controllers/RecordController.php": [],
+    "app/Http/Controllers/VoiceTurnController.php": [
+      "app/Actions/Voice/StoreVoiceTurn.php",
+      "app/Http/Requests/StoreVoiceTurnRequest.php"
+    ],
+    "app/Http/Requests/Auth/LoginRequest.php": [],
+    "app/Http/Requests/StoreVoiceTurnRequest.php": [],
+    "app/Jobs/TranscribeVoiceTurn.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Exceptions/PermanentTranscriptionException.php",
+      "app/Exceptions/TransientTranscriptionException.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "app/Models/Record.php": [
+      "app/RecordKind.php",
+      "app/Records/LocalDay.php",
+      "database/factories/RecordFactory.php"
+    ],
+    "app/Models/User.php": [
+      "database/factories/UserFactory.php"
+    ],
+    "app/Models/VoiceTurn.php": [
+      "app/VoiceTurnStatus.php",
+      "database/factories/VoiceTurnFactory.php"
+    ],
+    "app/Providers/AppServiceProvider.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Services/Transcription/HttpTranscriber.php"
+    ],
+    "app/RecordKind.php": [],
+    "app/Records/LocalDay.php": [],
+    "app/Services/Transcription/HttpTranscriber.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Exceptions/PermanentTranscriptionException.php",
+      "app/Exceptions/TransientTranscriptionException.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "app/VoiceTurnStatus.php": [],
+    "artisan": [],
+    "boost.json": [],
+    "bootstrap/app.php": [],
+    "bootstrap/providers.php": [
+      "app/Providers/AppServiceProvider.php"
+    ],
+    "composer.json": [],
+    "config/app.php": [],
+    "config/auth.php": [
+      "app/Models/User.php"
+    ],
+    "config/cache.php": [],
+    "config/database.php": [],
+    "config/filesystems.php": [],
+    "config/livewire.php": [],
+    "config/logging.php": [],
+    "config/mail.php": [],
+    "config/queue.php": [],
+    "config/rafael.php": [],
+    "config/services.php": [],
+    "config/session.php": [],
+    "database/factories/RecordFactory.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/RecordKind.php"
+    ],
+    "database/factories/UserFactory.php": [
+      "app/Models/User.php"
+    ],
+    "database/factories/VoiceTurnFactory.php": [
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "database/migrations/0001_01_01_000000_create_users_table.php": [],
+    "database/migrations/0001_01_01_000001_create_cache_table.php": [],
+    "database/migrations/0001_01_01_000002_create_jobs_table.php": [],
+    "database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php": [],
+    "database/migrations/2026_09_30_141334_create_voice_turns_table.php": [],
+    "database/migrations/2026_09_30_141335_create_records_table.php": [],
+    "database/seeders/DatabaseSeeder.php": [
+      "app/Models/User.php"
+    ],
+    "docs/database-schema.md": [],
+    "docs/project-description.md": [],
+    "docs/project-phases.md": [],
+    "docs/prompts/database-schema-prompt.md": [],
+    "docs/prompts/generate-phases.md": [],
+    "docs/user-stories.md": [],
+    "lang/pt_BR/auth.php": [],
+    "package.json": [],
+    "phpunit.xml": [],
+    "public/.htaccess": [],
+    "public/index.php": [],
+    "public/robots.txt": [],
+    "public_old/index.html": [],
+    "resources/css/app.css": [],
+    "resources/js/app.js": [
+      "resources/js/talk-control.js"
+    ],
+    "resources/js/talk-control.js": [],
+    "resources/views/auth/login.blade.php": [],
+    "resources/views/components/auth-screen.blade.php": [],
+    "resources/views/components/layouts/guest.blade.php": [],
+    "resources/views/components/secretary-turn.blade.php": [],
+    "resources/views/components/talk-control.blade.php": [],
+    "resources/views/layouts/app.blade.php": [],
+    "resources/views/pages/⚡conversation/conversation.blade.php": [],
+    "resources/views/pages/⚡conversation/conversation.php": [
+      "app/Actions/Conversation/Briefing.php",
+      "app/Actions/Conversation/OpenConversation.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "resources/views/welcome.blade.php": [],
+    "routes/console.php": [],
+    "routes/web.php": [
+      "app/Http/Controllers/Auth/LoginController.php",
+      "app/Http/Controllers/RecordController.php",
+      "app/Http/Controllers/VoiceTurnController.php"
+    ],
+    "skills-lock.json": [],
+    "tests/Feature/Auth/AuthenticatedRoutesTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Auth/LoginTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Conversation/BriefingTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Conversation/FirstVisitTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Conversation/HomeTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Conversation/TranscriptionFailureTest.php": [
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "tests/Feature/Conversation/TranscriptionSuccessTest.php": [
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "tests/Feature/ExampleTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Jobs/TranscribeVoiceTurnTest.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Exceptions/PermanentTranscriptionException.php",
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "tests/Feature/Models/RecordTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/RecordKind.php"
+    ],
+    "tests/Feature/Models/UserTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "tests/Feature/Models/VoiceTurnTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "tests/Feature/Records/LocalDayTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Records/LocalDay.php"
+    ],
+    "tests/Feature/Voice/AudioUploadTest.php": [
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "tests/Feature/Voice/ReplyAudioTest.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "tests/Feature/Voice/TalkControlTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Pest.php": [],
+    "tests/TestCase.php": [],
+    "tests/Unit/ExampleTest.php": [],
+    "vite.config.js": []
+  }
+}

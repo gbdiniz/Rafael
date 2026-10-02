@@ -1,0 +1,304 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 6,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 6,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "app/Actions/Voice/StoreVoiceTurn.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "handle",
+          "startLine": 14,
+          "endLine": 30,
+          "params": [
+            "$user",
+            "$audio"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StoreVoiceTurn",
+          "startLine": 12,
+          "endLine": 31,
+          "methods": [
+            "handle"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StoreVoiceTurn",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handle",
+          "callee": "Str::uuid",
+          "lineNumber": 16
+        },
+        {
+          "caller": "handle",
+          "callee": "$audio->storeAs",
+          "lineNumber": 17
+        },
+        {
+          "caller": "handle",
+          "callee": "$user->voiceTurns()->create",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handle",
+          "callee": "$user->voiceTurns",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handle",
+          "callee": "TranscribeVoiceTurn::dispatch",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/VoiceTurn.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 51,
+      "functions": [
+        {
+          "name": "casts",
+          "startLine": 33,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "user",
+          "startLine": 45,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "records",
+          "startLine": 53,
+          "endLine": 56,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "VoiceTurn",
+          "startLine": 13,
+          "endLine": 57,
+          "methods": [
+            "casts",
+            "user",
+            "records"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VoiceTurn",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "user",
+          "callee": "$this->belongsTo",
+          "lineNumber": 47
+        },
+        {
+          "caller": "records",
+          "callee": "$this->hasMany",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/VoiceTurnStatus.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/factories/VoiceTurnFactory.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "definition",
+          "startLine": 21,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "uploaded",
+          "startLine": 38,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "completed",
+          "startLine": 46,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "failed",
+          "startLine": 57,
+          "endLine": 67,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "VoiceTurnFactory",
+          "startLine": 14,
+          "endLine": 68,
+          "methods": [
+            "definition",
+            "uploaded",
+            "completed",
+            "failed"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VoiceTurnFactory",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "definition",
+          "callee": "User::factory",
+          "lineNumber": 24
+        },
+        {
+          "caller": "definition",
+          "callee": "Str::uuid",
+          "lineNumber": 25
+        },
+        {
+          "caller": "definition",
+          "callee": "Str::uuid",
+          "lineNumber": 29
+        },
+        {
+          "caller": "uploaded",
+          "callee": "$this->state",
+          "lineNumber": 40
+        },
+        {
+          "caller": "completed",
+          "callee": "$this->state",
+          "lineNumber": 48
+        },
+        {
+          "caller": "completed",
+          "callee": "fake()->sentence",
+          "lineNumber": 50
+        },
+        {
+          "caller": "completed",
+          "callee": "fake",
+          "lineNumber": 50
+        },
+        {
+          "caller": "completed",
+          "callee": "now",
+          "lineNumber": 53
+        },
+        {
+          "caller": "failed",
+          "callee": "$this->state",
+          "lineNumber": 59
+        },
+        {
+          "caller": "failed",
+          "callee": "now",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "tests/Feature/Models/VoiceTurnTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 50,
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Voice/AudioUploadTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 79,
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

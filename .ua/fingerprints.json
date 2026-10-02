@@ -1,0 +1,4833 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "aee039972ba0157f12eb49c7e85f064a14644219",
+  "generatedAt": "2026-10-02T18:32:11.653Z",
+  "files": {
+    ".agents/skills/grill-me/SKILL.md": {
+      "filePath": ".agents/skills/grill-me/SKILL.md",
+      "contentHash": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/grill-me/agents/openai.yaml": {
+      "filePath": ".agents/skills/grill-me/agents/openai.yaml",
+      "contentHash": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/grilling/SKILL.md": {
+      "filePath": ".agents/skills/grilling/SKILL.md",
+      "contentHash": "e4eeb445b65f5a92bd06afe9a83f2ac6129907df47e447ef3abaf691e7ad8845",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 25,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/grilling/agents/openai.yaml": {
+      "filePath": ".agents/skills/grilling/agents/openai.yaml",
+      "contentHash": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/SKILL.md": {
+      "filePath": ".agents/skills/impeccable/SKILL.md",
+      "contentHash": "6eeec6ef2028388a17de9f17a56c9cb7dbc7c8e7e1a8c15b831b0ba3e42168ac",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/agents/impeccable_asset_producer.toml": {
+      "filePath": ".agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "contentHash": "690a5e08a9b848ab3057014b75c101fe23a5c81f251b6e7a5844bb9cd4184d37",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 47,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/agents/impeccable_documenter.toml": {
+      "filePath": ".agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "contentHash": "2feb3768125ba6469c92a50d516727e6d42f44579165ddfd33409948e2a3803d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml": {
+      "filePath": ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "contentHash": "d57c3e0453f601ad688911fca4471057c7b46b561fcd42a1e12a581101c5186c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 42,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml": {
+      "filePath": ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "contentHash": "6c9ce3e27ec4520ead001da3aad2a2ebba481c4e5cd22873db8890259ee579fe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 96,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/agents/openai.yaml": {
+      "filePath": ".agents/skills/impeccable/agents/openai.yaml",
+      "contentHash": "cbd8bd68fa00935dd0f179adb169252629cf7ee443ea9dc7db77e7ef2cf77446",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/adapt.md": {
+      "filePath": ".agents/skills/impeccable/reference/adapt.md",
+      "contentHash": "871a8e4d749b807c693ebabd83defbd6c76e1bd2a0f53a28a460cb1308ba8634",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 319,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/adapt.native.md": {
+      "filePath": ".agents/skills/impeccable/reference/adapt.native.md",
+      "contentHash": "6acc0bf221a4ddc6e5c6438348920b2ca2393b29c4314dbde2cdc23f2b1a9639",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/android.md": {
+      "filePath": ".agents/skills/impeccable/reference/android.md",
+      "contentHash": "058f81f256134841875fd3183e06b37a023de0c877fd2b9eecd97011640791fe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 47,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/animate.md": {
+      "filePath": ".agents/skills/impeccable/reference/animate.md",
+      "contentHash": "d658c48ffbe0031e8e3b318996cad6ceafe29e40aa50d5bb25e4bf1d6839dc7c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 90,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/audit.md": {
+      "filePath": ".agents/skills/impeccable/reference/audit.md",
+      "contentHash": "d5f83912eda93d42f93522bb74aeff0ea04d9c559577ec52fcccc130dd03166d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 138,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/audit.native.md": {
+      "filePath": ".agents/skills/impeccable/reference/audit.native.md",
+      "contentHash": "960cb922bc934adbf9192e9428ff6bec1f382038166f02a785939c93b7391067",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 140,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/bolder.md": {
+      "filePath": ".agents/skills/impeccable/reference/bolder.md",
+      "contentHash": "f964506c0fae87b3c2c1db7016ddc9be9ef970bbcf5548d684b997b5d5991586",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/clarify.md": {
+      "filePath": ".agents/skills/impeccable/reference/clarify.md",
+      "contentHash": "173dd66abe65633910dcb04a51f40d6ff2a793f87088f022a02fc4cad24dd133",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 95,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/colorize.md": {
+      "filePath": ".agents/skills/impeccable/reference/colorize.md",
+      "contentHash": "bc5f71f1129d0f2c310d913d07c8dc609a1d25644121bd78c308f42d52a0b9e9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 87,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/component-review.md": {
+      "filePath": ".agents/skills/impeccable/reference/component-review.md",
+      "contentHash": "37edf9fbedb2bc609341e009b14588f46022fd7aace9399b5cb8f1c8325f81fe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 72,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/craft-floor.md": {
+      "filePath": ".agents/skills/impeccable/reference/craft-floor.md",
+      "contentHash": "e802e4f7bdc89050a9c0f2ca506e1d493a2316e6e810c0336c57aa073717ef3e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 51,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/craft.md": {
+      "filePath": ".agents/skills/impeccable/reference/craft.md",
+      "contentHash": "9205e222bc6565b37fb504ceec93233c2d2a456802b69d16e6b1c44723907c4c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/critique.md": {
+      "filePath": ".agents/skills/impeccable/reference/critique.md",
+      "contentHash": "cb8caddbb3919e5bf7f252143b519fb16db28a244642d937b186cb89962d9201",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 829,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/degraded/asset-producer.md": {
+      "filePath": ".agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "contentHash": "a690f011420ba486f268d790bb088e9a58c1be503d7ab17d68cd819ddf0f75bb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 43,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/degraded/documenter.md": {
+      "filePath": ".agents/skills/impeccable/reference/degraded/documenter.md",
+      "contentHash": "bcc05ea92faebb5c74037a9d4263a5ce9a56f5ab07c8ab3c59ee704d8cade745",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/degraded/finish-reviewer.md": {
+      "filePath": ".agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "contentHash": "275dd1b6e63bbd30d2713227c4f79b880a8bc4e01cc48d392068bb86939d3afa",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 38,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md": {
+      "filePath": ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "contentHash": "5fae7f8a2fc3ddd49ad0a413446dc44daedef5b6b7de5eb935bd2fbfad646d58",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 92,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/delight.md": {
+      "filePath": ".agents/skills/impeccable/reference/delight.md",
+      "contentHash": "098a891028ce59c212b747d3c70468dd750aff7053a703d1336045ed31e0da7c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 71,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/distill.md": {
+      "filePath": ".agents/skills/impeccable/reference/distill.md",
+      "contentHash": "ea8432c90c30ecb0426662a681ead5c0941113079704e1a766cda09e85b15b4f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 112,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/doctor.md": {
+      "filePath": ".agents/skills/impeccable/reference/doctor.md",
+      "contentHash": "a98b397cedeeaa1da57f3395b3d9b6c1fc477f4247fb9dc13e4da3da588283ff",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 55,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/document.md": {
+      "filePath": ".agents/skills/impeccable/reference/document.md",
+      "contentHash": "3673248740bcdd1122ccc610093ba2fe52f3943a61ce0b7170b74dc49e5b6098",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 417,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/extract.md": {
+      "filePath": ".agents/skills/impeccable/reference/extract.md",
+      "contentHash": "31b90048c0b540daec46762a10c2b6b6434737a89af005054d8b848d829d003b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 70,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/generate.md": {
+      "filePath": ".agents/skills/impeccable/reference/generate.md",
+      "contentHash": "53628d05b7eff0d4f48b95e48fad40266452fe1b42f398bd88dd9328353e0dd8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 102,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/harden.md": {
+      "filePath": ".agents/skills/impeccable/reference/harden.md",
+      "contentHash": "16ba7fca1973c5faf53dd2ca523559129c0fe9e5f8d50b645f527afa78186cd2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 346,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/hooks.md": {
+      "filePath": ".agents/skills/impeccable/reference/hooks.md",
+      "contentHash": "56cc1bba51e6805de370160ce4a9399fef3740571204f13c3c751725870305e5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 114,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/init.md": {
+      "filePath": ".agents/skills/impeccable/reference/init.md",
+      "contentHash": "bb069b43c09109d7031b0374e31955749fec657b252d39782f11e8985aca2b51",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 132,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/ios.md": {
+      "filePath": ".agents/skills/impeccable/reference/ios.md",
+      "contentHash": "40c87038b5f75147a5952a96237acf312a327bf70c1bcd8e0a5f064625ae9668",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 52,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/layout.md": {
+      "filePath": ".agents/skills/impeccable/reference/layout.md",
+      "contentHash": "0bc7d7971b3edf2acd0580e847458dc6d84129d90715b452799ace3bed815c7c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/live-setup.md": {
+      "filePath": ".agents/skills/impeccable/reference/live-setup.md",
+      "contentHash": "2b5b2fbf5f658f34ea1997fb1aeebe01604d05187f75c6a4f1f55a5bc78520a4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 105,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/live.md": {
+      "filePath": ".agents/skills/impeccable/reference/live.md",
+      "contentHash": "68c5636a7858dd0b5137a9229c15e25fdc2ee40a0f8a4e9d809f78e809256262",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 328,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/new-work.md": {
+      "filePath": ".agents/skills/impeccable/reference/new-work.md",
+      "contentHash": "af95e45318c9235de676cf1075840518cdd3a924b8bde952b5161d72caf3b290",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 153,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/onboard.md": {
+      "filePath": ".agents/skills/impeccable/reference/onboard.md",
+      "contentHash": "ef2dde00030580ed2765cbf7be9b2ea4a6f64cb915b804fd6f6abcf38051c7b9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 235,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/operate.md": {
+      "filePath": ".agents/skills/impeccable/reference/operate.md",
+      "contentHash": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 62,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/optimize.md": {
+      "filePath": ".agents/skills/impeccable/reference/optimize.md",
+      "contentHash": "f672ef8251a3ed4051a053d30819664951b17540b2899acd27d20e500c234abc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 259,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/overdrive.md": {
+      "filePath": ".agents/skills/impeccable/reference/overdrive.md",
+      "contentHash": "fce6688138d2ceb1e3d2cde5231f54b1d8dc8748b4c95a7919aa83b6f924cf96",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 128,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/polish.md": {
+      "filePath": ".agents/skills/impeccable/reference/polish.md",
+      "contentHash": "81666fc7f783b4e3514db6554e713dc0479bd9cdedb06e93d15f8b579aae869a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 106,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/quieter.md": {
+      "filePath": ".agents/skills/impeccable/reference/quieter.md",
+      "contentHash": "190a4e642ca362d7499f3c3ab123e21f18f75457d11f072b545a183f296e6495",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 100,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/region-map.md": {
+      "filePath": ".agents/skills/impeccable/reference/region-map.md",
+      "contentHash": "980fa8280907591eeb0b382c4edd2653405e548d66c5b670e5581ee521db8111",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/routing.md": {
+      "filePath": ".agents/skills/impeccable/reference/routing.md",
+      "contentHash": "77ae09542fbc10aa4e8b119d6fd19359908a47c13c30068d6a150bfdb50e3e10",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 25,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/shape.md": {
+      "filePath": ".agents/skills/impeccable/reference/shape.md",
+      "contentHash": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/typeset.md": {
+      "filePath": ".agents/skills/impeccable/reference/typeset.md",
+      "contentHash": "442749aed338f51c1a3ccfb182c6ade9b74b90590b67984062ac94a5b100e914",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/reference/visualize.md": {
+      "filePath": ".agents/skills/impeccable/reference/visualize.md",
+      "contentHash": "896da399bafcffb0623bdd81bb18709d6eab25c9d5917e739c8798f31ff0d076",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 47,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/scripts/VERSION": {
+      "filePath": ".agents/skills/impeccable/scripts/VERSION",
+      "contentHash": "1f2110568627307becae713f8b808f3d9d912d4b2a24ed6a78605f03f7437d3c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/scripts/command-metadata.json": {
+      "filePath": ".agents/skills/impeccable/scripts/command-metadata.json",
+      "contentHash": "e8720f3aa41135211cc58cc299a39eeda86c75651f4279cc1ede8db10dcc0584",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 99,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/scripts/data/font-index-failures.json": {
+      "filePath": ".agents/skills/impeccable/scripts/data/font-index-failures.json",
+      "contentHash": "835f19a0a3812f3652dd6979a2ce5597f654fd01f26e1b420b92d5f42b997ce4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 121,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/scripts/data/font-index.json": {
+      "filePath": ".agents/skills/impeccable/scripts/data/font-index.json",
+      "contentHash": "47edbdfaf27073c47033d1ac7dfee881be49e2dcbda7671d1157300481dde6da",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/scripts/impeccable": {
+      "filePath": ".agents/skills/impeccable/scripts/impeccable",
+      "contentHash": "39d9600489073e227e4f4d55c451ce4252a6632ed7ae37923efbbcbc91f16d07",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 207,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/scripts/impeccable.cmd": {
+      "filePath": ".agents/skills/impeccable/scripts/impeccable.cmd",
+      "contentHash": "759bab1d8adc071fdde2efcf6e2157aa4026f3c2b4f3c342a8070bf328011616",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 215,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/impeccable/scripts/live-browser-dom.js": {
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-dom.js",
+      "contentHash": "de1b7404f4cdfd7b515196afb17b74b1980f0bc88cb8681ae93a76ca48ec7bdb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 168,
+      "hasStructuralAnalysis": true
+    },
+    ".agents/skills/impeccable/scripts/live-browser-ignores.js": {
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "contentHash": "c1cb6877ca99a0c1b38ba0c7d59f32702d3022f6821d8045f7133f7c40b6362f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 243,
+      "hasStructuralAnalysis": true
+    },
+    ".agents/skills/impeccable/scripts/live-browser-session.js": {
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-session.js",
+      "contentHash": "edddeb3fad88adec9a055b1bf9d5c75418cbe97a13b1a7f6765e73249e482563",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 145,
+      "hasStructuralAnalysis": true
+    },
+    ".agents/skills/impeccable/scripts/live-browser.js": {
+      "filePath": ".agents/skills/impeccable/scripts/live-browser.js",
+      "contentHash": "f68a3d68ac92606e91aa8878e003d9432ddd09aa97ca01c6b3ce46c937dca316",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13511,
+      "hasStructuralAnalysis": true
+    },
+    ".agents/skills/impeccable/scripts/modern-screenshot.umd.js": {
+      "filePath": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "contentHash": "bb36665889124a0b6e15f16045265737449c3bdcf2712cdb08af3cfa01563e2b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    ".agents/skills/infer-conventions/SKILL.md": {
+      "filePath": ".agents/skills/infer-conventions/SKILL.md",
+      "contentHash": "6c17a1c29edf73636ff2292f0d29f97677801b3c253ff5caa8e828b4b6376804",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 106,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/infer-conventions/references/checklist.md": {
+      "filePath": ".agents/skills/infer-conventions/references/checklist.md",
+      "contentHash": "93cd1c36593635ea6531cf2e1a79ba84fd118bcb05b3fd8e9236421a1e225b8e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 140,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/SKILL.md": {
+      "filePath": ".agents/skills/laravel-best-practices/SKILL.md",
+      "contentHash": "3eeacd93123654b2a78caf3f839bda24299d5b2d2bab02f4a1491140d0d865eb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/advanced-queries.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/advanced-queries.md",
+      "contentHash": "fce698e1908bae69ff7158f6419a8267327064966733e7425560cdf453e85ef5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 107,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/architecture.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/architecture.md",
+      "contentHash": "ec19c18c0d0774faa2f5da57722d17b1a6f10956520c419c4571a6a2cdffa5a7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 220,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/blade-views.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/blade-views.md",
+      "contentHash": "4a3dafd6ae508f024e662f83313bbc687deb248cb63d2ad31bd7e81c2b6d6fbd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/caching.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/caching.md",
+      "contentHash": "37ea49baba7a4a4396535ec86a18697d15e4693b1faf2af8a572959da87e4c74",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 101,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/collections.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/collections.md",
+      "contentHash": "0980c7981f3b6987524f682bf6927db024fc4e3d6837a42a123a6084c63680dd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 73,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/config.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/config.md",
+      "contentHash": "4e4ce425dfb0c5cd42ed1e063f33b0f881b1f9f9cb41862b419eebb6402c004c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 86,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/db-performance.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/db-performance.md",
+      "contentHash": "2e05ae18996de4514212d9b7e77cf65c0b8c4de13ebe5c213701f5ce26afd2fc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 190,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/eloquent.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/eloquent.md",
+      "contentHash": "8fce9ae0d17d5ddac03d3957a8db21d1e5ca5cc7152d9d16b09923d229d5016e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 159,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/error-handling.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/error-handling.md",
+      "contentHash": "1ff685f9a145c02cd2fc88f271eab2ab53cae7e6141b407c27747bdbb0c7efc8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 78,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/events-notifications.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/events-notifications.md",
+      "contentHash": "6415ed285565c1fa74297ddfbe379125e4e9f4e6fa7358c2c78800bd4e83e82d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 53,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/http-client.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/http-client.md",
+      "contentHash": "4b99d3b1c4f9dac702658b2c26e6886a9b0f6ca6857dd8eaab1ea40dc16d160a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 158,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/mail.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/mail.md",
+      "contentHash": "3689c5a654ffe6c51fffd58a2592e283bd011e33bab61bc3bc7894ecd9f058f0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 55,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/migrations.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/migrations.md",
+      "contentHash": "8233dac7e60637aee0e84cd7791ce517b2f41ebf65a8f95e571294f1cae4b2d2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 68,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/queue-jobs.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/queue-jobs.md",
+      "contentHash": "9bd86c68cf596d603b836a8ee6dbe8dac2107f1c84128536fbe1293661fa0690",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 118,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/routing.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/routing.md",
+      "contentHash": "5bbfd27366142e5a45f744c7853490ed92e0025de4f51f98e33a9010ce378751",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 107,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/scheduling.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/scheduling.md",
+      "contentHash": "2e345ce8d6f89e6c2795cc388667520c7ea4f8178bfac478601568d8b6210800",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 62,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/security.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/security.md",
+      "contentHash": "4171c1da4ec71011c73b4dd8f5abc2d9548e9f302953b2c0f5e6adf4c2b2803b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 157,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/style.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/style.md",
+      "contentHash": "516eab65ce5f68e0e6826581b834e0e68b0d2c19b38b8e1f66428a2d95d13f90",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 111,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/laravel-best-practices/rules/validation.md": {
+      "filePath": ".agents/skills/laravel-best-practices/rules/validation.md",
+      "contentHash": "ab44a92d44b320f9a64986d336aff83b39182a87f6839cc1227d201eb19d4124",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 90,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/livewire-development/SKILL.md": {
+      "filePath": ".agents/skills/livewire-development/SKILL.md",
+      "contentHash": "187edb5a5b1ee144f1b841413aad8c65c1d5b1ce045d0281273ac52321439521",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 165,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/livewire-development/reference/javascript-hooks.md": {
+      "filePath": ".agents/skills/livewire-development/reference/javascript-hooks.md",
+      "contentHash": "3c6f6632855239379ac7c427cee76ca34d982330a3eb0132059af01745a4508c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/tailwindcss-development/SKILL.md": {
+      "filePath": ".agents/skills/tailwindcss-development/SKILL.md",
+      "contentHash": "6de99cb46f4a8aa97f234f9dc6a665b92a9f5666083a0fb66129ae4705f36796",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 97,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/SKILL.md": {
+      "filePath": ".agents/skills/testing-best-practices/SKILL.md",
+      "contentHash": "774a5f9596e1911aa2c9e86886babffcb79284cba1408ae578cbce11bc7ebbda",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/assertions.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/assertions.md",
+      "contentHash": "7a4fd32d3584d3b5ff5c05dd62efc9b18c9aecd0883215d43bb79d75512f2c67",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 65,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/endpoint-tests.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "contentHash": "a3ba24ccdace71a32d4414cf76f4ae979f2b9009b3bde5ddacfe72d72e37562c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 48,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/finding-features.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/finding-features.md",
+      "contentHash": "92917181242dd2d72d7f2cf38e9fb4c4658f0d07c49fa183c78bbdc36e200a8b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 38,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/isolation.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/isolation.md",
+      "contentHash": "6c18dc65202ce04169058acf1673be4b9f3fc63d7fddca86f7e58c1b2b91dc29",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 53,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/naming.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/naming.md",
+      "contentHash": "936bc949f456985aa4ea9a4838fef402454b0b63a033bdeb8d7ed33b226e52a1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/performance.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/performance.md",
+      "contentHash": "01fcac5757b16dbbeb61102212915a94be539d186ad9e1d0bc9f60d15cf38de0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/review.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/review.md",
+      "contentHash": "ce955ba54e7eba30d89f1de49905cd708aabe38822a443a8632d39ff52bd520d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/security.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/security.md",
+      "contentHash": "8dc9515f65e175854aa4380b9854f32c6d366adcd4efde12876900b5af90d987",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": false
+    },
+    ".agents/skills/testing-best-practices/rules/test-data.md": {
+      "filePath": ".agents/skills/testing-best-practices/rules/test-data.md",
+      "contentHash": "e1887c057b473fd040edc90504b7c3dea1bfb9ae3f18d133d97800c2016d8f68",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 57,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/infer-conventions/SKILL.md": {
+      "filePath": ".claude/skills/infer-conventions/SKILL.md",
+      "contentHash": "6c17a1c29edf73636ff2292f0d29f97677801b3c253ff5caa8e828b4b6376804",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 106,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/infer-conventions/references/checklist.md": {
+      "filePath": ".claude/skills/infer-conventions/references/checklist.md",
+      "contentHash": "93cd1c36593635ea6531cf2e1a79ba84fd118bcb05b3fd8e9236421a1e225b8e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 140,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/SKILL.md": {
+      "filePath": ".claude/skills/laravel-best-practices/SKILL.md",
+      "contentHash": "3eeacd93123654b2a78caf3f839bda24299d5b2d2bab02f4a1491140d0d865eb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/advanced-queries.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/advanced-queries.md",
+      "contentHash": "fce698e1908bae69ff7158f6419a8267327064966733e7425560cdf453e85ef5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 107,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/architecture.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/architecture.md",
+      "contentHash": "ec19c18c0d0774faa2f5da57722d17b1a6f10956520c419c4571a6a2cdffa5a7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 220,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/blade-views.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/blade-views.md",
+      "contentHash": "4a3dafd6ae508f024e662f83313bbc687deb248cb63d2ad31bd7e81c2b6d6fbd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/caching.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/caching.md",
+      "contentHash": "37ea49baba7a4a4396535ec86a18697d15e4693b1faf2af8a572959da87e4c74",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 101,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/collections.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/collections.md",
+      "contentHash": "0980c7981f3b6987524f682bf6927db024fc4e3d6837a42a123a6084c63680dd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 73,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/config.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/config.md",
+      "contentHash": "4e4ce425dfb0c5cd42ed1e063f33b0f881b1f9f9cb41862b419eebb6402c004c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 86,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/db-performance.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/db-performance.md",
+      "contentHash": "2e05ae18996de4514212d9b7e77cf65c0b8c4de13ebe5c213701f5ce26afd2fc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 190,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/eloquent.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/eloquent.md",
+      "contentHash": "8fce9ae0d17d5ddac03d3957a8db21d1e5ca5cc7152d9d16b09923d229d5016e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 159,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/error-handling.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/error-handling.md",
+      "contentHash": "1ff685f9a145c02cd2fc88f271eab2ab53cae7e6141b407c27747bdbb0c7efc8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 78,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/events-notifications.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/events-notifications.md",
+      "contentHash": "6415ed285565c1fa74297ddfbe379125e4e9f4e6fa7358c2c78800bd4e83e82d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 53,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/http-client.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/http-client.md",
+      "contentHash": "4b99d3b1c4f9dac702658b2c26e6886a9b0f6ca6857dd8eaab1ea40dc16d160a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 158,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/mail.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/mail.md",
+      "contentHash": "3689c5a654ffe6c51fffd58a2592e283bd011e33bab61bc3bc7894ecd9f058f0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 55,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/migrations.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/migrations.md",
+      "contentHash": "8233dac7e60637aee0e84cd7791ce517b2f41ebf65a8f95e571294f1cae4b2d2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 68,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/queue-jobs.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/queue-jobs.md",
+      "contentHash": "9bd86c68cf596d603b836a8ee6dbe8dac2107f1c84128536fbe1293661fa0690",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 118,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/routing.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/routing.md",
+      "contentHash": "5bbfd27366142e5a45f744c7853490ed92e0025de4f51f98e33a9010ce378751",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 107,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/scheduling.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/scheduling.md",
+      "contentHash": "2e345ce8d6f89e6c2795cc388667520c7ea4f8178bfac478601568d8b6210800",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 62,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/security.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/security.md",
+      "contentHash": "4171c1da4ec71011c73b4dd8f5abc2d9548e9f302953b2c0f5e6adf4c2b2803b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 157,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/style.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/style.md",
+      "contentHash": "516eab65ce5f68e0e6826581b834e0e68b0d2c19b38b8e1f66428a2d95d13f90",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 111,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/laravel-best-practices/rules/validation.md": {
+      "filePath": ".claude/skills/laravel-best-practices/rules/validation.md",
+      "contentHash": "ab44a92d44b320f9a64986d336aff83b39182a87f6839cc1227d201eb19d4124",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 90,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/livewire-development/SKILL.md": {
+      "filePath": ".claude/skills/livewire-development/SKILL.md",
+      "contentHash": "187edb5a5b1ee144f1b841413aad8c65c1d5b1ce045d0281273ac52321439521",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 165,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/livewire-development/reference/javascript-hooks.md": {
+      "filePath": ".claude/skills/livewire-development/reference/javascript-hooks.md",
+      "contentHash": "3c6f6632855239379ac7c427cee76ca34d982330a3eb0132059af01745a4508c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/tailwindcss-development/SKILL.md": {
+      "filePath": ".claude/skills/tailwindcss-development/SKILL.md",
+      "contentHash": "6de99cb46f4a8aa97f234f9dc6a665b92a9f5666083a0fb66129ae4705f36796",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 97,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/SKILL.md": {
+      "filePath": ".claude/skills/testing-best-practices/SKILL.md",
+      "contentHash": "774a5f9596e1911aa2c9e86886babffcb79284cba1408ae578cbce11bc7ebbda",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/assertions.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/assertions.md",
+      "contentHash": "7a4fd32d3584d3b5ff5c05dd62efc9b18c9aecd0883215d43bb79d75512f2c67",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 65,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/endpoint-tests.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "contentHash": "a3ba24ccdace71a32d4414cf76f4ae979f2b9009b3bde5ddacfe72d72e37562c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 48,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/finding-features.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/finding-features.md",
+      "contentHash": "92917181242dd2d72d7f2cf38e9fb4c4658f0d07c49fa183c78bbdc36e200a8b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 38,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/isolation.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/isolation.md",
+      "contentHash": "6c18dc65202ce04169058acf1673be4b9f3fc63d7fddca86f7e58c1b2b91dc29",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 53,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/naming.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/naming.md",
+      "contentHash": "936bc949f456985aa4ea9a4838fef402454b0b63a033bdeb8d7ed33b226e52a1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/performance.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/performance.md",
+      "contentHash": "01fcac5757b16dbbeb61102212915a94be539d186ad9e1d0bc9f60d15cf38de0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/review.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/review.md",
+      "contentHash": "ce955ba54e7eba30d89f1de49905cd708aabe38822a443a8632d39ff52bd520d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/security.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/security.md",
+      "contentHash": "8dc9515f65e175854aa4380b9854f32c6d366adcd4efde12876900b5af90d987",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": false
+    },
+    ".claude/skills/testing-best-practices/rules/test-data.md": {
+      "filePath": ".claude/skills/testing-best-practices/rules/test-data.md",
+      "contentHash": "e1887c057b473fd040edc90504b7c3dea1bfb9ae3f18d133d97800c2016d8f68",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 57,
+      "hasStructuralAnalysis": false
+    },
+    ".cursor/settings.json": {
+      "filePath": ".cursor/settings.json",
+      "contentHash": "cb37b0184b725a10435559570cb4ec91d54142fe67ce432f3d4fe5787e419766",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": false
+    },
+    ".env.example": {
+      "filePath": ".env.example",
+      "contentHash": "546636b05acbcd14dfaf4fcde8d067021540c63f87ad367640581aca7d054272",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 74,
+      "hasStructuralAnalysis": false
+    },
+    ".gitattributes": {
+      "filePath": ".gitattributes",
+      "contentHash": "a40eb27ee0b545ca5b5542daaf99fec51f84f23b3766a6353864ef2a115bc51c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/config.json": {
+      "filePath": ".impeccable/config.json",
+      "contentHash": "47c9348681feca8bbb886588ee251f5e902b6a3222ba304dc99e6e59467bf562",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/design.json": {
+      "filePath": ".impeccable/design.json",
+      "contentHash": "7e5cdd2d5d8a48e89aed633894723b3b726e76acb1945d17fd7532b157213fe2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 165,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/decision/assigned-r2.png.json": {
+      "filePath": ".impeccable/mocks/decision/assigned-r2.png.json",
+      "contentHash": "e792a8c277fcb2889aa81ab7c4b98d0c9156fe0fded70895460f85698e214eea",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/decision/assigned.png.json": {
+      "filePath": ".impeccable/mocks/decision/assigned.png.json",
+      "contentHash": "eb1517d685b820d2b21a68bac2e7f7c25c8fe38ccb46e8e0023e9a5cc2e6b3ce",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/decision/canon.png.json": {
+      "filePath": ".impeccable/mocks/decision/canon.png.json",
+      "contentHash": "859549af4593c8cc6ab2cde192d8f8fefb608aaff1cf1decb6f981f3355faf48",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/decision/model-pick-r2.png.json": {
+      "filePath": ".impeccable/mocks/decision/model-pick-r2.png.json",
+      "contentHash": "0dff44dee9639ee713e961ac1ccbd201aa74ba48205e454985200c62b8bafd89",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/decision/model-pick.png.json": {
+      "filePath": ".impeccable/mocks/decision/model-pick.png.json",
+      "contentHash": "167d346a974345ec53438cccaf1f9b297267cfcd80c4d1ba032c18e5cf368fde",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/decision/payload-r2.json": {
+      "filePath": ".impeccable/mocks/decision/payload-r2.json",
+      "contentHash": "a290329411bf996393d1b163606184feedd4e105b91d722136ed46c16d41fdfc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 136,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/decision/payload.json": {
+      "filePath": ".impeccable/mocks/decision/payload.json",
+      "contentHash": "31127f661090d6c8985e7b93ffee7cfebd949f7067c9e2cb817e7bbef77f27fe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 136,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/home-bars.png.json": {
+      "filePath": ".impeccable/mocks/home-bars.png.json",
+      "contentHash": "28e116e0216a00dbca992cfec5a6a7ce1a52848de66f442561283e4fa201df4c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/home-previews.json": {
+      "filePath": ".impeccable/mocks/home-previews.json",
+      "contentHash": "ee16eee258be2a72a0d5af86e2c1a9b6f1e2462e01a1ea866b7e3a7cbf6cbe10",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 44,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/malote-home.png.json": {
+      "filePath": ".impeccable/mocks/malote-home.png.json",
+      "contentHash": "b41fede2efa2f08b7eb06d9ddf94bfc8b7c048286e90b09cf705fc4151ce8ea3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/mocks/malote-preview.json": {
+      "filePath": ".impeccable/mocks/malote-preview.json",
+      "contentHash": "7206b1191be84effcfddaea5f6a530bb51206f75f6b7a5bda52ff2d0e0e42fa7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/questions/b92faafe.answer.json": {
+      "filePath": ".impeccable/questions/b92faafe.answer.json",
+      "contentHash": "8e7cdf03c37a3d77dc78db7612270ab84c3ae62bba4a27a7e53b7e3f6bae81d0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/questions/b92faafe.state.json": {
+      "filePath": ".impeccable/questions/b92faafe.state.json",
+      "contentHash": "f2108a245428d37be9019705352d4679a4a7d7dedd0ec6f1087a7a4704f145a4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/review/diff/desktop/raw-report.json": {
+      "filePath": ".impeccable/review/diff/desktop/raw-report.json",
+      "contentHash": "52ecc2304258a28cb1dbb9e47d27be24a52a40f96e8a927cb1abc7114520de1a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/review/diff/desktop/report.json": {
+      "filePath": ".impeccable/review/diff/desktop/report.json",
+      "contentHash": "fc8173f98d6c657dc4320092af1110a772b0d0b24e910b84b517231c0074b4ba",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 104,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/review/diff/hero/raw-report.json": {
+      "filePath": ".impeccable/review/diff/hero/raw-report.json",
+      "contentHash": "df2cf7c71311da65252f4ee605b7509d6e0c19c57fb10bf045ec890e49fc88c7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 90,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/review/diff/hero/report.json": {
+      "filePath": ".impeccable/review/diff/hero/report.json",
+      "contentHash": "b0df46173430587ef191828b062d7b163cde4835228107ba4a748df10a9e0403",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 102,
+      "hasStructuralAnalysis": false
+    },
+    ".impeccable/surfaces/home.md": {
+      "filePath": ".impeccable/surfaces/home.md",
+      "contentHash": "474f06e062d40a034425e0beada2087e1cf6e65f6d621c80ddad6285bdddd2ff",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": false
+    },
+    ".mcp.json": {
+      "filePath": ".mcp.json",
+      "contentHash": "d34f3787198d60234ef024d894015adfad5cd90ea87234048c9a2b43b34f8aa9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": false
+    },
+    ".npmrc": {
+      "filePath": ".npmrc",
+      "contentHash": "e968d1d336604e9986ea31306a4d9e1442f4312fca262f444384baf928d6560e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/config.json": {
+      "filePath": ".ua/config.json",
+      "contentHash": "715998f889553e2d2ad84863c0e2d5fcd88293624e4f40fba03241e1282fdb65",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    "AGENTS.md": {
+      "filePath": "AGENTS.md",
+      "contentHash": "e4a00e1574e61425aa31c053dc446d64b6a294bd8fd894c8cc1d0a7c57fce241",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 170,
+      "hasStructuralAnalysis": false
+    },
+    "CLAUDE.md": {
+      "filePath": "CLAUDE.md",
+      "contentHash": "fc7f68b818002266982ebc3e423826ce67988c1edb4532bb1b086a17744cd890",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 48,
+      "hasStructuralAnalysis": false
+    },
+    "DESIGN.md": {
+      "filePath": "DESIGN.md",
+      "contentHash": "7741d0dc3b5303d79ed7947d10db685d0041f9b200e7bf24a576f56417c5a4da",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 155,
+      "hasStructuralAnalysis": false
+    },
+    "PRODUCT.md": {
+      "filePath": "PRODUCT.md",
+      "contentHash": "c1b8d07c51704aaa2960d5ec91c92696e7b47f97696488cfb9dc934a50069375",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 83,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "322e92d11107be1066bb0b65172798e706381f32ea51873dca9c76e624fd0520",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 44,
+      "hasStructuralAnalysis": false
+    },
+    "app/Actions/Conversation/Briefing.php": {
+      "filePath": "app/Actions/Conversation/Briefing.php",
+      "contentHash": "9ba44f196eb926e40db0071ed2a311c3a5bb20cb97a6ae362dba2a39afbf4bf6",
+      "functions": [
+        {
+          "name": "handle",
+          "params": [
+            "$user",
+            "$now"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 36
+        }
+      ],
+      "classes": [
+        {
+          "name": "Briefing",
+          "methods": [
+            "handle"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 39
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Carbon",
+          "specifiers": [
+            "Carbon"
+          ]
+        }
+      ],
+      "exports": [
+        "Briefing"
+      ],
+      "totalLines": 48,
+      "hasStructuralAnalysis": true
+    },
+    "app/Actions/Conversation/OpenConversation.php": {
+      "filePath": "app/Actions/Conversation/OpenConversation.php",
+      "contentHash": "5ac4776496d45320e278d7bea92bacdf82f6ea2711a33ede0e13e7b4e24cadda",
+      "functions": [
+        {
+          "name": "handle",
+          "params": [
+            "$user"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [
+        {
+          "name": "OpenConversation",
+          "methods": [
+            "handle"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        }
+      ],
+      "exports": [
+        "OpenConversation"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "app/Actions/Voice/StoreVoiceTurn.php": {
+      "filePath": "app/Actions/Voice/StoreVoiceTurn.php",
+      "contentHash": "3af11955e3e38d1e22a7f84c2d41bd0858735e559c5e3e282d92d9646aee3371",
+      "functions": [
+        {
+          "name": "handle",
+          "params": [
+            "$user",
+            "$audio"
+          ],
+          "returnType": "VoiceTurn",
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [
+        {
+          "name": "StoreVoiceTurn",
+          "methods": [
+            "handle"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 20
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Jobs\\TranscribeVoiceTurn",
+          "specifiers": [
+            "TranscribeVoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\UploadedFile",
+          "specifiers": [
+            "UploadedFile"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [
+        "StoreVoiceTurn"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "app/Contracts/Transcriber.php": {
+      "filePath": "app/Contracts/Transcriber.php",
+      "contentHash": "8a91838260f06040997837e8520a27f27ac00929631da863f26d561000ef75fc",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Transcriber",
+          "methods": [
+            "transcribe"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        }
+      ],
+      "exports": [
+        "Transcriber"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "app/Exceptions/PermanentTranscriptionException.php": {
+      "filePath": "app/Exceptions/PermanentTranscriptionException.php",
+      "contentHash": "216bbb15b3bd04d1431a8aa4b4361b8f11aa5bc1760f81d120d84544c7edfe15",
+      "functions": [],
+      "classes": [
+        {
+          "name": "PermanentTranscriptionException",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "Exception",
+          "specifiers": [
+            "Exception"
+          ]
+        }
+      ],
+      "exports": [
+        "PermanentTranscriptionException"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "app/Exceptions/TransientTranscriptionException.php": {
+      "filePath": "app/Exceptions/TransientTranscriptionException.php",
+      "contentHash": "535f9671d14453b33168ef641e92da8f08e8922a432c286d5a68b0021c0cce84",
+      "functions": [],
+      "classes": [
+        {
+          "name": "TransientTranscriptionException",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "Exception",
+          "specifiers": [
+            "Exception"
+          ]
+        }
+      ],
+      "exports": [
+        "TransientTranscriptionException"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/LoginController.php": {
+      "filePath": "app/Http/Controllers/Auth/LoginController.php",
+      "contentHash": "7a55b6c35465410f2046671ed144d378e6223031340208d20daf7e0ba76b57a4",
+      "functions": [
+        {
+          "name": "create",
+          "params": [],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 14
+        }
+      ],
+      "classes": [
+        {
+          "name": "LoginController",
+          "methods": [
+            "create",
+            "store"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 24
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "App\\Http\\Requests\\Auth\\LoginRequest",
+          "specifiers": [
+            "LoginRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\App",
+          "specifiers": [
+            "App"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\ValidationException",
+          "specifiers": [
+            "ValidationException"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "LoginController"
+      ],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Controller.php": {
+      "filePath": "app/Http/Controllers/Controller.php",
+      "contentHash": "25d1c1ef8e6cc8a376553faacfba2b07d9dfaee9bdbb84f14f77517580e9deb1",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Controller",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "Controller"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/RecordController.php": {
+      "filePath": "app/Http/Controllers/RecordController.php",
+      "contentHash": "cd77fd92a52751628a2dff35ab51fe93187805084a7d6972854b6045c5c7b13b",
+      "functions": [
+        {
+          "name": "__invoke",
+          "params": [],
+          "returnType": "JsonResponse",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "RecordController",
+          "methods": [
+            "__invoke"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Http\\JsonResponse",
+          "specifiers": [
+            "JsonResponse"
+          ]
+        }
+      ],
+      "exports": [
+        "RecordController"
+      ],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/VoiceTurnController.php": {
+      "filePath": "app/Http/Controllers/VoiceTurnController.php",
+      "contentHash": "19f7074a9e860c0188e8fae21a2e6932dae8b66242e4a63b326365ecd8800a07",
+      "functions": [
+        {
+          "name": "store",
+          "params": [
+            "$request",
+            "$storeVoiceTurn"
+          ],
+          "returnType": "JsonResponse",
+          "exported": false,
+          "lineCount": 11
+        }
+      ],
+      "classes": [
+        {
+          "name": "VoiceTurnController",
+          "methods": [
+            "store"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 14
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Actions\\Voice\\StoreVoiceTurn",
+          "specifiers": [
+            "StoreVoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\Http\\Requests\\StoreVoiceTurnRequest",
+          "specifiers": [
+            "StoreVoiceTurnRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\JsonResponse",
+          "specifiers": [
+            "JsonResponse"
+          ]
+        }
+      ],
+      "exports": [
+        "VoiceTurnController"
+      ],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Requests/Auth/LoginRequest.php": {
+      "filePath": "app/Http/Requests/Auth/LoginRequest.php",
+      "contentHash": "f15e2f10a1d8015548bb33c2d718c5b2584557412d2f0f19a5ee379f5fa6eb10",
+      "functions": [
+        {
+          "name": "authorize",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "rules",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "messages",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 8
+        }
+      ],
+      "classes": [
+        {
+          "name": "LoginRequest",
+          "methods": [
+            "authorize",
+            "rules",
+            "messages"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 33
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Http\\FormRequest",
+          "specifiers": [
+            "FormRequest"
+          ]
+        }
+      ],
+      "exports": [
+        "LoginRequest"
+      ],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Requests/StoreVoiceTurnRequest.php": {
+      "filePath": "app/Http/Requests/StoreVoiceTurnRequest.php",
+      "contentHash": "ec32672122333ecda3bfdb6dee78c53c366427dd224f75a2104f00d08e3b17ef",
+      "functions": [
+        {
+          "name": "authorize",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "rules",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 11
+        }
+      ],
+      "classes": [
+        {
+          "name": "StoreVoiceTurnRequest",
+          "methods": [
+            "authorize",
+            "rules"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Http\\FormRequest",
+          "specifiers": [
+            "FormRequest"
+          ]
+        }
+      ],
+      "exports": [
+        "StoreVoiceTurnRequest"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "app/Jobs/TranscribeVoiceTurn.php": {
+      "filePath": "app/Jobs/TranscribeVoiceTurn.php",
+      "contentHash": "026bebaf97882a4424d4ddfef34534d6582a24a53750c3824f2c5cd7101b469b",
+      "functions": [
+        {
+          "name": "__construct",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "handle",
+          "params": [
+            "$transcriber"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 41
+        },
+        {
+          "name": "failed",
+          "params": [
+            "$exception"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "markFailed",
+          "params": [
+            "$turn",
+            "$message"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 14
+        }
+      ],
+      "classes": [
+        {
+          "name": "TranscribeVoiceTurn",
+          "methods": [
+            "__construct",
+            "handle",
+            "failed",
+            "markFailed"
+          ],
+          "properties": [
+            "timeout",
+            "tries",
+            "backoff"
+          ],
+          "exported": true,
+          "lineCount": 83
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Contracts\\Transcriber",
+          "specifiers": [
+            "Transcriber"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\PermanentTranscriptionException",
+          "specifiers": [
+            "PermanentTranscriptionException"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\TransientTranscriptionException",
+          "specifiers": [
+            "TransientTranscriptionException"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Illuminate\\Contracts\\Queue\\ShouldQueue",
+          "specifiers": [
+            "ShouldQueue"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Queue\\Queueable",
+          "specifiers": [
+            "Queueable"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Storage",
+          "specifiers": [
+            "Storage"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        },
+        {
+          "source": "Throwable",
+          "specifiers": [
+            "Throwable"
+          ]
+        }
+      ],
+      "exports": [
+        "TranscribeVoiceTurn"
+      ],
+      "totalLines": 99,
+      "hasStructuralAnalysis": true
+    },
+    "app/Models/Record.php": {
+      "filePath": "app/Models/Record.php",
+      "contentHash": "817c859284499c2f2df22f96d93f68b676e77c3d39b3d822d966ca84587df1c1",
+      "functions": [
+        {
+          "name": "casts",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "scopeAppointments",
+          "params": [
+            "$query"
+          ],
+          "returnType": "Builder",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "scopeTasks",
+          "params": [
+            "$query"
+          ],
+          "returnType": "Builder",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "scopeOnTheBooks",
+          "params": [
+            "$query"
+          ],
+          "returnType": "Builder",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "scopeScheduledOnLocalDay",
+          "params": [
+            "$query",
+            "$timezone",
+            "$now"
+          ],
+          "returnType": "Builder",
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "scopeScheduledBeforeLocalDay",
+          "params": [
+            "$query",
+            "$timezone",
+            "$now"
+          ],
+          "returnType": "Builder",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "user",
+          "params": [],
+          "returnType": "BelongsTo",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "lastVoiceTurn",
+          "params": [],
+          "returnType": "BelongsTo",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "Record",
+          "methods": [
+            "casts",
+            "scopeAppointments",
+            "scopeTasks",
+            "scopeOnTheBooks",
+            "scopeScheduledOnLocalDay",
+            "scopeScheduledBeforeLocalDay",
+            "user",
+            "lastVoiceTurn"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 87
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\RecordKind",
+          "specifiers": [
+            "RecordKind"
+          ]
+        },
+        {
+          "source": "App\\Records\\LocalDay",
+          "specifiers": [
+            "LocalDay"
+          ]
+        },
+        {
+          "source": "Database\\Factories\\RecordFactory",
+          "specifiers": [
+            "RecordFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Attributes\\Fillable",
+          "specifiers": [
+            "Fillable"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Builder",
+          "specifiers": [
+            "Builder"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+          "specifiers": [
+            "HasFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Model",
+          "specifiers": [
+            "Model"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+          "specifiers": [
+            "BelongsTo"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+          "specifiers": [
+            "SoftDeletes"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Carbon",
+          "specifiers": [
+            "Carbon"
+          ]
+        }
+      ],
+      "exports": [
+        "Record"
+      ],
+      "totalLines": 103,
+      "hasStructuralAnalysis": true
+    },
+    "app/Models/User.php": {
+      "filePath": "app/Models/User.php",
+      "contentHash": "c4edf209ece5c93fd30dd70cc40c7e57a8b258087d198e8d013723b7686ac7d3",
+      "functions": [
+        {
+          "name": "casts",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "records",
+          "params": [],
+          "returnType": "HasMany",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "voiceTurns",
+          "params": [],
+          "returnType": "HasMany",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "User",
+          "methods": [
+            "casts",
+            "records",
+            "voiceTurns"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 35
+        }
+      ],
+      "imports": [
+        {
+          "source": "Database\\Factories\\UserFactory",
+          "specifiers": [
+            "UserFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Attributes\\Fillable",
+          "specifiers": [
+            "Fillable"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Attributes\\Hidden",
+          "specifiers": [
+            "Hidden"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+          "specifiers": [
+            "HasFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+          "specifiers": [
+            "HasMany"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Auth\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Notifications\\Notifiable",
+          "specifiers": [
+            "Notifiable"
+          ]
+        }
+      ],
+      "exports": [
+        "User"
+      ],
+      "totalLines": 49,
+      "hasStructuralAnalysis": true
+    },
+    "app/Models/VoiceTurn.php": {
+      "filePath": "app/Models/VoiceTurn.php",
+      "contentHash": "27d1879e0295d6cc6d2032a6bf260931257698a13fc1f7c1926ebb17d51be1aa",
+      "functions": [
+        {
+          "name": "casts",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "user",
+          "params": [],
+          "returnType": "BelongsTo",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "records",
+          "params": [],
+          "returnType": "HasMany",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "VoiceTurn",
+          "methods": [
+            "casts",
+            "user",
+            "records"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 45
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Database\\Factories\\VoiceTurnFactory",
+          "specifiers": [
+            "VoiceTurnFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Attributes\\Fillable",
+          "specifiers": [
+            "Fillable"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+          "specifiers": [
+            "HasFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Model",
+          "specifiers": [
+            "Model"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+          "specifiers": [
+            "BelongsTo"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+          "specifiers": [
+            "HasMany"
+          ]
+        }
+      ],
+      "exports": [
+        "VoiceTurn"
+      ],
+      "totalLines": 58,
+      "hasStructuralAnalysis": true
+    },
+    "app/Providers/AppServiceProvider.php": {
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "contentHash": "7872a5a1adb613e5fb6bf2c8ddb2592b399360fd146aeb66d7c6869a7e84bb9b",
+      "functions": [
+        {
+          "name": "register",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "boot",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppServiceProvider",
+          "methods": [
+            "register",
+            "boot"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Contracts\\Transcriber",
+          "specifiers": [
+            "Transcriber"
+          ]
+        },
+        {
+          "source": "App\\Services\\Transcription\\HttpTranscriber",
+          "specifiers": [
+            "HttpTranscriber"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\ServiceProvider",
+          "specifiers": [
+            "ServiceProvider"
+          ]
+        }
+      ],
+      "exports": [
+        "AppServiceProvider"
+      ],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "app/RecordKind.php": {
+      "filePath": "app/RecordKind.php",
+      "contentHash": "06b3df430cd4df4b0b95c7c78b96eba458fe1e7344d12718377cf89ce0be123c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "app/Records/LocalDay.php": {
+      "filePath": "app/Records/LocalDay.php",
+      "contentHash": "7a63fc70e41e51e17573fc5bbbf9158f87ff277ea491eea8a973dcfc5cb91574",
+      "functions": [
+        {
+          "name": "__construct",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "forTimezone",
+          "params": [
+            "$timezone"
+          ],
+          "returnType": "self",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "startOfDayUtc",
+          "params": [
+            "$now"
+          ],
+          "returnType": "CarbonImmutable",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "startOfNextDayUtc",
+          "params": [
+            "$now"
+          ],
+          "returnType": "CarbonImmutable",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "dateOnlyToUtc",
+          "params": [
+            "$date"
+          ],
+          "returnType": "CarbonImmutable",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "isScheduledOnLocalDay",
+          "params": [
+            "$scheduledAtUtc",
+            "$now"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "isScheduledBeforeLocalDay",
+          "params": [
+            "$scheduledAtUtc",
+            "$now"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "LocalDay",
+          "methods": [
+            "__construct",
+            "forTimezone",
+            "startOfDayUtc",
+            "startOfNextDayUtc",
+            "dateOnlyToUtc",
+            "isScheduledOnLocalDay",
+            "isScheduledBeforeLocalDay"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 37
+        }
+      ],
+      "imports": [
+        {
+          "source": "Carbon\\CarbonImmutable",
+          "specifiers": [
+            "CarbonImmutable"
+          ]
+        },
+        {
+          "source": "Carbon\\CarbonInterface",
+          "specifiers": [
+            "CarbonInterface"
+          ]
+        }
+      ],
+      "exports": [
+        "LocalDay"
+      ],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    "app/Services/Transcription/HttpTranscriber.php": {
+      "filePath": "app/Services/Transcription/HttpTranscriber.php",
+      "contentHash": "ffe0e4c7143d81268bbc8c4704d6410906432eca34b3584d443f5d7e0fa3e1e7",
+      "functions": [
+        {
+          "name": "transcribe",
+          "params": [
+            "$turn"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 41
+        },
+        {
+          "name": "client",
+          "params": [],
+          "returnType": "PendingRequest",
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "transcriptionLanguage",
+          "params": [
+            "$turn"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "transcriptionUrl",
+          "params": [
+            "$turn"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "throwForFailedResponse",
+          "params": [
+            "$response"
+          ],
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "userFacingMessage",
+          "params": [
+            "$apiMessage"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "HttpTranscriber",
+          "methods": [
+            "transcribe",
+            "client",
+            "transcriptionLanguage",
+            "transcriptionUrl",
+            "throwForFailedResponse",
+            "userFacingMessage"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 116
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Contracts\\Transcriber",
+          "specifiers": [
+            "Transcriber"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\PermanentTranscriptionException",
+          "specifiers": [
+            "PermanentTranscriptionException"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\TransientTranscriptionException",
+          "specifiers": [
+            "TransientTranscriptionException"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Client\\ConnectionException",
+          "specifiers": [
+            "ConnectionException"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Client\\PendingRequest",
+          "specifiers": [
+            "PendingRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Client\\RequestException",
+          "specifiers": [
+            "RequestException"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Client\\Response",
+          "specifiers": [
+            "Response"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Http",
+          "specifiers": [
+            "Http"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Log",
+          "specifiers": [
+            "Log"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Storage",
+          "specifiers": [
+            "Storage"
+          ]
+        },
+        {
+          "source": "RuntimeException",
+          "specifiers": [
+            "RuntimeException"
+          ]
+        }
+      ],
+      "exports": [
+        "HttpTranscriber"
+      ],
+      "totalLines": 134,
+      "hasStructuralAnalysis": true
+    },
+    "app/VoiceTurnStatus.php": {
+      "filePath": "app/VoiceTurnStatus.php",
+      "contentHash": "c97c234d2633ec213aa950b60d2ba426d56851fcd82873f4a5999c6767c2bc01",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "artisan": {
+      "filePath": "artisan",
+      "contentHash": "f91a517c0c5d3a904c3f390933964a5e08ec1fc68146882730daac4aca4ffcec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 19,
+      "hasStructuralAnalysis": false
+    },
+    "boost.json": {
+      "filePath": "boost.json",
+      "contentHash": "15141e9a71336dcd1a752fb0517443c8a8e0746506418298357ed9f461e753b4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": false
+    },
+    "bootstrap/app.php": {
+      "filePath": "bootstrap/app.php",
+      "contentHash": "7693b1994c27b68a318689600ed1051fa7229eb818619be62b6d1326ba3ce750",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Application",
+          "specifiers": [
+            "Application"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Configuration\\Exceptions",
+          "specifiers": [
+            "Exceptions"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Configuration\\Middleware",
+          "specifiers": [
+            "Middleware"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "bootstrap/providers.php": {
+      "filePath": "bootstrap/providers.php",
+      "contentHash": "f720e185207a343d4c19fc99dbb317a4187efbcd7d38a303a695bbdd77ffb943",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Providers\\AppServiceProvider",
+          "specifiers": [
+            "AppServiceProvider"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "composer.json": {
+      "filePath": "composer.json",
+      "contentHash": "0193a110e48e5642ea5b2af6c3e490dac6a586c0206c5df36c0c8a89aca816a2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 91,
+      "hasStructuralAnalysis": false
+    },
+    "config/app.php": {
+      "filePath": "config/app.php",
+      "contentHash": "b4b25e15efa76846a7f2e19fd1044fec4945e4e928c4098126a2b0042b034383",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 127,
+      "hasStructuralAnalysis": true
+    },
+    "config/auth.php": {
+      "filePath": "config/auth.php",
+      "contentHash": "c7e204e9785c9f596d66fb884b493f658f2327f157646bdb4088efd6b3a7773f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 118,
+      "hasStructuralAnalysis": true
+    },
+    "config/cache.php": {
+      "filePath": "config/cache.php",
+      "contentHash": "ee4ad2bba1edfcff52e9599f37371f2370d0b167cc226ce72d46cdf6edf2dc55",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 137,
+      "hasStructuralAnalysis": true
+    },
+    "config/database.php": {
+      "filePath": "config/database.php",
+      "contentHash": "02cd62f589b43d33f9ceac740705dac1dec9740eb2bb9e6e202d4b66a15244cf",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        },
+        {
+          "source": "Pdo\\Mysql",
+          "specifiers": [
+            "Mysql"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 185,
+      "hasStructuralAnalysis": true
+    },
+    "config/filesystems.php": {
+      "filePath": "config/filesystems.php",
+      "contentHash": "ba7060d7a23e490c3ce830656f6d24ad3ccf5b868e3293f2a12e411959dc5635",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": true
+    },
+    "config/livewire.php": {
+      "filePath": "config/livewire.php",
+      "contentHash": "2e9d7133824f88a14f0546b946c1312f8ba295b58bd17c9630f04bea7dd7f875",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 283,
+      "hasStructuralAnalysis": true
+    },
+    "config/logging.php": {
+      "filePath": "config/logging.php",
+      "contentHash": "beb1ffd0db910f6f0b4f75214c3d5aa385d692733ece8a450f4c169d2c99ce38",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Monolog\\Handler\\NullHandler",
+          "specifiers": [
+            "NullHandler"
+          ]
+        },
+        {
+          "source": "Monolog\\Handler\\StreamHandler",
+          "specifiers": [
+            "StreamHandler"
+          ]
+        },
+        {
+          "source": "Monolog\\Handler\\SyslogUdpHandler",
+          "specifiers": [
+            "SyslogUdpHandler"
+          ]
+        },
+        {
+          "source": "Monolog\\Processor\\PsrLogMessageProcessor",
+          "specifiers": [
+            "PsrLogMessageProcessor"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 141,
+      "hasStructuralAnalysis": true
+    },
+    "config/mail.php": {
+      "filePath": "config/mail.php",
+      "contentHash": "c43ff49a31c5f32ce21eb7159f2a4b3cd2f4074eaed5838d265646dbfedd3474",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "config/queue.php": {
+      "filePath": "config/queue.php",
+      "contentHash": "6101774da7c8b79af46d0028f2b8b31a484c3f7eda10b76e5b27b6093ad364a4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 130,
+      "hasStructuralAnalysis": true
+    },
+    "config/rafael.php": {
+      "filePath": "config/rafael.php",
+      "contentHash": "e1d9dcf23d1843f0abd59427db00842808504a71f2d200bb24b86cf98292d44a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 64,
+      "hasStructuralAnalysis": true
+    },
+    "config/services.php": {
+      "filePath": "config/services.php",
+      "contentHash": "b7ee786ea1adbc92db9f229f479431c94503527c47051da3862eb0e4d7db70aa",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "config/session.php": {
+      "filePath": "config/session.php",
+      "contentHash": "64272cfbef6f47c65bf857f1c5b1e853700c0d0278de46b86663fd83ef4aeed8",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 234,
+      "hasStructuralAnalysis": true
+    },
+    "database/factories/RecordFactory.php": {
+      "filePath": "database/factories/RecordFactory.php",
+      "contentHash": "4ce0570f31616bd762fdfb123ee3bb48a87adb741aaa2ac240c73d7eb88efbda",
+      "functions": [
+        {
+          "name": "definition",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "appointment",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "task",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "withoutDueDate",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "deleted",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "forVoiceTurn",
+          "params": [
+            "$voiceTurn"
+          ],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 8
+        }
+      ],
+      "classes": [
+        {
+          "name": "RecordFactory",
+          "methods": [
+            "definition",
+            "appointment",
+            "task",
+            "withoutDueDate",
+            "deleted",
+            "forVoiceTurn"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 57
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\RecordKind",
+          "specifiers": [
+            "RecordKind"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+          "specifiers": [
+            "Factory"
+          ]
+        }
+      ],
+      "exports": [
+        "RecordFactory"
+      ],
+      "totalLines": 71,
+      "hasStructuralAnalysis": true
+    },
+    "database/factories/UserFactory.php": {
+      "filePath": "database/factories/UserFactory.php",
+      "contentHash": "1bab6bb4ffac354ff5036c48c074f67e1dc55eb84733ac50d37e5f73ebd5ffa9",
+      "functions": [
+        {
+          "name": "definition",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "unverified",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserFactory",
+          "methods": [
+            "definition",
+            "unverified"
+          ],
+          "properties": [
+            "password"
+          ],
+          "exported": true,
+          "lineCount": 35
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+          "specifiers": [
+            "Factory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [
+        "UserFactory"
+      ],
+      "totalLines": 48,
+      "hasStructuralAnalysis": true
+    },
+    "database/factories/VoiceTurnFactory.php": {
+      "filePath": "database/factories/VoiceTurnFactory.php",
+      "contentHash": "ed73778cae83dcb3537b8174c5f8b724a25ebfea68e8321ce501dc3a6634e9a2",
+      "functions": [
+        {
+          "name": "definition",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "uploaded",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "completed",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "failed",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 11
+        }
+      ],
+      "classes": [
+        {
+          "name": "VoiceTurnFactory",
+          "methods": [
+            "definition",
+            "uploaded",
+            "completed",
+            "failed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 55
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+          "specifiers": [
+            "Factory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [
+        "VoiceTurnFactory"
+      ],
+      "totalLines": 69,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0001_01_01_000000_create_users_table.php": {
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "contentHash": "10d79883bc08ce46510f9ad8b1830b4d06d586dc56ae2c8bac3b3e491f69a90f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 50,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0001_01_01_000001_create_cache_table.php": {
+      "filePath": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "contentHash": "fbb4665e5a977e71df4e74ec75b3c06ca4f17ad0de7138fe9786639189978e77",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0001_01_01_000002_create_jobs_table.php": {
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "contentHash": "df4910687180313a14a3f96a8bddd808ae145ed1b107cd772caf865c0dc2b746",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php": {
+      "filePath": "database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "contentHash": "3d5ac790046679b06ee146aa1dbab627c125d9abae8732405876fcdaef9cfd9a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/2026_09_30_141334_create_voice_turns_table.php": {
+      "filePath": "database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "contentHash": "40fabd79d132cefd3aad42114de0f008e385769811b574b49aeaae1bec27efe0",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/2026_09_30_141335_create_records_table.php": {
+      "filePath": "database/migrations/2026_09_30_141335_create_records_table.php",
+      "contentHash": "4dee856bb05b62ef7dc9a6c8fc2a80b49c17906f47d4e4e106626f3ef74c820a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\DB",
+          "specifiers": [
+            "DB"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 66,
+      "hasStructuralAnalysis": true
+    },
+    "database/seeders/DatabaseSeeder.php": {
+      "filePath": "database/seeders/DatabaseSeeder.php",
+      "contentHash": "65f6bbd1108aff9b70b0e123995ede0ba343a26c771a0302dab588d4394716b9",
+      "functions": [
+        {
+          "name": "run",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 16
+        }
+      ],
+      "classes": [
+        {
+          "name": "DatabaseSeeder",
+          "methods": [
+            "run"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 24
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents",
+          "specifiers": [
+            "WithoutModelEvents"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Seeder",
+          "specifiers": [
+            "Seeder"
+          ]
+        },
+        {
+          "source": "RuntimeException",
+          "specifiers": [
+            "RuntimeException"
+          ]
+        }
+      ],
+      "exports": [
+        "DatabaseSeeder"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "docs/database-schema.md": {
+      "filePath": "docs/database-schema.md",
+      "contentHash": "5c3d710b199ddf96c01e516b39920d769e76d12ccd9c97b28f96406c8551adcd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 667,
+      "hasStructuralAnalysis": false
+    },
+    "docs/project-description.md": {
+      "filePath": "docs/project-description.md",
+      "contentHash": "c6c012d1538992386c1bcb7b3132e1bb357e6dff9a9f940e820a8bae17abeff5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "docs/project-phases.md": {
+      "filePath": "docs/project-phases.md",
+      "contentHash": "b9765aaa112445a7768492d75de414927285c684f523d2f7690d45f15d861984",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 595,
+      "hasStructuralAnalysis": false
+    },
+    "docs/prompts/database-schema-prompt.md": {
+      "filePath": "docs/prompts/database-schema-prompt.md",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "docs/prompts/generate-phases.md": {
+      "filePath": "docs/prompts/generate-phases.md",
+      "contentHash": "29da7f9154efffb6a48d7ceccb0ac2e315dbf3b1d2f1f40c429d328b7c92ad56",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": false
+    },
+    "docs/user-stories.md": {
+      "filePath": "docs/user-stories.md",
+      "contentHash": "249892e53063de0ae9daa77ff346163cd475f9c0c712103df4955a479b850a86",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": false
+    },
+    "lang/pt_BR/auth.php": {
+      "filePath": "lang/pt_BR/auth.php",
+      "contentHash": "918412067609fd5ef6db75e2c44ec81cccc44234f9d960de13734f4f121cc40a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "4cd129b50f274b5338dcaca30923f9b12ac028aea297dbf53c7743f965abb7b2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "phpunit.xml": {
+      "filePath": "phpunit.xml",
+      "contentHash": "493369cfb7feea104da4bec214c2cc6526ca2f1b9d937c50a2961fc59cb61aaf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": false
+    },
+    "public/.htaccess": {
+      "filePath": "public/.htaccess",
+      "contentHash": "b7e379c77639fd56144947dbae84c84eb466d9c686ea81f2f013ae85421da923",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": false
+    },
+    "public/index.php": {
+      "filePath": "public/index.php",
+      "contentHash": "eba77cba39695b6bd091fe5211d481f7ebb2ce2d8d26230b5a609465d0a4aff9",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Application",
+          "specifiers": [
+            "Application"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "public/robots.txt": {
+      "filePath": "public/robots.txt",
+      "contentHash": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3,
+      "hasStructuralAnalysis": false
+    },
+    "public_old/index.html": {
+      "filePath": "public_old/index.html",
+      "contentHash": "733ac25bd97ba5c4d4506942143947c9fa11899fee01f0c42f8776d65edb395b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 177,
+      "hasStructuralAnalysis": false
+    },
+    "resources/css/app.css": {
+      "filePath": "resources/css/app.css",
+      "contentHash": "8bdfa4d8892381ac7f3e4112fb566d9f7d806eb1a1b7c514fc94aa5ae35789ef",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": false
+    },
+    "resources/js/app.js": {
+      "filePath": "resources/js/app.js",
+      "contentHash": "d8e0add945a9162b24d775fb2f21eb9cb132a5c1f50f567945961f71815709da",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./talk-control",
+          "specifiers": [
+            "talkControl"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "resources/js/talk-control.js": {
+      "filePath": "resources/js/talk-control.js",
+      "contentHash": "77a5678c6d0e64c050a9e472be27c649e4deb2024bdd9355969470412ee2f8f7",
+      "functions": [
+        {
+          "name": "talkControl",
+          "params": [],
+          "exported": true,
+          "lineCount": 116
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "gsap",
+          "specifiers": [
+            "gsap"
+          ]
+        }
+      ],
+      "exports": [
+        "talkControl"
+      ],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/auth/login.blade.php": {
+      "filePath": "resources/views/auth/login.blade.php",
+      "contentHash": "e803de3f26a3693b1bf39c0c682d7244277ae488bcb7e8d921c08c0dfe8fb35a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/auth-screen.blade.php": {
+      "filePath": "resources/views/components/auth-screen.blade.php",
+      "contentHash": "562503e59cd431e7389d571f1299dd87db0df8c8d991ef58598554633a5b1168",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 44,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/layouts/guest.blade.php": {
+      "filePath": "resources/views/components/layouts/guest.blade.php",
+      "contentHash": "69a377f585f94a87c8dddfaca508152f6da73d0691b68b57a569ff9dcf74f46f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/secretary-turn.blade.php": {
+      "filePath": "resources/views/components/secretary-turn.blade.php",
+      "contentHash": "e3eb826d0307e42613214b7107502ba3b70f7fd63764f41e986c65e34a3c00a9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/talk-control.blade.php": {
+      "filePath": "resources/views/components/talk-control.blade.php",
+      "contentHash": "28c010467c4a71ccd683e6548a0690ae5975aa27791135ed2bf9cbfdc976f895",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/layouts/app.blade.php": {
+      "filePath": "resources/views/layouts/app.blade.php",
+      "contentHash": "69a377f585f94a87c8dddfaca508152f6da73d0691b68b57a569ff9dcf74f46f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/pages/⚡conversation/conversation.blade.php": {
+      "filePath": "resources/views/pages/⚡conversation/conversation.blade.php",
+      "contentHash": "77ab1be438f26ade26ed75c35e81ab5e3b019e0c262d563154b2b501da7057f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/pages/⚡conversation/conversation.php": {
+      "filePath": "resources/views/pages/⚡conversation/conversation.php",
+      "contentHash": "2f8d546b5704963d9140f7d4696578f85881085a3bd53802c0ccb2de05047235",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Actions\\Conversation\\Briefing",
+          "specifiers": [
+            "Briefing"
+          ]
+        },
+        {
+          "source": "App\\Actions\\Conversation\\OpenConversation",
+          "specifiers": [
+            "OpenConversation"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\App",
+          "specifiers": [
+            "App"
+          ]
+        },
+        {
+          "source": "Livewire\\Component",
+          "specifiers": [
+            "Component"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 73,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/welcome.blade.php": {
+      "filePath": "resources/views/welcome.blade.php",
+      "contentHash": "bdb9bb7d2eecceb3581e429545b6ec96014ccab6d0ae83d4c52930e9a15f7d65",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 224,
+      "hasStructuralAnalysis": true
+    },
+    "routes/console.php": {
+      "filePath": "routes/console.php",
+      "contentHash": "9adccc33e7dd400683e434774077c7fdb2f299c5712cedf16a43fdf56f2850fa",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Inspiring",
+          "specifiers": [
+            "Inspiring"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Artisan",
+          "specifiers": [
+            "Artisan"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "routes/web.php": {
+      "filePath": "routes/web.php",
+      "contentHash": "4d9aeeaf52bac951a2d3eb9a86556adbcf9a228cdbd8079fc1a1883c0f198ec2",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Auth\\LoginController",
+          "specifiers": [
+            "LoginController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\RecordController",
+          "specifiers": [
+            "RecordController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\VoiceTurnController",
+          "specifiers": [
+            "VoiceTurnController"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Route",
+          "specifiers": [
+            "Route"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "skills-lock.json": {
+      "filePath": "skills-lock.json",
+      "contentHash": "a77537f511e0da8725dcb148061f440bd6b9578eea37dda010e8b9f57bb0bac4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 108,
+      "hasStructuralAnalysis": false
+    },
+    "tests/Feature/Auth/AuthenticatedRoutesTest.php": {
+      "filePath": "tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "contentHash": "81b23b82ec203b0701e5d0d9496461f39f792b211538cac6249f32e9cfd23631",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Auth/LoginTest.php": {
+      "filePath": "tests/Feature/Auth/LoginTest.php",
+      "contentHash": "e1404964c1dbd782de0cd26f54eb04b4a0a91583b60c8bc8809f9a1cac161a17",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Conversation/BriefingTest.php": {
+      "filePath": "tests/Feature/Conversation/BriefingTest.php",
+      "contentHash": "992d953f33ce6a3f8a20bc07aba2321c5e653fadcfe72986f2337ac8bdebd2db",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Carbon",
+          "specifiers": [
+            "Carbon"
+          ]
+        },
+        {
+          "source": "Livewire\\Livewire",
+          "specifiers": [
+            "Livewire"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\travelTo",
+          "specifiers": [
+            "travelTo"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 137,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Conversation/FirstVisitTest.php": {
+      "filePath": "tests/Feature/Conversation/FirstVisitTest.php",
+      "contentHash": "34b48e01db5f363b4b0fd02d4fce826a316931acfe049eb6be2401a3a1bb3cd0",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Livewire\\Livewire",
+          "specifiers": [
+            "Livewire"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\assertModelExists",
+          "specifiers": [
+            "assertModelExists"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 57,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Conversation/HomeTest.php": {
+      "filePath": "tests/Feature/Conversation/HomeTest.php",
+      "contentHash": "0b4d152a34787650da5c2e5f1a27bf6360d5f90a4a0b20797b3cfc81adbee74c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Livewire\\Livewire",
+          "specifiers": [
+            "Livewire"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Conversation/TranscriptionFailureTest.php": {
+      "filePath": "tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "contentHash": "b159c1d4556deadd133eb53fd1e7880da3ecf24618e5b8064172d6d94c625616",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "Livewire\\Livewire",
+          "specifiers": [
+            "Livewire"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Conversation/TranscriptionSuccessTest.php": {
+      "filePath": "tests/Feature/Conversation/TranscriptionSuccessTest.php",
+      "contentHash": "3123fa4dbade9ed612670aa960a2f2c81fcdeed0e3a7031421a0884a3d482925",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "Livewire\\Livewire",
+          "specifiers": [
+            "Livewire"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/ExampleTest.php": {
+      "filePath": "tests/Feature/ExampleTest.php",
+      "contentHash": "b67f5fc302c3a778034f4f75aa606d6748a48fe00f9cee4b7584f96e406d48b8",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Livewire\\Livewire",
+          "specifiers": [
+            "Livewire"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Jobs/TranscribeVoiceTurnTest.php": {
+      "filePath": "tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "contentHash": "085b71efc09e11d5242680ab66368f3fe7d7f28ca2dc78e89d10cf34f83bbf0b",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Contracts\\Transcriber",
+          "specifiers": [
+            "Transcriber"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\PermanentTranscriptionException",
+          "specifiers": [
+            "PermanentTranscriptionException"
+          ]
+        },
+        {
+          "source": "App\\Jobs\\TranscribeVoiceTurn",
+          "specifiers": [
+            "TranscribeVoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Http",
+          "specifiers": [
+            "Http"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Storage",
+          "specifiers": [
+            "Storage"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\mock",
+          "specifiers": [
+            "mock"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 177,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Models/RecordTest.php": {
+      "filePath": "tests/Feature/Models/RecordTest.php",
+      "contentHash": "e3d6f8acdae12c2fb153c59123acf673abcb145b8d734c750f7b5b6fcf9a2de7",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\RecordKind",
+          "specifiers": [
+            "RecordKind"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\QueryException",
+          "specifiers": [
+            "QueryException"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\DB",
+          "specifiers": [
+            "DB"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\assertModelExists",
+          "specifiers": [
+            "assertModelExists"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 120,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Models/UserTest.php": {
+      "filePath": "tests/Feature/Models/UserTest.php",
+      "contentHash": "12a9e7a7b8012d429a8275d4a0c9336c3962ade54d63b542bb54c340ad1d64b4",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\QueryException",
+          "specifiers": [
+            "QueryException"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\DB",
+          "specifiers": [
+            "DB"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 56,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Models/VoiceTurnTest.php": {
+      "filePath": "tests/Feature/Models/VoiceTurnTest.php",
+      "contentHash": "2fd2e54a8f178f667d77aba15c28d50612701f8ab3a4e5923116cf818c066151",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\QueryException",
+          "specifiers": [
+            "QueryException"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\assertModelExists",
+          "specifiers": [
+            "assertModelExists"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 66,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Records/LocalDayTest.php": {
+      "filePath": "tests/Feature/Records/LocalDayTest.php",
+      "contentHash": "d579cc69d2a550434a37faef103163be91944a28eee632cf546296af573328ac",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Records\\LocalDay",
+          "specifiers": [
+            "LocalDay"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Carbon",
+          "specifiers": [
+            "Carbon"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\travelTo",
+          "specifiers": [
+            "travelTo"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Voice/AudioUploadTest.php": {
+      "filePath": "tests/Feature/Voice/AudioUploadTest.php",
+      "contentHash": "6d5fb040998766c840e90ff0b3493177a402e83f6d2b8c052394c2388e928fa9",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Jobs\\TranscribeVoiceTurn",
+          "specifiers": [
+            "TranscribeVoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\Models\\Record",
+          "specifiers": [
+            "Record"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\VoiceTurnStatus",
+          "specifiers": [
+            "VoiceTurnStatus"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\UploadedFile",
+          "specifiers": [
+            "UploadedFile"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Queue",
+          "specifiers": [
+            "Queue"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Storage",
+          "specifiers": [
+            "Storage"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\actingAs",
+          "specifiers": [
+            "actingAs"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\assertModelExists",
+          "specifiers": [
+            "assertModelExists"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\post",
+          "specifiers": [
+            "post"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 103,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Voice/ReplyAudioTest.php": {
+      "filePath": "tests/Feature/Voice/ReplyAudioTest.php",
+      "contentHash": "1299e8db08fba6536521a06ad5b883f18652661f7a89f2b12435bc0eed22827e",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Contracts\\Transcriber",
+          "specifiers": [
+            "Transcriber"
+          ]
+        },
+        {
+          "source": "App\\Jobs\\TranscribeVoiceTurn",
+          "specifiers": [
+            "TranscribeVoiceTurn"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\VoiceTurn",
+          "specifiers": [
+            "VoiceTurn"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Storage",
+          "specifiers": [
+            "Storage"
+          ]
+        },
+        {
+          "source": "Pest\\Laravel\\mock",
+          "specifiers": [
+            "mock"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Voice/TalkControlTest.php": {
+      "filePath": "tests/Feature/Voice/TalkControlTest.php",
+      "contentHash": "299d5658b993511186400fe17f0b8c9d02617ba7e3fca87e40d0396988d56539",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Livewire\\Livewire",
+          "specifiers": [
+            "Livewire"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Pest.php": {
+      "filePath": "tests/Pest.php",
+      "contentHash": "e04c9c21df4a640471d0e4df52b86e3c8d9da6aad39680369cc234bf88d3ab22",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Testing\\LazilyRefreshDatabase",
+          "specifiers": [
+            "LazilyRefreshDatabase"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "tests/TestCase.php": {
+      "filePath": "tests/TestCase.php",
+      "contentHash": "c7c209f5579c42647c1f7b2a79ac828e8b54ac62a98442045a6e94fa2c0d0ebc",
+      "functions": [],
+      "classes": [
+        {
+          "name": "TestCase",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Testing\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "TestCase"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Unit/ExampleTest.php": {
+      "filePath": "tests/Unit/ExampleTest.php",
+      "contentHash": "93452c56b5d46910dbe19cc44c804c86b4849ee0cff7d1c0ff25ca074b0ee70b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "vite.config.js": {
+      "filePath": "vite.config.js",
+      "contentHash": "f413e14379e2db8b200c63a6326b925f6d47cc0df458c77bfe188cfc23e8081f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "vite",
+          "specifiers": [
+            "defineConfig"
+          ]
+        },
+        {
+          "source": "laravel-vite-plugin",
+          "specifiers": [
+            "laravel"
+          ]
+        },
+        {
+          "source": "laravel-vite-plugin/fonts",
+          "specifiers": [
+            "bunny"
+          ]
+        },
+        {
+          "source": "@tailwindcss/vite",
+          "specifiers": [
+            "tailwindcss"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

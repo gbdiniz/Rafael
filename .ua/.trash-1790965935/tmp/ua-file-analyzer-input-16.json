@@ -1,0 +1,15 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": ".impeccable/mocks/home-bars.png.json", "language": "json", "sizeLines": 5, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/home-previews.json", "language": "json", "sizeLines": 43, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/malote-home.png.json", "language": "json", "sizeLines": 5, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/malote-preview.json", "language": "json", "sizeLines": 19, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    ".impeccable/mocks/home-bars.png.json": [],
+    ".impeccable/mocks/home-previews.json": [],
+    ".impeccable/mocks/malote-home.png.json": [],
+    ".impeccable/mocks/malote-preview.json": []
+  }
+}

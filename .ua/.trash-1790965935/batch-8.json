@@ -1,0 +1,310 @@
+{
+  "nodes": [
+    {
+      "id": "document:.agents/skills/impeccable/reference/hooks.md",
+      "type": "document",
+      "name": "hooks.md",
+      "filePath": ".agents/skills/impeccable/reference/hooks.md",
+      "summary": "Reference for the $impeccable hooks command that toggles and configures the per-project design detector hook across Claude, Cursor, Codex, Copilot, and Grok harnesses.",
+      "tags": ["documentation", "design-detector", "hooks", "configuration", "workflow"],
+      "complexity": "moderate",
+      "languageNotes": "Documents per-provider hook manifests, two-tier rule scanning, and CLI actions for ignore rules and config reset."
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/init.md",
+      "type": "document",
+      "name": "init.md",
+      "filePath": ".agents/skills/impeccable/reference/init.md",
+      "summary": "Step-by-step init flow for capturing product truth by exploring the project, interviewing the user, writing PRODUCT.md, and recording workflow defaults.",
+      "tags": ["documentation", "onboarding", "product-discovery", "workflow", "setup"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/ios.md",
+      "type": "document",
+      "name": "ios.md",
+      "filePath": ".agents/skills/impeccable/reference/ios.md",
+      "summary": "iOS platform design checklist covering layout, touch targets, typography, materials, controls, motion, and build verification to avoid generic mobile UI patterns.",
+      "tags": ["documentation", "ios", "platform-guidelines", "mobile", "design-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/layout.md",
+      "type": "document",
+      "name": "layout.md",
+      "filePath": ".agents/skills/impeccable/reference/layout.md",
+      "summary": "Live-mode layout action reference that sets a spatial thesis, applies composition changes in visitor mode, verifies results, and defines signature parameters for variant generation.",
+      "tags": ["documentation", "layout", "live-mode", "composition", "design-action"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/live-setup.md",
+      "type": "document",
+      "name": "live-setup.md",
+      "filePath": ".agents/skills/impeccable/reference/live-setup.md",
+      "summary": "First-time live mode setup guide for writing .impeccable/config.json, handling CSP detection, consent prompts, append-array/string config, and troubleshooting injection issues.",
+      "tags": ["documentation", "live-mode", "configuration", "setup", "troubleshooting"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/live.md",
+      "type": "document",
+      "name": "live.md",
+      "filePath": ".agents/skills/impeccable/reference/live.md",
+      "summary": "Comprehensive interactive live variant mode contract covering boot, poll loops, generate/accept/discard/steer handlers, harness-specific policies, and session cleanup.",
+      "tags": ["documentation", "live-mode", "browser-overlay", "workflow", "variants"],
+      "complexity": "complex",
+      "languageNotes": "Defines strict ordered steps with harness-specific poll behavior for Claude Code, Cursor, and Codex."
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/new-work.md",
+      "type": "document",
+      "name": "new-work.md",
+      "filePath": ".agents/skills/impeccable/reference/new-work.md",
+      "summary": "Workflow for starting new visual work: assess existing truth, choose invention depth, commit the design world, record decisions, build comp-led or code-led, and finish with inspection.",
+      "tags": ["documentation", "design-workflow", "comps", "decision-recording", "build"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/onboard.md",
+      "type": "document",
+      "name": "onboard.md",
+      "filePath": ".agents/skills/impeccable/reference/onboard.md",
+      "summary": "UX onboarding design guide covering principles, guided tours, empty states, contextual help, implementation patterns, and quality verification for first-run experiences.",
+      "tags": ["documentation", "onboarding", "ux-patterns", "empty-states", "product-design"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/operate.md",
+      "type": "document",
+      "name": "operate.md",
+      "filePath": ".agents/skills/impeccable/reference/operate.md",
+      "summary": "Operate-mode depth notes for product surfaces, defining the product slop test and constraints across typography, color, layout, components, motion, and permissions.",
+      "tags": ["documentation", "operate-mode", "product-ui", "constraints", "quality-bar"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/optimize.md",
+      "type": "document",
+      "name": "optimize.md",
+      "filePath": ".agents/skills/impeccable/reference/optimize.md",
+      "summary": "Performance optimization reference covering loading, rendering, animation, framework tuning, network efficiency, Core Web Vitals targets, monitoring, and verification.",
+      "tags": ["documentation", "performance", "core-web-vitals", "optimization", "monitoring"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/overdrive.md",
+      "type": "document",
+      "name": "overdrive.md",
+      "filePath": ".agents/skills/impeccable/reference/overdrive.md",
+      "summary": "Guide for pushing interfaces beyond baseline quality with cinematic motion, scroll-driven effects, advanced rendering, and disciplined progressive enhancement.",
+      "tags": ["documentation", "motion", "advanced-ui", "progressive-enhancement", "polish"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/polish.md",
+      "type": "document",
+      "name": "polish.md",
+      "filePath": ".agents/skills/impeccable/reference/polish.md",
+      "summary": "Polish command workflow to establish the design system, gather evidence, triage findings, refine flow/layout/type/color/interaction across a surface, and verify completion.",
+      "tags": ["documentation", "polish", "design-review", "triage", "workflow"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/quieter.md",
+      "type": "document",
+      "name": "quieter.md",
+      "filePath": ".agents/skills/impeccable/reference/quieter.md",
+      "summary": "Quieter live action reference for reducing visual noise through color refinement, weight reduction, simplification, motion cuts, and composition tightening in visitor mode.",
+      "tags": ["documentation", "visual-refinement", "live-mode", "subtlety", "design-action"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/region-map.md",
+      "type": "document",
+      "name": "region-map.md",
+      "filePath": ".agents/skills/impeccable/reference/region-map.md",
+      "summary": "Procedure for authoring and inspecting comp region maps with comp-spec, defining containment and review groups before asset production or measured builds.",
+      "tags": ["documentation", "comps", "region-mapping", "asset-production", "inspection"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/routing.md",
+      "type": "document",
+      "name": "routing.md",
+      "filePath": ".agents/skills/impeccable/reference/routing.md",
+      "summary": "No-argument $impeccable routing guide that reads project signals and recommends 2-3 context-aware next commands before showing the full command menu.",
+      "tags": ["documentation", "command-routing", "context-aware", "workflow", "recommendations"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/shape.md",
+      "type": "document",
+      "name": "shape.md",
+      "filePath": ".agents/skills/impeccable/reference/shape.md",
+      "summary": "Shape command reference for a two-round discovery interview that resolves design direction and produces a brief before visual work begins.",
+      "tags": ["documentation", "discovery", "design-brief", "interview", "direction"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/typeset.md",
+      "type": "document",
+      "name": "typeset.md",
+      "filePath": ".agents/skills/impeccable/reference/typeset.md",
+      "summary": "Typeset live action reference for assessing typography in isolation, setting a type system, applying changes, verifying legibility, and defining live-mode signature parameters.",
+      "tags": ["documentation", "typography", "live-mode", "design-action", "type-system"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/visualize.md",
+      "type": "document",
+      "name": "visualize.md",
+      "filePath": ".agents/skills/impeccable/reference/visualize.md",
+      "summary": "Visualize command reference for generating three compositional direction comps, securing a single approval point, and treating the approved comp as a build spec with provenance plates.",
+      "tags": ["documentation", "comps", "direction", "approval", "asset-production"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.agents/skills/impeccable/reference/hooks.md",
+      "target": "document:.agents/skills/impeccable/reference/craft-floor.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/live-setup.md",
+      "target": "document:.agents/skills/impeccable/reference/live.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/live.md",
+      "target": "document:.agents/skills/impeccable/reference/live-setup.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/live.md",
+      "target": "document:.agents/skills/impeccable/reference/layout.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/live.md",
+      "target": "document:.agents/skills/impeccable/reference/typeset.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/live.md",
+      "target": "document:.agents/skills/impeccable/reference/quieter.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/layout.md",
+      "target": "document:.agents/skills/impeccable/reference/typeset.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/layout.md",
+      "target": "document:.agents/skills/impeccable/reference/quieter.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/region-map.md",
+      "target": "document:.agents/skills/impeccable/reference/new-work.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/routing.md",
+      "target": "document:.agents/skills/impeccable/reference/init.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/routing.md",
+      "target": "document:.agents/skills/impeccable/reference/live.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/routing.md",
+      "target": "document:.agents/skills/impeccable/reference/polish.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/routing.md",
+      "target": "document:.agents/skills/impeccable/reference/quieter.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/routing.md",
+      "target": "document:.agents/skills/impeccable/reference/typeset.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/shape.md",
+      "target": "document:.agents/skills/impeccable/reference/new-work.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/visualize.md",
+      "target": "document:.agents/skills/impeccable/reference/new-work.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/visualize.md",
+      "target": "document:.agents/skills/impeccable/reference/region-map.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/overdrive.md",
+      "target": "document:.agents/skills/impeccable/reference/optimize.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/polish.md",
+      "target": "document:.agents/skills/impeccable/reference/quieter.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/ios.md",
+      "target": "document:.agents/skills/impeccable/reference/operate.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "config:.impeccable/mocks/home-bars.png.json",
+      "type": "config",
+      "name": "home-bars.png.json",
+      "filePath": ".impeccable/mocks/home-bars.png.json",
+      "summary": "Approved Impeccable mock metadata for a Figma-derived home icon: five rounded vertical bars on a dark void background, with source notes and a generation prompt.",
+      "tags": ["configuration", "impeccable", "design-mock", "ui-asset"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.impeccable/mocks/home-previews.json",
+      "type": "config",
+      "name": "home-previews.json",
+      "filePath": ".impeccable/mocks/home-previews.json",
+      "summary": "Impeccable decision config presenting three home-screen design directions (Malote, Espaço, Neumorfismo) with lineage, palette, materials, viewport, risks, and comp paths for each option.",
+      "tags": ["configuration", "impeccable", "design-decision", "ui-preview"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.impeccable/mocks/malote-home.png.json",
+      "type": "config",
+      "name": "malote-home.png.json",
+      "filePath": ".impeccable/mocks/malote-home.png.json",
+      "summary": "Generation prompt and aspect metadata for the Malote home comp: a portrait messenger-pouch UI with seven timed onion-skin slips and a Segurar hold control at the bottom.",
+      "tags": ["configuration", "impeccable", "design-mock", "generation-prompt"],
+      "complexity": "simple",
+      "languageNotes": "Detailed region-based prompt specifies palette, typography, and Portuguese copy for seven schedule slips."
+    },
+    {
+      "id": "config:.impeccable/mocks/malote-preview.json",
+      "type": "config",
+      "name": "malote-preview.json",
+      "filePath": ".impeccable/mocks/malote-preview.json",
+      "summary": "Focused Impeccable preview config for the locked Malote home direction, describing the messenger-pouch metaphor and pointing to the malote-home comp for build output.",
+      "tags": ["configuration", "impeccable", "design-preview", "ui-concept"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:.impeccable/mocks/home-previews.json",
+      "target": "config:.impeccable/mocks/malote-home.png.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/mocks/malote-preview.json",
+      "target": "config:.impeccable/mocks/malote-home.png.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/mocks/malote-preview.json",
+      "target": "config:.impeccable/mocks/home-previews.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.impeccable/mocks/home-bars.png.json",
+      "target": "config:.impeccable/mocks/home-previews.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

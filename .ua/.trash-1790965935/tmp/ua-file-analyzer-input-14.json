@@ -1,0 +1,31 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": ".env.example", "language": "config", "sizeLines": 73, "fileCategory": "config"},
+    {"path": ".mcp.json", "language": "json", "sizeLines": 11, "fileCategory": "config"},
+    {"path": "AGENTS.md", "language": "markdown", "sizeLines": 169, "fileCategory": "docs"},
+    {"path": "CLAUDE.md", "language": "markdown", "sizeLines": 47, "fileCategory": "docs"},
+    {"path": "DESIGN.md", "language": "markdown", "sizeLines": 154, "fileCategory": "docs"},
+    {"path": "PRODUCT.md", "language": "markdown", "sizeLines": 82, "fileCategory": "docs"},
+    {"path": "README.md", "language": "markdown", "sizeLines": 43, "fileCategory": "docs"},
+    {"path": "boost.json", "language": "json", "sizeLines": 19, "fileCategory": "config"},
+    {"path": "composer.json", "language": "json", "sizeLines": 90, "fileCategory": "config"},
+    {"path": "package.json", "language": "json", "sizeLines": 22, "fileCategory": "config"},
+    {"path": "phpunit.xml", "language": "xml", "sizeLines": 36, "fileCategory": "config"},
+    {"path": "skills-lock.json", "language": "json", "sizeLines": 107, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    ".env.example": [],
+    ".mcp.json": [],
+    "AGENTS.md": [],
+    "CLAUDE.md": [],
+    "DESIGN.md": [],
+    "PRODUCT.md": [],
+    "README.md": [],
+    "boost.json": [],
+    "composer.json": [],
+    "package.json": [],
+    "phpunit.xml": [],
+    "skills-lock.json": []
+  }
+}

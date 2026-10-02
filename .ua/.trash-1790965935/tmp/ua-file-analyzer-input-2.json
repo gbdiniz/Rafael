@@ -1,0 +1,55 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": "app/Contracts/Transcriber.php", "language": "php", "sizeLines": 10, "fileCategory": "code"},
+    {"path": "app/Exceptions/PermanentTranscriptionException.php", "language": "php", "sizeLines": 10, "fileCategory": "code"},
+    {"path": "app/Exceptions/TransientTranscriptionException.php", "language": "php", "sizeLines": 10, "fileCategory": "code"},
+    {"path": "app/Jobs/TranscribeVoiceTurn.php", "language": "php", "sizeLines": 98, "fileCategory": "code"},
+    {"path": "app/Providers/AppServiceProvider.php", "language": "php", "sizeLines": 26, "fileCategory": "code"},
+    {"path": "app/Services/Transcription/HttpTranscriber.php", "language": "php", "sizeLines": 133, "fileCategory": "code"},
+    {"path": "bootstrap/providers.php", "language": "php", "sizeLines": 7, "fileCategory": "code"},
+    {"path": "tests/Feature/Jobs/TranscribeVoiceTurnTest.php", "language": "php", "sizeLines": 176, "fileCategory": "code"},
+    {"path": "tests/Feature/Voice/ReplyAudioTest.php", "language": "php", "sizeLines": 33, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "app/Contracts/Transcriber.php": [
+      "app/Models/VoiceTurn.php"
+    ],
+    "app/Exceptions/PermanentTranscriptionException.php": [],
+    "app/Exceptions/TransientTranscriptionException.php": [],
+    "app/Jobs/TranscribeVoiceTurn.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Exceptions/PermanentTranscriptionException.php",
+      "app/Exceptions/TransientTranscriptionException.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "app/Providers/AppServiceProvider.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Services/Transcription/HttpTranscriber.php"
+    ],
+    "app/Services/Transcription/HttpTranscriber.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Exceptions/PermanentTranscriptionException.php",
+      "app/Exceptions/TransientTranscriptionException.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "bootstrap/providers.php": [
+      "app/Providers/AppServiceProvider.php"
+    ],
+    "tests/Feature/Jobs/TranscribeVoiceTurnTest.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Exceptions/PermanentTranscriptionException.php",
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/VoiceTurnStatus.php"
+    ],
+    "tests/Feature/Voice/ReplyAudioTest.php": [
+      "app/Contracts/Transcriber.php",
+      "app/Jobs/TranscribeVoiceTurn.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ]
+  }
+}

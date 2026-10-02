@@ -1,0 +1,290 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/assertions.md",
+      "type": "document",
+      "name": "assertions.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/assertions.md",
+      "summary": "Guidelines for writing Pest and Laravel assertions using arrange-act-assert structure, subject-specific matchers, and complete result checks.",
+      "tags": ["documentation", "testing", "assertions", "pest", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "type": "document",
+      "name": "endpoint-tests.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "summary": "Covers HTTP endpoint test design including auth, tenant isolation, validation, authorization policies, and layer ownership for failure cases.",
+      "tags": ["documentation", "testing", "http", "api", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/finding-features.md",
+      "type": "document",
+      "name": "finding-features.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/finding-features.md",
+      "summary": "Explains how to discover Laravel and Pest testing features through documentation and built-in assertion methods before writing custom checks.",
+      "tags": ["documentation", "testing", "discovery", "laravel", "pest"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/isolation.md",
+      "type": "document",
+      "name": "isolation.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/isolation.md",
+      "summary": "Describes isolating tests with framework fakes, mocks, HTTP faking, time control, and database strategies for deterministic outcomes.",
+      "tags": ["documentation", "testing", "mocks", "fakes", "isolation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/naming.md",
+      "type": "document",
+      "name": "naming.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/naming.md",
+      "summary": "Defines conventions for test file layout, function naming, descriptive test names, and logical grouping within the Pest suite.",
+      "tags": ["documentation", "testing", "conventions", "naming", "structure"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/performance.md",
+      "type": "document",
+      "name": "performance.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/performance.md",
+      "summary": "Provides guidance on test suite performance including environment setup, parallel execution, CI splitting, and identifying slow tests.",
+      "tags": ["documentation", "testing", "performance", "ci-cd", "parallel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "type": "document",
+      "name": "review.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/review.md",
+      "summary": "Checklist for reviewing tests across value, naming, coverage, data determinism, and assertion quality before merging changes.",
+      "tags": ["documentation", "testing", "code-review", "quality", "coverage"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/security.md",
+      "type": "document",
+      "name": "security.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/security.md",
+      "summary": "Outlines security-focused test cases for authentication boundaries, authorization, input validation, and cross-tenant access control.",
+      "tags": ["documentation", "testing", "security", "authorization", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/test-data.md",
+      "type": "document",
+      "name": "test-data.md",
+      "filePath": ".claude/skills/testing-best-practices/rules/test-data.md",
+      "summary": "Covers factory usage, per-test data creation, record construction patterns, and Pest datasets for parameterized scenarios.",
+      "tags": ["documentation", "testing", "factories", "test-data", "pest"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/assertions.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/finding-features.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/isolation.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/naming.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/performance.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/security.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/test-data.md",
+      "target": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/assertions.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/assertions.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/finding-features.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/finding-features.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/isolation.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/isolation.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/naming.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/naming.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/performance.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/performance.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/review.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/security.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/security.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/test-data.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/test-data.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/assertions.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/naming.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/test-data.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/isolation.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/finding-features.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/assertions.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/endpoint-tests.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/security.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/test-data.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/isolation.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/performance.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/isolation.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/performance.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "target": "document:.claude/skills/testing-best-practices/rules/security.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

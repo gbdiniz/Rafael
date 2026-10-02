@@ -1,0 +1,53 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": "app/Models/Record.php", "language": "php", "sizeLines": 102, "fileCategory": "code"},
+    {"path": "app/RecordKind.php", "language": "php", "sizeLines": 9, "fileCategory": "code"},
+    {"path": "app/Records/LocalDay.php", "language": "php", "sizeLines": 44, "fileCategory": "code"},
+    {"path": "database/factories/RecordFactory.php", "language": "php", "sizeLines": 70, "fileCategory": "code"},
+    {"path": "tests/Feature/Conversation/BriefingTest.php", "language": "php", "sizeLines": 136, "fileCategory": "code"},
+    {"path": "tests/Feature/Conversation/FirstVisitTest.php", "language": "php", "sizeLines": 56, "fileCategory": "code"},
+    {"path": "tests/Feature/Models/RecordTest.php", "language": "php", "sizeLines": 119, "fileCategory": "code"},
+    {"path": "tests/Feature/Models/UserTest.php", "language": "php", "sizeLines": 55, "fileCategory": "code"},
+    {"path": "tests/Feature/Records/LocalDayTest.php", "language": "php", "sizeLines": 58, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "app/Models/Record.php": [
+      "app/RecordKind.php",
+      "app/Records/LocalDay.php",
+      "database/factories/RecordFactory.php"
+    ],
+    "app/RecordKind.php": [],
+    "app/Records/LocalDay.php": [],
+    "database/factories/RecordFactory.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/RecordKind.php"
+    ],
+    "tests/Feature/Conversation/BriefingTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Conversation/FirstVisitTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Models/RecordTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php",
+      "app/RecordKind.php"
+    ],
+    "tests/Feature/Models/UserTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Models/VoiceTurn.php"
+    ],
+    "tests/Feature/Records/LocalDayTest.php": [
+      "app/Models/Record.php",
+      "app/Models/User.php",
+      "app/Records/LocalDay.php"
+    ]
+  }
+}

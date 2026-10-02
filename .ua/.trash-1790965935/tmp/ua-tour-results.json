@@ -1,0 +1,3043 @@
+{
+  "scriptCompleted": true,
+  "entryPointCandidates": [
+    {
+      "id": "document:README.md",
+      "score": 5,
+      "name": "README.md",
+      "summary": "Project overview explaining Rafael's secretary concept, voice interaction flow, core product principles, and setup requirements including MySQL and Redis.",
+      "type": "document"
+    },
+    {
+      "id": "file:public/index.php",
+      "score": 4,
+      "name": "index.php",
+      "summary": "HTTP front controller that bootstraps the Laravel application and dispatches incoming web requests.",
+      "type": "file"
+    },
+    {
+      "id": "file:resources/js/app.js",
+      "score": 3,
+      "name": "app.js",
+      "summary": "Frontend JavaScript entry point that registers the talkControl Alpine.js component on alpine:init.",
+      "type": "file"
+    },
+    {
+      "id": "document:AGENTS.md",
+      "score": 2,
+      "name": "AGENTS.md",
+      "summary": "Primary AI agent guidelines for the Rafael Laravel app, covering Laravel Boost tools, PHP conventions, Livewire patterns, Pint formatting, and Pest testing workflows.",
+      "type": "document"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "score": 2,
+      "name": "CLAUDE.md",
+      "summary": "Bootstrap instructions for Claude agents working in this repo, covering PHP/Composer prerequisites and Laravel Boost installation before reading AGENTS.md.",
+      "type": "document"
+    }
+  ],
+  "fanInRanking": [
+    {
+      "id": "file:app/Models/User.php",
+      "fanIn": 31,
+      "name": "User.php"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "fanIn": 19,
+      "name": "SKILL.md"
+    },
+    {
+      "id": "file:app/Models/VoiceTurn.php",
+      "fanIn": 19,
+      "name": "VoiceTurn.php"
+    },
+    {
+      "id": "file:app/Models/Record.php",
+      "fanIn": 14,
+      "name": "Record.php"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/SKILL.md",
+      "fanIn": 9,
+      "name": "SKILL.md"
+    },
+    {
+      "id": "file:app/VoiceTurnStatus.php",
+      "fanIn": 9,
+      "name": "VoiceTurnStatus.php"
+    },
+    {
+      "id": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "fanIn": 8,
+      "name": "TranscribeVoiceTurn.php"
+    },
+    {
+      "id": "file:bootstrap/app.php",
+      "fanIn": 7,
+      "name": "app.php"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/impeccable",
+      "fanIn": 6,
+      "name": "impeccable"
+    },
+    {
+      "id": "file:public/index.php",
+      "fanIn": 6,
+      "name": "index.php"
+    },
+    {
+      "id": "file:resources/css/app.css",
+      "fanIn": 6,
+      "name": "app.css"
+    },
+    {
+      "id": "file:resources/views/pages/⚡conversation/conversation.php",
+      "fanIn": 6,
+      "name": "conversation.php"
+    },
+    {
+      "id": "class:app/Http/Controllers/Controller.php:Controller",
+      "fanIn": 5,
+      "name": "Controller"
+    },
+    {
+      "id": "class:app/Models/VoiceTurn.php:VoiceTurn",
+      "fanIn": 5,
+      "name": "VoiceTurn"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/SKILL.md",
+      "fanIn": 5,
+      "name": "SKILL.md"
+    },
+    {
+      "id": "document:PRODUCT.md",
+      "fanIn": 5,
+      "name": "PRODUCT.md"
+    },
+    {
+      "id": "file:app/Contracts/Transcriber.php",
+      "fanIn": 5,
+      "name": "Transcriber.php"
+    },
+    {
+      "id": "file:resources/js/app.js",
+      "fanIn": 5,
+      "name": "app.js"
+    },
+    {
+      "id": "file:resources/js/talk-control.js",
+      "fanIn": 5,
+      "name": "talk-control.js"
+    },
+    {
+      "id": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "fanIn": 5,
+      "name": "TranscribeVoiceTurnTest.php"
+    }
+  ],
+  "fanOutRanking": [
+    {
+      "id": "document:docs/project-phases.md",
+      "fanOut": 26,
+      "name": "project-phases.md"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "fanOut": 22,
+      "name": "SKILL.md"
+    },
+    {
+      "id": "file:app/Models/User.php",
+      "fanOut": 15,
+      "name": "User.php"
+    },
+    {
+      "id": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "fanOut": 13,
+      "name": "TranscribeVoiceTurn.php"
+    },
+    {
+      "id": "document:docs/database-schema.md",
+      "fanOut": 12,
+      "name": "database-schema.md"
+    },
+    {
+      "id": "file:app/Services/Transcription/HttpTranscriber.php",
+      "fanOut": 11,
+      "name": "HttpTranscriber.php"
+    },
+    {
+      "id": "file:app/Models/Record.php",
+      "fanOut": 10,
+      "name": "Record.php"
+    },
+    {
+      "id": "file:resources/views/pages/⚡conversation/conversation.php",
+      "fanOut": 10,
+      "name": "conversation.php"
+    },
+    {
+      "id": "document:.claude/skills/testing-best-practices/rules/review.md",
+      "fanOut": 9,
+      "name": "review.md"
+    },
+    {
+      "id": "file:database/factories/VoiceTurnFactory.php",
+      "fanOut": 9,
+      "name": "VoiceTurnFactory.php"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "fanOut": 8,
+      "name": "finish-reviewer.md"
+    },
+    {
+      "id": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "fanOut": 8,
+      "name": "StoreVoiceTurn.php"
+    },
+    {
+      "id": "file:app/Models/VoiceTurn.php",
+      "fanOut": 8,
+      "name": "VoiceTurn.php"
+    },
+    {
+      "id": "file:database/factories/RecordFactory.php",
+      "fanOut": 8,
+      "name": "RecordFactory.php"
+    },
+    {
+      "id": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "fanOut": 7,
+      "name": "impeccable_finish_reviewer.toml"
+    },
+    {
+      "id": "document:docs/project-description.md",
+      "fanOut": 7,
+      "name": "project-description.md"
+    },
+    {
+      "id": "config:.env.example",
+      "fanOut": 6,
+      "name": ".env.example"
+    },
+    {
+      "id": "file:app/Actions/Conversation/Briefing.php",
+      "fanOut": 6,
+      "name": "Briefing.php"
+    },
+    {
+      "id": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "fanOut": 6,
+      "name": "TranscribeVoiceTurnTest.php"
+    },
+    {
+      "id": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "fanOut": 5,
+      "name": "impeccable_asset_producer.toml"
+    }
+  ],
+  "bfsTraversal": {
+    "startNode": "file:public/index.php",
+    "order": [
+      "file:public/index.php"
+    ],
+    "depthMap": {
+      "file:public/index.php": 0
+    },
+    "byDepth": {
+      "0": [
+        "file:public/index.php"
+      ]
+    }
+  },
+  "nonCodeFiles": {
+    "documentation": [
+      {
+        "id": "document:.agents/skills/impeccable/reference/adapt.md",
+        "name": "adapt.md",
+        "type": "document",
+        "summary": "Comprehensive web adaptation guide covering responsive breakpoints, touch targets, layout patterns, responsive images, and verification across mobile, tablet, desktop, print, and email contexts."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/adapt.native.md",
+        "name": "adapt.native.md",
+        "type": "document",
+        "summary": "Native adaptation workflow for scaling phone layouts to tablets, handling orientation and foldables, cross-platform iOS/Android differences, and porting web experiences to native runtimes."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/android.md",
+        "name": "android.md",
+        "type": "document",
+        "summary": "Android platform conformance checklist evaluating layout structure, touch targets, typography, color theming, components, motion, and build verification against Material expectations."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/animate.md",
+        "name": "animate.md",
+        "type": "document",
+        "summary": "Motion design command that defines an animation thesis, selects material by meaning, sets timing and easing, implements to the target runtime, and verifies accessibility controls."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/audit.md",
+        "name": "audit.md",
+        "type": "document",
+        "summary": "Web implementation diagnostic scanning accessibility, performance, theming, responsive design, and implementation integrity, then generating a scored audit report with prioritized actions."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/audit.native.md",
+        "name": "audit.native.md",
+        "type": "document",
+        "summary": "Native app audit workflow evaluating VoiceOver and TalkBack accessibility, performance, appearance, platform conformance, adaptivity, and producing a conformance verdict report."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/bolder.md",
+        "name": "bolder.md",
+        "type": "document",
+        "summary": "Visual amplification command that diagnoses flat interfaces, intensifies hierarchy and presence within fixed scope, and validates the result with a skeleton test."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/clarify.md",
+        "name": "clarify.md",
+        "type": "document",
+        "summary": "UX copy refinement workflow auditing interface language, rewriting actions, forms, errors, and state messages, and verifying voice, accessibility, and localization quality."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/colorize.md",
+        "name": "colorize.md",
+        "type": "document",
+        "summary": "Color strategy command that audits existing palettes, chooses an application strategy, applies tokens at system scale, and verifies contrast and perceptual consistency."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/component-review.md",
+        "name": "component-review.md",
+        "type": "document",
+        "summary": "Structured component review workflow for preparing a component kit, presenting variants to stakeholders, and assembling findings into a focused review session."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/craft-floor.md",
+        "name": "craft-floor.md",
+        "type": "document",
+        "summary": "Minimum craft quality bar defining verification criteria and explicit refusal conditions for design output that falls below acceptable standards."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/craft.md",
+        "name": "craft.md",
+        "type": "document",
+        "summary": "Deprecated alias pointing agents to the craft-floor quality standards reference instead of maintaining a separate craft command."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/critique.md",
+        "name": "critique.md",
+        "type": "document",
+        "summary": "Comprehensive design critique orchestration combining design review, browser evidence, cognitive load assessment, Nielsen heuristics scoring, persona red flags, and persisted snapshot reporting."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/delight.md",
+        "name": "delight.md",
+        "type": "document",
+        "summary": "Delight design command identifying emotional opportunities, defining a single delight thesis, building for key moments, and protecting core usability during enhancement."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/distill.md",
+        "name": "distill.md",
+        "type": "document",
+        "summary": "Simplification workflow assessing interface complexity, planning reductions across information architecture, visuals, layout, interactions, content, and code, then verifying outcomes."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/doctor.md",
+        "name": "doctor.md",
+        "type": "document",
+        "summary": "Skill maintenance pass that runs health checks, acts on findings by severity, enforces deprecated field handling, and supports monorepo-wide validation with opt-out controls."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/document.md",
+        "name": "document.md",
+        "type": "document",
+        "summary": "Design documentation workflow for producing DESIGN.md and .impeccable/design.json via scan or seed modes, including token frontmatter schema, sidecar rules, and confirmation steps."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/extract.md",
+        "name": "extract.md",
+        "type": "document",
+        "summary": "Six-step design system extraction flow to discover existing patterns, plan component extraction, enrich tokens, migrate usage, and document the resulting system."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/generate.md",
+        "name": "generate.md",
+        "type": "document",
+        "summary": "UI generation workflow parsing user requests, reusing existing pages where possible, generating new screens, and closing with acceptance criteria."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/harden.md",
+        "name": "harden.md",
+        "type": "document",
+        "summary": "Production hardening guide covering text overflow, internationalization, error handling, edge cases, input validation, accessibility resilience, performance, and verification strategies."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/hooks.md",
+        "name": "hooks.md",
+        "type": "document",
+        "summary": "Reference for the $impeccable hooks command that toggles and configures the per-project design detector hook across Claude, Cursor, Codex, Copilot, and Grok harnesses."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/init.md",
+        "name": "init.md",
+        "type": "document",
+        "summary": "Step-by-step init flow for capturing product truth by exploring the project, interviewing the user, writing PRODUCT.md, and recording workflow defaults."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/ios.md",
+        "name": "ios.md",
+        "type": "document",
+        "summary": "iOS platform design checklist covering layout, touch targets, typography, materials, controls, motion, and build verification to avoid generic mobile UI patterns."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/layout.md",
+        "name": "layout.md",
+        "type": "document",
+        "summary": "Live-mode layout action reference that sets a spatial thesis, applies composition changes in visitor mode, verifies results, and defines signature parameters for variant generation."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/live-setup.md",
+        "name": "live-setup.md",
+        "type": "document",
+        "summary": "First-time live mode setup guide for writing .impeccable/config.json, handling CSP detection, consent prompts, append-array/string config, and troubleshooting injection issues."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/live.md",
+        "name": "live.md",
+        "type": "document",
+        "summary": "Comprehensive interactive live variant mode contract covering boot, poll loops, generate/accept/discard/steer handlers, harness-specific policies, and session cleanup."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/new-work.md",
+        "name": "new-work.md",
+        "type": "document",
+        "summary": "Workflow for starting new visual work: assess existing truth, choose invention depth, commit the design world, record decisions, build comp-led or code-led, and finish with inspection."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/onboard.md",
+        "name": "onboard.md",
+        "type": "document",
+        "summary": "UX onboarding design guide covering principles, guided tours, empty states, contextual help, implementation patterns, and quality verification for first-run experiences."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/operate.md",
+        "name": "operate.md",
+        "type": "document",
+        "summary": "Operate-mode depth notes for product surfaces, defining the product slop test and constraints across typography, color, layout, components, motion, and permissions."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/optimize.md",
+        "name": "optimize.md",
+        "type": "document",
+        "summary": "Performance optimization reference covering loading, rendering, animation, framework tuning, network efficiency, Core Web Vitals targets, monitoring, and verification."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/overdrive.md",
+        "name": "overdrive.md",
+        "type": "document",
+        "summary": "Guide for pushing interfaces beyond baseline quality with cinematic motion, scroll-driven effects, advanced rendering, and disciplined progressive enhancement."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/polish.md",
+        "name": "polish.md",
+        "type": "document",
+        "summary": "Polish command workflow to establish the design system, gather evidence, triage findings, refine flow/layout/type/color/interaction across a surface, and verify completion."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/quieter.md",
+        "name": "quieter.md",
+        "type": "document",
+        "summary": "Quieter live action reference for reducing visual noise through color refinement, weight reduction, simplification, motion cuts, and composition tightening in visitor mode."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/region-map.md",
+        "name": "region-map.md",
+        "type": "document",
+        "summary": "Procedure for authoring and inspecting comp region maps with comp-spec, defining containment and review groups before asset production or measured builds."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/routing.md",
+        "name": "routing.md",
+        "type": "document",
+        "summary": "No-argument $impeccable routing guide that reads project signals and recommends 2-3 context-aware next commands before showing the full command menu."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/shape.md",
+        "name": "shape.md",
+        "type": "document",
+        "summary": "Shape command reference for a two-round discovery interview that resolves design direction and produces a brief before visual work begins."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/typeset.md",
+        "name": "typeset.md",
+        "type": "document",
+        "summary": "Typeset live action reference for assessing typography in isolation, setting a type system, applying changes, verifying legibility, and defining live-mode signature parameters."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/visualize.md",
+        "name": "visualize.md",
+        "type": "document",
+        "summary": "Visualize command reference for generating three compositional direction comps, securing a single approval point, and treating the approved comp as a build spec with provenance plates."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/degraded/asset-producer.md",
+        "name": "asset-producer.md",
+        "type": "document",
+        "summary": "Degraded inline fallback for the Impeccable Asset Producer agent, defining how to produce raster plates from an approved comp spec without redesigning or inventing new art direction."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+        "name": "documenter.md",
+        "type": "document",
+        "summary": "Degraded inline fallback for the Impeccable Documenter agent, prescribing post-build capture of DESIGN.md and its sidecar from shipped code rather than planned intent."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+        "name": "finish-reviewer.md",
+        "type": "document",
+        "summary": "Degraded inline fallback for the Impeccable Finish Reviewer, defining the final quality gate with ordered checks for evidence, persistence, fidelity, ceiling, contract truth, and craft-floor compliance."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+        "name": "manual-edit-applier.md",
+        "type": "document",
+        "summary": "Degraded inline fallback for the Manual Edit Applier agent, governing how leased live manual_edit_apply events are applied to source files with per-entry atomicity and JSON-only responses."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/advanced-queries.md",
+        "name": "advanced-queries.md",
+        "type": "document",
+        "summary": "Agent skill rule covering advanced Eloquent query patterns including subquery relationships, conditional aggregates, whereHas optimization, composite indexes, and correlated subqueries for ordering."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+        "name": "architecture.md",
+        "type": "document",
+        "summary": "Agent skill rule defining application architecture conventions: action classes, dependency injection, contracts, atomic locks, defer/post-response work, Context, Concurrency, and framework conventions."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/blade-views.md",
+        "name": "blade-views.md",
+        "type": "document",
+        "summary": "Agent skill rule for Blade and view layer practices including component attribute merging, @pushOnce scripts, view composers, fragment rendering, and @aware parent props."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/caching.md",
+        "name": "caching.md",
+        "type": "document",
+        "summary": "Agent skill rule documenting Laravel cache strategies: remember, flexible stale-while-revalidate, memo, tags, atomic add, once() memoization, and production failover stores."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/collections.md",
+        "name": "collections.md",
+        "type": "document",
+        "summary": "Agent skill rule for Laravel collection usage covering higher-order messages, cursor vs lazy iteration, lazyById updates, toQuery bulk ops, and CollectedBy custom collections."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/config.md",
+        "name": "config.md",
+        "type": "document",
+        "summary": "Agent skill rule for configuration management: env vars only in config files, production secret protection, App::environment checks, and naming repeated domain values."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/db-performance.md",
+        "name": "db-performance.md",
+        "type": "document",
+        "summary": "Agent skill rule for database performance covering eager loading, lazy-load prevention, column selection, incremental processing, indexing, withCount, and keeping queries out of Blade."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/eloquent.md",
+        "name": "eloquent.md",
+        "type": "document",
+        "summary": "Agent skill rule for Eloquent modeling practices: relationship types, local/global scopes, attribute casts, date casting, whereBelongsTo, and keeping queries model-aware."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/error-handling.md",
+        "name": "error-handling.md",
+        "type": "document",
+        "summary": "Agent skill rule for exception handling: report/render configuration, dontReport lists, throttling, deduplication, JSON API rendering, and exception context."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/events-notifications.md",
+        "name": "events-notifications.md",
+        "type": "document",
+        "summary": "Agent skill rule for events and notifications covering discovery, cached discovery, ShouldDispatchAfterCommit, queued notifications, channel queues, on-demand recipients, and locale preferences."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/http-client.md",
+        "name": "http-client.md",
+        "type": "document",
+        "summary": "Agent skill rule for Laravel HTTP client usage: explicit timeouts, safe retries, explicit error handling, request pooling, and Http::fake in tests."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/mail.md",
+        "name": "mail.md",
+        "type": "document",
+        "summary": "Agent skill rule for mail delivery covering queued mail, after-commit dispatch, delivery mode assertions, Markdown mailables, and separating content from delivery tests."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/migrations.md",
+        "name": "migrations.md",
+        "type": "document",
+        "summary": "Agent skill rule for database migrations: Artisan generation, foreign keys, immutability of deployed migrations, index design, staged changes, defaults, honest rollbacks, and focused migrations."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md",
+        "name": "queue-jobs.md",
+        "type": "document",
+        "summary": "Agent skill rule for queue and job reliability: reservation timeouts, backoff, unique jobs, terminal failure handling, rate limiting, batching, retry limits, and Horizon."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/routing.md",
+        "name": "routing.md",
+        "type": "document",
+        "summary": "Agent skill rule for routing and controllers covering implicit binding, scoped nested bindings, resource routes, resource-oriented controllers, and HTTP-focused controller design."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/scheduling.md",
+        "name": "scheduling.md",
+        "type": "document",
+        "summary": "Agent skill rule for task scheduling: withoutOverlapping, onOneServer, background execution, environment restrictions, grouped configuration, and bounded task work."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/security.md",
+        "name": "security.md",
+        "type": "document",
+        "summary": "Agent skill rule for Laravel security covering mass assignment, authorization, query binding, output escaping, CSRF, rate limiting, upload validation, secrets, dependency audits, and encryption."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/style.md",
+        "name": "style.md",
+        "type": "document",
+        "summary": "Agent skill rule for code style and conventions: naming, idiomatic syntax, utility helpers, maintainable presentation code, and comments that explain why."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/rules/validation.md",
+        "name": "validation.md",
+        "type": "document",
+        "summary": "Agent skill rule for validation and forms: Form Request extraction, readable rules, validated-only data, conditional rules, and cross-field validation ordering."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/assertions.md",
+        "name": "assertions.md",
+        "type": "document",
+        "summary": "Guidelines for writing test assertions using Arrange-Act-Assert, choosing Pest expectations over PHPUnit, named Laravel response assertions, format expectations, and asserting complete results."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/endpoint-tests.md",
+        "name": "endpoint-tests.md",
+        "type": "document",
+        "summary": "Rules for writing HTTP endpoint feature tests covering route coverage, tenant isolation, policy-level authorization, validation cases, and which application layer owns each test scenario."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/finding-features.md",
+        "name": "finding-features.md",
+        "type": "document",
+        "summary": "Explains how to discover existing Pest and Laravel testing features via documentation and the codebase before implementing test behavior manually."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/isolation.md",
+        "name": "isolation.md",
+        "type": "document",
+        "summary": "Covers fakes, mocks, and determinism for isolating dependencies, including framework fakes, Pest mocking, outbound HTTP testing, time/randomness control, and database setup ordering."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/naming.md",
+        "name": "naming.md",
+        "type": "document",
+        "summary": "Defines test file layout mirroring source paths, consistent Pest function style, descriptive test naming conventions, and logical test grouping within files."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/performance.md",
+        "name": "performance.md",
+        "type": "document",
+        "summary": "Optimizing test suite speed through environment configuration, global fakes in Pest.php, parallel and TIA runs, CI shard balancing, and profiling slow tests."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/review.md",
+        "name": "review.md",
+        "type": "document",
+        "summary": "Checklist for reviewing tests across value, naming and structure, coverage, data determinism, and assertion quality before merging changes."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/security.md",
+        "name": "security.md",
+        "type": "document",
+        "summary": "Security testing guidance for verifying authorization boundaries and ensuring tests do not leak sensitive data through factory or assertion misuse."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/rules/test-data.md",
+        "name": "test-data.md",
+        "type": "document",
+        "summary": "Best practices for factories and test data: per-test record creation, named factory states, relationship recycling, and Pest datasets for parameterized cases."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/advanced-queries.md",
+        "name": "advanced-queries.md",
+        "type": "document",
+        "summary": "Laravel skill rule covering advanced Eloquent query techniques including subquery relationships, conditional aggregates, whereHas optimization, composite indexes, and correlated subquery ordering."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/architecture.md",
+        "name": "architecture.md",
+        "type": "document",
+        "summary": "Laravel skill rule defining application architecture patterns: action classes, dependency injection, contracts, atomic locks, defer/post-response work, Context, Concurrency, and framework conventions."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/blade-views.md",
+        "name": "blade-views.md",
+        "type": "document",
+        "summary": "Laravel skill rule for Blade and view layer practices: component attribute merging, @pushOnce scripts, view composers, fragment rendering, and @aware parent prop sharing."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/caching.md",
+        "name": "caching.md",
+        "type": "document",
+        "summary": "Laravel skill rule for caching strategies: Cache::remember, flexible stale-while-revalidate, memoization, cache tags, atomic Cache::add writes, once() helpers, and production failover stores."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/collections.md",
+        "name": "collections.md",
+        "type": "document",
+        "summary": "Laravel skill rule for collection and lazy iteration patterns: higher-order messages, cursor vs lazy, lazyById for updates, toQuery bulk operations, and #[CollectedBy] custom collections."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/config.md",
+        "name": "config.md",
+        "type": "document",
+        "summary": "Laravel skill rule for configuration management: reading env vars only in config files, protecting production secrets, App::environment() checks, and naming repeated domain values."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/db-performance.md",
+        "name": "db-performance.md",
+        "type": "document",
+        "summary": "Laravel skill rule for database performance: eager loading, preventing lazy loading in development, column selection, incremental large-dataset processing, indexes, withCount, and keeping queries out of Blade."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/eloquent.md",
+        "name": "eloquent.md",
+        "type": "document",
+        "summary": "Laravel skill rule for Eloquent ORM usage: relationship types, local and global scopes, attribute casts, date casting, whereBelongsTo, and keeping queries model-aware."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/error-handling.md",
+        "name": "error-handling.md",
+        "type": "document",
+        "summary": "Laravel skill rule for exception handling: report vs render configuration, suppressing noisy exceptions, throttling reports, deduplication, JSON API rendering, and exception context."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/events-notifications.md",
+        "name": "events-notifications.md",
+        "type": "document",
+        "summary": "Laravel skill rule for events and notifications: event discovery caching, ShouldDispatchAfterCommit, queued notifications, after-commit dispatch, dedicated queues, on-demand notifications, and locale preferences."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/http-client.md",
+        "name": "http-client.md",
+        "type": "document",
+        "summary": "Laravel skill rule for outbound HTTP client usage: explicit timeouts, safe retry policies, explicit error handling, request pooling, and Http::fake in tests."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/mail.md",
+        "name": "mail.md",
+        "type": "document",
+        "summary": "Laravel skill rule for mail delivery: queuing slow mail, after-commit dispatch, asserting delivery mode, Markdown mailables, and separating content from delivery tests."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/migrations.md",
+        "name": "migrations.md",
+        "type": "document",
+        "summary": "Laravel skill rule for database migrations: Artisan generation, foreign-key constraints, immutability of deployed migrations, query-driven indexes, staged row changes, defaults, honest rollbacks, and focused migrations."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/queue-jobs.md",
+        "name": "queue-jobs.md",
+        "type": "document",
+        "summary": "Laravel skill rule for queue and job configuration: reservation timeouts, backoff, unique jobs, terminal failure handling, rate limiting, job batches, retry limits, and Horizon operations."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/routing.md",
+        "name": "routing.md",
+        "type": "document",
+        "summary": "Laravel skill rule for routing and controllers: implicit route model binding, scoped nested bindings, resource routes, resource-oriented controller organization, and HTTP-focused controllers."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/scheduling.md",
+        "name": "scheduling.md",
+        "type": "document",
+        "summary": "Laravel skill rule for task scheduling: overlap prevention, single-server execution, background commands, environment restrictions, grouped configuration, and bounded task work."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/security.md",
+        "name": "security.md",
+        "type": "document",
+        "summary": "Laravel skill rule for application security: mass assignment control, authorization, query parameter binding, output escaping, CSRF protection, rate limiting, safe uploads, secrets management, dependency audits, and attribute encryption."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/style.md",
+        "name": "style.md",
+        "type": "document",
+        "summary": "Laravel skill rule for code style and conventions: project naming, idiomatic PHP syntax, clarifying utilities, maintainable presentation code, and purpose-driven comments."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/rules/validation.md",
+        "name": "validation.md",
+        "type": "document",
+        "summary": "Laravel skill rule for validation and forms: Form Request extraction, readable rule syntax, validated-only data access, conditional rules, and cross-field validation ordering."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/assertions.md",
+        "name": "assertions.md",
+        "type": "document",
+        "summary": "Guidelines for writing Pest and Laravel assertions using arrange-act-assert structure, subject-specific matchers, and complete result checks."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/endpoint-tests.md",
+        "name": "endpoint-tests.md",
+        "type": "document",
+        "summary": "Covers HTTP endpoint test design including auth, tenant isolation, validation, authorization policies, and layer ownership for failure cases."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/finding-features.md",
+        "name": "finding-features.md",
+        "type": "document",
+        "summary": "Explains how to discover Laravel and Pest testing features through documentation and built-in assertion methods before writing custom checks."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/isolation.md",
+        "name": "isolation.md",
+        "type": "document",
+        "summary": "Describes isolating tests with framework fakes, mocks, HTTP faking, time control, and database strategies for deterministic outcomes."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/naming.md",
+        "name": "naming.md",
+        "type": "document",
+        "summary": "Defines conventions for test file layout, function naming, descriptive test names, and logical grouping within the Pest suite."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/performance.md",
+        "name": "performance.md",
+        "type": "document",
+        "summary": "Provides guidance on test suite performance including environment setup, parallel execution, CI splitting, and identifying slow tests."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/review.md",
+        "name": "review.md",
+        "type": "document",
+        "summary": "Checklist for reviewing tests across value, naming, coverage, data determinism, and assertion quality before merging changes."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/security.md",
+        "name": "security.md",
+        "type": "document",
+        "summary": "Outlines security-focused test cases for authentication boundaries, authorization, input validation, and cross-tenant access control."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/rules/test-data.md",
+        "name": "test-data.md",
+        "type": "document",
+        "summary": "Covers factory usage, per-test data creation, record construction patterns, and Pest datasets for parameterized scenarios."
+      },
+      {
+        "id": "document:AGENTS.md",
+        "name": "AGENTS.md",
+        "type": "document",
+        "summary": "Primary AI agent guidelines for the Rafael Laravel app, covering Laravel Boost tools, PHP conventions, Livewire patterns, Pint formatting, and Pest testing workflows."
+      },
+      {
+        "id": "document:CLAUDE.md",
+        "name": "CLAUDE.md",
+        "type": "document",
+        "summary": "Bootstrap instructions for Claude agents working in this repo, covering PHP/Composer prerequisites and Laravel Boost installation before reading AGENTS.md."
+      },
+      {
+        "id": "document:DESIGN.md",
+        "name": "DESIGN.md",
+        "type": "document",
+        "summary": "Design system specification for Rafael's void-and-ice visual language, defining colors, typography, talk-bar components, mic-denial states, and layout rules."
+      },
+      {
+        "id": "document:PRODUCT.md",
+        "name": "PRODUCT.md",
+        "type": "document",
+        "summary": "Product definition for Rafael as a single-user personal secretary PWA with voice-first conversation, appointment briefings, draft-and-confirm record changes, and queued transcription."
+      },
+      {
+        "id": "document:README.md",
+        "name": "README.md",
+        "type": "document",
+        "summary": "Project overview explaining Rafael's secretary concept, voice interaction flow, core product principles, and setup requirements including MySQL and Redis."
+      },
+      {
+        "id": "document:docs/database-schema.md",
+        "name": "database-schema.md",
+        "type": "document",
+        "summary": "Authoritative MySQL schema specification for Rafael v1 covering users, records, and voice_turns with design principles, migration order, enum conventions, and a user-story coverage matrix."
+      },
+      {
+        "id": "document:docs/project-description.md",
+        "name": "project-description.md",
+        "type": "document",
+        "summary": "Technical map of Rafael defining domain concepts (records, appointments, tasks), the Laravel/Livewire/Alpine stack, UI kit components, and the voice-to-transcript workflow."
+      },
+      {
+        "id": "document:docs/project-phases.md",
+        "name": "project-phases.md",
+        "type": "document",
+        "summary": "Phased v1 implementation roadmap with build and test conventions, dependency ordering across eleven phases, and checked progress tied to user stories and schema sections."
+      },
+      {
+        "id": "document:docs/user-stories.md",
+        "name": "user-stories.md",
+        "type": "document",
+        "summary": "Ten pt-BR user stories (US-01 through US-10) specifying login, first-visit greeting, daily briefing, voice capture, task queries, and spoken-yes record mutations for a single user."
+      },
+      {
+        "id": "document:.agents/skills/grill-me/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Thin agent skill stub that delegates stress-test interviews to the grilling skill when users want to sharpen a plan or design."
+      },
+      {
+        "id": "document:.agents/skills/grilling/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Agent skill that runs multi-round design-tree interviews via AskQuestion, stress-testing user decisions until the frontier of open questions is empty."
+      },
+      {
+        "id": "document:.agents/skills/impeccable/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Primary Impeccable agent skill covering frontend design workflows, setup via the impeccable CLI launcher, design modes, and command playbooks for live browser iteration."
+      },
+      {
+        "id": "document:.agents/skills/infer-conventions/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Laravel agent skill for sweeping ~49 convention dimensions, recording path-scoped rules via Boost record-rule, and documenting how the app actually writes code."
+      },
+      {
+        "id": "document:.agents/skills/infer-conventions/references/checklist.md",
+        "name": "checklist.md",
+        "type": "document",
+        "summary": "Structured detection checklist grouped A–J covering validation, controllers, models, testing, frontend, and architecture forks for infer-conventions sweeps."
+      },
+      {
+        "id": "document:.agents/skills/laravel-best-practices/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Laravel best-practices skill index that maps backend tasks to rule files and prioritizes consistency with existing application patterns over theoretical defaults."
+      },
+      {
+        "id": "document:.agents/skills/livewire-development/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Livewire 4 development skill covering component creation (SFC/MFC), wire directives, islands, migration from v3, and JavaScript integration patterns."
+      },
+      {
+        "id": "document:.agents/skills/livewire-development/reference/javascript-hooks.md",
+        "name": "javascript-hooks.md",
+        "type": "document",
+        "summary": "Reference for Livewire 4 JavaScript interceptor APIs including interceptMessage and interceptRequest lifecycle hooks."
+      },
+      {
+        "id": "document:.agents/skills/tailwindcss-development/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Tailwind CSS v4 skill for utility-class styling in Blade and SPA templates, emphasizing CSS-first @theme configuration and project convention alignment."
+      },
+      {
+        "id": "document:.agents/skills/testing-best-practices/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Pest-focused Laravel testing skill covering coverage selection, assertions, isolation, naming, and review criteria for high-value feature tests."
+      },
+      {
+        "id": "document:.claude/skills/infer-conventions/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Claude-side copy of the infer-conventions skill for analyzing Laravel application patterns and recording durable path-scoped rules in .ai/rules."
+      },
+      {
+        "id": "document:.claude/skills/infer-conventions/references/checklist.md",
+        "name": "checklist.md",
+        "type": "document",
+        "summary": "Claude-side copy of the infer-conventions detection checklist listing convention forks across validation, routing, models, and testing dimensions."
+      },
+      {
+        "id": "document:.claude/skills/laravel-best-practices/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Claude agent skill indexing Laravel best-practice rule files, emphasizing codebase consistency before applying patterns to controllers, models, jobs, and queries."
+      },
+      {
+        "id": "document:.claude/skills/livewire-development/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Comprehensive Livewire 4 development guide covering component formats, directives, Alpine integration, configuration, testing, and migration notes from Livewire 3."
+      },
+      {
+        "id": "document:.claude/skills/livewire-development/reference/javascript-hooks.md",
+        "name": "javascript-hooks.md",
+        "type": "document",
+        "summary": "Reference for Livewire 4 JavaScript interceptor APIs covering message/request hooks, component-scoped interceptors, and magic properties."
+      },
+      {
+        "id": "document:.claude/skills/tailwindcss-development/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Tailwind CSS v4 development skill documenting CSS-first configuration, import syntax, replaced utilities, spacing conventions, and dark mode patterns."
+      },
+      {
+        "id": "document:.claude/skills/testing-best-practices/SKILL.md",
+        "name": "SKILL.md",
+        "type": "document",
+        "summary": "Testing best-practices skill indexing rule files for assertions, isolation, naming, endpoint tests, and security-focused test guidance in Pest/Laravel."
+      },
+      {
+        "id": "document:.impeccable/surfaces/home.md",
+        "name": "home.md",
+        "type": "document",
+        "summary": "Impeccable direction contract for the home surface defining click-to-talk UX, void background, ice bars control, and Portuguese microphone-denied messaging."
+      },
+      {
+        "id": "document:docs/prompts/database-schema-prompt.md",
+        "name": "database-schema-prompt.md",
+        "type": "document",
+        "summary": "Placeholder prompt file intended to guide generation of database schema documentation; currently empty."
+      },
+      {
+        "id": "document:docs/prompts/generate-phases.md",
+        "name": "generate-phases.md",
+        "type": "document",
+        "summary": "AI prompt instructing generation of a phased implementation plan with acceptance tests from user stories, project description, and database schema docs."
+      },
+      {
+        "id": "document:public/robots.txt",
+        "name": "robots.txt",
+        "type": "document",
+        "summary": "Robots exclusion file allowing all crawlers to index the public site without path restrictions."
+      }
+    ],
+    "infrastructure": [],
+    "data": [
+      {
+        "id": "table:database/migrations/0001_01_01_000000_create_users_table.php:users",
+        "name": "users",
+        "type": "table",
+        "summary": "Core users table storing name, email, password hash, and remember token for authentication."
+      },
+      {
+        "id": "table:database/migrations/0001_01_01_000000_create_users_table.php:password_reset_tokens",
+        "name": "password_reset_tokens",
+        "type": "table",
+        "summary": "Stores password reset tokens keyed by user email for Laravel password recovery flows."
+      },
+      {
+        "id": "table:database/migrations/0001_01_01_000000_create_users_table.php:sessions",
+        "name": "sessions",
+        "type": "table",
+        "summary": "Database session store capturing session payload, client IP, user agent, and last activity timestamp."
+      },
+      {
+        "id": "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache",
+        "name": "cache",
+        "type": "table",
+        "summary": "Key-value cache table storing serialized values with expiration timestamps."
+      },
+      {
+        "id": "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache_locks",
+        "name": "cache_locks",
+        "type": "table",
+        "summary": "Cache lock table used by Laravel atomic lock operations on database cache driver."
+      },
+      {
+        "id": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:jobs",
+        "name": "jobs",
+        "type": "table",
+        "summary": "Queue jobs table holding serialized job payloads, queue name, and availability timestamps."
+      },
+      {
+        "id": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:job_batches",
+        "name": "job_batches",
+        "type": "table",
+        "summary": "Tracks batched queue job progress including totals, failures, and cancellation state."
+      },
+      {
+        "id": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:failed_jobs",
+        "name": "failed_jobs",
+        "type": "table",
+        "summary": "Persists failed queue job UUIDs, connection details, and exception traces for debugging."
+      },
+      {
+        "id": "table:database/migrations/2026_09_30_141334_create_voice_turns_table.php:voice_turns",
+        "name": "voice_turns",
+        "type": "table",
+        "summary": "Voice interaction records linking users to uploaded audio paths, transcription status, locale, and consumption timestamps."
+      },
+      {
+        "id": "table:database/migrations/2026_09_30_141335_create_records_table.php:records",
+        "name": "records",
+        "type": "table",
+        "summary": "User-owned tasks and appointments with kind constraints, optional scheduling, soft deletes, and last voice-turn reference."
+      }
+    ],
+    "config": [
+      {
+        "id": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+        "name": "impeccable_asset_producer.toml",
+        "type": "config",
+        "summary": "Defines the Impeccable asset producer sub-agent that generates clean raster plates from approved mock comps using comp-spec scripts, without redesigning the approved visual direction."
+      },
+      {
+        "id": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+        "name": "impeccable_documenter.toml",
+        "type": "config",
+        "summary": "Defines the Impeccable documenter sub-agent that records DESIGN.md and its sidecar from shipped build artifacts, deriving design tokens from ground-truth code rather than intentions."
+      },
+      {
+        "id": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+        "name": "impeccable_finish_reviewer.toml",
+        "type": "config",
+        "summary": "Defines the Impeccable finish reviewer sub-agent that audits completed builds against direction contracts, approved comps, and quality bars, returning ordered material fixes or ship/rebuild dispositions."
+      },
+      {
+        "id": "config:.agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+        "name": "impeccable_manual_edit_applier.toml",
+        "type": "config",
+        "summary": "Defines the Impeccable manual edit applier sub-agent that applies leased live manual_edit_apply batches to source files and returns canonical JSON apply results with entry-level atomicity."
+      },
+      {
+        "id": "config:.agents/skills/impeccable/agents/openai.yaml",
+        "name": "openai.yaml",
+        "type": "config",
+        "summary": "Registers the Impeccable skill interface metadata including display name, short description, and default prompt for frontend design and polish workflows."
+      },
+      {
+        "id": "config:.env.example",
+        "name": ".env.example",
+        "type": "config",
+        "summary": "Environment variable template for Laravel runtime settings, including MySQL database, Redis cache/queue, session storage, admin credentials, and Whisper-compatible transcription API endpoints."
+      },
+      {
+        "id": "config:.mcp.json",
+        "name": ".mcp.json",
+        "type": "config",
+        "summary": "MCP server configuration that registers the Laravel Boost MCP server via the artisan boost:mcp command for AI agent tooling."
+      },
+      {
+        "id": "config:boost.json",
+        "name": "boost.json",
+        "type": "config",
+        "summary": "Laravel Boost installation manifest enabling MCP, guidelines, and domain skills for Cursor, Claude Code, and Codex agents."
+      },
+      {
+        "id": "config:composer.json",
+        "name": "composer.json",
+        "type": "config",
+        "summary": "PHP dependency and autoload manifest for Laravel 13, Livewire 4, Redis extension, Pest testing, and Composer scripts for setup, dev, and test workflows."
+      },
+      {
+        "id": "config:package.json",
+        "name": "package.json",
+        "type": "config",
+        "summary": "Frontend build configuration using Vite 8, Tailwind CSS 4, Laravel Vite plugin, and GSAP for talk-control animations."
+      },
+      {
+        "id": "config:phpunit.xml",
+        "name": "phpunit.xml",
+        "type": "config",
+        "summary": "PHPUnit test runner configuration defining Unit and Feature test suites with in-memory SQLite and isolated testing environment variables."
+      },
+      {
+        "id": "config:skills-lock.json",
+        "name": "skills-lock.json",
+        "type": "config",
+        "summary": "Version-locked registry of installed AI agent skills with source paths and content hashes for reproducible skill resolution."
+      },
+      {
+        "id": "config:.impeccable/mocks/decision/assigned-r2.png.json",
+        "name": "assigned-r2.png.json",
+        "type": "config",
+        "summary": "Image-generation config with a portrait prompt and 9:16 aspect for the bolder reroll comp of the assigned Relógio de ponto (wall time clock) visual world."
+      },
+      {
+        "id": "config:.impeccable/mocks/decision/assigned.png.json",
+        "name": "assigned.png.json",
+        "type": "config",
+        "summary": "Image-generation config defining the portrait comp prompt for the Tecla de falar feature-phone assigned visual world with phase band, timed rows, and three-key deck."
+      },
+      {
+        "id": "config:.impeccable/mocks/decision/canon.png.json",
+        "name": "canon.png.json",
+        "type": "config",
+        "summary": "Image-generation config for the category-standard reference comp showing a conventional voice inbox with Rafael header, circular Segurar control, and plain daily list."
+      },
+      {
+        "id": "config:.impeccable/mocks/decision/model-pick-r2.png.json",
+        "name": "model-pick-r2.png.json",
+        "type": "config",
+        "summary": "Image-generation config with prompt and aspect for the bolder reroll comp of Impeccable's Espeto de recados desk-spike model-pick visual world."
+      },
+      {
+        "id": "config:.impeccable/mocks/decision/model-pick.png.json",
+        "name": "model-pick.png.json",
+        "type": "config",
+        "summary": "Image-generation config defining the apartment intercom Interfone model-pick comp with ruled log, hold button, and engraved Anotar/Rasgar keys."
+      },
+      {
+        "id": "config:.impeccable/mocks/decision/payload-r2.json",
+        "name": "payload-r2.json",
+        "type": "config",
+        "summary": "Full Impeccable decision-screen mock payload for a bolder reroll round pairing Relógio de ponto and Espeto de recados options with declined challengers, reroll registers, and shared canon card metadata."
+      },
+      {
+        "id": "config:.impeccable/mocks/decision/payload.json",
+        "name": "payload.json",
+        "type": "config",
+        "summary": "Full Impeccable decision-screen mock payload presenting visual world choices—assigned Tecla de falar handset, Interfone model pick, six declined challengers, and a category-standard canon baseline—for Rafael's home screen design."
+      },
+      {
+        "id": "config:.impeccable/mocks/home-bars.png.json",
+        "name": "home-bars.png.json",
+        "type": "config",
+        "summary": "Approved Impeccable mock metadata for a Figma-derived home icon: five rounded vertical bars on a dark void background, with source notes and a generation prompt."
+      },
+      {
+        "id": "config:.impeccable/mocks/home-previews.json",
+        "name": "home-previews.json",
+        "type": "config",
+        "summary": "Impeccable decision config presenting three home-screen design directions (Malote, Espaço, Neumorfismo) with lineage, palette, materials, viewport, risks, and comp paths for each option."
+      },
+      {
+        "id": "config:.impeccable/mocks/malote-home.png.json",
+        "name": "malote-home.png.json",
+        "type": "config",
+        "summary": "Generation prompt and aspect metadata for the Malote home comp: a portrait messenger-pouch UI with seven timed onion-skin slips and a Segurar hold control at the bottom."
+      },
+      {
+        "id": "config:.impeccable/mocks/malote-preview.json",
+        "name": "malote-preview.json",
+        "type": "config",
+        "summary": "Focused Impeccable preview config for the locked Malote home direction, describing the messenger-pouch metaphor and pointing to the malote-home comp for build output."
+      },
+      {
+        "id": "config:.agents/skills/grill-me/agents/openai.yaml",
+        "name": "openai.yaml",
+        "type": "config",
+        "summary": "OpenAI agent interface and policy configuration for the grill-me skill wrapper."
+      },
+      {
+        "id": "config:.agents/skills/grilling/agents/openai.yaml",
+        "name": "openai.yaml",
+        "type": "config",
+        "summary": "Minimal OpenAI agent interface declaration for the grilling interview skill."
+      },
+      {
+        "id": "config:.agents/skills/impeccable/scripts/command-metadata.json",
+        "name": "command-metadata.json",
+        "type": "config",
+        "summary": "JSON registry of Impeccable CLI verbs with human-readable descriptions and argument hints for init, live, generate, audit, and other design commands."
+      },
+      {
+        "id": "config:.agents/skills/impeccable/scripts/data/font-index-failures.json",
+        "name": "font-index-failures.json",
+        "type": "config",
+        "summary": "Catalog of Google Font families that failed to load or render during font indexing, with weight, category, and failure reason per entry."
+      },
+      {
+        "id": "config:.agents/skills/impeccable/scripts/data/font-index.json",
+        "name": "font-index.json",
+        "type": "config",
+        "summary": "Placeholder or empty font index data file reserved for successful font catalog entries used by Impeccable typography tooling."
+      },
+      {
+        "id": "config:.cursor/settings.json",
+        "name": "settings.json",
+        "type": "config",
+        "summary": "Cursor IDE workspace settings enabling the Figma plugin for design-to-code workflows within the editor."
+      },
+      {
+        "id": "config:.impeccable/config.json",
+        "name": "config.json",
+        "type": "config",
+        "summary": "Impeccable build configuration pointing the design toolchain at the comp build path for mock comparison workflows."
+      },
+      {
+        "id": "config:.impeccable/design.json",
+        "name": "design.json",
+        "type": "config",
+        "summary": "Canonical Impeccable design system for Rafael defining void/ice color tokens, component specs, and narrative design metadata."
+      },
+      {
+        "id": "config:.impeccable/questions/b92faafe.answer.json",
+        "name": "b92faafe.answer.json",
+        "type": "config",
+        "summary": "Stored Impeccable decision answer capturing the chosen design option, steer direction, comp reference, and build path for the home surface."
+      },
+      {
+        "id": "config:.impeccable/questions/b92faafe.state.json",
+        "name": "b92faafe.state.json",
+        "type": "config",
+        "summary": "Runtime state for an Impeccable live-browser session tracking process ID, port, URL, heartbeat, and claim timestamp."
+      },
+      {
+        "id": "config:.impeccable/review/diff/desktop/raw-report.json",
+        "name": "raw-report.json",
+        "type": "config",
+        "summary": "Raw Impeccable comp-diff report for the desktop viewport comparing mock comp against built screenshot with structure, color, and region scores."
+      },
+      {
+        "id": "config:.impeccable/review/diff/desktop/report.json",
+        "name": "report.json",
+        "type": "config",
+        "summary": "Processed desktop finish-review report wrapping raw diff scores with interpretation, measurement availability, quality gate, and raw report reference."
+      },
+      {
+        "id": "config:.impeccable/review/diff/hero/raw-report.json",
+        "name": "raw-report.json",
+        "type": "config",
+        "summary": "Raw Impeccable comp-diff report for the hero viewport measuring alignment between approved comp and built home hero region."
+      },
+      {
+        "id": "config:.impeccable/review/diff/hero/report.json",
+        "name": "report.json",
+        "type": "config",
+        "summary": "Processed hero finish-review report aggregating raw diff metrics with verdict interpretation and pass/fail gate for the home hero surface."
+      },
+      {
+        "id": "config:.ua/config.json",
+        "name": "config.json",
+        "type": "config",
+        "summary": "Understand-Anything plugin settings specifying English output language and disabled auto-update for knowledge graph generation."
+      }
+    ]
+  },
+  "clusters": [
+    {
+      "nodes": [
+        "file:app/Models/Record.php",
+        "file:app/Records/LocalDay.php",
+        "file:tests/Feature/Records/LocalDayTest.php"
+      ],
+      "edgeCount": 5
+    },
+    {
+      "nodes": [
+        "file:app/Models/Record.php",
+        "file:app/Records/LocalDay.php",
+        "file:tests/Feature/Records/LocalDayTest.php"
+      ],
+      "edgeCount": 5
+    },
+    {
+      "nodes": [
+        "file:app/Actions/Conversation/OpenConversation.php",
+        "file:app/Models/User.php",
+        "file:tests/Feature/Conversation/FirstVisitTest.php"
+      ],
+      "edgeCount": 4
+    },
+    {
+      "nodes": [
+        "document:.agents/skills/laravel-best-practices/SKILL.md",
+        "document:.agents/skills/laravel-best-practices/rules/architecture.md",
+        "document:.agents/skills/laravel-best-practices/rules/style.md"
+      ],
+      "edgeCount": 4
+    },
+    {
+      "nodes": [
+        "file:app/Models/User.php",
+        "file:tests/Feature/Auth/AuthenticatedRoutesTest.php"
+      ],
+      "edgeCount": 2
+    },
+    {
+      "nodes": [
+        "file:app/Models/User.php",
+        "file:tests/Feature/Auth/LoginTest.php"
+      ],
+      "edgeCount": 2
+    },
+    {
+      "nodes": [
+        "file:app/Models/User.php",
+        "file:tests/Feature/Conversation/HomeTest.php"
+      ],
+      "edgeCount": 2
+    },
+    {
+      "nodes": [
+        "file:app/Models/User.php",
+        "file:tests/Feature/Conversation/TranscriptionFailureTest.php"
+      ],
+      "edgeCount": 2
+    },
+    {
+      "nodes": [
+        "file:app/Models/User.php",
+        "file:tests/Feature/Conversation/TranscriptionSuccessTest.php"
+      ],
+      "edgeCount": 2
+    },
+    {
+      "nodes": [
+        "file:app/Models/User.php",
+        "file:tests/Feature/ExampleTest.php"
+      ],
+      "edgeCount": 2
+    }
+  ],
+  "layers": {
+    "count": 8,
+    "list": [
+      {
+        "id": "layer:api",
+        "name": "API Layer",
+        "description": "HTTP routes, controllers, form requests, and the public front controller that expose Rafael's voice conversation and record endpoints."
+      },
+      {
+        "id": "layer:service",
+        "name": "Service Layer",
+        "description": "Business logic for Portuguese voice conversations, transcription orchestration, appointment briefings, and voice-turn storage via Actions, Jobs, and Services."
+      },
+      {
+        "id": "layer:data",
+        "name": "Data Layer",
+        "description": "Eloquent models (User, Record, VoiceTurn), migrations, factories, seeders, and table definitions for appointments and voice turns."
+      },
+      {
+        "id": "layer:ui",
+        "name": "Presentation Layer",
+        "description": "Livewire conversation page, Blade components, Tailwind CSS, and JavaScript for the voice talk-control UI."
+      },
+      {
+        "id": "layer:test",
+        "name": "Test Layer",
+        "description": "Pest feature and unit tests covering auth, conversation flows, voice upload, transcription jobs, and model behavior."
+      },
+      {
+        "id": "layer:config",
+        "name": "Configuration Layer",
+        "description": "Laravel bootstrap, environment config (including rafael.php), Vite/build settings, PHPUnit, and Portuguese auth translations."
+      },
+      {
+        "id": "layer:documentation",
+        "name": "Documentation Layer",
+        "description": "Project README, product/design specs, database schema docs, user stories, and phase planning in docs/."
+      },
+      {
+        "id": "layer:tooling",
+        "name": "Developer Tooling Layer",
+        "description": "Agent skill definitions, Impeccable design-review configs, and Cursor/Claude assistant rules supporting development workflows."
+      }
+    ]
+  },
+  "nodeSummaryIndex": {
+    "file:app/Actions/Conversation/Briefing.php": {
+      "name": "Briefing.php",
+      "type": "file",
+      "summary": "Action class that builds a Portuguese briefing message summarizing missed and today's appointments for a user based on their timezone."
+    },
+    "class:app/Actions/Conversation/Briefing.php:Briefing": {
+      "name": "Briefing",
+      "type": "class",
+      "summary": "Single-purpose action that queries scheduled records and formats a conversational greeting with pending and same-day appointments."
+    },
+    "function:app/Actions/Conversation/Briefing.php:handle": {
+      "name": "handle",
+      "type": "function",
+      "summary": "Loads missed and today-on-the-books records for the user, then returns a Portuguese summary string or a default greeting when none exist."
+    },
+    "file:app/Actions/Conversation/OpenConversation.php": {
+      "name": "OpenConversation.php",
+      "type": "file",
+      "summary": "Action that marks a user's first conversation visit by setting conversation_opened_at and returning the initial greeting."
+    },
+    "class:app/Actions/Conversation/OpenConversation.php:OpenConversation": {
+      "name": "OpenConversation",
+      "type": "class",
+      "summary": "Handles the first-time conversation open flow by persisting conversation_opened_at on the authenticated user."
+    },
+    "function:app/Actions/Conversation/OpenConversation.php:handle": {
+      "name": "handle",
+      "type": "function",
+      "summary": "Sets the user's conversation_opened_at timestamp on first visit and returns the Olá greeting."
+    },
+    "file:app/Models/User.php": {
+      "name": "User.php",
+      "type": "file",
+      "summary": "Eloquent authenticatable model representing the secretary's single user, with timezone support and relationships to records and voice turns."
+    },
+    "class:app/Models/User.php:User": {
+      "name": "User",
+      "type": "class",
+      "summary": "Core user entity extending Laravel Authenticatable with datetime casts, records(), and voiceTurns() relationships."
+    },
+    "file:config/auth.php": {
+      "name": "auth.php",
+      "type": "file",
+      "summary": "Laravel authentication configuration defining guards, password brokers, and the Eloquent user provider backed by the User model."
+    },
+    "file:database/factories/UserFactory.php": {
+      "name": "UserFactory.php",
+      "type": "file",
+      "summary": "Model factory for generating test and seed users with hashed passwords, timezone defaults, and an unverified state."
+    },
+    "class:database/factories/UserFactory.php:UserFactory": {
+      "name": "UserFactory",
+      "type": "class",
+      "summary": "Factory class producing User instances with faker data, default timezone from config, and a reusable unverified state."
+    },
+    "function:database/factories/UserFactory.php:definition": {
+      "name": "definition",
+      "type": "function",
+      "summary": "Returns default attribute values for a new User including name, email, hashed password, remember token, and timezone."
+    },
+    "file:database/seeders/DatabaseSeeder.php": {
+      "name": "DatabaseSeeder.php",
+      "type": "file",
+      "summary": "Application seeder that creates the admin user from rafael config values, failing fast when credentials are missing."
+    },
+    "class:database/seeders/DatabaseSeeder.php:DatabaseSeeder": {
+      "name": "DatabaseSeeder",
+      "type": "class",
+      "summary": "Seeder entry point that validates admin config and creates the initial User via the factory."
+    },
+    "function:database/seeders/DatabaseSeeder.php:run": {
+      "name": "run",
+      "type": "function",
+      "summary": "Reads admin credentials from config, throws if any are blank, then creates the admin User record."
+    },
+    "file:resources/views/pages/⚡conversation/conversation.php": {
+      "name": "conversation.php",
+      "type": "file",
+      "summary": "Livewire full-page component for the voice conversation UI, orchestrating first-visit greeting, daily briefing, and voice turn status polling."
+    },
+    "function:resources/views/pages/⚡conversation/conversation.php:mount": {
+      "name": "mount",
+      "type": "function",
+      "summary": "Initializes locale to pt_BR and sets the greeting via OpenConversation on first visit or Briefing on subsequent visits."
+    },
+    "function:resources/views/pages/⚡conversation/conversation.php:refreshTurnStatus": {
+      "name": "refreshTurnStatus",
+      "type": "function",
+      "summary": "Polls the tracked VoiceTurn by UUID and updates UI state when transcription completes or fails."
+    },
+    "file:tests/Feature/Auth/AuthenticatedRoutesTest.php": {
+      "name": "AuthenticatedRoutesTest.php",
+      "type": "file",
+      "summary": "Feature tests verifying authenticated users can access protected routes and guests are redirected appropriately."
+    },
+    "file:tests/Feature/Auth/LoginTest.php": {
+      "name": "LoginTest.php",
+      "type": "file",
+      "summary": "Feature tests covering login screen rendering, successful authentication redirect, invalid credentials, and disabled registration."
+    },
+    "file:tests/Feature/Conversation/HomeTest.php": {
+      "name": "HomeTest.php",
+      "type": "file",
+      "summary": "Livewire feature tests asserting the conversation page replaces the welcome screen and renders Portuguese copy without record lists."
+    },
+    "file:tests/Feature/Conversation/TranscriptionFailureTest.php": {
+      "name": "TranscriptionFailureTest.php",
+      "type": "file",
+      "summary": "Feature test verifying failed voice turn transcription errors are surfaced on the conversation Livewire component."
+    },
+    "file:tests/Feature/Conversation/TranscriptionSuccessTest.php": {
+      "name": "TranscriptionSuccessTest.php",
+      "type": "file",
+      "summary": "Feature test verifying successful voice turn transcription results appear on the conversation Livewire component."
+    },
+    "file:tests/Feature/ExampleTest.php": {
+      "name": "ExampleTest.php",
+      "type": "file",
+      "summary": "Placeholder feature test asserting the application root returns a successful HTTP response for authenticated context."
+    },
+    "file:tests/Feature/Voice/TalkControlTest.php": {
+      "name": "TalkControlTest.php",
+      "type": "file",
+      "summary": "Livewire feature tests validating talk-control DOM attributes for toggle clicks, mouseleave behavior, wire:ignore, and listening state markers."
+    },
+    "file:app/Contracts/Transcriber.php": {
+      "name": "Transcriber.php",
+      "type": "file",
+      "summary": "Defines the Transcriber contract that abstracts voice-to-text conversion for VoiceTurn records, exposing a single transcribe method."
+    },
+    "class:app/Contracts/Transcriber.php:Transcriber": {
+      "name": "Transcriber",
+      "type": "class",
+      "summary": "Interface contract requiring implementors to transcribe a VoiceTurn audio recording into text."
+    },
+    "file:app/Exceptions/PermanentTranscriptionException.php": {
+      "name": "PermanentTranscriptionException.php",
+      "type": "file",
+      "summary": "Custom exception signaling unrecoverable transcription failures such as invalid audio or client errors that should not be retried."
+    },
+    "class:app/Exceptions/PermanentTranscriptionException.php:PermanentTranscriptionException": {
+      "name": "PermanentTranscriptionException",
+      "type": "class",
+      "summary": "Exception type thrown when a transcription error is permanent and the job should fail without further retries."
+    },
+    "file:app/Exceptions/TransientTranscriptionException.php": {
+      "name": "TransientTranscriptionException.php",
+      "type": "file",
+      "summary": "Custom exception for recoverable transcription failures such as network timeouts or upstream server errors that may succeed on retry."
+    },
+    "class:app/Exceptions/TransientTranscriptionException.php:TransientTranscriptionException": {
+      "name": "TransientTranscriptionException",
+      "type": "class",
+      "summary": "Exception type indicating a temporary transcription failure where the queue job may be retried."
+    },
+    "file:app/Jobs/TranscribeVoiceTurn.php": {
+      "name": "TranscribeVoiceTurn.php",
+      "type": "file",
+      "summary": "Queued job that transcribes a VoiceTurn via the Transcriber contract, updates turn status, cleans up audio storage, and handles permanent versus transient failures."
+    },
+    "class:app/Jobs/TranscribeVoiceTurn.php:TranscribeVoiceTurn": {
+      "name": "TranscribeVoiceTurn",
+      "type": "class",
+      "summary": "Queue job dispatched after audio upload to run transcription asynchronously and persist the resulting transcript on the VoiceTurn."
+    },
+    "function:app/Jobs/TranscribeVoiceTurn.php:handle": {
+      "name": "handle",
+      "type": "function",
+      "summary": "Loads the VoiceTurn, marks it processing, invokes the Transcriber, stores the transcript on success, and routes exceptions to permanent or transient failure handling."
+    },
+    "function:app/Jobs/TranscribeVoiceTurn.php:failed": {
+      "name": "failed",
+      "type": "function",
+      "summary": "Laravel queue failure hook that marks the VoiceTurn as failed when all retry attempts are exhausted."
+    },
+    "function:app/Jobs/TranscribeVoiceTurn.php:markFailed": {
+      "name": "markFailed",
+      "type": "function",
+      "summary": "Deletes stored audio, updates the VoiceTurn status to failed, and records a truncated error message with a failure timestamp."
+    },
+    "file:app/Providers/AppServiceProvider.php": {
+      "name": "AppServiceProvider.php",
+      "type": "file",
+      "summary": "Laravel service provider that binds the Transcriber contract to the HttpTranscriber HTTP implementation in the container."
+    },
+    "class:app/Providers/AppServiceProvider.php:AppServiceProvider": {
+      "name": "AppServiceProvider",
+      "type": "class",
+      "summary": "Application service provider registering dependency-injection bindings for core services including the transcription backend."
+    },
+    "file:app/Services/Transcription/HttpTranscriber.php": {
+      "name": "HttpTranscriber.php",
+      "type": "file",
+      "summary": "HTTP-based Transcriber implementation that uploads VoiceTurn audio to an external API, maps HTTP errors to permanent or transient exceptions, and returns the transcript text."
+    },
+    "class:app/Services/Transcription/HttpTranscriber.php:HttpTranscriber": {
+      "name": "HttpTranscriber",
+      "type": "class",
+      "summary": "Concrete Transcriber that posts audio files to a remote transcription endpoint and normalizes API failures into domain exceptions."
+    },
+    "function:app/Services/Transcription/HttpTranscriber.php:transcribe": {
+      "name": "transcribe",
+      "type": "function",
+      "summary": "Reads audio from storage, posts it to the transcription API with locale parameters, and returns the transcript string from the JSON response."
+    },
+    "function:app/Services/Transcription/HttpTranscriber.php:client": {
+      "name": "client",
+      "type": "function",
+      "summary": "Builds a configured Laravel HTTP client with connect and request timeouts and optional bearer token authentication from Rafael config."
+    },
+    "function:app/Services/Transcription/HttpTranscriber.php:transcriptionUrl": {
+      "name": "transcriptionUrl",
+      "type": "function",
+      "summary": "Constructs the full transcription API URL with language query parameters derived from the VoiceTurn locale."
+    },
+    "function:app/Services/Transcription/HttpTranscriber.php:throwForFailedResponse": {
+      "name": "throwForFailedResponse",
+      "type": "function",
+      "summary": "Maps HTTP response status codes and API error bodies to PermanentTranscriptionException or TransientTranscriptionException with user-facing messages."
+    },
+    "file:bootstrap/providers.php": {
+      "name": "providers.php",
+      "type": "file",
+      "summary": "Bootstrap file that registers application service providers, including AppServiceProvider, for Laravel container setup."
+    },
+    "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php": {
+      "name": "TranscribeVoiceTurnTest.php",
+      "type": "file",
+      "summary": "Feature tests covering TranscribeVoiceTurn job success, permanent and transient failure paths, retry behavior, and audio cleanup."
+    },
+    "file:tests/Feature/Voice/ReplyAudioTest.php": {
+      "name": "ReplyAudioTest.php",
+      "type": "file",
+      "summary": "Feature test verifying that reply audio playback triggers the TranscribeVoiceTurn job and updates the VoiceTurn after transcription."
+    },
+    "file:app/Models/Record.php": {
+      "name": "Record.php",
+      "type": "file",
+      "summary": "Eloquent model for user appointments and tasks, providing query scopes for kind filtering, soft-delete state, and timezone-aware scheduling windows."
+    },
+    "class:app/Models/Record.php:Record": {
+      "name": "Record",
+      "type": "class",
+      "summary": "Core domain model linking users to appointments or tasks, with belongs-to relationships and scopes that filter by kind, deletion state, and local calendar day."
+    },
+    "file:app/RecordKind.php": {
+      "name": "RecordKind.php",
+      "type": "file",
+      "summary": "Backed PHP enum that distinguishes appointment records from task records across the domain model and factories."
+    },
+    "file:app/Records/LocalDay.php": {
+      "name": "LocalDay.php",
+      "type": "file",
+      "summary": "Immutable value object that computes timezone-aware start-of-day and next-day UTC boundaries for scheduling queries and predicates."
+    },
+    "class:app/Records/LocalDay.php:LocalDay": {
+      "name": "LocalDay",
+      "type": "class",
+      "summary": "Encapsulates a user timezone and exposes helpers to convert local calendar days to UTC ranges and test whether a UTC timestamp falls on or before the current local day."
+    },
+    "file:database/factories/RecordFactory.php": {
+      "name": "RecordFactory.php",
+      "type": "file",
+      "summary": "Laravel model factory that seeds Record rows for tests with fluent states for appointments, tasks, soft-deletes, and voice-turn provenance."
+    },
+    "class:database/factories/RecordFactory.php:RecordFactory": {
+      "name": "RecordFactory",
+      "type": "class",
+      "summary": "Factory class defining default Record attributes and state modifiers used throughout feature tests for appointments, tasks, and deleted records."
+    },
+    "function:database/factories/RecordFactory.php:definition": {
+      "name": "definition",
+      "type": "function",
+      "summary": "Returns the default attribute map for a new Record, associating a user, kind, title, timestamps, and optional notes."
+    },
+    "file:tests/Feature/Conversation/BriefingTest.php": {
+      "name": "BriefingTest.php",
+      "type": "file",
+      "summary": "Feature tests asserting that the conversation briefing surfaces the correct mix of today's appointments, overdue items, and open tasks for authenticated users."
+    },
+    "file:tests/Feature/Conversation/FirstVisitTest.php": {
+      "name": "FirstVisitTest.php",
+      "type": "file",
+      "summary": "Feature tests verifying first-time user experience on the conversation home, including welcome messaging when no records exist yet."
+    },
+    "file:tests/Feature/Models/RecordTest.php": {
+      "name": "RecordTest.php",
+      "type": "file",
+      "summary": "Feature tests covering Record model casts, relationships, factory states, and query scopes for appointments, tasks, and local-day scheduling."
+    },
+    "file:tests/Feature/Models/UserTest.php": {
+      "name": "UserTest.php",
+      "type": "file",
+      "summary": "Feature tests validating User model associations to records and voice turns, ensuring relationship integrity across the domain."
+    },
+    "file:tests/Feature/Records/LocalDayTest.php": {
+      "name": "LocalDayTest.php",
+      "type": "file",
+      "summary": "Feature tests for LocalDay boundary calculations and scheduling predicates across timezones and daylight-saving edge cases."
+    },
+    "file:app/Http/Controllers/Auth/LoginController.php": {
+      "name": "LoginController.php",
+      "type": "file",
+      "summary": "Authentication controller that renders the login form and authenticates users with session regeneration, redirecting to the conversation page on success."
+    },
+    "file:app/Http/Controllers/Controller.php": {
+      "name": "Controller.php",
+      "type": "file",
+      "summary": "Abstract base controller class that all application HTTP controllers extend."
+    },
+    "file:app/Http/Controllers/RecordController.php": {
+      "name": "RecordController.php",
+      "type": "file",
+      "summary": "Invokable controller that serves the records index endpoint, currently returning an empty JSON array as a placeholder."
+    },
+    "file:app/Http/Controllers/VoiceTurnController.php": {
+      "name": "VoiceTurnController.php",
+      "type": "file",
+      "summary": "API controller that accepts authenticated voice turn audio uploads and delegates persistence and transcription to the StoreVoiceTurn action."
+    },
+    "file:app/Http/Requests/Auth/LoginRequest.php": {
+      "name": "LoginRequest.php",
+      "type": "file",
+      "summary": "Form request validating login credentials with required email and password fields and Portuguese localized validation messages."
+    },
+    "file:app/Http/Requests/StoreVoiceTurnRequest.php": {
+      "name": "StoreVoiceTurnRequest.php",
+      "type": "file",
+      "summary": "Form request authorizing authenticated users and validating voice turn audio uploads against MIME types and size limits from Rafael config."
+    },
+    "file:routes/web.php": {
+      "name": "web.php",
+      "type": "file",
+      "summary": "Web route definitions wiring guest login routes and authenticated conversation, records, and voice turn upload endpoints."
+    },
+    "class:app/Http/Controllers/Auth/LoginController.php:LoginController": {
+      "name": "LoginController",
+      "type": "class",
+      "summary": "Handles login form display and credential authentication with Portuguese locale and session regeneration."
+    },
+    "class:app/Http/Controllers/Controller.php:Controller": {
+      "name": "Controller",
+      "type": "class",
+      "summary": "Abstract base class for all HTTP controllers in the application."
+    },
+    "class:app/Http/Controllers/RecordController.php:RecordController": {
+      "name": "RecordController",
+      "type": "class",
+      "summary": "Single-action controller returning a JSON response for the records listing endpoint."
+    },
+    "class:app/Http/Controllers/VoiceTurnController.php:VoiceTurnController": {
+      "name": "VoiceTurnController",
+      "type": "class",
+      "summary": "Controller that processes voice turn uploads by delegating to the StoreVoiceTurn action and returning the created turn UUID."
+    },
+    "class:app/Http/Requests/Auth/LoginRequest.php:LoginRequest": {
+      "name": "LoginRequest",
+      "type": "class",
+      "summary": "Validates email and password fields for login with custom Portuguese error messages."
+    },
+    "class:app/Http/Requests/StoreVoiceTurnRequest.php:StoreVoiceTurnRequest": {
+      "name": "StoreVoiceTurnRequest",
+      "type": "class",
+      "summary": "Authorizes authenticated users and validates uploaded audio files against Rafael voice turn configuration."
+    },
+    "function:app/Http/Controllers/Auth/LoginController.php:store": {
+      "name": "store",
+      "type": "function",
+      "summary": "Attempts authentication with validated credentials, throws a validation exception on failure, regenerates the session, and redirects to the conversation route."
+    },
+    "function:app/Http/Controllers/VoiceTurnController.php:store": {
+      "name": "store",
+      "type": "function",
+      "summary": "Passes the authenticated user and uploaded audio file to StoreVoiceTurn and returns the new voice turn UUID as JSON."
+    },
+    "function:app/Http/Requests/StoreVoiceTurnRequest.php:rules": {
+      "name": "rules",
+      "type": "function",
+      "summary": "Defines validation rules for the audio upload field using allowed MIME types and max size from Rafael config."
+    },
+    "file:app/Actions/Voice/StoreVoiceTurn.php": {
+      "name": "StoreVoiceTurn.php",
+      "type": "file",
+      "summary": "Action that persists an uploaded audio file, creates a VoiceTurn record in Uploaded status, and dispatches asynchronous transcription."
+    },
+    "class:app/Actions/Voice/StoreVoiceTurn.php:StoreVoiceTurn": {
+      "name": "StoreVoiceTurn",
+      "type": "class",
+      "summary": "Single-purpose action class invoked by the voice upload controller to store audio and enqueue transcription."
+    },
+    "function:app/Actions/Voice/StoreVoiceTurn.php:handle": {
+      "name": "handle",
+      "type": "function",
+      "summary": "Stores the uploaded WebM file on the local disk, creates a VoiceTurn for the user, and dispatches TranscribeVoiceTurn."
+    },
+    "file:app/Models/VoiceTurn.php": {
+      "name": "VoiceTurn.php",
+      "type": "file",
+      "summary": "Eloquent model representing a single voice interaction turn with status, audio path, transcript, and relationships to User and Record."
+    },
+    "class:app/Models/VoiceTurn.php:VoiceTurn": {
+      "name": "VoiceTurn",
+      "type": "class",
+      "summary": "Core domain model for voice turns, linking users to transcripts and records created from conversation."
+    },
+    "file:app/VoiceTurnStatus.php": {
+      "name": "VoiceTurnStatus.php",
+      "type": "file",
+      "summary": "Backed string enum defining the lifecycle states of a voice turn from upload through transcription completion or failure."
+    },
+    "file:database/factories/VoiceTurnFactory.php": {
+      "name": "VoiceTurnFactory.php",
+      "type": "file",
+      "summary": "Eloquent factory for VoiceTurn with default uploaded state and convenience states for completed and failed transcription outcomes."
+    },
+    "class:database/factories/VoiceTurnFactory.php:VoiceTurnFactory": {
+      "name": "VoiceTurnFactory",
+      "type": "class",
+      "summary": "Factory class generating VoiceTurn test fixtures with state helpers for uploaded, completed, and failed turns."
+    },
+    "function:database/factories/VoiceTurnFactory.php:definition": {
+      "name": "definition",
+      "type": "function",
+      "summary": "Returns default VoiceTurn attributes including a related user, UUID, uploaded status, and local audio path."
+    },
+    "function:database/factories/VoiceTurnFactory.php:completed": {
+      "name": "completed",
+      "type": "function",
+      "summary": "Factory state modifier producing a completed turn with transcript and cleared audio storage fields."
+    },
+    "function:database/factories/VoiceTurnFactory.php:failed": {
+      "name": "failed",
+      "type": "function",
+      "summary": "Factory state modifier producing a failed turn with an error message and deleted audio metadata."
+    },
+    "file:tests/Feature/Models/VoiceTurnTest.php": {
+      "name": "VoiceTurnTest.php",
+      "type": "file",
+      "summary": "Feature tests validating VoiceTurn UUID uniqueness, foreign key constraints, and record link behavior on deletion."
+    },
+    "file:tests/Feature/Voice/AudioUploadTest.php": {
+      "name": "AudioUploadTest.php",
+      "type": "file",
+      "summary": "HTTP feature tests for the voice-turn upload endpoint covering storage, validation, transcription dispatch, and record isolation."
+    },
+    "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml": {
+      "name": "impeccable_asset_producer.toml",
+      "type": "config",
+      "summary": "Defines the Impeccable asset producer sub-agent that generates clean raster plates from approved mock comps using comp-spec scripts, without redesigning the approved visual direction."
+    },
+    "config:.agents/skills/impeccable/agents/impeccable_documenter.toml": {
+      "name": "impeccable_documenter.toml",
+      "type": "config",
+      "summary": "Defines the Impeccable documenter sub-agent that records DESIGN.md and its sidecar from shipped build artifacts, deriving design tokens from ground-truth code rather than intentions."
+    },
+    "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml": {
+      "name": "impeccable_finish_reviewer.toml",
+      "type": "config",
+      "summary": "Defines the Impeccable finish reviewer sub-agent that audits completed builds against direction contracts, approved comps, and quality bars, returning ordered material fixes or ship/rebuild dispositions."
+    },
+    "config:.agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml": {
+      "name": "impeccable_manual_edit_applier.toml",
+      "type": "config",
+      "summary": "Defines the Impeccable manual edit applier sub-agent that applies leased live manual_edit_apply batches to source files and returns canonical JSON apply results with entry-level atomicity."
+    },
+    "config:.agents/skills/impeccable/agents/openai.yaml": {
+      "name": "openai.yaml",
+      "type": "config",
+      "summary": "Registers the Impeccable skill interface metadata including display name, short description, and default prompt for frontend design and polish workflows."
+    },
+    "document:.agents/skills/impeccable/reference/adapt.md": {
+      "name": "adapt.md",
+      "type": "document",
+      "summary": "Comprehensive web adaptation guide covering responsive breakpoints, touch targets, layout patterns, responsive images, and verification across mobile, tablet, desktop, print, and email contexts."
+    },
+    "document:.agents/skills/impeccable/reference/adapt.native.md": {
+      "name": "adapt.native.md",
+      "type": "document",
+      "summary": "Native adaptation workflow for scaling phone layouts to tablets, handling orientation and foldables, cross-platform iOS/Android differences, and porting web experiences to native runtimes."
+    },
+    "document:.agents/skills/impeccable/reference/android.md": {
+      "name": "android.md",
+      "type": "document",
+      "summary": "Android platform conformance checklist evaluating layout structure, touch targets, typography, color theming, components, motion, and build verification against Material expectations."
+    },
+    "document:.agents/skills/impeccable/reference/animate.md": {
+      "name": "animate.md",
+      "type": "document",
+      "summary": "Motion design command that defines an animation thesis, selects material by meaning, sets timing and easing, implements to the target runtime, and verifies accessibility controls."
+    },
+    "document:.agents/skills/impeccable/reference/audit.md": {
+      "name": "audit.md",
+      "type": "document",
+      "summary": "Web implementation diagnostic scanning accessibility, performance, theming, responsive design, and implementation integrity, then generating a scored audit report with prioritized actions."
+    },
+    "document:.agents/skills/impeccable/reference/audit.native.md": {
+      "name": "audit.native.md",
+      "type": "document",
+      "summary": "Native app audit workflow evaluating VoiceOver and TalkBack accessibility, performance, appearance, platform conformance, adaptivity, and producing a conformance verdict report."
+    },
+    "document:.agents/skills/impeccable/reference/bolder.md": {
+      "name": "bolder.md",
+      "type": "document",
+      "summary": "Visual amplification command that diagnoses flat interfaces, intensifies hierarchy and presence within fixed scope, and validates the result with a skeleton test."
+    },
+    "document:.agents/skills/impeccable/reference/clarify.md": {
+      "name": "clarify.md",
+      "type": "document",
+      "summary": "UX copy refinement workflow auditing interface language, rewriting actions, forms, errors, and state messages, and verifying voice, accessibility, and localization quality."
+    },
+    "document:.agents/skills/impeccable/reference/colorize.md": {
+      "name": "colorize.md",
+      "type": "document",
+      "summary": "Color strategy command that audits existing palettes, chooses an application strategy, applies tokens at system scale, and verifies contrast and perceptual consistency."
+    },
+    "document:.agents/skills/impeccable/reference/component-review.md": {
+      "name": "component-review.md",
+      "type": "document",
+      "summary": "Structured component review workflow for preparing a component kit, presenting variants to stakeholders, and assembling findings into a focused review session."
+    },
+    "document:.agents/skills/impeccable/reference/craft-floor.md": {
+      "name": "craft-floor.md",
+      "type": "document",
+      "summary": "Minimum craft quality bar defining verification criteria and explicit refusal conditions for design output that falls below acceptable standards."
+    },
+    "document:.agents/skills/impeccable/reference/craft.md": {
+      "name": "craft.md",
+      "type": "document",
+      "summary": "Deprecated alias pointing agents to the craft-floor quality standards reference instead of maintaining a separate craft command."
+    },
+    "document:.agents/skills/impeccable/reference/critique.md": {
+      "name": "critique.md",
+      "type": "document",
+      "summary": "Comprehensive design critique orchestration combining design review, browser evidence, cognitive load assessment, Nielsen heuristics scoring, persona red flags, and persisted snapshot reporting."
+    },
+    "document:.agents/skills/impeccable/reference/delight.md": {
+      "name": "delight.md",
+      "type": "document",
+      "summary": "Delight design command identifying emotional opportunities, defining a single delight thesis, building for key moments, and protecting core usability during enhancement."
+    },
+    "document:.agents/skills/impeccable/reference/distill.md": {
+      "name": "distill.md",
+      "type": "document",
+      "summary": "Simplification workflow assessing interface complexity, planning reductions across information architecture, visuals, layout, interactions, content, and code, then verifying outcomes."
+    },
+    "document:.agents/skills/impeccable/reference/doctor.md": {
+      "name": "doctor.md",
+      "type": "document",
+      "summary": "Skill maintenance pass that runs health checks, acts on findings by severity, enforces deprecated field handling, and supports monorepo-wide validation with opt-out controls."
+    },
+    "document:.agents/skills/impeccable/reference/document.md": {
+      "name": "document.md",
+      "type": "document",
+      "summary": "Design documentation workflow for producing DESIGN.md and .impeccable/design.json via scan or seed modes, including token frontmatter schema, sidecar rules, and confirmation steps."
+    },
+    "document:.agents/skills/impeccable/reference/extract.md": {
+      "name": "extract.md",
+      "type": "document",
+      "summary": "Six-step design system extraction flow to discover existing patterns, plan component extraction, enrich tokens, migrate usage, and document the resulting system."
+    },
+    "document:.agents/skills/impeccable/reference/generate.md": {
+      "name": "generate.md",
+      "type": "document",
+      "summary": "UI generation workflow parsing user requests, reusing existing pages where possible, generating new screens, and closing with acceptance criteria."
+    },
+    "document:.agents/skills/impeccable/reference/harden.md": {
+      "name": "harden.md",
+      "type": "document",
+      "summary": "Production hardening guide covering text overflow, internationalization, error handling, edge cases, input validation, accessibility resilience, performance, and verification strategies."
+    },
+    "document:.agents/skills/impeccable/reference/hooks.md": {
+      "name": "hooks.md",
+      "type": "document",
+      "summary": "Reference for the $impeccable hooks command that toggles and configures the per-project design detector hook across Claude, Cursor, Codex, Copilot, and Grok harnesses."
+    },
+    "document:.agents/skills/impeccable/reference/init.md": {
+      "name": "init.md",
+      "type": "document",
+      "summary": "Step-by-step init flow for capturing product truth by exploring the project, interviewing the user, writing PRODUCT.md, and recording workflow defaults."
+    },
+    "document:.agents/skills/impeccable/reference/ios.md": {
+      "name": "ios.md",
+      "type": "document",
+      "summary": "iOS platform design checklist covering layout, touch targets, typography, materials, controls, motion, and build verification to avoid generic mobile UI patterns."
+    },
+    "document:.agents/skills/impeccable/reference/layout.md": {
+      "name": "layout.md",
+      "type": "document",
+      "summary": "Live-mode layout action reference that sets a spatial thesis, applies composition changes in visitor mode, verifies results, and defines signature parameters for variant generation."
+    },
+    "document:.agents/skills/impeccable/reference/live-setup.md": {
+      "name": "live-setup.md",
+      "type": "document",
+      "summary": "First-time live mode setup guide for writing .impeccable/config.json, handling CSP detection, consent prompts, append-array/string config, and troubleshooting injection issues."
+    },
+    "document:.agents/skills/impeccable/reference/live.md": {
+      "name": "live.md",
+      "type": "document",
+      "summary": "Comprehensive interactive live variant mode contract covering boot, poll loops, generate/accept/discard/steer handlers, harness-specific policies, and session cleanup."
+    },
+    "document:.agents/skills/impeccable/reference/new-work.md": {
+      "name": "new-work.md",
+      "type": "document",
+      "summary": "Workflow for starting new visual work: assess existing truth, choose invention depth, commit the design world, record decisions, build comp-led or code-led, and finish with inspection."
+    },
+    "document:.agents/skills/impeccable/reference/onboard.md": {
+      "name": "onboard.md",
+      "type": "document",
+      "summary": "UX onboarding design guide covering principles, guided tours, empty states, contextual help, implementation patterns, and quality verification for first-run experiences."
+    },
+    "document:.agents/skills/impeccable/reference/operate.md": {
+      "name": "operate.md",
+      "type": "document",
+      "summary": "Operate-mode depth notes for product surfaces, defining the product slop test and constraints across typography, color, layout, components, motion, and permissions."
+    },
+    "document:.agents/skills/impeccable/reference/optimize.md": {
+      "name": "optimize.md",
+      "type": "document",
+      "summary": "Performance optimization reference covering loading, rendering, animation, framework tuning, network efficiency, Core Web Vitals targets, monitoring, and verification."
+    },
+    "document:.agents/skills/impeccable/reference/overdrive.md": {
+      "name": "overdrive.md",
+      "type": "document",
+      "summary": "Guide for pushing interfaces beyond baseline quality with cinematic motion, scroll-driven effects, advanced rendering, and disciplined progressive enhancement."
+    },
+    "document:.agents/skills/impeccable/reference/polish.md": {
+      "name": "polish.md",
+      "type": "document",
+      "summary": "Polish command workflow to establish the design system, gather evidence, triage findings, refine flow/layout/type/color/interaction across a surface, and verify completion."
+    },
+    "document:.agents/skills/impeccable/reference/quieter.md": {
+      "name": "quieter.md",
+      "type": "document",
+      "summary": "Quieter live action reference for reducing visual noise through color refinement, weight reduction, simplification, motion cuts, and composition tightening in visitor mode."
+    },
+    "document:.agents/skills/impeccable/reference/region-map.md": {
+      "name": "region-map.md",
+      "type": "document",
+      "summary": "Procedure for authoring and inspecting comp region maps with comp-spec, defining containment and review groups before asset production or measured builds."
+    },
+    "document:.agents/skills/impeccable/reference/routing.md": {
+      "name": "routing.md",
+      "type": "document",
+      "summary": "No-argument $impeccable routing guide that reads project signals and recommends 2-3 context-aware next commands before showing the full command menu."
+    },
+    "document:.agents/skills/impeccable/reference/shape.md": {
+      "name": "shape.md",
+      "type": "document",
+      "summary": "Shape command reference for a two-round discovery interview that resolves design direction and produces a brief before visual work begins."
+    },
+    "document:.agents/skills/impeccable/reference/typeset.md": {
+      "name": "typeset.md",
+      "type": "document",
+      "summary": "Typeset live action reference for assessing typography in isolation, setting a type system, applying changes, verifying legibility, and defining live-mode signature parameters."
+    },
+    "document:.agents/skills/impeccable/reference/visualize.md": {
+      "name": "visualize.md",
+      "type": "document",
+      "summary": "Visualize command reference for generating three compositional direction comps, securing a single approval point, and treating the approved comp as a build spec with provenance plates."
+    },
+    "document:.agents/skills/impeccable/reference/degraded/asset-producer.md": {
+      "name": "asset-producer.md",
+      "type": "document",
+      "summary": "Degraded inline fallback for the Impeccable Asset Producer agent, defining how to produce raster plates from an approved comp spec without redesigning or inventing new art direction."
+    },
+    "document:.agents/skills/impeccable/reference/degraded/documenter.md": {
+      "name": "documenter.md",
+      "type": "document",
+      "summary": "Degraded inline fallback for the Impeccable Documenter agent, prescribing post-build capture of DESIGN.md and its sidecar from shipped code rather than planned intent."
+    },
+    "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md": {
+      "name": "finish-reviewer.md",
+      "type": "document",
+      "summary": "Degraded inline fallback for the Impeccable Finish Reviewer, defining the final quality gate with ordered checks for evidence, persistence, fidelity, ceiling, contract truth, and craft-floor compliance."
+    },
+    "document:.agents/skills/impeccable/reference/degraded/manual-edit-applier.md": {
+      "name": "manual-edit-applier.md",
+      "type": "document",
+      "summary": "Degraded inline fallback for the Manual Edit Applier agent, governing how leased live manual_edit_apply events are applied to source files with per-entry atomicity and JSON-only responses."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/advanced-queries.md": {
+      "name": "advanced-queries.md",
+      "type": "document",
+      "summary": "Agent skill rule covering advanced Eloquent query patterns including subquery relationships, conditional aggregates, whereHas optimization, composite indexes, and correlated subqueries for ordering."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/architecture.md": {
+      "name": "architecture.md",
+      "type": "document",
+      "summary": "Agent skill rule defining application architecture conventions: action classes, dependency injection, contracts, atomic locks, defer/post-response work, Context, Concurrency, and framework conventions."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/blade-views.md": {
+      "name": "blade-views.md",
+      "type": "document",
+      "summary": "Agent skill rule for Blade and view layer practices including component attribute merging, @pushOnce scripts, view composers, fragment rendering, and @aware parent props."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/caching.md": {
+      "name": "caching.md",
+      "type": "document",
+      "summary": "Agent skill rule documenting Laravel cache strategies: remember, flexible stale-while-revalidate, memo, tags, atomic add, once() memoization, and production failover stores."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/collections.md": {
+      "name": "collections.md",
+      "type": "document",
+      "summary": "Agent skill rule for Laravel collection usage covering higher-order messages, cursor vs lazy iteration, lazyById updates, toQuery bulk ops, and CollectedBy custom collections."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/config.md": {
+      "name": "config.md",
+      "type": "document",
+      "summary": "Agent skill rule for configuration management: env vars only in config files, production secret protection, App::environment checks, and naming repeated domain values."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/db-performance.md": {
+      "name": "db-performance.md",
+      "type": "document",
+      "summary": "Agent skill rule for database performance covering eager loading, lazy-load prevention, column selection, incremental processing, indexing, withCount, and keeping queries out of Blade."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/eloquent.md": {
+      "name": "eloquent.md",
+      "type": "document",
+      "summary": "Agent skill rule for Eloquent modeling practices: relationship types, local/global scopes, attribute casts, date casting, whereBelongsTo, and keeping queries model-aware."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/error-handling.md": {
+      "name": "error-handling.md",
+      "type": "document",
+      "summary": "Agent skill rule for exception handling: report/render configuration, dontReport lists, throttling, deduplication, JSON API rendering, and exception context."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/events-notifications.md": {
+      "name": "events-notifications.md",
+      "type": "document",
+      "summary": "Agent skill rule for events and notifications covering discovery, cached discovery, ShouldDispatchAfterCommit, queued notifications, channel queues, on-demand recipients, and locale preferences."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/http-client.md": {
+      "name": "http-client.md",
+      "type": "document",
+      "summary": "Agent skill rule for Laravel HTTP client usage: explicit timeouts, safe retries, explicit error handling, request pooling, and Http::fake in tests."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/mail.md": {
+      "name": "mail.md",
+      "type": "document",
+      "summary": "Agent skill rule for mail delivery covering queued mail, after-commit dispatch, delivery mode assertions, Markdown mailables, and separating content from delivery tests."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/migrations.md": {
+      "name": "migrations.md",
+      "type": "document",
+      "summary": "Agent skill rule for database migrations: Artisan generation, foreign keys, immutability of deployed migrations, index design, staged changes, defaults, honest rollbacks, and focused migrations."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/queue-jobs.md": {
+      "name": "queue-jobs.md",
+      "type": "document",
+      "summary": "Agent skill rule for queue and job reliability: reservation timeouts, backoff, unique jobs, terminal failure handling, rate limiting, batching, retry limits, and Horizon."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/routing.md": {
+      "name": "routing.md",
+      "type": "document",
+      "summary": "Agent skill rule for routing and controllers covering implicit binding, scoped nested bindings, resource routes, resource-oriented controllers, and HTTP-focused controller design."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/scheduling.md": {
+      "name": "scheduling.md",
+      "type": "document",
+      "summary": "Agent skill rule for task scheduling: withoutOverlapping, onOneServer, background execution, environment restrictions, grouped configuration, and bounded task work."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/security.md": {
+      "name": "security.md",
+      "type": "document",
+      "summary": "Agent skill rule for Laravel security covering mass assignment, authorization, query binding, output escaping, CSRF, rate limiting, upload validation, secrets, dependency audits, and encryption."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/style.md": {
+      "name": "style.md",
+      "type": "document",
+      "summary": "Agent skill rule for code style and conventions: naming, idiomatic syntax, utility helpers, maintainable presentation code, and comments that explain why."
+    },
+    "document:.agents/skills/laravel-best-practices/rules/validation.md": {
+      "name": "validation.md",
+      "type": "document",
+      "summary": "Agent skill rule for validation and forms: Form Request extraction, readable rules, validated-only data, conditional rules, and cross-field validation ordering."
+    },
+    "document:.agents/skills/testing-best-practices/rules/assertions.md": {
+      "name": "assertions.md",
+      "type": "document",
+      "summary": "Guidelines for writing test assertions using Arrange-Act-Assert, choosing Pest expectations over PHPUnit, named Laravel response assertions, format expectations, and asserting complete results."
+    },
+    "document:.agents/skills/testing-best-practices/rules/endpoint-tests.md": {
+      "name": "endpoint-tests.md",
+      "type": "document",
+      "summary": "Rules for writing HTTP endpoint feature tests covering route coverage, tenant isolation, policy-level authorization, validation cases, and which application layer owns each test scenario."
+    },
+    "document:.agents/skills/testing-best-practices/rules/finding-features.md": {
+      "name": "finding-features.md",
+      "type": "document",
+      "summary": "Explains how to discover existing Pest and Laravel testing features via documentation and the codebase before implementing test behavior manually."
+    },
+    "document:.agents/skills/testing-best-practices/rules/isolation.md": {
+      "name": "isolation.md",
+      "type": "document",
+      "summary": "Covers fakes, mocks, and determinism for isolating dependencies, including framework fakes, Pest mocking, outbound HTTP testing, time/randomness control, and database setup ordering."
+    },
+    "document:.agents/skills/testing-best-practices/rules/naming.md": {
+      "name": "naming.md",
+      "type": "document",
+      "summary": "Defines test file layout mirroring source paths, consistent Pest function style, descriptive test naming conventions, and logical test grouping within files."
+    },
+    "document:.agents/skills/testing-best-practices/rules/performance.md": {
+      "name": "performance.md",
+      "type": "document",
+      "summary": "Optimizing test suite speed through environment configuration, global fakes in Pest.php, parallel and TIA runs, CI shard balancing, and profiling slow tests."
+    },
+    "document:.agents/skills/testing-best-practices/rules/review.md": {
+      "name": "review.md",
+      "type": "document",
+      "summary": "Checklist for reviewing tests across value, naming and structure, coverage, data determinism, and assertion quality before merging changes."
+    },
+    "document:.agents/skills/testing-best-practices/rules/security.md": {
+      "name": "security.md",
+      "type": "document",
+      "summary": "Security testing guidance for verifying authorization boundaries and ensuring tests do not leak sensitive data through factory or assertion misuse."
+    },
+    "document:.agents/skills/testing-best-practices/rules/test-data.md": {
+      "name": "test-data.md",
+      "type": "document",
+      "summary": "Best practices for factories and test data: per-test record creation, named factory states, relationship recycling, and Pest datasets for parameterized cases."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/advanced-queries.md": {
+      "name": "advanced-queries.md",
+      "type": "document",
+      "summary": "Laravel skill rule covering advanced Eloquent query techniques including subquery relationships, conditional aggregates, whereHas optimization, composite indexes, and correlated subquery ordering."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/architecture.md": {
+      "name": "architecture.md",
+      "type": "document",
+      "summary": "Laravel skill rule defining application architecture patterns: action classes, dependency injection, contracts, atomic locks, defer/post-response work, Context, Concurrency, and framework conventions."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/blade-views.md": {
+      "name": "blade-views.md",
+      "type": "document",
+      "summary": "Laravel skill rule for Blade and view layer practices: component attribute merging, @pushOnce scripts, view composers, fragment rendering, and @aware parent prop sharing."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/caching.md": {
+      "name": "caching.md",
+      "type": "document",
+      "summary": "Laravel skill rule for caching strategies: Cache::remember, flexible stale-while-revalidate, memoization, cache tags, atomic Cache::add writes, once() helpers, and production failover stores."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/collections.md": {
+      "name": "collections.md",
+      "type": "document",
+      "summary": "Laravel skill rule for collection and lazy iteration patterns: higher-order messages, cursor vs lazy, lazyById for updates, toQuery bulk operations, and #[CollectedBy] custom collections."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/config.md": {
+      "name": "config.md",
+      "type": "document",
+      "summary": "Laravel skill rule for configuration management: reading env vars only in config files, protecting production secrets, App::environment() checks, and naming repeated domain values."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/db-performance.md": {
+      "name": "db-performance.md",
+      "type": "document",
+      "summary": "Laravel skill rule for database performance: eager loading, preventing lazy loading in development, column selection, incremental large-dataset processing, indexes, withCount, and keeping queries out of Blade."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/eloquent.md": {
+      "name": "eloquent.md",
+      "type": "document",
+      "summary": "Laravel skill rule for Eloquent ORM usage: relationship types, local and global scopes, attribute casts, date casting, whereBelongsTo, and keeping queries model-aware."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/error-handling.md": {
+      "name": "error-handling.md",
+      "type": "document",
+      "summary": "Laravel skill rule for exception handling: report vs render configuration, suppressing noisy exceptions, throttling reports, deduplication, JSON API rendering, and exception context."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/events-notifications.md": {
+      "name": "events-notifications.md",
+      "type": "document",
+      "summary": "Laravel skill rule for events and notifications: event discovery caching, ShouldDispatchAfterCommit, queued notifications, after-commit dispatch, dedicated queues, on-demand notifications, and locale preferences."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/http-client.md": {
+      "name": "http-client.md",
+      "type": "document",
+      "summary": "Laravel skill rule for outbound HTTP client usage: explicit timeouts, safe retry policies, explicit error handling, request pooling, and Http::fake in tests."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/mail.md": {
+      "name": "mail.md",
+      "type": "document",
+      "summary": "Laravel skill rule for mail delivery: queuing slow mail, after-commit dispatch, asserting delivery mode, Markdown mailables, and separating content from delivery tests."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/migrations.md": {
+      "name": "migrations.md",
+      "type": "document",
+      "summary": "Laravel skill rule for database migrations: Artisan generation, foreign-key constraints, immutability of deployed migrations, query-driven indexes, staged row changes, defaults, honest rollbacks, and focused migrations."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/queue-jobs.md": {
+      "name": "queue-jobs.md",
+      "type": "document",
+      "summary": "Laravel skill rule for queue and job configuration: reservation timeouts, backoff, unique jobs, terminal failure handling, rate limiting, job batches, retry limits, and Horizon operations."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/routing.md": {
+      "name": "routing.md",
+      "type": "document",
+      "summary": "Laravel skill rule for routing and controllers: implicit route model binding, scoped nested bindings, resource routes, resource-oriented controller organization, and HTTP-focused controllers."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/scheduling.md": {
+      "name": "scheduling.md",
+      "type": "document",
+      "summary": "Laravel skill rule for task scheduling: overlap prevention, single-server execution, background commands, environment restrictions, grouped configuration, and bounded task work."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/security.md": {
+      "name": "security.md",
+      "type": "document",
+      "summary": "Laravel skill rule for application security: mass assignment control, authorization, query parameter binding, output escaping, CSRF protection, rate limiting, safe uploads, secrets management, dependency audits, and attribute encryption."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/style.md": {
+      "name": "style.md",
+      "type": "document",
+      "summary": "Laravel skill rule for code style and conventions: project naming, idiomatic PHP syntax, clarifying utilities, maintainable presentation code, and purpose-driven comments."
+    },
+    "document:.claude/skills/laravel-best-practices/rules/validation.md": {
+      "name": "validation.md",
+      "type": "document",
+      "summary": "Laravel skill rule for validation and forms: Form Request extraction, readable rule syntax, validated-only data access, conditional rules, and cross-field validation ordering."
+    },
+    "document:.claude/skills/testing-best-practices/rules/assertions.md": {
+      "name": "assertions.md",
+      "type": "document",
+      "summary": "Guidelines for writing Pest and Laravel assertions using arrange-act-assert structure, subject-specific matchers, and complete result checks."
+    },
+    "document:.claude/skills/testing-best-practices/rules/endpoint-tests.md": {
+      "name": "endpoint-tests.md",
+      "type": "document",
+      "summary": "Covers HTTP endpoint test design including auth, tenant isolation, validation, authorization policies, and layer ownership for failure cases."
+    },
+    "document:.claude/skills/testing-best-practices/rules/finding-features.md": {
+      "name": "finding-features.md",
+      "type": "document",
+      "summary": "Explains how to discover Laravel and Pest testing features through documentation and built-in assertion methods before writing custom checks."
+    },
+    "document:.claude/skills/testing-best-practices/rules/isolation.md": {
+      "name": "isolation.md",
+      "type": "document",
+      "summary": "Describes isolating tests with framework fakes, mocks, HTTP faking, time control, and database strategies for deterministic outcomes."
+    },
+    "document:.claude/skills/testing-best-practices/rules/naming.md": {
+      "name": "naming.md",
+      "type": "document",
+      "summary": "Defines conventions for test file layout, function naming, descriptive test names, and logical grouping within the Pest suite."
+    },
+    "document:.claude/skills/testing-best-practices/rules/performance.md": {
+      "name": "performance.md",
+      "type": "document",
+      "summary": "Provides guidance on test suite performance including environment setup, parallel execution, CI splitting, and identifying slow tests."
+    },
+    "document:.claude/skills/testing-best-practices/rules/review.md": {
+      "name": "review.md",
+      "type": "document",
+      "summary": "Checklist for reviewing tests across value, naming, coverage, data determinism, and assertion quality before merging changes."
+    },
+    "document:.claude/skills/testing-best-practices/rules/security.md": {
+      "name": "security.md",
+      "type": "document",
+      "summary": "Outlines security-focused test cases for authentication boundaries, authorization, input validation, and cross-tenant access control."
+    },
+    "document:.claude/skills/testing-best-practices/rules/test-data.md": {
+      "name": "test-data.md",
+      "type": "document",
+      "summary": "Covers factory usage, per-test data creation, record construction patterns, and Pest datasets for parameterized scenarios."
+    },
+    "config:.env.example": {
+      "name": ".env.example",
+      "type": "config",
+      "summary": "Environment variable template for Laravel runtime settings, including MySQL database, Redis cache/queue, session storage, admin credentials, and Whisper-compatible transcription API endpoints."
+    },
+    "config:.mcp.json": {
+      "name": ".mcp.json",
+      "type": "config",
+      "summary": "MCP server configuration that registers the Laravel Boost MCP server via the artisan boost:mcp command for AI agent tooling."
+    },
+    "document:AGENTS.md": {
+      "name": "AGENTS.md",
+      "type": "document",
+      "summary": "Primary AI agent guidelines for the Rafael Laravel app, covering Laravel Boost tools, PHP conventions, Livewire patterns, Pint formatting, and Pest testing workflows."
+    },
+    "document:CLAUDE.md": {
+      "name": "CLAUDE.md",
+      "type": "document",
+      "summary": "Bootstrap instructions for Claude agents working in this repo, covering PHP/Composer prerequisites and Laravel Boost installation before reading AGENTS.md."
+    },
+    "document:DESIGN.md": {
+      "name": "DESIGN.md",
+      "type": "document",
+      "summary": "Design system specification for Rafael's void-and-ice visual language, defining colors, typography, talk-bar components, mic-denial states, and layout rules."
+    },
+    "document:PRODUCT.md": {
+      "name": "PRODUCT.md",
+      "type": "document",
+      "summary": "Product definition for Rafael as a single-user personal secretary PWA with voice-first conversation, appointment briefings, draft-and-confirm record changes, and queued transcription."
+    },
+    "document:README.md": {
+      "name": "README.md",
+      "type": "document",
+      "summary": "Project overview explaining Rafael's secretary concept, voice interaction flow, core product principles, and setup requirements including MySQL and Redis."
+    },
+    "config:boost.json": {
+      "name": "boost.json",
+      "type": "config",
+      "summary": "Laravel Boost installation manifest enabling MCP, guidelines, and domain skills for Cursor, Claude Code, and Codex agents."
+    },
+    "config:composer.json": {
+      "name": "composer.json",
+      "type": "config",
+      "summary": "PHP dependency and autoload manifest for Laravel 13, Livewire 4, Redis extension, Pest testing, and Composer scripts for setup, dev, and test workflows."
+    },
+    "config:package.json": {
+      "name": "package.json",
+      "type": "config",
+      "summary": "Frontend build configuration using Vite 8, Tailwind CSS 4, Laravel Vite plugin, and GSAP for talk-control animations."
+    },
+    "config:phpunit.xml": {
+      "name": "phpunit.xml",
+      "type": "config",
+      "summary": "PHPUnit test runner configuration defining Unit and Feature test suites with in-memory SQLite and isolated testing environment variables."
+    },
+    "config:skills-lock.json": {
+      "name": "skills-lock.json",
+      "type": "config",
+      "summary": "Version-locked registry of installed AI agent skills with source paths and content hashes for reproducible skill resolution."
+    },
+    "config:.impeccable/mocks/decision/assigned-r2.png.json": {
+      "name": "assigned-r2.png.json",
+      "type": "config",
+      "summary": "Image-generation config with a portrait prompt and 9:16 aspect for the bolder reroll comp of the assigned Relógio de ponto (wall time clock) visual world."
+    },
+    "config:.impeccable/mocks/decision/assigned.png.json": {
+      "name": "assigned.png.json",
+      "type": "config",
+      "summary": "Image-generation config defining the portrait comp prompt for the Tecla de falar feature-phone assigned visual world with phase band, timed rows, and three-key deck."
+    },
+    "config:.impeccable/mocks/decision/canon.png.json": {
+      "name": "canon.png.json",
+      "type": "config",
+      "summary": "Image-generation config for the category-standard reference comp showing a conventional voice inbox with Rafael header, circular Segurar control, and plain daily list."
+    },
+    "config:.impeccable/mocks/decision/model-pick-r2.png.json": {
+      "name": "model-pick-r2.png.json",
+      "type": "config",
+      "summary": "Image-generation config with prompt and aspect for the bolder reroll comp of Impeccable's Espeto de recados desk-spike model-pick visual world."
+    },
+    "config:.impeccable/mocks/decision/model-pick.png.json": {
+      "name": "model-pick.png.json",
+      "type": "config",
+      "summary": "Image-generation config defining the apartment intercom Interfone model-pick comp with ruled log, hold button, and engraved Anotar/Rasgar keys."
+    },
+    "config:.impeccable/mocks/decision/payload-r2.json": {
+      "name": "payload-r2.json",
+      "type": "config",
+      "summary": "Full Impeccable decision-screen mock payload for a bolder reroll round pairing Relógio de ponto and Espeto de recados options with declined challengers, reroll registers, and shared canon card metadata."
+    },
+    "config:.impeccable/mocks/decision/payload.json": {
+      "name": "payload.json",
+      "type": "config",
+      "summary": "Full Impeccable decision-screen mock payload presenting visual world choices—assigned Tecla de falar handset, Interfone model pick, six declined challengers, and a category-standard canon baseline—for Rafael's home screen design."
+    },
+    "config:.impeccable/mocks/home-bars.png.json": {
+      "name": "home-bars.png.json",
+      "type": "config",
+      "summary": "Approved Impeccable mock metadata for a Figma-derived home icon: five rounded vertical bars on a dark void background, with source notes and a generation prompt."
+    },
+    "config:.impeccable/mocks/home-previews.json": {
+      "name": "home-previews.json",
+      "type": "config",
+      "summary": "Impeccable decision config presenting three home-screen design directions (Malote, Espaço, Neumorfismo) with lineage, palette, materials, viewport, risks, and comp paths for each option."
+    },
+    "config:.impeccable/mocks/malote-home.png.json": {
+      "name": "malote-home.png.json",
+      "type": "config",
+      "summary": "Generation prompt and aspect metadata for the Malote home comp: a portrait messenger-pouch UI with seven timed onion-skin slips and a Segurar hold control at the bottom."
+    },
+    "config:.impeccable/mocks/malote-preview.json": {
+      "name": "malote-preview.json",
+      "type": "config",
+      "summary": "Focused Impeccable preview config for the locked Malote home direction, describing the messenger-pouch metaphor and pointing to the malote-home comp for build output."
+    },
+    "document:docs/database-schema.md": {
+      "name": "database-schema.md",
+      "type": "document",
+      "summary": "Authoritative MySQL schema specification for Rafael v1 covering users, records, and voice_turns with design principles, migration order, enum conventions, and a user-story coverage matrix."
+    },
+    "document:docs/project-description.md": {
+      "name": "project-description.md",
+      "type": "document",
+      "summary": "Technical map of Rafael defining domain concepts (records, appointments, tasks), the Laravel/Livewire/Alpine stack, UI kit components, and the voice-to-transcript workflow."
+    },
+    "document:docs/project-phases.md": {
+      "name": "project-phases.md",
+      "type": "document",
+      "summary": "Phased v1 implementation roadmap with build and test conventions, dependency ordering across eleven phases, and checked progress tied to user stories and schema sections."
+    },
+    "document:docs/user-stories.md": {
+      "name": "user-stories.md",
+      "type": "document",
+      "summary": "Ten pt-BR user stories (US-01 through US-10) specifying login, first-visit greeting, daily briefing, voice capture, task queries, and spoken-yes record mutations for a single user."
+    },
+    "document:.agents/skills/grill-me/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Thin agent skill stub that delegates stress-test interviews to the grilling skill when users want to sharpen a plan or design."
+    },
+    "config:.agents/skills/grill-me/agents/openai.yaml": {
+      "name": "openai.yaml",
+      "type": "config",
+      "summary": "OpenAI agent interface and policy configuration for the grill-me skill wrapper."
+    },
+    "document:.agents/skills/grilling/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Agent skill that runs multi-round design-tree interviews via AskQuestion, stress-testing user decisions until the frontier of open questions is empty."
+    },
+    "config:.agents/skills/grilling/agents/openai.yaml": {
+      "name": "openai.yaml",
+      "type": "config",
+      "summary": "Minimal OpenAI agent interface declaration for the grilling interview skill."
+    },
+    "document:.agents/skills/impeccable/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Primary Impeccable agent skill covering frontend design workflows, setup via the impeccable CLI launcher, design modes, and command playbooks for live browser iteration."
+    },
+    "file:.agents/skills/impeccable/scripts/VERSION": {
+      "name": "VERSION",
+      "type": "file",
+      "summary": "Single-line version pin (0.1.6) read by the impeccable launcher to locate or download the matching engine binary."
+    },
+    "config:.agents/skills/impeccable/scripts/command-metadata.json": {
+      "name": "command-metadata.json",
+      "type": "config",
+      "summary": "JSON registry of Impeccable CLI verbs with human-readable descriptions and argument hints for init, live, generate, audit, and other design commands."
+    },
+    "config:.agents/skills/impeccable/scripts/data/font-index-failures.json": {
+      "name": "font-index-failures.json",
+      "type": "config",
+      "summary": "Catalog of Google Font families that failed to load or render during font indexing, with weight, category, and failure reason per entry."
+    },
+    "config:.agents/skills/impeccable/scripts/data/font-index.json": {
+      "name": "font-index.json",
+      "type": "config",
+      "summary": "Placeholder or empty font index data file reserved for successful font catalog entries used by Impeccable typography tooling."
+    },
+    "file:.agents/skills/impeccable/scripts/impeccable": {
+      "name": "impeccable",
+      "type": "file",
+      "summary": "POSIX shell launcher that resolves and execs the Impeccable engine binary from sibling bin paths, home cache, or version-pinned download using VERSION and IMPECCABLE_SKILL_DIR."
+    },
+    "file:.agents/skills/impeccable/scripts/impeccable.cmd": {
+      "name": "impeccable.cmd",
+      "type": "file",
+      "summary": "Windows batch launcher mirroring the POSIX impeccable script: resolves sibling or cached engine binaries, validates via engine-probe, and downloads with SHA256 verification."
+    },
+    "file:.agents/skills/impeccable/scripts/live-browser-dom.js": {
+      "name": "live-browser-dom.js",
+      "type": "file",
+      "summary": "Browser-side DOM helper module for Impeccable live mode, exposing element picking, UI chrome mounting, and focus utilities on window.__IMPECCABLE_LIVE_DOM__."
+    },
+    "function:.agents/skills/impeccable/scripts/live-browser-dom.js:createLiveBrowserDomHelpers": {
+      "name": "createLiveBrowserDomHelpers",
+      "type": "function",
+      "summary": "Factory that builds DOM utilities for live overlay chrome: pickable element filtering, frozen anchors, UI root mounting, and event defanging."
+    },
+    "file:.agents/skills/impeccable/scripts/live-browser-ignores.js": {
+      "name": "live-browser-ignores.js",
+      "type": "file",
+      "summary": "Browser-side resolver for Impeccable detector ignore rules, mirroring CLI config to suppress findings or skip scans based on page URL and project globs."
+    },
+    "function:.agents/skills/impeccable/scripts/live-browser-ignores.js:resolveDetectIgnores": {
+      "name": "resolveDetectIgnores",
+      "type": "function",
+      "summary": "Resolves serialized project ignore config against the current pathname to produce disabled rules, disabled values, or a skipScan flag for live detector scans."
+    },
+    "file:.agents/skills/impeccable/scripts/live-browser-session.js": {
+      "name": "live-browser-session.js",
+      "type": "file",
+      "summary": "Durable localStorage session helpers for Impeccable live mode, attached to window.__IMPECCABLE_LIVE_SESSION__ for recovery without booting the full overlay UI."
+    },
+    "function:.agents/skills/impeccable/scripts/live-browser-session.js:createLiveBrowserSessionState": {
+      "name": "createLiveBrowserSessionState",
+      "type": "function",
+      "summary": "Factory for prefixed localStorage session state including save/load/clear, handled-variant tracking, scroll position persistence, and checkpoint revision."
+    },
+    "file:.agents/skills/impeccable/scripts/live-browser.js": {
+      "name": "live-browser.js",
+      "type": "file",
+      "summary": "Large injected browser script (~13k lines) implementing Impeccable Live Variant Mode: floating Spotlight-style UI, element picking, variant generation cycling, HMR hot-swap, screenshots, and localhost server integration."
+    },
+    "file:.agents/skills/impeccable/scripts/modern-screenshot.umd.js": {
+      "name": "modern-screenshot.umd.js",
+      "type": "file",
+      "summary": "Minified UMD bundle of the modern-screenshot library exposing domToCanvas, domToPng, and related DOM-to-image capture APIs for live-mode screenshots."
+    },
+    "document:.agents/skills/infer-conventions/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Laravel agent skill for sweeping ~49 convention dimensions, recording path-scoped rules via Boost record-rule, and documenting how the app actually writes code."
+    },
+    "document:.agents/skills/infer-conventions/references/checklist.md": {
+      "name": "checklist.md",
+      "type": "document",
+      "summary": "Structured detection checklist grouped A–J covering validation, controllers, models, testing, frontend, and architecture forks for infer-conventions sweeps."
+    },
+    "document:.agents/skills/laravel-best-practices/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Laravel best-practices skill index that maps backend tasks to rule files and prioritizes consistency with existing application patterns over theoretical defaults."
+    },
+    "document:.agents/skills/livewire-development/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Livewire 4 development skill covering component creation (SFC/MFC), wire directives, islands, migration from v3, and JavaScript integration patterns."
+    },
+    "document:.agents/skills/livewire-development/reference/javascript-hooks.md": {
+      "name": "javascript-hooks.md",
+      "type": "document",
+      "summary": "Reference for Livewire 4 JavaScript interceptor APIs including interceptMessage and interceptRequest lifecycle hooks."
+    },
+    "document:.agents/skills/tailwindcss-development/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Tailwind CSS v4 skill for utility-class styling in Blade and SPA templates, emphasizing CSS-first @theme configuration and project convention alignment."
+    },
+    "document:.agents/skills/testing-best-practices/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Pest-focused Laravel testing skill covering coverage selection, assertions, isolation, naming, and review criteria for high-value feature tests."
+    },
+    "document:.claude/skills/infer-conventions/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Claude-side copy of the infer-conventions skill for analyzing Laravel application patterns and recording durable path-scoped rules in .ai/rules."
+    },
+    "document:.claude/skills/infer-conventions/references/checklist.md": {
+      "name": "checklist.md",
+      "type": "document",
+      "summary": "Claude-side copy of the infer-conventions detection checklist listing convention forks across validation, routing, models, and testing dimensions."
+    },
+    "document:.claude/skills/laravel-best-practices/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Claude agent skill indexing Laravel best-practice rule files, emphasizing codebase consistency before applying patterns to controllers, models, jobs, and queries."
+    },
+    "document:.claude/skills/livewire-development/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Comprehensive Livewire 4 development guide covering component formats, directives, Alpine integration, configuration, testing, and migration notes from Livewire 3."
+    },
+    "document:.claude/skills/livewire-development/reference/javascript-hooks.md": {
+      "name": "javascript-hooks.md",
+      "type": "document",
+      "summary": "Reference for Livewire 4 JavaScript interceptor APIs covering message/request hooks, component-scoped interceptors, and magic properties."
+    },
+    "document:.claude/skills/tailwindcss-development/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Tailwind CSS v4 development skill documenting CSS-first configuration, import syntax, replaced utilities, spacing conventions, and dark mode patterns."
+    },
+    "document:.claude/skills/testing-best-practices/SKILL.md": {
+      "name": "SKILL.md",
+      "type": "document",
+      "summary": "Testing best-practices skill indexing rule files for assertions, isolation, naming, endpoint tests, and security-focused test guidance in Pest/Laravel."
+    },
+    "config:.cursor/settings.json": {
+      "name": "settings.json",
+      "type": "config",
+      "summary": "Cursor IDE workspace settings enabling the Figma plugin for design-to-code workflows within the editor."
+    },
+    "file:.gitattributes": {
+      "name": ".gitattributes",
+      "type": "file",
+      "summary": "Git attributes enforcing LF line endings, language-specific diff drivers for Blade/PHP/CSS, and export-ignore rules for packaging."
+    },
+    "config:.impeccable/config.json": {
+      "name": "config.json",
+      "type": "config",
+      "summary": "Impeccable build configuration pointing the design toolchain at the comp build path for mock comparison workflows."
+    },
+    "config:.impeccable/design.json": {
+      "name": "design.json",
+      "type": "config",
+      "summary": "Canonical Impeccable design system for Rafael defining void/ice color tokens, component specs, and narrative design metadata."
+    },
+    "config:.impeccable/questions/b92faafe.answer.json": {
+      "name": "b92faafe.answer.json",
+      "type": "config",
+      "summary": "Stored Impeccable decision answer capturing the chosen design option, steer direction, comp reference, and build path for the home surface."
+    },
+    "config:.impeccable/questions/b92faafe.state.json": {
+      "name": "b92faafe.state.json",
+      "type": "config",
+      "summary": "Runtime state for an Impeccable live-browser session tracking process ID, port, URL, heartbeat, and claim timestamp."
+    },
+    "config:.impeccable/review/diff/desktop/raw-report.json": {
+      "name": "raw-report.json",
+      "type": "config",
+      "summary": "Raw Impeccable comp-diff report for the desktop viewport comparing mock comp against built screenshot with structure, color, and region scores."
+    },
+    "config:.impeccable/review/diff/desktop/report.json": {
+      "name": "report.json",
+      "type": "config",
+      "summary": "Processed desktop finish-review report wrapping raw diff scores with interpretation, measurement availability, quality gate, and raw report reference."
+    },
+    "config:.impeccable/review/diff/hero/raw-report.json": {
+      "name": "raw-report.json",
+      "type": "config",
+      "summary": "Raw Impeccable comp-diff report for the hero viewport measuring alignment between approved comp and built home hero region."
+    },
+    "config:.impeccable/review/diff/hero/report.json": {
+      "name": "report.json",
+      "type": "config",
+      "summary": "Processed hero finish-review report aggregating raw diff metrics with verdict interpretation and pass/fail gate for the home hero surface."
+    },
+    "document:.impeccable/surfaces/home.md": {
+      "name": "home.md",
+      "type": "document",
+      "summary": "Impeccable direction contract for the home surface defining click-to-talk UX, void background, ice bars control, and Portuguese microphone-denied messaging."
+    },
+    "file:.npmrc": {
+      "name": ".npmrc",
+      "type": "file",
+      "summary": "npm configuration disabling install scripts while keeping security audits enabled for frontend dependency management."
+    },
+    "config:.ua/config.json": {
+      "name": "config.json",
+      "type": "config",
+      "summary": "Understand-Anything plugin settings specifying English output language and disabled auto-update for knowledge graph generation."
+    },
+    "file:artisan": {
+      "name": "artisan",
+      "type": "file",
+      "summary": "Laravel CLI entry script that bootstraps the application container and dispatches Artisan console commands."
+    },
+    "file:bootstrap/app.php": {
+      "name": "app.php",
+      "type": "file",
+      "summary": "Laravel 11 application bootstrap configuring web/console routing, guest/user redirects to login and conversation, and JSON exception rendering for API routes."
+    },
+    "file:config/app.php": {
+      "name": "app.php",
+      "type": "file",
+      "summary": "Core Laravel application configuration defining app name, environment, debug mode, timezone, locale, encryption key, and service provider aliases."
+    },
+    "file:config/cache.php": {
+      "name": "cache.php",
+      "type": "file",
+      "summary": "Cache store configuration defining default driver, Redis/database/file store connections, and cache key prefix for the application."
+    },
+    "file:config/database.php": {
+      "name": "database.php",
+      "type": "file",
+      "summary": "Database configuration specifying default connection, SQLite/MySQL/PostgreSQL connection parameters, migration paths, and Redis client settings."
+    },
+    "file:config/filesystems.php": {
+      "name": "filesystems.php",
+      "type": "file",
+      "summary": "Filesystem disk configuration for local, public, and S3 storage used by voice audio uploads and Laravel file operations."
+    },
+    "file:config/livewire.php": {
+      "name": "livewire.php",
+      "type": "file",
+      "summary": "Livewire 4 configuration mapping component locations and namespaces to views directories, plus wire-model, navigate, and asset settings."
+    },
+    "file:config/logging.php": {
+      "name": "logging.php",
+      "type": "file",
+      "summary": "Laravel logging configuration defining default channels, stack drivers, and log level settings for application diagnostics."
+    },
+    "file:config/mail.php": {
+      "name": "mail.php",
+      "type": "file",
+      "summary": "Mail transport configuration for Laravel, specifying default mailer, SMTP settings, and global from-address options."
+    },
+    "file:config/queue.php": {
+      "name": "queue.php",
+      "type": "file",
+      "summary": "Queue connection and worker configuration controlling how background jobs such as voice transcription are dispatched and retried."
+    },
+    "file:config/rafael.php": {
+      "name": "rafael.php",
+      "type": "file",
+      "summary": "Application-specific settings for default timezone, bootstrap admin credentials, voice-turn upload limits, and external transcriber service endpoints."
+    },
+    "file:config/services.php": {
+      "name": "services.php",
+      "type": "file",
+      "summary": "Third-party service credentials and endpoint configuration for external integrations used by the Laravel application."
+    },
+    "file:config/session.php": {
+      "name": "session.php",
+      "type": "file",
+      "summary": "Session driver, lifetime, and cookie settings that govern authenticated user state and CSRF protection across HTTP requests."
+    },
+    "file:database/migrations/0001_01_01_000000_create_users_table.php": {
+      "name": "0001_01_01_000000_create_users_table.php",
+      "type": "file",
+      "summary": "Initial migration creating users, password reset tokens, and sessions tables that underpin authentication and session storage."
+    },
+    "file:database/migrations/0001_01_01_000001_create_cache_table.php": {
+      "name": "0001_01_01_000001_create_cache_table.php",
+      "type": "file",
+      "summary": "Migration creating cache and cache_locks tables for database-backed cache storage in Laravel."
+    },
+    "file:database/migrations/0001_01_01_000002_create_jobs_table.php": {
+      "name": "0001_01_01_000002_create_jobs_table.php",
+      "type": "file",
+      "summary": "Migration creating jobs, job_batches, and failed_jobs tables required for Laravel queue processing and failure tracking."
+    },
+    "file:database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php": {
+      "name": "2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "type": "file",
+      "summary": "Migration adding timezone and conversation_opened_at columns to the users table for calendar-day scoping and conversation state."
+    },
+    "file:database/migrations/2026_09_30_141334_create_voice_turns_table.php": {
+      "name": "2026_09_30_141334_create_voice_turns_table.php",
+      "type": "file",
+      "summary": "Migration creating the voice_turns table to store uploaded audio metadata, transcription status, and user-scoped voice interaction records."
+    },
+    "file:database/migrations/2026_09_30_141335_create_records_table.php": {
+      "name": "2026_09_30_141335_create_records_table.php",
+      "type": "file",
+      "summary": "Migration creating the records table for user tasks and appointments with soft deletes, voice-turn linkage, and kind-specific constraints."
+    },
+    "document:docs/prompts/database-schema-prompt.md": {
+      "name": "database-schema-prompt.md",
+      "type": "document",
+      "summary": "Placeholder prompt file intended to guide generation of database schema documentation; currently empty."
+    },
+    "document:docs/prompts/generate-phases.md": {
+      "name": "generate-phases.md",
+      "type": "document",
+      "summary": "AI prompt instructing generation of a phased implementation plan with acceptance tests from user stories, project description, and database schema docs."
+    },
+    "file:lang/pt_BR/auth.php": {
+      "name": "auth.php",
+      "type": "file",
+      "summary": "Brazilian Portuguese translation strings for authentication failure messages displayed during login."
+    },
+    "file:public/.htaccess": {
+      "name": ".htaccess",
+      "type": "file",
+      "summary": "Apache rewrite rules forwarding all non-file requests to the Laravel front controller and preserving authorization headers."
+    },
+    "file:public/index.php": {
+      "name": "index.php",
+      "type": "file",
+      "summary": "HTTP front controller that bootstraps the Laravel application and dispatches incoming web requests."
+    },
+    "document:public/robots.txt": {
+      "name": "robots.txt",
+      "type": "document",
+      "summary": "Robots exclusion file allowing all crawlers to index the public site without path restrictions."
+    },
+    "file:public_old/index.html": {
+      "name": "index.html",
+      "type": "file",
+      "summary": "Legacy static HTML prototype of the Rafael home screen with inline styles using the void/ice design palette."
+    },
+    "file:resources/css/app.css": {
+      "name": "app.css",
+      "type": "file",
+      "summary": "Tailwind CSS v4 entry stylesheet defining custom theme tokens (void, ice) and scanning Blade view sources for utility classes."
+    },
+    "file:resources/js/app.js": {
+      "name": "app.js",
+      "type": "file",
+      "summary": "Frontend JavaScript entry point that registers the talkControl Alpine.js component on alpine:init."
+    },
+    "file:resources/js/talk-control.js": {
+      "name": "talk-control.js",
+      "type": "file",
+      "summary": "Alpine.js component module handling microphone recording, audio upload to the voice-turn endpoint, and GSAP bar animations during listening."
+    },
+    "file:resources/views/auth/login.blade.php": {
+      "name": "login.blade.php",
+      "type": "file",
+      "summary": "Login page view composing the guest layout wrapper around the shared auth-screen form component."
+    },
+    "file:resources/views/components/auth-screen.blade.php": {
+      "name": "auth-screen.blade.php",
+      "type": "file",
+      "summary": "Reusable Blade component rendering a Portuguese email/password login form with validation error display."
+    },
+    "file:resources/views/components/layouts/guest.blade.php": {
+      "name": "guest.blade.php",
+      "type": "file",
+      "summary": "Guest layout shell providing HTML document structure, Vite asset loading, and void/ice themed body wrapper for unauthenticated pages."
+    },
+    "function:resources/js/talk-control.js:talkControl": {
+      "name": "talkControl",
+      "type": "function",
+      "summary": "Exports an Alpine.js data factory that records audio via MediaRecorder, uploads it to the server, and animates talk bars with GSAP."
+    },
+    "table:database/migrations/0001_01_01_000000_create_users_table.php:users": {
+      "name": "users",
+      "type": "table",
+      "summary": "Core users table storing name, email, password hash, and remember token for authentication."
+    },
+    "table:database/migrations/0001_01_01_000000_create_users_table.php:password_reset_tokens": {
+      "name": "password_reset_tokens",
+      "type": "table",
+      "summary": "Stores password reset tokens keyed by user email for Laravel password recovery flows."
+    },
+    "table:database/migrations/0001_01_01_000000_create_users_table.php:sessions": {
+      "name": "sessions",
+      "type": "table",
+      "summary": "Database session store capturing session payload, client IP, user agent, and last activity timestamp."
+    },
+    "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache": {
+      "name": "cache",
+      "type": "table",
+      "summary": "Key-value cache table storing serialized values with expiration timestamps."
+    },
+    "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache_locks": {
+      "name": "cache_locks",
+      "type": "table",
+      "summary": "Cache lock table used by Laravel atomic lock operations on database cache driver."
+    },
+    "table:database/migrations/0001_01_01_000002_create_jobs_table.php:jobs": {
+      "name": "jobs",
+      "type": "table",
+      "summary": "Queue jobs table holding serialized job payloads, queue name, and availability timestamps."
+    },
+    "table:database/migrations/0001_01_01_000002_create_jobs_table.php:job_batches": {
+      "name": "job_batches",
+      "type": "table",
+      "summary": "Tracks batched queue job progress including totals, failures, and cancellation state."
+    },
+    "table:database/migrations/0001_01_01_000002_create_jobs_table.php:failed_jobs": {
+      "name": "failed_jobs",
+      "type": "table",
+      "summary": "Persists failed queue job UUIDs, connection details, and exception traces for debugging."
+    },
+    "table:database/migrations/2026_09_30_141334_create_voice_turns_table.php:voice_turns": {
+      "name": "voice_turns",
+      "type": "table",
+      "summary": "Voice interaction records linking users to uploaded audio paths, transcription status, locale, and consumption timestamps."
+    },
+    "table:database/migrations/2026_09_30_141335_create_records_table.php:records": {
+      "name": "records",
+      "type": "table",
+      "summary": "User-owned tasks and appointments with kind constraints, optional scheduling, soft deletes, and last voice-turn reference."
+    },
+    "file:resources/views/components/secretary-turn.blade.php": {
+      "name": "secretary-turn.blade.php",
+      "type": "file",
+      "summary": "Blade component that renders the secretary's spoken message in a centered, styled paragraph for the conversation UI."
+    },
+    "file:resources/views/components/talk-control.blade.php": {
+      "name": "talk-control.blade.php",
+      "type": "file",
+      "summary": "Voice recording control component combining Alpine.js talkControl with a toggle button, animated listening bars, and upload URL wiring to the voice-turns store endpoint."
+    },
+    "file:resources/views/layouts/app.blade.php": {
+      "name": "app.blade.php",
+      "type": "file",
+      "summary": "Primary application HTML layout loading Vite assets, setting locale-aware metadata, and rendering page content through a slot with dark-themed body styling."
+    },
+    "file:resources/views/pages/⚡conversation/conversation.blade.php": {
+      "name": "conversation.blade.php",
+      "type": "file",
+      "summary": "Livewire conversation page view showing secretary messages, transcription status/errors, and the talk-control widget with conditional polling while a voice turn is processing."
+    },
+    "file:resources/views/welcome.blade.php": {
+      "name": "welcome.blade.php",
+      "type": "file",
+      "summary": "Default Laravel welcome landing page with embedded Tailwind fallback styles, auth navigation links, and marketing hero content for unauthenticated visitors."
+    },
+    "file:routes/console.php": {
+      "name": "console.php",
+      "type": "file",
+      "summary": "Artisan route definitions registering the inspire demo command that prints a random motivational quote via the console."
+    },
+    "file:tests/Pest.php": {
+      "name": "Pest.php",
+      "type": "file",
+      "summary": "Pest bootstrap that binds feature tests to the Laravel TestCase and enables LazilyRefreshDatabase only for tests under the Feature directory."
+    },
+    "file:tests/TestCase.php": {
+      "name": "TestCase.php",
+      "type": "file",
+      "summary": "Abstract base test case extending Laravel's foundation TestCase, serving as the shared parent for feature tests configured in Pest.php."
+    },
+    "class:tests/TestCase.php:TestCase": {
+      "name": "TestCase",
+      "type": "class",
+      "summary": "Abstract application test case that subclasses Laravel's foundation TestCase for use by Pest feature tests."
+    },
+    "file:tests/Unit/ExampleTest.php": {
+      "name": "ExampleTest.php",
+      "type": "file",
+      "summary": "Placeholder Pest unit test asserting a trivial truth value, demonstrating the default unit test setup without Laravel application bootstrapping."
+    },
+    "file:vite.config.js": {
+      "name": "vite.config.js",
+      "type": "file",
+      "summary": "Vite build configuration wiring the Laravel plugin, Tailwind CSS, Instrument Sans font loading, and frontend entry points for app.css and app.js."
+    }
+  },
+  "totalNodes": 319,
+  "totalEdges": 609
+}

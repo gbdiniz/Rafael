@@ -20,7 +20,7 @@ class HttpTranscriber implements Transcriber
     public function transcribe(VoiceTurn $turn): string
     {
         if ($turn->disk === null || $turn->audio_path === null) {
-            throw new RuntimeException('No audio file to transcribe.');
+            throw new RuntimeException('Nenhum áudio para transcrição.');
         }
 
         $disk = Storage::disk($turn->disk);
@@ -53,7 +53,7 @@ class HttpTranscriber implements Transcriber
         $transcript = $response->json('text');
 
         if (! is_string($transcript) || $transcript === '') {
-            throw new RuntimeException('Transcriber returned an empty transcript.');
+            throw new RuntimeException('A transcrição retornou um texto vazio.');
         }
 
         return $transcript;
@@ -123,7 +123,7 @@ class HttpTranscriber implements Transcriber
             throw new PermanentTranscriptionException($this->userFacingMessage($apiMessage));
         }
 
-        throw new RuntimeException('HTTP request returned status code '.$response->status());
+        throw new RuntimeException('Opa. Ocorreu um erro ao tentar no sistema. Código: '.$response->status());
     }
 
     private function userFacingMessage(string $apiMessage): string

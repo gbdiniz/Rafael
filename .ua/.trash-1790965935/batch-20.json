@@ -1,0 +1,627 @@
+{
+  "nodes": [
+    {
+      "id": "file:config/logging.php",
+      "type": "file",
+      "name": "logging.php",
+      "filePath": "config/logging.php",
+      "summary": "Laravel logging configuration defining default channels, stack drivers, and log level settings for application diagnostics.",
+      "tags": ["configuration", "logging", "monitoring", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/mail.php",
+      "type": "file",
+      "name": "mail.php",
+      "filePath": "config/mail.php",
+      "summary": "Mail transport configuration for Laravel, specifying default mailer, SMTP settings, and global from-address options.",
+      "tags": ["configuration", "mail", "laravel", "notifications"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/queue.php",
+      "type": "file",
+      "name": "queue.php",
+      "filePath": "config/queue.php",
+      "summary": "Queue connection and worker configuration controlling how background jobs such as voice transcription are dispatched and retried.",
+      "tags": ["configuration", "queue-jobs", "laravel", "background-processing"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/rafael.php",
+      "type": "file",
+      "name": "rafael.php",
+      "filePath": "config/rafael.php",
+      "summary": "Application-specific settings for default timezone, bootstrap admin credentials, voice-turn upload limits, and external transcriber service endpoints.",
+      "tags": ["configuration", "domain-config", "voice", "transcription"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/services.php",
+      "type": "file",
+      "name": "services.php",
+      "filePath": "config/services.php",
+      "summary": "Third-party service credentials and endpoint configuration for external integrations used by the Laravel application.",
+      "tags": ["configuration", "services", "laravel", "integrations"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:config/session.php",
+      "type": "file",
+      "name": "session.php",
+      "filePath": "config/session.php",
+      "summary": "Session driver, lifetime, and cookie settings that govern authenticated user state and CSRF protection across HTTP requests.",
+      "tags": ["configuration", "session", "security", "authentication"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "type": "file",
+      "name": "0001_01_01_000000_create_users_table.php",
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "summary": "Initial migration creating users, password reset tokens, and sessions tables that underpin authentication and session storage.",
+      "tags": ["migration", "database", "authentication", "users"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "type": "file",
+      "name": "0001_01_01_000001_create_cache_table.php",
+      "filePath": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "summary": "Migration creating cache and cache_locks tables for database-backed cache storage in Laravel.",
+      "tags": ["migration", "database", "caching", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "type": "file",
+      "name": "0001_01_01_000002_create_jobs_table.php",
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "summary": "Migration creating jobs, job_batches, and failed_jobs tables required for Laravel queue processing and failure tracking.",
+      "tags": ["migration", "database", "queue-jobs", "background-processing"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "type": "file",
+      "name": "2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "filePath": "database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "summary": "Migration adding timezone and conversation_opened_at columns to the users table for calendar-day scoping and conversation state.",
+      "tags": ["migration", "database", "users", "calendar"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "type": "file",
+      "name": "2026_09_30_141334_create_voice_turns_table.php",
+      "filePath": "database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "summary": "Migration creating the voice_turns table to store uploaded audio metadata, transcription status, and user-scoped voice interaction records.",
+      "tags": ["migration", "database", "voice", "transcription"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/2026_09_30_141335_create_records_table.php",
+      "type": "file",
+      "name": "2026_09_30_141335_create_records_table.php",
+      "filePath": "database/migrations/2026_09_30_141335_create_records_table.php",
+      "summary": "Migration creating the records table for user tasks and appointments with soft deletes, voice-turn linkage, and kind-specific constraints.",
+      "tags": ["migration", "database", "data-model", "records"],
+      "complexity": "moderate",
+      "languageNotes": "Uses raw SQL for SQLite CHECK constraints while Schema builder handles other drivers."
+    },
+    {
+      "id": "document:docs/prompts/database-schema-prompt.md",
+      "type": "document",
+      "name": "database-schema-prompt.md",
+      "filePath": "docs/prompts/database-schema-prompt.md",
+      "summary": "Placeholder prompt file intended to guide generation of database schema documentation; currently empty.",
+      "tags": ["documentation", "prompt", "database", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/prompts/generate-phases.md",
+      "type": "document",
+      "name": "generate-phases.md",
+      "filePath": "docs/prompts/generate-phases.md",
+      "summary": "AI prompt instructing generation of a phased implementation plan with acceptance tests from user stories, project description, and database schema docs.",
+      "tags": ["documentation", "prompt", "planning", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:lang/pt_BR/auth.php",
+      "type": "file",
+      "name": "auth.php",
+      "filePath": "lang/pt_BR/auth.php",
+      "summary": "Brazilian Portuguese translation strings for authentication failure messages displayed during login.",
+      "tags": ["localization", "authentication", "i18n", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:public/.htaccess",
+      "type": "file",
+      "name": ".htaccess",
+      "filePath": "public/.htaccess",
+      "summary": "Apache rewrite rules forwarding all non-file requests to the Laravel front controller and preserving authorization headers.",
+      "tags": ["infrastructure", "routing", "apache", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:public/index.php",
+      "type": "file",
+      "name": "index.php",
+      "filePath": "public/index.php",
+      "summary": "HTTP front controller that bootstraps the Laravel application and dispatches incoming web requests.",
+      "tags": ["entry-point", "bootstrap", "http", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:public/robots.txt",
+      "type": "document",
+      "name": "robots.txt",
+      "filePath": "public/robots.txt",
+      "summary": "Robots exclusion file allowing all crawlers to index the public site without path restrictions.",
+      "tags": ["documentation", "seo", "public", "web"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:public_old/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "public_old/index.html",
+      "summary": "Legacy static HTML prototype of the Rafael home screen with inline styles using the void/ice design palette.",
+      "tags": ["markup", "prototype", "legacy", "frontend"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/css/app.css",
+      "type": "file",
+      "name": "app.css",
+      "filePath": "resources/css/app.css",
+      "summary": "Tailwind CSS v4 entry stylesheet defining custom theme tokens (void, ice) and scanning Blade view sources for utility classes.",
+      "tags": ["stylesheet", "tailwindcss", "theme", "frontend"],
+      "complexity": "simple",
+      "languageNotes": "Uses Tailwind v4 @import, @source, and @theme directives instead of a tailwind.config.js file."
+    },
+    {
+      "id": "file:resources/js/app.js",
+      "type": "file",
+      "name": "app.js",
+      "filePath": "resources/js/app.js",
+      "summary": "Frontend JavaScript entry point that registers the talkControl Alpine.js component on alpine:init.",
+      "tags": ["entry-point", "javascript", "alpinejs", "frontend"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:resources/js/talk-control.js",
+      "type": "file",
+      "name": "talk-control.js",
+      "filePath": "resources/js/talk-control.js",
+      "summary": "Alpine.js component module handling microphone recording, audio upload to the voice-turn endpoint, and GSAP bar animations during listening.",
+      "tags": ["component", "voice", "alpinejs", "frontend"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/login.blade.php",
+      "type": "file",
+      "name": "login.blade.php",
+      "filePath": "resources/views/auth/login.blade.php",
+      "summary": "Login page view composing the guest layout wrapper around the shared auth-screen form component.",
+      "tags": ["blade-views", "authentication", "component", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:resources/views/components/auth-screen.blade.php",
+      "type": "file",
+      "name": "auth-screen.blade.php",
+      "filePath": "resources/views/components/auth-screen.blade.php",
+      "summary": "Reusable Blade component rendering a Portuguese email/password login form with validation error display.",
+      "tags": ["component", "authentication", "blade-views", "form"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:resources/views/components/layouts/guest.blade.php",
+      "type": "file",
+      "name": "guest.blade.php",
+      "filePath": "resources/views/components/layouts/guest.blade.php",
+      "summary": "Guest layout shell providing HTML document structure, Vite asset loading, and void/ice themed body wrapper for unauthenticated pages.",
+      "tags": ["component", "layout", "blade-views", "frontend"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:resources/js/talk-control.js:talkControl",
+      "type": "function",
+      "name": "talkControl",
+      "filePath": "resources/js/talk-control.js",
+      "lineRange": [3, 118],
+      "summary": "Exports an Alpine.js data factory that records audio via MediaRecorder, uploads it to the server, and animates talk bars with GSAP.",
+      "tags": ["voice", "alpinejs", "media-recorder", "frontend"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000000_create_users_table.php:users",
+      "type": "table",
+      "name": "users",
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "summary": "Core users table storing name, email, password hash, and remember token for authentication.",
+      "tags": ["database", "users", "authentication", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000000_create_users_table.php:password_reset_tokens",
+      "type": "table",
+      "name": "password_reset_tokens",
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "summary": "Stores password reset tokens keyed by user email for Laravel password recovery flows.",
+      "tags": ["database", "authentication", "security", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000000_create_users_table.php:sessions",
+      "type": "table",
+      "name": "sessions",
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "summary": "Database session store capturing session payload, client IP, user agent, and last activity timestamp.",
+      "tags": ["database", "session", "authentication", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache",
+      "type": "table",
+      "name": "cache",
+      "filePath": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "summary": "Key-value cache table storing serialized values with expiration timestamps.",
+      "tags": ["database", "caching", "schema-definition", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache_locks",
+      "type": "table",
+      "name": "cache_locks",
+      "filePath": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "summary": "Cache lock table used by Laravel atomic lock operations on database cache driver.",
+      "tags": ["database", "caching", "concurrency", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:jobs",
+      "type": "table",
+      "name": "jobs",
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "summary": "Queue jobs table holding serialized job payloads, queue name, and availability timestamps.",
+      "tags": ["database", "queue-jobs", "background-processing", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:job_batches",
+      "type": "table",
+      "name": "job_batches",
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "summary": "Tracks batched queue job progress including totals, failures, and cancellation state.",
+      "tags": ["database", "queue-jobs", "batch-processing", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:failed_jobs",
+      "type": "table",
+      "name": "failed_jobs",
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "summary": "Persists failed queue job UUIDs, connection details, and exception traces for debugging.",
+      "tags": ["database", "queue-jobs", "error-handling", "schema-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "table:database/migrations/2026_09_30_141334_create_voice_turns_table.php:voice_turns",
+      "type": "table",
+      "name": "voice_turns",
+      "filePath": "database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "summary": "Voice interaction records linking users to uploaded audio paths, transcription status, locale, and consumption timestamps.",
+      "tags": ["database", "voice", "transcription", "schema-definition"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:database/migrations/2026_09_30_141335_create_records_table.php:records",
+      "type": "table",
+      "name": "records",
+      "filePath": "database/migrations/2026_09_30_141335_create_records_table.php",
+      "summary": "User-owned tasks and appointments with kind constraints, optional scheduling, soft deletes, and last voice-turn reference.",
+      "tags": ["database", "data-model", "records", "schema-definition"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:resources/js/app.js",
+      "target": "file:resources/js/talk-control.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:resources/js/talk-control.js",
+      "target": "function:resources/js/talk-control.js:talkControl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:resources/js/talk-control.js",
+      "target": "function:resources/js/talk-control.js:talkControl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:resources/js/app.js",
+      "target": "function:resources/js/talk-control.js:talkControl",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/logging.php",
+      "target": "file:public/index.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/mail.php",
+      "target": "file:public/index.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/queue.php",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/rafael.php",
+      "target": "file:app/Models/User.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/rafael.php",
+      "target": "file:app/Actions/Voice/StoreVoiceTurn.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/rafael.php",
+      "target": "file:app/Services/Transcription/HttpTranscriber.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/services.php",
+      "target": "file:public/index.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:config/session.php",
+      "target": "file:app/Http/Controllers/Auth/LoginController.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:lang/pt_BR/auth.php",
+      "target": "file:resources/views/components/auth-screen.blade.php",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:public/.htaccess",
+      "target": "file:public/index.php",
+      "type": "routes",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:public/index.php",
+      "target": "file:bootstrap/app.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/components/layouts/guest.blade.php",
+      "target": "file:resources/css/app.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/components/layouts/guest.blade.php",
+      "target": "file:resources/js/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/auth/login.blade.php",
+      "target": "file:resources/views/components/layouts/guest.blade.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/auth/login.blade.php",
+      "target": "file:resources/views/components/auth-screen.blade.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/js/talk-control.js",
+      "target": "file:app/Http/Controllers/VoiceTurnController.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:docs/prompts/generate-phases.md",
+      "target": "document:docs/user-stories.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/prompts/generate-phases.md",
+      "target": "document:docs/project-description.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/prompts/generate-phases.md",
+      "target": "document:docs/database-schema.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/prompts/generate-phases.md",
+      "target": "document:docs/project-phases.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/prompts/database-schema-prompt.md",
+      "target": "document:docs/database-schema.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:public_old/index.html",
+      "target": "file:resources/css/app.css",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:database/migrations/0001_01_01_000000_create_users_table.php:users",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:database/migrations/0001_01_01_000000_create_users_table.php:password_reset_tokens",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:database/migrations/0001_01_01_000000_create_users_table.php:sessions",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "target": "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "target": "table:database/migrations/0001_01_01_000001_create_cache_table.php:cache_locks",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:jobs",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:job_batches",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:database/migrations/0001_01_01_000002_create_jobs_table.php:failed_jobs",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "target": "table:database/migrations/0001_01_01_000000_create_users_table.php:users",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "target": "table:database/migrations/2026_09_30_141334_create_voice_turns_table.php:voice_turns",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/2026_09_30_141335_create_records_table.php",
+      "target": "table:database/migrations/2026_09_30_141335_create_records_table.php:records",
+      "type": "migrates",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "file:app/Models/User.php",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "target": "file:app/Models/User.php",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/migrations/2026_09_30_141335_create_records_table.php",
+      "target": "file:app/Models/Record.php",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/migrations/2026_09_30_141335_create_records_table.php",
+      "target": "table:database/migrations/2026_09_30_141334_create_voice_turns_table.php:voice_turns",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": ".impeccable/mocks/home-bars.png.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "sections": [
+        {
+          "heading": "approved",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "prompt",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".impeccable/mocks/home-previews.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 43,
+      "nonEmptyLines": 43,
+      "sections": [
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "question",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "options",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "buildPath",
+          "level": 1,
+          "line": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".impeccable/mocks/malote-home.png.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "sections": [
+        {
+          "heading": "prompt",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "aspect",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "approved",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".impeccable/mocks/malote-preview.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 19,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "question",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "options",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "buildPath",
+          "level": 1,
+          "line": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": ".agents/skills/impeccable/agents/impeccable_asset_producer.toml", "language": "toml", "sizeLines": 46, "fileCategory": "config"},
+    {"path": ".agents/skills/impeccable/agents/impeccable_documenter.toml", "language": "toml", "sizeLines": 27, "fileCategory": "config"},
+    {"path": ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml", "language": "toml", "sizeLines": 41, "fileCategory": "config"},
+    {"path": ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml", "language": "toml", "sizeLines": 95, "fileCategory": "config"},
+    {"path": ".agents/skills/impeccable/agents/openai.yaml", "language": "yaml", "sizeLines": 3, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    ".agents/skills/impeccable/agents/impeccable_asset_producer.toml": [],
+    ".agents/skills/impeccable/agents/impeccable_documenter.toml": [],
+    ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml": [],
+    ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml": [],
+    ".agents/skills/impeccable/agents/openai.yaml": []
+  }
+}

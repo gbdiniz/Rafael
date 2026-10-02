@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/assertions.md",
+      "type": "document",
+      "name": "assertions.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/assertions.md",
+      "summary": "Guidelines for writing test assertions using Arrange-Act-Assert, choosing Pest expectations over PHPUnit, named Laravel response assertions, format expectations, and asserting complete results.",
+      "tags": ["documentation", "testing", "assertions", "pest", "development"],
+      "complexity": "simple",
+      "languageNotes": "Prioritizes Pest expectations and Laravel assertion helpers before falling back to PHPUnit."
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "type": "document",
+      "name": "endpoint-tests.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "summary": "Rules for writing HTTP endpoint feature tests covering route coverage, tenant isolation, policy-level authorization, validation cases, and which application layer owns each test scenario.",
+      "tags": ["documentation", "testing", "api-handler", "security", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/finding-features.md",
+      "type": "document",
+      "name": "finding-features.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/finding-features.md",
+      "summary": "Explains how to discover existing Pest and Laravel testing features via documentation and the codebase before implementing test behavior manually.",
+      "tags": ["documentation", "testing", "pest", "development", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/isolation.md",
+      "type": "document",
+      "name": "isolation.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/isolation.md",
+      "summary": "Covers fakes, mocks, and determinism for isolating dependencies, including framework fakes, Pest mocking, outbound HTTP testing, time/randomness control, and database setup ordering.",
+      "tags": ["documentation", "testing", "isolation", "mocking", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/naming.md",
+      "type": "document",
+      "name": "naming.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/naming.md",
+      "summary": "Defines test file layout mirroring source paths, consistent Pest function style, descriptive test naming conventions, and logical test grouping within files.",
+      "tags": ["documentation", "testing", "naming", "structure", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/performance.md",
+      "type": "document",
+      "name": "performance.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/performance.md",
+      "summary": "Optimizing test suite speed through environment configuration, global fakes in Pest.php, parallel and TIA runs, CI shard balancing, and profiling slow tests.",
+      "tags": ["documentation", "testing", "performance", "ci-cd", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/review.md",
+      "type": "document",
+      "name": "review.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/review.md",
+      "summary": "Checklist for reviewing tests across value, naming and structure, coverage, data determinism, and assertion quality before merging changes.",
+      "tags": ["documentation", "testing", "review", "quality", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/security.md",
+      "type": "document",
+      "name": "security.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/security.md",
+      "summary": "Security testing guidance for verifying authorization boundaries and ensuring tests do not leak sensitive data through factory or assertion misuse.",
+      "tags": ["documentation", "testing", "security", "authorization", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/rules/test-data.md",
+      "type": "document",
+      "name": "test-data.md",
+      "filePath": ".agents/skills/testing-best-practices/rules/test-data.md",
+      "summary": "Best practices for factories and test data: per-test record creation, named factory states, relationship recycling, and Pest datasets for parameterized cases.",
+      "tags": ["documentation", "testing", "factory", "test-data", "development"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/finding-features.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/assertions.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/security.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/isolation.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/test-data.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/performance.md",
+      "target": "file:tests/Pest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/review.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/assertions.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/review.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/naming.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/review.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/test-data.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/testing-best-practices/rules/review.md",
+      "target": "document:.agents/skills/testing-best-practices/rules/endpoint-tests.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

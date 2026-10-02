@@ -1,0 +1,1047 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 22,
+  "filesSkipped": [
+    ".gitattributes",
+    ".npmrc",
+    "artisan"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 22,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 6,
+      "failed": 0,
+      "skipped": 16
+    }
+  },
+  "results": [
+    {
+      "path": ".claude/skills/laravel-best-practices/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 59,
+      "nonEmptyLines": 47,
+      "sections": [
+        {
+          "heading": "Laravel Best Practices",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "Consistency First",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "How to Apply",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Rule Index",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Decision Rules",
+          "level": 2,
+          "line": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/livewire-development/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 164,
+      "nonEmptyLines": 117,
+      "sections": [
+        {
+          "heading": "Livewire Development",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "Documentation",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Creating Components",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Converting Between Formats",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "Choosing a Component Format",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Component Format Reference",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "Single-File Component Example",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Livewire 4 Specifics",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Key Changes From Livewire 3",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "New Features",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "New Directives",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Configuration",
+          "level": 2,
+          "line": 131
+        },
+        {
+          "heading": "Alpine & JavaScript",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "Testing",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "Verification",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "Common Pitfalls",
+          "level": 2,
+          "line": 158
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".claude/skills/livewire-development/reference/javascript-hooks.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 39,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "Livewire 4 JavaScript Integration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Interceptor System (v4)",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Intercept Messages",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Intercept Requests",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "Component-Scoped Interceptors",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Magic Properties",
+          "level": 2,
+          "line": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/tailwindcss-development/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 96,
+      "nonEmptyLines": 72,
+      "sections": [
+        {
+          "heading": "Tailwind CSS Development",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "Documentation",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Tailwind CSS v4 Specifics",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "CSS-First Configuration",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Import Syntax",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Replaced Utilities",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "Spacing",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Dark Mode",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Common Pitfalls",
+          "level": 2,
+          "line": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".claude/skills/testing-best-practices/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 58,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "Testing Best Practices",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "Consistency First",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "What to Test",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "How to Apply",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Rule Index",
+          "level": 2,
+          "line": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".cursor/settings.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "plugins",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".impeccable/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "buildPath",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".impeccable/design.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 164,
+      "nonEmptyLines": 164,
+      "sections": [
+        {
+          "heading": "schemaVersion",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "generatedAt",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "extensions",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "components",
+          "level": 1,
+          "line": 78
+        },
+        {
+          "heading": "narrative",
+          "level": 1,
+          "line": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".impeccable/questions/b92faafe.answer.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "optionId",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "steer",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "comp",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "buildPath",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "buildPathFlipped",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".impeccable/questions/b92faafe.state.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "pid",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "port",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "url",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "lastBeat",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "claimedAt",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".impeccable/review/diff/desktop/raw-report.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 85,
+      "nonEmptyLines": 85,
+      "sections": [
+        {
+          "heading": "tool",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "createdAt",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "label",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "comp",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "build",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "spec",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "compSize",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "buildSize",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "align",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "overall",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "verdict",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "scores",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "palette",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "regions",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".impeccable/review/diff/desktop/report.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 104,
+      "nonEmptyLines": 104,
+      "sections": [
+        {
+          "heading": "tool",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "createdAt",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "label",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "comp",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "build",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "spec",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "compSize",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "buildSize",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "align",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "overall",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "verdict",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "scores",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "palette",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "regions",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 83
+        },
+        {
+          "heading": "interpretation",
+          "level": 1,
+          "line": 90
+        },
+        {
+          "heading": "measurementsAvailable",
+          "level": 1,
+          "line": 91
+        },
+        {
+          "heading": "gate",
+          "level": 1,
+          "line": 92
+        },
+        {
+          "heading": "rawReport",
+          "level": 1,
+          "line": 103
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": ".impeccable/review/diff/hero/raw-report.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 90,
+      "nonEmptyLines": 90,
+      "sections": [
+        {
+          "heading": "tool",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "createdAt",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "label",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "comp",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "build",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "spec",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "compSize",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "buildSize",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "align",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "overall",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "verdict",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "scores",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "palette",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "regions",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".impeccable/review/diff/hero/report.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 102,
+      "nonEmptyLines": 102,
+      "sections": [
+        {
+          "heading": "tool",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "createdAt",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "label",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "comp",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "build",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "spec",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "compSize",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "buildSize",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "align",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "overall",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "verdict",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "scores",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "palette",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "regions",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 86
+        },
+        {
+          "heading": "interpretation",
+          "level": 1,
+          "line": 93
+        },
+        {
+          "heading": "measurementsAvailable",
+          "level": 1,
+          "line": 94
+        },
+        {
+          "heading": "gate",
+          "level": 1,
+          "line": 95
+        },
+        {
+          "heading": "rawReport",
+          "level": 1,
+          "line": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": ".impeccable/surfaces/home.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "Home",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "Direction contract",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "outputLanguage",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "autoUpdate",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "bootstrap/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 104,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/cache.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 136,
+      "nonEmptyLines": 115,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/database.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 184,
+      "nonEmptyLines": 162,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/filesystems.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 68,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/livewire.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 282,
+      "nonEmptyLines": 243,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

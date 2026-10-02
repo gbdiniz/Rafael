@@ -1,0 +1,18 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge was clean: 319 nodes and 609 edges in/out with no deduplication, dropped edges, or 'Could not fix' items.",
+    "No 'Fixed' section in merge report — upstream batch output already used canonical ID prefixes and valid complexity values.",
+    "10 nodes use type 'table' for migration-defined database schemas; semantically valid domain type, left unchanged.",
+    "Import map fully satisfied: all 90 import relationships where both file nodes exist have matching imports edges (0 gaps).",
+    "32 cross-batch import relationships all present in assembled graph; intra-batch dangling edges (267) resolve correctly after merge.",
+    "166 of 260 scanned files have no file node (mostly .agents/skills docs and reference material) — expected given selective batch analysis of 94 production files.",
+    "1 orphan file node (.gitattributes) with no edges — minor, no action needed.",
+    "tested_by linker added 0 supplemental edges; 40 tested_by edges already present from batch analysis."
+  ]
+}

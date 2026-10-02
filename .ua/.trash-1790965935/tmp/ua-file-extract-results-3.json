@@ -1,0 +1,641 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 9,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 9,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "app/Models/Record.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 89,
+      "functions": [
+        {
+          "name": "casts",
+          "startLine": 25,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "scopeAppointments",
+          "startLine": 37,
+          "endLine": 40,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeTasks",
+          "startLine": 46,
+          "endLine": 49,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeOnTheBooks",
+          "startLine": 55,
+          "endLine": 58,
+          "params": [
+            "$query"
+          ]
+        },
+        {
+          "name": "scopeScheduledOnLocalDay",
+          "startLine": 64,
+          "endLine": 72,
+          "params": [
+            "$query",
+            "$timezone",
+            "$now"
+          ]
+        },
+        {
+          "name": "scopeScheduledBeforeLocalDay",
+          "startLine": 78,
+          "endLine": 85,
+          "params": [
+            "$query",
+            "$timezone",
+            "$now"
+          ]
+        },
+        {
+          "name": "user",
+          "startLine": 90,
+          "endLine": 93,
+          "params": []
+        },
+        {
+          "name": "lastVoiceTurn",
+          "startLine": 98,
+          "endLine": 101,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Record",
+          "startLine": 16,
+          "endLine": 102,
+          "methods": [
+            "casts",
+            "scopeAppointments",
+            "scopeTasks",
+            "scopeOnTheBooks",
+            "scopeScheduledOnLocalDay",
+            "scopeScheduledBeforeLocalDay",
+            "user",
+            "lastVoiceTurn"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Record",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "scopeAppointments",
+          "callee": "$query->where",
+          "lineNumber": 39
+        },
+        {
+          "caller": "scopeTasks",
+          "callee": "$query->where",
+          "lineNumber": 48
+        },
+        {
+          "caller": "scopeOnTheBooks",
+          "callee": "$query->whereNull",
+          "lineNumber": 57
+        },
+        {
+          "caller": "scopeScheduledOnLocalDay",
+          "callee": "LocalDay::forTimezone",
+          "lineNumber": 66
+        },
+        {
+          "caller": "scopeScheduledOnLocalDay",
+          "callee": "$query\n            ->appointments()\n            ->where('scheduled_at', '>=', $localDay->startOfDayUtc($now))->where",
+          "lineNumber": 68
+        },
+        {
+          "caller": "scopeScheduledOnLocalDay",
+          "callee": "$query\n            ->appointments()->where",
+          "lineNumber": 68
+        },
+        {
+          "caller": "scopeScheduledOnLocalDay",
+          "callee": "$query->appointments",
+          "lineNumber": 68
+        },
+        {
+          "caller": "scopeScheduledOnLocalDay",
+          "callee": "$localDay->startOfDayUtc",
+          "lineNumber": 70
+        },
+        {
+          "caller": "scopeScheduledOnLocalDay",
+          "callee": "$localDay->startOfNextDayUtc",
+          "lineNumber": 71
+        },
+        {
+          "caller": "scopeScheduledBeforeLocalDay",
+          "callee": "LocalDay::forTimezone",
+          "lineNumber": 80
+        },
+        {
+          "caller": "scopeScheduledBeforeLocalDay",
+          "callee": "$query\n            ->appointments()->where",
+          "lineNumber": 82
+        },
+        {
+          "caller": "scopeScheduledBeforeLocalDay",
+          "callee": "$query->appointments",
+          "lineNumber": 82
+        },
+        {
+          "caller": "scopeScheduledBeforeLocalDay",
+          "callee": "$localDay->startOfDayUtc",
+          "lineNumber": 84
+        },
+        {
+          "caller": "user",
+          "callee": "$this->belongsTo",
+          "lineNumber": 92
+        },
+        {
+          "caller": "lastVoiceTurn",
+          "callee": "$this->belongsTo",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/RecordKind.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/Records/LocalDay.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "forTimezone",
+          "startLine": 12,
+          "endLine": 15,
+          "params": [
+            "$timezone"
+          ]
+        },
+        {
+          "name": "startOfDayUtc",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "$now"
+          ]
+        },
+        {
+          "name": "startOfNextDayUtc",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "$now"
+          ]
+        },
+        {
+          "name": "dateOnlyToUtc",
+          "startLine": 27,
+          "endLine": 30,
+          "params": [
+            "$date"
+          ]
+        },
+        {
+          "name": "isScheduledOnLocalDay",
+          "startLine": 32,
+          "endLine": 38,
+          "params": [
+            "$scheduledAtUtc",
+            "$now"
+          ]
+        },
+        {
+          "name": "isScheduledBeforeLocalDay",
+          "startLine": 40,
+          "endLine": 43,
+          "params": [
+            "$scheduledAtUtc",
+            "$now"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LocalDay",
+          "startLine": 8,
+          "endLine": 44,
+          "methods": [
+            "__construct",
+            "forTimezone",
+            "startOfDayUtc",
+            "startOfNextDayUtc",
+            "dateOnlyToUtc",
+            "isScheduledOnLocalDay",
+            "isScheduledBeforeLocalDay"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LocalDay",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "startOfDayUtc",
+          "callee": "CarbonImmutable::parse($now)->timezone($this->timezone)->startOfDay()->utc",
+          "lineNumber": 19
+        },
+        {
+          "caller": "startOfDayUtc",
+          "callee": "CarbonImmutable::parse($now)->timezone($this->timezone)->startOfDay",
+          "lineNumber": 19
+        },
+        {
+          "caller": "startOfDayUtc",
+          "callee": "CarbonImmutable::parse($now)->timezone",
+          "lineNumber": 19
+        },
+        {
+          "caller": "startOfDayUtc",
+          "callee": "CarbonImmutable::parse",
+          "lineNumber": 19
+        },
+        {
+          "caller": "startOfNextDayUtc",
+          "callee": "CarbonImmutable::parse($now)->timezone($this->timezone)->startOfDay()->addDay()->utc",
+          "lineNumber": 24
+        },
+        {
+          "caller": "startOfNextDayUtc",
+          "callee": "CarbonImmutable::parse($now)->timezone($this->timezone)->startOfDay()->addDay",
+          "lineNumber": 24
+        },
+        {
+          "caller": "startOfNextDayUtc",
+          "callee": "CarbonImmutable::parse($now)->timezone($this->timezone)->startOfDay",
+          "lineNumber": 24
+        },
+        {
+          "caller": "startOfNextDayUtc",
+          "callee": "CarbonImmutable::parse($now)->timezone",
+          "lineNumber": 24
+        },
+        {
+          "caller": "startOfNextDayUtc",
+          "callee": "CarbonImmutable::parse",
+          "lineNumber": 24
+        },
+        {
+          "caller": "dateOnlyToUtc",
+          "callee": "CarbonImmutable::parse($date, $this->timezone)->startOfDay()->utc",
+          "lineNumber": 29
+        },
+        {
+          "caller": "dateOnlyToUtc",
+          "callee": "CarbonImmutable::parse($date, $this->timezone)->startOfDay",
+          "lineNumber": 29
+        },
+        {
+          "caller": "dateOnlyToUtc",
+          "callee": "CarbonImmutable::parse",
+          "lineNumber": 29
+        },
+        {
+          "caller": "isScheduledOnLocalDay",
+          "callee": "CarbonImmutable::parse($scheduledAtUtc)->utc",
+          "lineNumber": 34
+        },
+        {
+          "caller": "isScheduledOnLocalDay",
+          "callee": "CarbonImmutable::parse",
+          "lineNumber": 34
+        },
+        {
+          "caller": "isScheduledOnLocalDay",
+          "callee": "$scheduledAt->gte",
+          "lineNumber": 36
+        },
+        {
+          "caller": "isScheduledOnLocalDay",
+          "callee": "$this->startOfDayUtc",
+          "lineNumber": 36
+        },
+        {
+          "caller": "isScheduledOnLocalDay",
+          "callee": "$scheduledAt->lt",
+          "lineNumber": 37
+        },
+        {
+          "caller": "isScheduledOnLocalDay",
+          "callee": "$this->startOfNextDayUtc",
+          "lineNumber": 37
+        },
+        {
+          "caller": "isScheduledBeforeLocalDay",
+          "callee": "CarbonImmutable::parse($scheduledAtUtc)->utc()->lt",
+          "lineNumber": 42
+        },
+        {
+          "caller": "isScheduledBeforeLocalDay",
+          "callee": "CarbonImmutable::parse($scheduledAtUtc)->utc",
+          "lineNumber": 42
+        },
+        {
+          "caller": "isScheduledBeforeLocalDay",
+          "callee": "CarbonImmutable::parse",
+          "lineNumber": 42
+        },
+        {
+          "caller": "isScheduledBeforeLocalDay",
+          "callee": "$this->startOfDayUtc",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/factories/RecordFactory.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "definition",
+          "startLine": 21,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "appointment",
+          "startLine": 33,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "task",
+          "startLine": 41,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "withoutDueDate",
+          "startLine": 48,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "deleted",
+          "startLine": 55,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "forVoiceTurn",
+          "startLine": 62,
+          "endLine": 69,
+          "params": [
+            "$voiceTurn"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RecordFactory",
+          "startLine": 14,
+          "endLine": 70,
+          "methods": [
+            "definition",
+            "appointment",
+            "task",
+            "withoutDueDate",
+            "deleted",
+            "forVoiceTurn"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RecordFactory",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "definition",
+          "callee": "User::factory",
+          "lineNumber": 24
+        },
+        {
+          "caller": "definition",
+          "callee": "fake()->sentence",
+          "lineNumber": 26
+        },
+        {
+          "caller": "definition",
+          "callee": "fake",
+          "lineNumber": 26
+        },
+        {
+          "caller": "definition",
+          "callee": "now",
+          "lineNumber": 27
+        },
+        {
+          "caller": "definition",
+          "callee": "fake()->sentence",
+          "lineNumber": 28
+        },
+        {
+          "caller": "definition",
+          "callee": "fake",
+          "lineNumber": 28
+        },
+        {
+          "caller": "appointment",
+          "callee": "$this->state",
+          "lineNumber": 35
+        },
+        {
+          "caller": "appointment",
+          "callee": "now",
+          "lineNumber": 37
+        },
+        {
+          "caller": "task",
+          "callee": "$this->state",
+          "lineNumber": 43
+        },
+        {
+          "caller": "withoutDueDate",
+          "callee": "$this->task()->state",
+          "lineNumber": 50
+        },
+        {
+          "caller": "withoutDueDate",
+          "callee": "$this->task",
+          "lineNumber": 50
+        },
+        {
+          "caller": "deleted",
+          "callee": "$this->afterCreating",
+          "lineNumber": 57
+        },
+        {
+          "caller": "deleted",
+          "callee": "$record->delete",
+          "lineNumber": 58
+        },
+        {
+          "caller": "forVoiceTurn",
+          "callee": "$this->state",
+          "lineNumber": 64
+        },
+        {
+          "caller": "forVoiceTurn",
+          "callee": "fake()->sentence",
+          "lineNumber": 67
+        },
+        {
+          "caller": "forVoiceTurn",
+          "callee": "fake",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "tests/Feature/Conversation/BriefingTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 136,
+      "nonEmptyLines": 106,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Conversation/FirstVisitTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 44,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Models/RecordTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 119,
+      "nonEmptyLines": 91,
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Models/UserTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 41,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Records/LocalDayTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 43,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

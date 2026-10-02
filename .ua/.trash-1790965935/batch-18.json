@@ -1,0 +1,403 @@
+{
+  "nodes": [
+    {
+      "id": "document:.agents/skills/grill-me/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/grill-me/SKILL.md",
+      "summary": "Thin agent skill stub that delegates stress-test interviews to the grilling skill when users want to sharpen a plan or design.",
+      "tags": ["documentation", "agent-skill", "delegation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.agents/skills/grill-me/agents/openai.yaml",
+      "type": "config",
+      "name": "openai.yaml",
+      "filePath": ".agents/skills/grill-me/agents/openai.yaml",
+      "summary": "OpenAI agent interface and policy configuration for the grill-me skill wrapper.",
+      "tags": ["configuration", "agent-config", "openai"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/grilling/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/grilling/SKILL.md",
+      "summary": "Agent skill that runs multi-round design-tree interviews via AskQuestion, stress-testing user decisions until the frontier of open questions is empty.",
+      "tags": ["documentation", "agent-skill", "interview"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.agents/skills/grilling/agents/openai.yaml",
+      "type": "config",
+      "name": "openai.yaml",
+      "filePath": ".agents/skills/grilling/agents/openai.yaml",
+      "summary": "Minimal OpenAI agent interface declaration for the grilling interview skill.",
+      "tags": ["configuration", "agent-config", "openai"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/impeccable/SKILL.md",
+      "summary": "Primary Impeccable agent skill covering frontend design workflows, setup via the impeccable CLI launcher, design modes, and command playbooks for live browser iteration.",
+      "tags": ["documentation", "agent-skill", "frontend-design"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/VERSION",
+      "type": "file",
+      "name": "VERSION",
+      "filePath": ".agents/skills/impeccable/scripts/VERSION",
+      "summary": "Single-line version pin (0.1.6) read by the impeccable launcher to locate or download the matching engine binary.",
+      "tags": ["version", "metadata", "launcher"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.agents/skills/impeccable/scripts/command-metadata.json",
+      "type": "config",
+      "name": "command-metadata.json",
+      "filePath": ".agents/skills/impeccable/scripts/command-metadata.json",
+      "summary": "JSON registry of Impeccable CLI verbs with human-readable descriptions and argument hints for init, live, generate, audit, and other design commands.",
+      "tags": ["configuration", "cli-metadata", "commands"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.agents/skills/impeccable/scripts/data/font-index-failures.json",
+      "type": "config",
+      "name": "font-index-failures.json",
+      "filePath": ".agents/skills/impeccable/scripts/data/font-index-failures.json",
+      "summary": "Catalog of Google Font families that failed to load or render during font indexing, with weight, category, and failure reason per entry.",
+      "tags": ["configuration", "fonts", "failure-log"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.agents/skills/impeccable/scripts/data/font-index.json",
+      "type": "config",
+      "name": "font-index.json",
+      "filePath": ".agents/skills/impeccable/scripts/data/font-index.json",
+      "summary": "Placeholder or empty font index data file reserved for successful font catalog entries used by Impeccable typography tooling.",
+      "tags": ["configuration", "fonts", "data"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/impeccable",
+      "type": "file",
+      "name": "impeccable",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable",
+      "summary": "POSIX shell launcher that resolves and execs the Impeccable engine binary from sibling bin paths, home cache, or version-pinned download using VERSION and IMPECCABLE_SKILL_DIR.",
+      "tags": ["entry-point", "launcher", "shell-script"],
+      "complexity": "moderate",
+      "languageNotes": "Uses engine-probe handshake to reject legacy npm CLI binaries named impeccable."
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/impeccable.cmd",
+      "type": "file",
+      "name": "impeccable.cmd",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable.cmd",
+      "summary": "Windows batch launcher mirroring the POSIX impeccable script: resolves sibling or cached engine binaries, validates via engine-probe, and downloads with SHA256 verification.",
+      "tags": ["entry-point", "launcher", "windows"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-browser-dom.js",
+      "type": "file",
+      "name": "live-browser-dom.js",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-dom.js",
+      "summary": "Browser-side DOM helper module for Impeccable live mode, exposing element picking, UI chrome mounting, and focus utilities on window.__IMPECCABLE_LIVE_DOM__.",
+      "tags": ["utility", "browser", "live-mode"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-browser-dom.js:createLiveBrowserDomHelpers",
+      "type": "function",
+      "name": "createLiveBrowserDomHelpers",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-dom.js",
+      "lineRange": [12, 161],
+      "summary": "Factory that builds DOM utilities for live overlay chrome: pickable element filtering, frozen anchors, UI root mounting, and event defanging.",
+      "tags": ["factory", "dom", "live-mode"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "type": "file",
+      "name": "live-browser-ignores.js",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "summary": "Browser-side resolver for Impeccable detector ignore rules, mirroring CLI config to suppress findings or skip scans based on page URL and project globs.",
+      "tags": ["utility", "browser", "detector"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-browser-ignores.js:resolveDetectIgnores",
+      "type": "function",
+      "name": "resolveDetectIgnores",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "lineRange": [195, 236],
+      "summary": "Resolves serialized project ignore config against the current pathname to produce disabled rules, disabled values, or a skipScan flag for live detector scans.",
+      "tags": ["validation", "config", "live-mode"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-browser-session.js",
+      "type": "file",
+      "name": "live-browser-session.js",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-session.js",
+      "summary": "Durable localStorage session helpers for Impeccable live mode, attached to window.__IMPECCABLE_LIVE_SESSION__ for recovery without booting the full overlay UI.",
+      "tags": ["utility", "browser", "session"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-browser-session.js:createLiveBrowserSessionState",
+      "type": "function",
+      "name": "createLiveBrowserSessionState",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-session.js",
+      "lineRange": [11, 141],
+      "summary": "Factory for prefixed localStorage session state including save/load/clear, handled-variant tracking, scroll position persistence, and checkpoint revision.",
+      "tags": ["factory", "session", "local-storage"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-browser.js",
+      "type": "file",
+      "name": "live-browser.js",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser.js",
+      "summary": "Large injected browser script (~13k lines) implementing Impeccable Live Variant Mode: floating Spotlight-style UI, element picking, variant generation cycling, HMR hot-swap, screenshots, and localhost server integration.",
+      "tags": ["entry-point", "browser", "live-mode"],
+      "complexity": "complex",
+      "languageNotes": "IIFE guarded by __IMPECCABLE_LIVE_INIT__; composes session, DOM, and ignore helper modules via window globals."
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "type": "file",
+      "name": "modern-screenshot.umd.js",
+      "filePath": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "summary": "Minified UMD bundle of the modern-screenshot library exposing domToCanvas, domToPng, and related DOM-to-image capture APIs for live-mode screenshots.",
+      "tags": ["vendor", "screenshot", "browser"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/infer-conventions/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/infer-conventions/SKILL.md",
+      "summary": "Laravel agent skill for sweeping ~49 convention dimensions, recording path-scoped rules via Boost record-rule, and documenting how the app actually writes code.",
+      "tags": ["documentation", "agent-skill", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/infer-conventions/references/checklist.md",
+      "type": "document",
+      "name": "checklist.md",
+      "filePath": ".agents/skills/infer-conventions/references/checklist.md",
+      "summary": "Structured detection checklist grouped A–J covering validation, controllers, models, testing, frontend, and architecture forks for infer-conventions sweeps.",
+      "tags": ["documentation", "checklist", "conventions"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/laravel-best-practices/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/laravel-best-practices/SKILL.md",
+      "summary": "Laravel best-practices skill index that maps backend tasks to rule files and prioritizes consistency with existing application patterns over theoretical defaults.",
+      "tags": ["documentation", "agent-skill", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/livewire-development/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/livewire-development/SKILL.md",
+      "summary": "Livewire 4 development skill covering component creation (SFC/MFC), wire directives, islands, migration from v3, and JavaScript integration patterns.",
+      "tags": ["documentation", "agent-skill", "livewire"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/livewire-development/reference/javascript-hooks.md",
+      "type": "document",
+      "name": "javascript-hooks.md",
+      "filePath": ".agents/skills/livewire-development/reference/javascript-hooks.md",
+      "summary": "Reference for Livewire 4 JavaScript interceptor APIs including interceptMessage and interceptRequest lifecycle hooks.",
+      "tags": ["documentation", "livewire", "javascript"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/tailwindcss-development/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/tailwindcss-development/SKILL.md",
+      "summary": "Tailwind CSS v4 skill for utility-class styling in Blade and SPA templates, emphasizing CSS-first @theme configuration and project convention alignment.",
+      "tags": ["documentation", "agent-skill", "tailwind"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/testing-best-practices/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/testing-best-practices/SKILL.md",
+      "summary": "Pest-focused Laravel testing skill covering coverage selection, assertions, isolation, naming, and review criteria for high-value feature tests.",
+      "tags": ["documentation", "agent-skill", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/infer-conventions/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/infer-conventions/SKILL.md",
+      "summary": "Claude-side copy of the infer-conventions skill for analyzing Laravel application patterns and recording durable path-scoped rules in .ai/rules.",
+      "tags": ["documentation", "agent-skill", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/infer-conventions/references/checklist.md",
+      "type": "document",
+      "name": "checklist.md",
+      "filePath": ".claude/skills/infer-conventions/references/checklist.md",
+      "summary": "Claude-side copy of the infer-conventions detection checklist listing convention forks across validation, routing, models, and testing dimensions.",
+      "tags": ["documentation", "checklist", "conventions"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.agents/skills/grill-me/SKILL.md",
+      "target": "document:.agents/skills/grilling/SKILL.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/SKILL.md",
+      "target": "file:.agents/skills/impeccable/scripts/impeccable",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/SKILL.md",
+      "target": "file:.agents/skills/impeccable/scripts/impeccable.cmd",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/SKILL.md",
+      "target": "file:.agents/skills/impeccable/scripts/live-browser.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/infer-conventions/SKILL.md",
+      "target": "document:.agents/skills/infer-conventions/references/checklist.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/livewire-development/SKILL.md",
+      "target": "document:.agents/skills/livewire-development/reference/javascript-hooks.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/infer-conventions/SKILL.md",
+      "target": "document:.claude/skills/infer-conventions/references/checklist.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/scripts/command-metadata.json",
+      "target": "file:.agents/skills/impeccable/scripts/impeccable",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable",
+      "target": "file:.agents/skills/impeccable/scripts/VERSION",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable.cmd",
+      "target": "file:.agents/skills/impeccable/scripts/VERSION",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable",
+      "target": "config:.agents/skills/impeccable/scripts/command-metadata.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-browser.js",
+      "target": "file:.agents/skills/impeccable/scripts/live-browser-dom.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-browser.js",
+      "target": "file:.agents/skills/impeccable/scripts/live-browser-session.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-browser.js",
+      "target": "file:.agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-browser.js",
+      "target": "file:.agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-browser-dom.js",
+      "target": "function:.agents/skills/impeccable/scripts/live-browser-dom.js:createLiveBrowserDomHelpers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "target": "function:.agents/skills/impeccable/scripts/live-browser-ignores.js:resolveDetectIgnores",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-browser-session.js",
+      "target": "function:.agents/skills/impeccable/scripts/live-browser-session.js:createLiveBrowserSessionState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "document:.claude/skills/infer-conventions/SKILL.md",
+      "target": "document:.agents/skills/infer-conventions/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/infer-conventions/references/checklist.md",
+      "target": "document:.agents/skills/infer-conventions/references/checklist.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

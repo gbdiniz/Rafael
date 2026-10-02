@@ -1,0 +1,704 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 9,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 9,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "app/Contracts/Transcriber.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "Transcriber",
+          "startLine": 7,
+          "endLine": 10,
+          "methods": [
+            "transcribe"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Transcriber",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Exceptions/PermanentTranscriptionException.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "PermanentTranscriptionException",
+          "startLine": 7,
+          "endLine": 10,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PermanentTranscriptionException",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Exceptions/TransientTranscriptionException.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "TransientTranscriptionException",
+          "startLine": 7,
+          "endLine": 10,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TransientTranscriptionException",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Jobs/TranscribeVoiceTurn.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 98,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "handle",
+          "startLine": 31,
+          "endLine": 71,
+          "params": [
+            "$transcriber"
+          ]
+        },
+        {
+          "name": "failed",
+          "startLine": 73,
+          "endLine": 82,
+          "params": [
+            "$exception"
+          ]
+        },
+        {
+          "name": "markFailed",
+          "startLine": 84,
+          "endLine": 97,
+          "params": [
+            "$turn",
+            "$message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TranscribeVoiceTurn",
+          "startLine": 16,
+          "endLine": 98,
+          "methods": [
+            "__construct",
+            "handle",
+            "failed",
+            "markFailed"
+          ],
+          "properties": [
+            "timeout",
+            "tries",
+            "backoff"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TranscribeVoiceTurn",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handle",
+          "callee": "VoiceTurn::query()->find",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "VoiceTurn::query",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handle",
+          "callee": "$turn->update",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handle",
+          "callee": "$transcriber->transcribe",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handle",
+          "callee": "$this->markFailed",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handle",
+          "callee": "$exception->getMessage",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handle",
+          "callee": "$this->markFailed",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handle",
+          "callee": "Storage::disk($turn->disk)->delete",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handle",
+          "callee": "Storage::disk",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handle",
+          "callee": "$turn->update",
+          "lineNumber": 63
+        },
+        {
+          "caller": "handle",
+          "callee": "now",
+          "lineNumber": 68
+        },
+        {
+          "caller": "failed",
+          "callee": "VoiceTurn::query()->find",
+          "lineNumber": 75
+        },
+        {
+          "caller": "failed",
+          "callee": "VoiceTurn::query",
+          "lineNumber": 75
+        },
+        {
+          "caller": "failed",
+          "callee": "$this->markFailed",
+          "lineNumber": 81
+        },
+        {
+          "caller": "markFailed",
+          "callee": "Storage::disk($turn->disk)->delete",
+          "lineNumber": 87
+        },
+        {
+          "caller": "markFailed",
+          "callee": "Storage::disk",
+          "lineNumber": 87
+        },
+        {
+          "caller": "markFailed",
+          "callee": "$turn->update",
+          "lineNumber": 90
+        },
+        {
+          "caller": "markFailed",
+          "callee": "Str::limit",
+          "lineNumber": 92
+        },
+        {
+          "caller": "markFailed",
+          "callee": "now",
+          "lineNumber": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Providers/AppServiceProvider.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "register",
+          "startLine": 14,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "boot",
+          "startLine": 22,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppServiceProvider",
+          "startLine": 9,
+          "endLine": 26,
+          "methods": [
+            "register",
+            "boot"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AppServiceProvider",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "register",
+          "callee": "$this->app->bind",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Services/Transcription/HttpTranscriber.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 133,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "transcribe",
+          "startLine": 20,
+          "endLine": 60,
+          "params": [
+            "$turn"
+          ]
+        },
+        {
+          "name": "client",
+          "startLine": 62,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "transcriptionLanguage",
+          "startLine": 76,
+          "endLine": 79,
+          "params": [
+            "$turn"
+          ]
+        },
+        {
+          "name": "transcriptionUrl",
+          "startLine": 81,
+          "endLine": 93,
+          "params": [
+            "$turn"
+          ]
+        },
+        {
+          "name": "throwForFailedResponse",
+          "startLine": 95,
+          "endLine": 127,
+          "params": [
+            "$response"
+          ]
+        },
+        {
+          "name": "userFacingMessage",
+          "startLine": 129,
+          "endLine": 132,
+          "params": [
+            "$apiMessage"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "HttpTranscriber",
+          "startLine": 18,
+          "endLine": 133,
+          "methods": [
+            "transcribe",
+            "client",
+            "transcriptionLanguage",
+            "transcriptionUrl",
+            "throwForFailedResponse",
+            "userFacingMessage"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "HttpTranscriber",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "transcribe",
+          "callee": "Storage::disk",
+          "lineNumber": 26
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$disk->get",
+          "lineNumber": 27
+        },
+        {
+          "caller": "transcribe",
+          "callee": "strlen",
+          "lineNumber": 29
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$this->client()\n            ->attach('audio_file', $contents, basename($turn->audio_path))->post",
+          "lineNumber": 33
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$this->client()->attach",
+          "lineNumber": 33
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$this->client",
+          "lineNumber": 33
+        },
+        {
+          "caller": "transcribe",
+          "callee": "basename",
+          "lineNumber": 34
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$this->transcriptionUrl",
+          "lineNumber": 35
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$response->failed",
+          "lineNumber": 37
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$this->throwForFailedResponse",
+          "lineNumber": 38
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$response->throw",
+          "lineNumber": 42
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$exception->getMessage",
+          "lineNumber": 44
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$this->throwForFailedResponse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$exception->getMessage",
+          "lineNumber": 50
+        },
+        {
+          "caller": "transcribe",
+          "callee": "$response->json",
+          "lineNumber": 53
+        },
+        {
+          "caller": "transcribe",
+          "callee": "is_string",
+          "lineNumber": 55
+        },
+        {
+          "caller": "client",
+          "callee": "Http::connectTimeout(config('rafael.transcriber.connect_timeout'))->timeout",
+          "lineNumber": 64
+        },
+        {
+          "caller": "client",
+          "callee": "Http::connectTimeout",
+          "lineNumber": 64
+        },
+        {
+          "caller": "client",
+          "callee": "config",
+          "lineNumber": 64
+        },
+        {
+          "caller": "client",
+          "callee": "config",
+          "lineNumber": 65
+        },
+        {
+          "caller": "client",
+          "callee": "config",
+          "lineNumber": 67
+        },
+        {
+          "caller": "client",
+          "callee": "is_string",
+          "lineNumber": 69
+        },
+        {
+          "caller": "client",
+          "callee": "$client->withToken",
+          "lineNumber": 70
+        },
+        {
+          "caller": "transcriptionLanguage",
+          "callee": "str($turn->locale)->before('-')->lower()->toString",
+          "lineNumber": 78
+        },
+        {
+          "caller": "transcriptionLanguage",
+          "callee": "str($turn->locale)->before('-')->lower",
+          "lineNumber": 78
+        },
+        {
+          "caller": "transcriptionLanguage",
+          "callee": "str($turn->locale)->before",
+          "lineNumber": 78
+        },
+        {
+          "caller": "transcriptionLanguage",
+          "callee": "str",
+          "lineNumber": 78
+        },
+        {
+          "caller": "transcriptionUrl",
+          "callee": "config",
+          "lineNumber": 83
+        },
+        {
+          "caller": "transcriptionUrl",
+          "callee": "http_build_query",
+          "lineNumber": 84
+        },
+        {
+          "caller": "transcriptionUrl",
+          "callee": "$this->transcriptionLanguage",
+          "lineNumber": 87
+        },
+        {
+          "caller": "transcriptionUrl",
+          "callee": "str_contains",
+          "lineNumber": 90
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->json",
+          "lineNumber": 97
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->json",
+          "lineNumber": 98
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "Log::warning",
+          "lineNumber": 100
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->status",
+          "lineNumber": 101
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "is_string",
+          "lineNumber": 103
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->body",
+          "lineNumber": 103
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->status",
+          "lineNumber": 106
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->status",
+          "lineNumber": 110
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->status",
+          "lineNumber": 114
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->status",
+          "lineNumber": 118
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->serverError",
+          "lineNumber": 118
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "is_string",
+          "lineNumber": 119
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->body",
+          "lineNumber": 119
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "is_string",
+          "lineNumber": 122
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$this->userFacingMessage",
+          "lineNumber": 123
+        },
+        {
+          "caller": "throwForFailedResponse",
+          "callee": "$response->status",
+          "lineNumber": 126
+        },
+        {
+          "caller": "userFacingMessage",
+          "callee": "str($apiMessage)->limit(255, '')->toString",
+          "lineNumber": 131
+        },
+        {
+          "caller": "userFacingMessage",
+          "callee": "str($apiMessage)->limit",
+          "lineNumber": 131
+        },
+        {
+          "caller": "userFacingMessage",
+          "callee": "str",
+          "lineNumber": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/providers.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 132,
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/Feature/Voice/ReplyAudioTest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 25,
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": ".impeccable/mocks/decision/assigned-r2.png.json", "language": "json", "sizeLines": 1, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/decision/assigned.png.json", "language": "json", "sizeLines": 1, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/decision/canon.png.json", "language": "json", "sizeLines": 1, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/decision/model-pick-r2.png.json", "language": "json", "sizeLines": 1, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/decision/model-pick.png.json", "language": "json", "sizeLines": 1, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/decision/payload-r2.json", "language": "json", "sizeLines": 135, "fileCategory": "config"},
+    {"path": ".impeccable/mocks/decision/payload.json", "language": "json", "sizeLines": 135, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    ".impeccable/mocks/decision/assigned-r2.png.json": [],
+    ".impeccable/mocks/decision/assigned.png.json": [],
+    ".impeccable/mocks/decision/canon.png.json": [],
+    ".impeccable/mocks/decision/model-pick-r2.png.json": [],
+    ".impeccable/mocks/decision/model-pick.png.json": [],
+    ".impeccable/mocks/decision/payload-r2.json": [],
+    ".impeccable/mocks/decision/payload.json": []
+  }
+}

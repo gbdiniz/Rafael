@@ -1,0 +1,70 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with README.md to understand Rafael's purpose: a Portuguese-only personal secretary that manages appointments and tasks through voice conversation. The README explains core product principles—Rafael speaks first, voice is a draft until confirmed, and the app requires MySQL plus Redis for cache and queues—giving you the conceptual frame for everything that follows.",
+    "nodeIds": ["document:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Technical Architecture",
+    "description": "Building on the product overview, docs/project-description.md maps Rafael's domain concepts (records, appointments, tasks) to the Laravel, Livewire, and Alpine.js stack. Pair it with docs/database-schema.md to see how users, records, and voice_turns relate in MySQL—these two documents are the authoritative blueprint for the code you'll explore next.",
+    "nodeIds": ["document:docs/project-description.md", "document:docs/database-schema.md"]
+  },
+  {
+    "order": 3,
+    "title": "HTTP Entry Point",
+    "description": "Every web request enters through public/index.php, Laravel's front controller that bootstraps the application kernel. From there, bootstrap/app.php configures routing, middleware, and redirect behavior—sending guests to login and authenticated users to the conversation page—establishing the runtime shell that all Rafael features run inside.",
+    "nodeIds": ["file:public/index.php", "file:bootstrap/app.php"]
+  },
+  {
+    "order": 4,
+    "title": "Routes and Controllers",
+    "description": "With the bootstrap in place, routes/web.php wires guest login routes and authenticated endpoints for the conversation page, records, and voice-turn uploads. VoiceTurnController.php is the key API surface: it accepts authenticated audio uploads and delegates persistence and transcription to the service layer, connecting HTTP requests to Rafael's voice pipeline.",
+    "nodeIds": ["file:routes/web.php", "file:app/Http/Controllers/VoiceTurnController.php"]
+  },
+  {
+    "order": 5,
+    "title": "Core Data Models",
+    "description": "Rafael's domain lives in three Eloquent models. User.php represents the single authenticated secretary owner with timezone support. Record.php models appointments and tasks with kind filtering and soft-delete state. VoiceTurn.php tracks each voice interaction through its lifecycle—audio path, transcript, and status—linking conversation turns back to the user who spoke.",
+    "nodeIds": ["file:app/Models/User.php", "file:app/Models/Record.php", "file:app/Models/VoiceTurn.php", "table:database/migrations/2026_09_30_141335_create_records_table.php:records", "table:database/migrations/2026_09_30_141334_create_voice_turns_table.php:voice_turns"]
+  },
+  {
+    "order": 6,
+    "title": "Conversation Flow",
+    "description": "The heart of Rafael is the Livewire full-page component in conversation.php, which orchestrates first-visit greetings via OpenConversation.php and daily briefings via Briefing.php. The companion Blade view conversation.blade.php renders secretary messages, transcription status, and the talk-control widget—this is where product behavior (Rafael speaks first, Portuguese-only) becomes interactive UI.",
+    "nodeIds": ["file:resources/views/pages/⚡conversation/conversation.php", "file:resources/views/pages/⚡conversation/conversation.blade.php", "file:app/Actions/Conversation/OpenConversation.php", "file:app/Actions/Conversation/Briefing.php"],
+    "languageLesson": "Livewire full-page components keep server-side state (greeting, briefing, turn history) synchronized with the browser without writing a separate JavaScript API client—the PHP class and Blade view are the conversation UI."
+  },
+  {
+    "order": 7,
+    "title": "Voice UI Frontend",
+    "description": "The microphone experience is built with Alpine.js. app.js registers the talkControl component on alpine:init, and talk-control.js handles recording, uploading audio to the voice-turn endpoint, and GSAP bar animations during listening. The talk-control.blade.php component combines the toggle button, animated bars, and wire:ignore boundaries so Livewire re-renders do not break the active recording session.",
+    "nodeIds": ["file:resources/js/app.js", "file:resources/js/talk-control.js", "file:resources/views/components/talk-control.blade.php"]
+  },
+  {
+    "order": 8,
+    "title": "Voice Upload Pipeline",
+    "description": "When the user finishes speaking, StoreVoiceTurnRequest.php validates the authenticated upload against MIME types and size limits from config. StoreVoiceTurn.php then persists the audio file, creates a VoiceTurn in Uploaded status, and dispatches the transcription job—this action is the handoff from the synchronous HTTP upload to Rafael's asynchronous voice processing.",
+    "nodeIds": ["file:app/Http/Requests/StoreVoiceTurnRequest.php", "file:app/Actions/Voice/StoreVoiceTurn.php"]
+  },
+  {
+    "order": 9,
+    "title": "Async Transcription",
+    "description": "Transcription runs outside the request cycle. The Transcriber.php contract abstracts voice-to-text, implemented by HttpTranscriber.php which posts audio to an external API and maps HTTP errors to permanent or transient failures. TranscribeVoiceTurn.php is the queued job that calls the transcriber, updates VoiceTurnStatus through each lifecycle state, and cleans up stored audio once complete.",
+    "nodeIds": ["file:app/Contracts/Transcriber.php", "file:app/Services/Transcription/HttpTranscriber.php", "file:app/Jobs/TranscribeVoiceTurn.php", "file:app/VoiceTurnStatus.php"],
+    "languageLesson": "Laravel queue jobs decouple slow I/O (external transcription) from the HTTP response. VoiceTurnStatus is a backed PHP enum, giving type-safe lifecycle states that both the job and tests can match against."
+  },
+  {
+    "order": 10,
+    "title": "Domain Helpers and Config",
+    "description": "Supporting types sharpen the domain model. RecordKind.php distinguishes appointments from tasks, LocalDay.php computes timezone-aware day boundaries for scheduling queries, and config/rafael.php centralizes app-specific settings—default timezone, upload limits, and external transcription credentials. Together they keep business rules out of controllers and views.",
+    "nodeIds": ["file:app/RecordKind.php", "file:app/Records/LocalDay.php", "file:config/rafael.php"]
+  },
+  {
+    "order": 11,
+    "title": "Feature Test Coverage",
+    "description": "Rafael's critical paths are guarded by Pest feature tests. TranscriptionSuccessTest.php verifies transcribed text appears on the conversation page, TalkControlTest.php validates the voice UI's DOM contract, and TranscribeVoiceTurnTest.php covers job success, retry behavior, and permanent versus transient failure handling—read these after the pipeline steps to see expected behavior codified.",
+    "nodeIds": ["file:tests/Feature/Conversation/TranscriptionSuccessTest.php", "file:tests/Feature/Voice/TalkControlTest.php", "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php"]
+  }
+]

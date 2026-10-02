@@ -1,0 +1,199 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/views/components/secretary-turn.blade.php",
+      "type": "file",
+      "name": "secretary-turn.blade.php",
+      "filePath": "resources/views/components/secretary-turn.blade.php",
+      "summary": "Blade component that renders the secretary's spoken message in a centered, styled paragraph for the conversation UI.",
+      "tags": ["component", "blade", "ui", "conversation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:resources/views/components/talk-control.blade.php",
+      "type": "file",
+      "name": "talk-control.blade.php",
+      "filePath": "resources/views/components/talk-control.blade.php",
+      "summary": "Voice recording control component combining Alpine.js talkControl with a toggle button, animated listening bars, and upload URL wiring to the voice-turns store endpoint.",
+      "tags": ["component", "blade", "voice", "alpine-js"],
+      "complexity": "moderate",
+      "languageNotes": "Uses wire:ignore to isolate Alpine state from Livewire DOM diffing while posting audio via the talkControl JavaScript module."
+    },
+    {
+      "id": "file:resources/views/layouts/app.blade.php",
+      "type": "file",
+      "name": "app.blade.php",
+      "filePath": "resources/views/layouts/app.blade.php",
+      "summary": "Primary application HTML layout loading Vite assets, setting locale-aware metadata, and rendering page content through a slot with dark-themed body styling.",
+      "tags": ["layout", "blade", "vite", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:resources/views/pages/⚡conversation/conversation.blade.php",
+      "type": "file",
+      "name": "conversation.blade.php",
+      "filePath": "resources/views/pages/⚡conversation/conversation.blade.php",
+      "summary": "Livewire conversation page view showing secretary messages, transcription status/errors, and the talk-control widget with conditional polling while a voice turn is processing.",
+      "tags": ["component", "blade", "livewire", "conversation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/welcome.blade.php",
+      "type": "file",
+      "name": "welcome.blade.php",
+      "filePath": "resources/views/welcome.blade.php",
+      "summary": "Default Laravel welcome landing page with embedded Tailwind fallback styles, auth navigation links, and marketing hero content for unauthenticated visitors.",
+      "tags": ["blade", "landing-page", "marketing", "authentication"],
+      "complexity": "complex",
+      "languageNotes": "Inlines a full Tailwind v4 stylesheet when Vite build artifacts are absent, making the file unusually large for a Blade template."
+    },
+    {
+      "id": "file:routes/console.php",
+      "type": "file",
+      "name": "console.php",
+      "filePath": "routes/console.php",
+      "summary": "Artisan route definitions registering the inspire demo command that prints a random motivational quote via the console.",
+      "tags": ["routing", "artisan", "cli", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Pest.php",
+      "type": "file",
+      "name": "Pest.php",
+      "filePath": "tests/Pest.php",
+      "summary": "Pest bootstrap that binds feature tests to the Laravel TestCase and enables LazilyRefreshDatabase only for tests under the Feature directory.",
+      "tags": ["test", "pest", "configuration", "bootstrap"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/TestCase.php",
+      "type": "file",
+      "name": "TestCase.php",
+      "filePath": "tests/TestCase.php",
+      "summary": "Abstract base test case extending Laravel's foundation TestCase, serving as the shared parent for feature tests configured in Pest.php.",
+      "tags": ["test", "base-class", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/TestCase.php:TestCase",
+      "type": "class",
+      "name": "TestCase",
+      "filePath": "tests/TestCase.php",
+      "lineRange": [7, 10],
+      "summary": "Abstract application test case that subclasses Laravel's foundation TestCase for use by Pest feature tests.",
+      "tags": ["test", "base-class", "abstract"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/Unit/ExampleTest.php",
+      "type": "file",
+      "name": "ExampleTest.php",
+      "filePath": "tests/Unit/ExampleTest.php",
+      "summary": "Placeholder Pest unit test asserting a trivial truth value, demonstrating the default unit test setup without Laravel application bootstrapping.",
+      "tags": ["test", "unit", "pest", "example"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "vite.config.js",
+      "summary": "Vite build configuration wiring the Laravel plugin, Tailwind CSS, Instrument Sans font loading, and frontend entry points for app.css and app.js.",
+      "tags": ["build-system", "vite", "frontend", "configuration"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.blade.php",
+      "target": "file:resources/views/components/secretary-turn.blade.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.blade.php",
+      "target": "file:resources/views/components/talk-control.blade.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/pages/⚡conversation/conversation.blade.php",
+      "target": "file:resources/views/pages/⚡conversation/conversation.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/components/talk-control.blade.php",
+      "target": "file:resources/js/talk-control.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/layouts/app.blade.php",
+      "target": "file:resources/css/app.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/layouts/app.blade.php",
+      "target": "file:resources/js/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/welcome.blade.php",
+      "target": "file:resources/css/app.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:resources/views/welcome.blade.php",
+      "target": "file:resources/js/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:tests/Pest.php",
+      "target": "file:tests/TestCase.php",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:tests/TestCase.php",
+      "target": "class:tests/TestCase.php:TestCase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tests/TestCase.php",
+      "target": "class:tests/TestCase.php:TestCase",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:vite.config.js",
+      "target": "file:resources/css/app.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:vite.config.js",
+      "target": "file:resources/js/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

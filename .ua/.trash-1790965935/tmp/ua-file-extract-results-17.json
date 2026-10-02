@@ -1,0 +1,563 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "docs/database-schema.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 666,
+      "nonEmptyLines": 461,
+      "sections": [
+        {
+          "heading": "Database Schema",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Overview",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "2. Design Principles",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Naming",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "Database engine",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Referential integrity",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Normalization",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Timestamps",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Soft deletes",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Monetary fields",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Enum and status handling",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Indexing",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "Multi-tenancy",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Cache, queue, and sessions",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Audit and history",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "Audio",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "3. Assumptions",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "4. Entity Relationship Overview",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "5. Tables",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "`users`",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "`records`",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "`voice_turns`",
+          "level": 3,
+          "line": 299
+        },
+        {
+          "heading": "`sessions`",
+          "level": 3,
+          "line": 360
+        },
+        {
+          "heading": "`password_reset_tokens`",
+          "level": 3,
+          "line": 400
+        },
+        {
+          "heading": "`jobs`",
+          "level": 3,
+          "line": 432
+        },
+        {
+          "heading": "`job_batches`",
+          "level": 3,
+          "line": 463
+        },
+        {
+          "heading": "`failed_jobs`",
+          "level": 3,
+          "line": 475
+        },
+        {
+          "heading": "`cache` and `cache_locks`",
+          "level": 3,
+          "line": 491
+        },
+        {
+          "heading": "6. Pivot Tables",
+          "level": 2,
+          "line": 499
+        },
+        {
+          "heading": "7. Statuses and Enums",
+          "level": 2,
+          "line": 509
+        },
+        {
+          "heading": "8. Data Integrity Rules",
+          "level": 2,
+          "line": 528
+        },
+        {
+          "heading": "9. Index Strategy",
+          "level": 2,
+          "line": 545
+        },
+        {
+          "heading": "10. Suggested Laravel Models",
+          "level": 2,
+          "line": 565
+        },
+        {
+          "heading": "11. Suggested Migration Order",
+          "level": 2,
+          "line": 586
+        },
+        {
+          "heading": "12. Existing Implementation vs Proposed Schema",
+          "level": 2,
+          "line": 604
+        },
+        {
+          "heading": "13. Open Questions",
+          "level": 2,
+          "line": 633
+        },
+        {
+          "heading": "14. User Story Coverage",
+          "level": 2,
+          "line": 643
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 37
+      }
+    },
+    {
+      "path": "docs/project-description.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 80,
+      "nonEmptyLines": 61,
+      "sections": [
+        {
+          "heading": "Project description",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key concepts",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Tech stack",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Core workflows",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "docs/project-phases.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 594,
+      "nonEmptyLines": 383,
+      "sections": [
+        {
+          "heading": "Project phases",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "How to build",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "How to test",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Phase 1 — Foundation",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Phase 1.1 — Laravel app boots",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "Phase 1.2 — Framework tables",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Phase 1.3 — Redis for cache and queue",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "Phase 1.4 — Schema specification",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Phase 1.5 — Livewire 4 and Pest",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "Phase 2 — Books and voice turns",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Phase 2.1 — User calendar columns",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "Phase 2.2 — Enums and models",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Phase 2.3 — `voice_turns`",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "Phase 2.4 — `records`",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Phase 2.5 — Local day",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "Phase 3 — One login",
+          "level": 2,
+          "line": 187
+        },
+        {
+          "heading": "Phase 3.1 — Session login, no signup",
+          "level": 3,
+          "line": 191
+        },
+        {
+          "heading": "Phase 3.2 — Authenticated doors",
+          "level": 3,
+          "line": 209
+        },
+        {
+          "heading": "Phase 4 — Rafael speaks first",
+          "level": 2,
+          "line": 224
+        },
+        {
+          "heading": "Phase 4.1 — Conversation is home",
+          "level": 3,
+          "line": 228
+        },
+        {
+          "heading": "Phase 4.2 — First visit is a greeting",
+          "level": 3,
+          "line": 242
+        },
+        {
+          "heading": "Phase 4.3 — Today and what is still hanging",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "Phase 5 — Click to talk",
+          "level": 2,
+          "line": 274
+        },
+        {
+          "heading": "Phase 5.1 — Talk control",
+          "level": 3,
+          "line": 278
+        },
+        {
+          "heading": "Phase 5.2 — Authenticated upload",
+          "level": 3,
+          "line": 294
+        },
+        {
+          "heading": "Phase 5.3 — Transcribe, then delete the file",
+          "level": 3,
+          "line": 311
+        },
+        {
+          "heading": "Phase 5.4 — Transcription failure",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "Phase 5.5 — Missing turn",
+          "level": 3,
+          "line": 338
+        },
+        {
+          "heading": "Phase 5.6 — Replies are not audio files",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "Phase 5.7 — Rafael-Whisper (self-hosted transcriber)",
+          "level": 3,
+          "line": 354
+        },
+        {
+          "heading": "Phase 6 — Questions stay on the books",
+          "level": 2,
+          "line": 365
+        },
+        {
+          "heading": "Phase 6.1 — Interpret a transcript without the open web",
+          "level": 3,
+          "line": 369
+        },
+        {
+          "heading": "Phase 6.2 — Answer about tasks when asked",
+          "level": 3,
+          "line": 383
+        },
+        {
+          "heading": "Phase 6.3 — Answer about appointments when asked",
+          "level": 3,
+          "line": 396
+        },
+        {
+          "heading": "Phase 7 — Change the books only after yes",
+          "level": 2,
+          "line": 408
+        },
+        {
+          "heading": "Phase 7.1 — Proposal is not a row",
+          "level": 3,
+          "line": 416
+        },
+        {
+          "heading": "Phase 7.2 — Create after yes",
+          "level": 3,
+          "line": 428
+        },
+        {
+          "heading": "Phase 7.3 — Change title, time, or type",
+          "level": 3,
+          "line": 445
+        },
+        {
+          "heading": "Phase 7.4 — Remove after yes",
+          "level": 3,
+          "line": 458
+        },
+        {
+          "heading": "Phase 7.5 — Several records match",
+          "level": 3,
+          "line": 472
+        },
+        {
+          "heading": "Phase 8 — Clear failures",
+          "level": 2,
+          "line": 484
+        },
+        {
+          "heading": "Phase 8.1 — Microphone blocked",
+          "level": 3,
+          "line": 488
+        },
+        {
+          "heading": "Phase 8.2 — He cannot speak",
+          "level": 3,
+          "line": 497
+        },
+        {
+          "heading": "Phase 8.3 — No typed notes",
+          "level": 3,
+          "line": 509
+        },
+        {
+          "heading": "Phase 9 — PWA shell",
+          "level": 2,
+          "line": 520
+        },
+        {
+          "heading": "Phase 9.1 — Manifest and service worker",
+          "level": 3,
+          "line": 524
+        },
+        {
+          "heading": "Phase 10 — Voice-turn retention",
+          "level": 2,
+          "line": 537
+        },
+        {
+          "heading": "Phase 10.1 — Prune after 7 days",
+          "level": 3,
+          "line": 541
+        },
+        {
+          "heading": "Phase 10.2 — Schedule",
+          "level": 3,
+          "line": 553
+        },
+        {
+          "heading": "Phase 11 — Not v1",
+          "level": 2,
+          "line": 565
+        },
+        {
+          "heading": "Story map",
+          "level": 2,
+          "line": 579
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 51
+      }
+    },
+    {
+      "path": "docs/user-stories.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 78,
+      "nonEmptyLines": 52,
+      "sections": [
+        {
+          "heading": "User stories",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Enter",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Talk",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Change the books",
+          "level": 2,
+          "line": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

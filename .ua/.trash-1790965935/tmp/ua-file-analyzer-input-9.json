@@ -1,0 +1,15 @@
+{
+  "projectRoot": "/media/dev/Arquivos/Projetos/Laravel/Rafael",
+  "batchFiles": [
+    {"path": ".agents/skills/impeccable/reference/degraded/asset-producer.md", "language": "markdown", "sizeLines": 42, "fileCategory": "docs"},
+    {"path": ".agents/skills/impeccable/reference/degraded/documenter.md", "language": "markdown", "sizeLines": 23, "fileCategory": "docs"},
+    {"path": ".agents/skills/impeccable/reference/degraded/finish-reviewer.md", "language": "markdown", "sizeLines": 37, "fileCategory": "docs"},
+    {"path": ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md", "language": "markdown", "sizeLines": 91, "fileCategory": "docs"}
+  ],
+  "batchImportData": {
+    ".agents/skills/impeccable/reference/degraded/asset-producer.md": [],
+    ".agents/skills/impeccable/reference/degraded/documenter.md": [],
+    ".agents/skills/impeccable/reference/degraded/finish-reviewer.md": [],
+    ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md": []
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/database-schema.md",
+      "type": "document",
+      "name": "database-schema.md",
+      "filePath": "docs/database-schema.md",
+      "summary": "Authoritative MySQL schema specification for Rafael v1 covering users, records, and voice_turns with design principles, migration order, enum conventions, and a user-story coverage matrix.",
+      "tags": ["documentation", "database", "schema-definition", "migration", "requirements"],
+      "complexity": "complex",
+      "languageNotes": "Specifies MySQL at runtime with SQLite in-memory for Pest, Redis for cache/queue, and SQL sessions."
+    },
+    {
+      "id": "document:docs/project-description.md",
+      "type": "document",
+      "name": "project-description.md",
+      "filePath": "docs/project-description.md",
+      "summary": "Technical map of Rafael defining domain concepts (records, appointments, tasks), the Laravel/Livewire/Alpine stack, UI kit components, and the voice-to-transcript workflow.",
+      "tags": ["documentation", "architecture", "domain", "overview", "voice"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/project-phases.md",
+      "type": "document",
+      "name": "project-phases.md",
+      "filePath": "docs/project-phases.md",
+      "summary": "Phased v1 implementation roadmap with build and test conventions, dependency ordering across eleven phases, and checked progress tied to user stories and schema sections.",
+      "tags": ["documentation", "development", "planning", "testing", "livewire"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/user-stories.md",
+      "type": "document",
+      "name": "user-stories.md",
+      "filePath": "docs/user-stories.md",
+      "summary": "Ten pt-BR user stories (US-01 through US-10) specifying login, first-visit greeting, daily briefing, voice capture, task queries, and spoken-yes record mutations for a single user.",
+      "tags": ["documentation", "requirements", "user-stories", "domain", "voice"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "document:docs/user-stories.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "document:docs/project-description.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "document:docs/database-schema.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "document:docs/user-stories.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-description.md",
+      "target": "document:docs/user-stories.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-description.md",
+      "target": "document:README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-description.md",
+      "target": "file:resources/js/talk-control.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-description.md",
+      "target": "file:resources/views/components/talk-control.blade.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-description.md",
+      "target": "file:resources/views/components/secretary-turn.blade.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-description.md",
+      "target": "file:resources/views/components/auth-screen.blade.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-description.md",
+      "target": "file:resources/views/pages/⚡conversation/conversation.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:app/Models/User.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:app/Models/Record.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:app/Models/VoiceTurn.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:app/RecordKind.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:app/VoiceTurnStatus.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:database/migrations/2026_09_30_141333_add_calendar_columns_to_users_table.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:database/migrations/2026_09_30_141334_create_voice_turns_table.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:database/migrations/2026_09_30_141335_create_records_table.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:database/factories/UserFactory.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/database-schema.md",
+      "target": "file:config/database.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:resources/views/pages/⚡conversation/conversation.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:config/livewire.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:config/rafael.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:resources/css/app.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Pest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/ExampleTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Models/UserTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Models/VoiceTurnTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Models/RecordTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Records/LocalDayTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Auth/LoginTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Auth/AuthenticatedRoutesTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Conversation/HomeTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Conversation/FirstVisitTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Conversation/BriefingTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Voice/TalkControlTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Voice/AudioUploadTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Jobs/TranscribeVoiceTurnTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Conversation/TranscriptionFailureTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:tests/Feature/Voice/ReplyAudioTest.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:app/Jobs/TranscribeVoiceTurn.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:app/Providers/AppServiceProvider.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/project-phases.md",
+      "target": "file:routes/console.php",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

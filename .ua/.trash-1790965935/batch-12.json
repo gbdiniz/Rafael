@@ -1,0 +1,345 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/advanced-queries.md",
+      "type": "document",
+      "name": "advanced-queries.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/advanced-queries.md",
+      "summary": "Laravel skill rule covering advanced Eloquent query techniques including subquery relationships, conditional aggregates, whereHas optimization, composite indexes, and correlated subquery ordering.",
+      "tags": ["documentation", "eloquent", "database", "query-optimization", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/architecture.md",
+      "type": "document",
+      "name": "architecture.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/architecture.md",
+      "summary": "Laravel skill rule defining application architecture patterns: action classes, dependency injection, contracts, atomic locks, defer/post-response work, Context, Concurrency, and framework conventions.",
+      "tags": ["documentation", "architecture", "dependency-injection", "laravel", "design-patterns"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/blade-views.md",
+      "type": "document",
+      "name": "blade-views.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/blade-views.md",
+      "summary": "Laravel skill rule for Blade and view layer practices: component attribute merging, @pushOnce scripts, view composers, fragment rendering, and @aware parent prop sharing.",
+      "tags": ["documentation", "blade", "views", "components", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/caching.md",
+      "type": "document",
+      "name": "caching.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/caching.md",
+      "summary": "Laravel skill rule for caching strategies: Cache::remember, flexible stale-while-revalidate, memoization, cache tags, atomic Cache::add writes, once() helpers, and production failover stores.",
+      "tags": ["documentation", "caching", "performance", "laravel", "redis"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/collections.md",
+      "type": "document",
+      "name": "collections.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/collections.md",
+      "summary": "Laravel skill rule for collection and lazy iteration patterns: higher-order messages, cursor vs lazy, lazyById for updates, toQuery bulk operations, and #[CollectedBy] custom collections.",
+      "tags": ["documentation", "collections", "lazy-loading", "laravel", "performance"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/config.md",
+      "type": "document",
+      "name": "config.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/config.md",
+      "summary": "Laravel skill rule for configuration management: reading env vars only in config files, protecting production secrets, App::environment() checks, and naming repeated domain values.",
+      "tags": ["documentation", "configuration", "environment", "security", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/db-performance.md",
+      "type": "document",
+      "name": "db-performance.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/db-performance.md",
+      "summary": "Laravel skill rule for database performance: eager loading, preventing lazy loading in development, column selection, incremental large-dataset processing, indexes, withCount, and keeping queries out of Blade.",
+      "tags": ["documentation", "database", "n-plus-one", "performance", "eloquent"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/eloquent.md",
+      "type": "document",
+      "name": "eloquent.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/eloquent.md",
+      "summary": "Laravel skill rule for Eloquent ORM usage: relationship types, local and global scopes, attribute casts, date casting, whereBelongsTo, and keeping queries model-aware.",
+      "tags": ["documentation", "eloquent", "data-model", "orm", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/error-handling.md",
+      "type": "document",
+      "name": "error-handling.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/error-handling.md",
+      "summary": "Laravel skill rule for exception handling: report vs render configuration, suppressing noisy exceptions, throttling reports, deduplication, JSON API rendering, and exception context.",
+      "tags": ["documentation", "error-handling", "exceptions", "api", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/events-notifications.md",
+      "type": "document",
+      "name": "events-notifications.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/events-notifications.md",
+      "summary": "Laravel skill rule for events and notifications: event discovery caching, ShouldDispatchAfterCommit, queued notifications, after-commit dispatch, dedicated queues, on-demand notifications, and locale preferences.",
+      "tags": ["documentation", "events", "notifications", "queues", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/http-client.md",
+      "type": "document",
+      "name": "http-client.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/http-client.md",
+      "summary": "Laravel skill rule for outbound HTTP client usage: explicit timeouts, safe retry policies, explicit error handling, request pooling, and Http::fake in tests.",
+      "tags": ["documentation", "http-client", "testing", "resilience", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/mail.md",
+      "type": "document",
+      "name": "mail.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/mail.md",
+      "summary": "Laravel skill rule for mail delivery: queuing slow mail, after-commit dispatch, asserting delivery mode, Markdown mailables, and separating content from delivery tests.",
+      "tags": ["documentation", "mail", "queues", "testing", "laravel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/migrations.md",
+      "type": "document",
+      "name": "migrations.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/migrations.md",
+      "summary": "Laravel skill rule for database migrations: Artisan generation, foreign-key constraints, immutability of deployed migrations, query-driven indexes, staged row changes, defaults, honest rollbacks, and focused migrations.",
+      "tags": ["documentation", "migrations", "database", "schema", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/queue-jobs.md",
+      "type": "document",
+      "name": "queue-jobs.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/queue-jobs.md",
+      "summary": "Laravel skill rule for queue and job configuration: reservation timeouts, backoff, unique jobs, terminal failure handling, rate limiting, job batches, retry limits, and Horizon operations.",
+      "tags": ["documentation", "queues", "jobs", "horizon", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/routing.md",
+      "type": "document",
+      "name": "routing.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/routing.md",
+      "summary": "Laravel skill rule for routing and controllers: implicit route model binding, scoped nested bindings, resource routes, resource-oriented controller organization, and HTTP-focused controllers.",
+      "tags": ["documentation", "routing", "controllers", "api-handler", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/scheduling.md",
+      "type": "document",
+      "name": "scheduling.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/scheduling.md",
+      "summary": "Laravel skill rule for task scheduling: overlap prevention, single-server execution, background commands, environment restrictions, grouped configuration, and bounded task work.",
+      "tags": ["documentation", "scheduling", "cron", "tasks", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/security.md",
+      "type": "document",
+      "name": "security.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/security.md",
+      "summary": "Laravel skill rule for application security: mass assignment control, authorization, query parameter binding, output escaping, CSRF protection, rate limiting, safe uploads, secrets management, dependency audits, and attribute encryption.",
+      "tags": ["documentation", "security", "authorization", "validation", "laravel"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/style.md",
+      "type": "document",
+      "name": "style.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/style.md",
+      "summary": "Laravel skill rule for code style and conventions: project naming, idiomatic PHP syntax, clarifying utilities, maintainable presentation code, and purpose-driven comments.",
+      "tags": ["documentation", "style", "conventions", "php", "laravel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.claude/skills/laravel-best-practices/rules/validation.md",
+      "type": "document",
+      "name": "validation.md",
+      "filePath": ".claude/skills/laravel-best-practices/rules/validation.md",
+      "summary": "Laravel skill rule for validation and forms: Form Request extraction, readable rule syntax, validated-only data access, conditional rules, and cross-field validation ordering.",
+      "tags": ["documentation", "validation", "form-requests", "forms", "laravel"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/advanced-queries.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/architecture.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/blade-views.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/caching.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/collections.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/config.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/db-performance.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/eloquent.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/error-handling.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/events-notifications.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/http-client.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/mail.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/migrations.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/queue-jobs.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/routing.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/scheduling.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/security.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/style.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/SKILL.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/validation.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/rules/db-performance.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/advanced-queries.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/rules/db-performance.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/eloquent.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/rules/architecture.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/routing.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/rules/validation.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/security.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.claude/skills/laravel-best-practices/rules/queue-jobs.md",
+      "target": "document:.claude/skills/laravel-best-practices/rules/events-notifications.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

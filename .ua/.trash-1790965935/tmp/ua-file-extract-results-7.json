@@ -1,0 +1,1519 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 20,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 20
+    }
+  },
+  "results": [
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 318,
+      "nonEmptyLines": 234,
+      "sections": [
+        {
+          "heading": "Assess Adaptation Challenge",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Plan Adaptation Strategy",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Mobile Adaptation (Desktop → Mobile)",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Tablet Adaptation (Hybrid Approach)",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Desktop Adaptation (Mobile → Desktop)",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Print Adaptation (Screen → Print)",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Email Adaptation (Web → Email)",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "Implement Adaptations",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Responsive Breakpoints",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Layout Adaptation Techniques",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Touch Adaptation",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "Content Adaptation",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Navigation Adaptation",
+          "level": 3,
+          "line": 161
+        },
+        {
+          "heading": "Verify Adaptations",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "Reference Material",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "Responsive Design",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "Mobile-First: Write It Right",
+          "level": 4,
+          "line": 207
+        },
+        {
+          "heading": "Breakpoints: Content-Driven",
+          "level": 4,
+          "line": 211
+        },
+        {
+          "heading": "Detect Input Method, Not Just Screen Size",
+          "level": 4,
+          "line": 215
+        },
+        {
+          "heading": "Safe Areas: Handle the Notch",
+          "level": 4,
+          "line": 243
+        },
+        {
+          "heading": "Responsive Images: Get It Right",
+          "level": 4,
+          "line": 266
+        },
+        {
+          "heading": "srcset with Width Descriptors",
+          "level": 5,
+          "line": 268
+        },
+        {
+          "heading": "Picture Element for Art Direction",
+          "level": 5,
+          "line": 288
+        },
+        {
+          "heading": "Layout Adaptation Patterns",
+          "level": 4,
+          "line": 300
+        },
+        {
+          "heading": "Testing: Don't Trust DevTools Alone",
+          "level": 4,
+          "line": 304
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.native.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 58,
+      "nonEmptyLines": 40,
+      "sections": [
+        {
+          "heading": "Assess Adaptation Challenge",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Adaptation Strategies",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Phone → Tablet (iPad / large screens)",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "Orientation & foldables",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Platform → platform (iOS ↔ Android)",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Web → native (porting a website or web app)",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "Implement & Verify",
+          "level": 2,
+          "line": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/android.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "Android platform",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Android slop test",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Layout & structure",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Touch targets",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Color & theming",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Components & motion",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Verifying the build",
+          "level": 2,
+          "line": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/animate.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 89,
+      "nonEmptyLines": 59,
+      "sections": [
+        {
+          "heading": "Visitor mode",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Find the job",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Set the motion thesis",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Choose material by meaning",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Timing and easing",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Implement to the runtime",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Accessibility and control",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Verify",
+          "level": 2,
+          "line": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 137,
+      "nonEmptyLines": 97,
+      "sections": [
+        {
+          "heading": "Diagnostic Scan",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1. Accessibility (A11y)",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "2. Performance",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "3. Theming",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "4. Responsive Design",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "5. Implementation Integrity (CRITICAL)",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Generate Report",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Audit Health Score",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Implementation Integrity Verdict",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "Executive Summary",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Detailed Findings by Severity",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Patterns & Systemic Issues",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Positive Findings",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Recommended Actions",
+          "level": 2,
+          "line": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.native.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 139,
+      "nonEmptyLines": 100,
+      "sections": [
+        {
+          "heading": "Diagnostic Scan",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. Accessibility (VoiceOver / TalkBack)",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "2. Performance",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "3. Appearance & Theming",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "4. Platform Conformance (CRITICAL)",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "5. Adaptivity",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Generate Report",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Audit Health Score",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "Platform Conformance Verdict",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "Executive Summary",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "Detailed Findings by Severity",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Patterns & Systemic Issues",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Positive Findings",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "Recommended Actions",
+          "level": 2,
+          "line": 117
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/bolder.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 33,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "Scope is sovereign",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Why it reads flat",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "The amplification",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "The skeleton test",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Before you finish",
+          "level": 2,
+          "line": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/clarify.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 94,
+      "nonEmptyLines": 59,
+      "sections": [
+        {
+          "heading": "Audit the language",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Set the message hierarchy",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Rewrite by function",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Actions and navigation",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "Forms",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Errors and permissions",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Loading, empty, and success states",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Help and instructional text",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "Voice, accessibility, and localization",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Verify",
+          "level": 2,
+          "line": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/colorize.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 86,
+      "nonEmptyLines": 58,
+      "sections": [
+        {
+          "heading": "Visitor mode",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Audit before choosing",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Choose a strategy",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Apply at system scale",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Contrast and perception",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Verify",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Live-mode signature params",
+          "level": 2,
+          "line": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/component-review.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 71,
+      "nonEmptyLines": 50,
+      "sections": [
+        {
+          "heading": "Component review",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prepare the component kit",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Present and wait",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "Assemble and review",
+          "level": 2,
+          "line": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft-floor.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 50,
+      "nonEmptyLines": 38,
+      "sections": [
+        {
+          "heading": "Craft floor",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Verify",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Refuse",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Craft (deprecated alias)",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/critique.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 828,
+      "nonEmptyLines": 600,
+      "sections": [
+        {
+          "heading": "Purpose",
+          "level": 3,
+          "line": 1
+        },
+        {
+          "heading": "Hard Invariants",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Setup",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Assessment Orchestration",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Assessment A: Design Review",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Assessment B: Detector + Browser Evidence",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Generate Combined Critique Report",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Report header provenance",
+          "level": 4,
+          "line": 106
+        },
+        {
+          "heading": "Design Health Score",
+          "level": 4,
+          "line": 112
+        },
+        {
+          "heading": "Design Specificity Verdict",
+          "level": 4,
+          "line": 137
+        },
+        {
+          "heading": "Overall Impression",
+          "level": 4,
+          "line": 147
+        },
+        {
+          "heading": "What's Working",
+          "level": 4,
+          "line": 150
+        },
+        {
+          "heading": "Priority Issues",
+          "level": 4,
+          "line": 153
+        },
+        {
+          "heading": "Persona Red Flags",
+          "level": 4,
+          "line": 162
+        },
+        {
+          "heading": "Minor Observations",
+          "level": 4,
+          "line": 175
+        },
+        {
+          "heading": "Questions to Consider",
+          "level": 4,
+          "line": 178
+        },
+        {
+          "heading": "Run Notes",
+          "level": 4,
+          "line": 184
+        },
+        {
+          "heading": "Deliver the Report",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "Persist the Snapshot",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "Ask the User",
+          "level": 3,
+          "line": 245
+        },
+        {
+          "heading": "Recommended Actions",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "Action Summary",
+          "level": 4,
+          "line": 273
+        },
+        {
+          "heading": "Reference Material",
+          "level": 2,
+          "line": 299
+        },
+        {
+          "heading": "Cognitive Load Assessment",
+          "level": 3,
+          "line": 303
+        },
+        {
+          "heading": "Three Types of Cognitive Load",
+          "level": 4,
+          "line": 309
+        },
+        {
+          "heading": "Intrinsic Load: The Task Itself",
+          "level": 5,
+          "line": 311
+        },
+        {
+          "heading": "Extraneous Load: Bad Design",
+          "level": 5,
+          "line": 320
+        },
+        {
+          "heading": "Germane Load: Learning Effort",
+          "level": 5,
+          "line": 330
+        },
+        {
+          "heading": "Cognitive Load Checklist",
+          "level": 4,
+          "line": 341
+        },
+        {
+          "heading": "The Working Memory Rule",
+          "level": 4,
+          "line": 358
+        },
+        {
+          "heading": "Common Cognitive Load Violations",
+          "level": 4,
+          "line": 376
+        },
+        {
+          "heading": "1. The Wall of Options",
+          "level": 5,
+          "line": 378
+        },
+        {
+          "heading": "2. The Memory Bridge",
+          "level": 5,
+          "line": 382
+        },
+        {
+          "heading": "3. The Hidden Navigation",
+          "level": 5,
+          "line": 386
+        },
+        {
+          "heading": "4. The Jargon Barrier",
+          "level": 5,
+          "line": 390
+        },
+        {
+          "heading": "5. The Visual Noise Floor",
+          "level": 5,
+          "line": 394
+        },
+        {
+          "heading": "6. The Inconsistent Pattern",
+          "level": 5,
+          "line": 398
+        },
+        {
+          "heading": "7. The Multi-Task Demand",
+          "level": 5,
+          "line": 402
+        },
+        {
+          "heading": "8. The Context Switch",
+          "level": 5,
+          "line": 406
+        },
+        {
+          "heading": "Heuristics Scoring Guide",
+          "level": 3,
+          "line": 412
+        },
+        {
+          "heading": "Nielsen's 10 Heuristics",
+          "level": 4,
+          "line": 416
+        },
+        {
+          "heading": "1. Visibility of System Status",
+          "level": 5,
+          "line": 418
+        },
+        {
+          "heading": "2. Match Between System and Real World",
+          "level": 5,
+          "line": 438
+        },
+        {
+          "heading": "3. User Control and Freedom",
+          "level": 5,
+          "line": 458
+        },
+        {
+          "heading": "4. Consistency and Standards",
+          "level": 5,
+          "line": 478
+        },
+        {
+          "heading": "5. Error Prevention",
+          "level": 5,
+          "line": 498
+        },
+        {
+          "heading": "6. Recognition Rather Than Recall",
+          "level": 5,
+          "line": 518
+        },
+        {
+          "heading": "7. Flexibility and Efficiency of Use",
+          "level": 5,
+          "line": 538
+        },
+        {
+          "heading": "8. Aesthetic and Minimalist Design",
+          "level": 5,
+          "line": 558
+        },
+        {
+          "heading": "9. Help Users Recognize, Diagnose, and Recover from Errors",
+          "level": 5,
+          "line": 578
+        },
+        {
+          "heading": "10. Help and Documentation",
+          "level": 5,
+          "line": 598
+        },
+        {
+          "heading": "Score Summary",
+          "level": 4,
+          "line": 620
+        },
+        {
+          "heading": "Issue Severity (P0–P3)",
+          "level": 4,
+          "line": 636
+        },
+        {
+          "heading": "Persona-Based Design Testing",
+          "level": 3,
+          "line": 651
+        },
+        {
+          "heading": "1. Impatient Power User: \"Alex\"",
+          "level": 4,
+          "line": 659
+        },
+        {
+          "heading": "2. Confused First-Timer: \"Jordan\"",
+          "level": 4,
+          "line": 686
+        },
+        {
+          "heading": "3. Accessibility-Dependent User: \"Sam\"",
+          "level": 4,
+          "line": 713
+        },
+        {
+          "heading": "4. Deliberate Stress Tester: \"Riley\"",
+          "level": 4,
+          "line": 741
+        },
+        {
+          "heading": "5. Distracted Mobile User: \"Casey\"",
+          "level": 4,
+          "line": 768
+        },
+        {
+          "heading": "Selecting Personas",
+          "level": 4,
+          "line": 795
+        },
+        {
+          "heading": "Project-Specific Personas",
+          "level": 4,
+          "line": 810
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 61
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/delight.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 70,
+      "nonEmptyLines": 48,
+      "sections": [
+        {
+          "heading": "Visitor mode",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Find the opportunity",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Define one delight thesis",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Build for the emotional moment",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Protect the experience",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Verify",
+          "level": 2,
+          "line": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/distill.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 111,
+      "nonEmptyLines": 84,
+      "sections": [
+        {
+          "heading": "Assess Current State",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Plan Simplification",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Simplify the Design",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Information Architecture",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "Visual Simplification",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Layout Simplification",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Interaction Simplification",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Content Simplification",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Code Simplification",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "Verify Simplification",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Document Removed Complexity",
+          "level": 2,
+          "line": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/doctor.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 54,
+      "nonEmptyLines": 32,
+      "sections": [
+        {
+          "heading": "What this owns, and what it does not",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 1: Run the pass",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Step 2: Act by severity",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Step 3: Deprecated fields are binding",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Step 4: Do not overclaim on truth drift",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Monorepo notes",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Opting out of the boot check",
+          "level": 2,
+          "line": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/document.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 416,
+      "nonEmptyLines": 305,
+      "sections": [
+        {
+          "heading": "The frontmatter: token schema",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "The markdown body: eight sections (canonical order)",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "When to run",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Two paths",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Scan mode (approach C: auto-extract, then confirm descriptive language)",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Step 1: Find the design assets",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Step 2: Auto-extract what can be auto-extracted",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "Step 2b: Stage the frontmatter",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Step 3: Ask the user for qualitative language",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "Step 4: Write DESIGN.md",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "Step 4b: Write .impeccable/design.json sidecar (extensions only)",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "Schema",
+          "level": 4,
+          "line": 257
+        },
+        {
+          "heading": "Component translation rules",
+          "level": 4,
+          "line": 305
+        },
+        {
+          "heading": "What to include",
+          "level": 4,
+          "line": 316
+        },
+        {
+          "heading": "Tonal ramps",
+          "level": 4,
+          "line": 326
+        },
+        {
+          "heading": "Narrative mapping",
+          "level": 4,
+          "line": 330
+        },
+        {
+          "heading": "Step 5: Confirm and refine",
+          "level": 3,
+          "line": 342
+        },
+        {
+          "heading": "Seed mode",
+          "level": 2,
+          "line": 350
+        },
+        {
+          "heading": "Step 1: Route through new-work's workshop",
+          "level": 3,
+          "line": 354
+        },
+        {
+          "heading": "Step 2: Write seed DESIGN.md",
+          "level": 3,
+          "line": 362
+        },
+        {
+          "heading": "Step 3: Confirm",
+          "level": 3,
+          "line": 385
+        },
+        {
+          "heading": "Style guidelines",
+          "level": 2,
+          "line": 392
+        },
+        {
+          "heading": "Pitfalls",
+          "level": 2,
+          "line": 406
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/extract.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 69,
+      "nonEmptyLines": 46,
+      "sections": [
+        {
+          "heading": "Extract Flow",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Step 1: Discover the Design System",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 2: Identify Patterns",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Step 3: Plan Extraction",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Step 4: Extract & Enrich",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Step 5: Migrate",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "Step 6: Document",
+          "level": 2,
+          "line": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/generate.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 101,
+      "nonEmptyLines": 69,
+      "sections": [
+        {
+          "heading": "Step 1: Parse the request",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Step 2: Reuse the page, then start",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Step 3: Generate",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Step 4: Accept and close",
+          "level": 2,
+          "line": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/harden.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 345,
+      "nonEmptyLines": 282,
+      "sections": [
+        {
+          "heading": "Assess Hardening Needs",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Hardening Dimensions",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Text Overflow & Wrapping",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Internationalization (i18n)",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "Error Handling",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "Edge Cases & Boundary Conditions",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "Input Validation & Sanitization",
+          "level": 3,
+          "line": 225
+        },
+        {
+          "heading": "Accessibility Resilience",
+          "level": 3,
+          "line": 255
+        },
+        {
+          "heading": "Performance Resilience",
+          "level": 3,
+          "line": 274
+        },
+        {
+          "heading": "Testing Strategies",
+          "level": 2,
+          "line": 297
+        },
+        {
+          "heading": "Verify Hardening",
+          "level": 2,
+          "line": 328
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

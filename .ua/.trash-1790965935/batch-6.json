@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "type": "config",
+      "name": "impeccable_asset_producer.toml",
+      "filePath": ".agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "summary": "Defines the Impeccable asset producer sub-agent that generates clean raster plates from approved mock comps using comp-spec scripts, without redesigning the approved visual direction.",
+      "tags": ["configuration", "agent-definition", "impeccable", "asset-production", "design-system"],
+      "complexity": "moderate",
+      "languageNotes": "TOML agent manifest with a multi-section developer_instructions block covering decision comps, plate production, and output contracts."
+    },
+    {
+      "id": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "type": "config",
+      "name": "impeccable_documenter.toml",
+      "filePath": ".agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "summary": "Defines the Impeccable documenter sub-agent that records DESIGN.md and its sidecar from shipped build artifacts, deriving design tokens from ground-truth code rather than intentions.",
+      "tags": ["configuration", "agent-definition", "impeccable", "documentation", "design-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "type": "config",
+      "name": "impeccable_finish_reviewer.toml",
+      "filePath": ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "summary": "Defines the Impeccable finish reviewer sub-agent that audits completed builds against direction contracts, approved comps, and quality bars, returning ordered material fixes or ship/rebuild dispositions.",
+      "tags": ["configuration", "agent-definition", "impeccable", "quality-review", "design-system"],
+      "complexity": "moderate",
+      "languageNotes": "Long-form review checklist encoded in developer_instructions with six ordered fidelity and craft checks plus verdict-pass scoring rules."
+    },
+    {
+      "id": "config:.agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "type": "config",
+      "name": "impeccable_manual_edit_applier.toml",
+      "filePath": ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "summary": "Defines the Impeccable manual edit applier sub-agent that applies leased live manual_edit_apply batches to source files and returns canonical JSON apply results with entry-level atomicity.",
+      "tags": ["configuration", "agent-definition", "impeccable", "live-editing", "source-editing"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.agents/skills/impeccable/agents/openai.yaml",
+      "type": "config",
+      "name": "openai.yaml",
+      "filePath": ".agents/skills/impeccable/agents/openai.yaml",
+      "summary": "Registers the Impeccable skill interface metadata including display name, short description, and default prompt for frontend design and polish workflows.",
+      "tags": ["configuration", "agent-definition", "impeccable", "skill-interface", "entry-point"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "target": "config:.agents/skills/impeccable/agents/openai.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "target": "config:.agents/skills/impeccable/agents/openai.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "target": "config:.agents/skills/impeccable/agents/openai.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "target": "config:.agents/skills/impeccable/agents/openai.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "target": "file:.agents/skills/impeccable/scripts/impeccable",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "target": "document:.agents/skills/impeccable/reference/component-review.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "target": "document:PRODUCT.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "target": "document:.agents/skills/impeccable/reference/document.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "target": "document:PRODUCT.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "target": "document:DESIGN.md",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "target": "document:.agents/skills/impeccable/reference/craft-floor.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "target": "document:.agents/skills/impeccable/reference/ios.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "target": "document:.agents/skills/impeccable/reference/android.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "target": "document:PRODUCT.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "target": "document:DESIGN.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "target": "file:.agents/skills/impeccable/scripts/impeccable",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/openai.yaml",
+      "target": "document:.agents/skills/impeccable/SKILL.md",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "target": "document:.agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "target": "document:.agents/skills/impeccable/reference/degraded/documenter.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "target": "document:.agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "target": "document:.agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

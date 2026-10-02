@@ -1,0 +1,261 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 7,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 7
+    }
+  },
+  "results": [
+    {
+      "path": ".impeccable/mocks/decision/assigned-r2.png.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "prompt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "aspect",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".impeccable/mocks/decision/assigned.png.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "prompt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "aspect",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".impeccable/mocks/decision/canon.png.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "prompt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "aspect",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".impeccable/mocks/decision/model-pick-r2.png.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "prompt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "aspect",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".impeccable/mocks/decision/model-pick.png.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "prompt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "aspect",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".impeccable/mocks/decision/payload-r2.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 135,
+      "nonEmptyLines": 135,
+      "sections": [
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "question",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "options",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "reroll",
+          "level": 1,
+          "line": 122
+        },
+        {
+          "heading": "buildPath",
+          "level": 1,
+          "line": 123
+        },
+        {
+          "heading": "canon",
+          "level": 1,
+          "line": 124
+        },
+        {
+          "heading": "canonCard",
+          "level": 1,
+          "line": 125
+        },
+        {
+          "heading": "steer",
+          "level": 1,
+          "line": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".impeccable/mocks/decision/payload.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 135,
+      "nonEmptyLines": 135,
+      "sections": [
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "question",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "options",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "reroll",
+          "level": 1,
+          "line": 122
+        },
+        {
+          "heading": "buildPath",
+          "level": 1,
+          "line": 123
+        },
+        {
+          "heading": "canon",
+          "level": 1,
+          "line": 124
+        },
+        {
+          "heading": "canonCard",
+          "level": 1,
+          "line": 125
+        },
+        {
+          "heading": "steer",
+          "level": 1,
+          "line": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    }
+  ]
+}

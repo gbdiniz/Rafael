@@ -1,0 +1,291 @@
+{
+  "nodes": [
+    {
+      "id": "document:.agents/skills/impeccable/reference/adapt.md",
+      "type": "document",
+      "name": "adapt.md",
+      "filePath": ".agents/skills/impeccable/reference/adapt.md",
+      "summary": "Comprehensive web adaptation guide covering responsive breakpoints, touch targets, layout patterns, responsive images, and verification across mobile, tablet, desktop, print, and email contexts.",
+      "tags": ["documentation", "responsive-design", "adaptation", "mobile-first", "ux"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/adapt.native.md",
+      "type": "document",
+      "name": "adapt.native.md",
+      "filePath": ".agents/skills/impeccable/reference/adapt.native.md",
+      "summary": "Native adaptation workflow for scaling phone layouts to tablets, handling orientation and foldables, cross-platform iOS/Android differences, and porting web experiences to native runtimes.",
+      "tags": ["documentation", "native-mobile", "adaptation", "ios-android", "ux"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/android.md",
+      "type": "document",
+      "name": "android.md",
+      "filePath": ".agents/skills/impeccable/reference/android.md",
+      "summary": "Android platform conformance checklist evaluating layout structure, touch targets, typography, color theming, components, motion, and build verification against Material expectations.",
+      "tags": ["documentation", "android", "platform-guidelines", "mobile", "design-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/animate.md",
+      "type": "document",
+      "name": "animate.md",
+      "filePath": ".agents/skills/impeccable/reference/animate.md",
+      "summary": "Motion design command that defines an animation thesis, selects material by meaning, sets timing and easing, implements to the target runtime, and verifies accessibility controls.",
+      "tags": ["documentation", "animation", "motion-design", "accessibility", "ux"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/audit.md",
+      "type": "document",
+      "name": "audit.md",
+      "filePath": ".agents/skills/impeccable/reference/audit.md",
+      "summary": "Web implementation diagnostic scanning accessibility, performance, theming, responsive design, and implementation integrity, then generating a scored audit report with prioritized actions.",
+      "tags": ["documentation", "audit", "accessibility", "quality-assurance", "web"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/audit.native.md",
+      "type": "document",
+      "name": "audit.native.md",
+      "filePath": ".agents/skills/impeccable/reference/audit.native.md",
+      "summary": "Native app audit workflow evaluating VoiceOver and TalkBack accessibility, performance, appearance, platform conformance, adaptivity, and producing a conformance verdict report.",
+      "tags": ["documentation", "audit", "native-mobile", "accessibility", "quality-assurance"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/bolder.md",
+      "type": "document",
+      "name": "bolder.md",
+      "filePath": ".agents/skills/impeccable/reference/bolder.md",
+      "summary": "Visual amplification command that diagnoses flat interfaces, intensifies hierarchy and presence within fixed scope, and validates the result with a skeleton test.",
+      "tags": ["documentation", "visual-design", "hierarchy", "typography", "ux"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/clarify.md",
+      "type": "document",
+      "name": "clarify.md",
+      "filePath": ".agents/skills/impeccable/reference/clarify.md",
+      "summary": "UX copy refinement workflow auditing interface language, rewriting actions, forms, errors, and state messages, and verifying voice, accessibility, and localization quality.",
+      "tags": ["documentation", "ux-writing", "content-design", "accessibility", "forms"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/colorize.md",
+      "type": "document",
+      "name": "colorize.md",
+      "filePath": ".agents/skills/impeccable/reference/colorize.md",
+      "summary": "Color strategy command that audits existing palettes, chooses an application strategy, applies tokens at system scale, and verifies contrast and perceptual consistency.",
+      "tags": ["documentation", "color-system", "theming", "accessibility", "design-tokens"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/component-review.md",
+      "type": "document",
+      "name": "component-review.md",
+      "filePath": ".agents/skills/impeccable/reference/component-review.md",
+      "summary": "Structured component review workflow for preparing a component kit, presenting variants to stakeholders, and assembling findings into a focused review session.",
+      "tags": ["documentation", "component-library", "design-review", "design-system", "workflow"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/craft-floor.md",
+      "type": "document",
+      "name": "craft-floor.md",
+      "filePath": ".agents/skills/impeccable/reference/craft-floor.md",
+      "summary": "Minimum craft quality bar defining verification criteria and explicit refusal conditions for design output that falls below acceptable standards.",
+      "tags": ["documentation", "quality-standards", "design-craft", "verification", "guidelines"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/craft.md",
+      "type": "document",
+      "name": "craft.md",
+      "filePath": ".agents/skills/impeccable/reference/craft.md",
+      "summary": "Deprecated alias pointing agents to the craft-floor quality standards reference instead of maintaining a separate craft command.",
+      "tags": ["documentation", "deprecated", "quality-standards", "alias", "guidelines"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/critique.md",
+      "type": "document",
+      "name": "critique.md",
+      "filePath": ".agents/skills/impeccable/reference/critique.md",
+      "summary": "Comprehensive design critique orchestration combining design review, browser evidence, cognitive load assessment, Nielsen heuristics scoring, persona red flags, and persisted snapshot reporting.",
+      "tags": ["documentation", "design-review", "heuristics", "ux-research", "quality-assurance"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/delight.md",
+      "type": "document",
+      "name": "delight.md",
+      "filePath": ".agents/skills/impeccable/reference/delight.md",
+      "summary": "Delight design command identifying emotional opportunities, defining a single delight thesis, building for key moments, and protecting core usability during enhancement.",
+      "tags": ["documentation", "delight", "microinteractions", "emotion-design", "ux"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/distill.md",
+      "type": "document",
+      "name": "distill.md",
+      "filePath": ".agents/skills/impeccable/reference/distill.md",
+      "summary": "Simplification workflow assessing interface complexity, planning reductions across information architecture, visuals, layout, interactions, content, and code, then verifying outcomes.",
+      "tags": ["documentation", "simplification", "information-architecture", "ux", "refactoring"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/doctor.md",
+      "type": "document",
+      "name": "doctor.md",
+      "filePath": ".agents/skills/impeccable/reference/doctor.md",
+      "summary": "Skill maintenance pass that runs health checks, acts on findings by severity, enforces deprecated field handling, and supports monorepo-wide validation with opt-out controls.",
+      "tags": ["documentation", "maintenance", "skill-health", "validation", "monorepo"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/document.md",
+      "type": "document",
+      "name": "document.md",
+      "filePath": ".agents/skills/impeccable/reference/document.md",
+      "summary": "Design documentation workflow for producing DESIGN.md and .impeccable/design.json via scan or seed modes, including token frontmatter schema, sidecar rules, and confirmation steps.",
+      "tags": ["documentation", "design-system", "design-tokens", "workflow", "metadata"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/extract.md",
+      "type": "document",
+      "name": "extract.md",
+      "filePath": ".agents/skills/impeccable/reference/extract.md",
+      "summary": "Six-step design system extraction flow to discover existing patterns, plan component extraction, enrich tokens, migrate usage, and document the resulting system.",
+      "tags": ["documentation", "design-system", "extraction", "migration", "component-library"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/generate.md",
+      "type": "document",
+      "name": "generate.md",
+      "filePath": ".agents/skills/impeccable/reference/generate.md",
+      "summary": "UI generation workflow parsing user requests, reusing existing pages where possible, generating new screens, and closing with acceptance criteria.",
+      "tags": ["documentation", "ui-generation", "workflow", "page-creation", "design-system"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/impeccable/reference/harden.md",
+      "type": "document",
+      "name": "harden.md",
+      "filePath": ".agents/skills/impeccable/reference/harden.md",
+      "summary": "Production hardening guide covering text overflow, internationalization, error handling, edge cases, input validation, accessibility resilience, performance, and verification strategies.",
+      "tags": ["documentation", "production-readiness", "internationalization", "accessibility", "edge-cases"],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.agents/skills/impeccable/reference/adapt.md",
+      "target": "document:.agents/skills/impeccable/reference/adapt.native.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/adapt.native.md",
+      "target": "document:.agents/skills/impeccable/reference/android.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/audit.md",
+      "target": "document:.agents/skills/impeccable/reference/audit.native.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/audit.md",
+      "target": "document:.agents/skills/impeccable/reference/harden.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/craft.md",
+      "target": "document:.agents/skills/impeccable/reference/craft-floor.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/craft-floor.md",
+      "target": "document:.agents/skills/impeccable/reference/critique.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/critique.md",
+      "target": "document:.agents/skills/impeccable/reference/audit.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/critique.md",
+      "target": "document:.agents/skills/impeccable/reference/component-review.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/bolder.md",
+      "target": "document:.agents/skills/impeccable/reference/colorize.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/bolder.md",
+      "target": "document:.agents/skills/impeccable/reference/delight.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/colorize.md",
+      "target": "document:.agents/skills/impeccable/reference/animate.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/distill.md",
+      "target": "document:.agents/skills/impeccable/reference/clarify.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/document.md",
+      "target": "document:.agents/skills/impeccable/reference/extract.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/extract.md",
+      "target": "document:.agents/skills/impeccable/reference/document.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/impeccable/reference/generate.md",
+      "target": "document:.agents/skills/impeccable/reference/component-review.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}
