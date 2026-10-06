@@ -353,10 +353,10 @@ Use `Storage::fake('local')` and `Queue::fake([TranscribeVoiceTurn::class])`. `a
 
 ### Phase 5.7 — Rafael-Whisper (self-hosted transcriber)
 
-- [ ] Deploy [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) on the Debian transcription server. Follow that repo’s [`docs/deployment.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/deployment.md).
-- [ ] Rafael production `.env`: `TRANSCRIBER_URL`, `TRANSCRIBER_API_KEY`, `TRANSCRIBER_MODEL=base`. Leave `OPENAI_API_KEY` empty.
-- [ ] `config/rafael.php` reads `TRANSCRIBER_API_KEY` for the bearer token sent to Rafael-Whisper.
-- [ ] End-to-end: a voice turn reaches `completed` with a transcript via the self-hosted API. See Rafael-Whisper [`docs/verification.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/verification.md).
+- [x] Deploy [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) on the Debian transcription server. Follow that repo’s [`docs/deployment.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/deployment.md).
+- [x] Rafael production `.env`: `TRANSCRIBER_URL`, `TRANSCRIBER_API_KEY`, `TRANSCRIBER_MODEL=base`. Leave `OPENAI_API_KEY` empty.
+- [x] `config/rafael.php` reads `TRANSCRIBER_API_KEY` for the bearer token sent to Rafael-Whisper.
+- [x] End-to-end: a voice turn reaches `completed` with a transcript via the self-hosted API. See Rafael-Whisper [`docs/verification.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/verification.md).
 
 **Ops docs:** Rafael-Whisper [`docs/rafael-integration.md`](https://github.com/gbdiniz/Rafael-Whisper/blob/main/docs/rafael-integration.md).
 
