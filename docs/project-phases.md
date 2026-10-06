@@ -43,7 +43,7 @@ Pest. Create files with `php artisan make:test --pest {name}` and `--unit` for a
 - Freeze time with `travelTo()`. Do not call `Carbon::setTestNow()`. Fakes go inside the test, not in `beforeEach()`. `Storage::fake('local')`. `Http::preventStrayRequests()` and fake the exact transcriber URL. `Queue::fake([TranscribeVoiceTurn::class])` only when the test asserts dispatch; job tests run the job. Mock a contract with `use function Pest\Laravel\mock`.
 - Do not test an enum cast by echoing it, and do not test a foreign-key engine rule the app never exercises.
 - Do not delete `tests/Feature/ExampleTest.php`. Rewrite it in place when `/` stops being the welcome page.
-- `phpunit.xml` keeps cache `array`, queue `sync`, session `array`, and database `sqlite` `:memory:`. Do not assert that runtime drivers are Redis or MySQL.
+- `.env.testing` is the Pest env: cache `array`, queue `sync`, session `array`, and database `sqlite` `:memory:` (`phpunit.xml` forces the same, and skips the MySQL `config:cache` / `route:cache` files). Never run tests against MySQL. Do not assert that runtime drivers are Redis or MySQL.
 
 ---
 
