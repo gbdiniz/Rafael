@@ -9,6 +9,14 @@
 
     <x-secretary-turn :message="$message" />
 
+    @if (count($matches) > 0)
+        <ul class="flex max-w-md flex-col gap-2 text-center text-sm text-ice/90">
+            @foreach ($matches as $match)
+                <li wire:key="match-{{ $match['id'] }}">{{ $match['title'] }}</li>
+            @endforeach
+        </ul>
+    @endif
+
     <div
         @if ($trackingTurnUuid)
             wire:poll.2s="refreshTurnStatus"

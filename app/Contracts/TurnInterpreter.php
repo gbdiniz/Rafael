@@ -7,5 +7,8 @@ use App\Models\VoiceTurn;
 
 interface TurnInterpreter
 {
-    public function interpret(VoiceTurn $turn): Interpretation;
+    /**
+     * @param  array{timezone?: string, records?: list<array<string, mixed>>, draft?: ?array<string, mixed>, matches?: list<array<string, mixed>>}  $context
+     */
+    public function interpret(VoiceTurn $turn, array $context = []): Interpretation;
 }

@@ -368,9 +368,9 @@ Depends on Phase 4.3 and Phase 5.3. **US-05.**
 
 ### Phase 6.1 — Interpret a transcript without the open web
 
-- [ ] `TurnInterpreter` contract: question, mutation draft, yes, no, or not-about-the-books. Bound in the provider. Tests bind a fake.
-- [ ] `Http::preventStrayRequests()` so an off-books question cannot call a search or chat host.
-- [ ] Off-books: pt-BR refusal, no `records` write.
+- [x] `TurnInterpreter` contract: question, mutation draft, yes, no, or not-about-the-books. Bound in the provider. Tests bind a fake.
+- [x] `Http::preventStrayRequests()` so an off-books question cannot call a search or chat host.
+- [x] Off-books: pt-BR refusal, no `records` write.
 
 **Feature tests:** `tests/Feature/Conversation/AskTest.php`
 
@@ -382,9 +382,9 @@ Assert the refusal and the untouched books. Do not assert which fake class the c
 
 ### Phase 6.2 — Answer about tasks when asked
 
-- [ ] `AnswerQuestion` reads on-the-books tasks through the `tasks` scope, including a due when `scheduled_at` is set. Soft-deleted tasks stay out.
-- [ ] The ask sets `consumed_at` on the voice turn and does not insert a record.
-- [ ] The opening briefing still omits tasks.
+- [x] `AnswerQuestion` reads on-the-books tasks through the `tasks` scope, including a due when `scheduled_at` is set. Soft-deleted tasks stay out.
+- [x] The ask sets `consumed_at` on the voice turn and does not insert a record.
+- [x] The opening briefing still omits tasks.
 
 **Feature tests:** `tests/Feature/Conversation/AskTasksTest.php`
 
@@ -395,8 +395,8 @@ Assert the refusal and the untouched books. Do not assert which fake class the c
 
 ### Phase 6.3 — Answer about appointments when asked
 
-- [ ] An appointment question may include future appointments the briefing hid. Soft-deleted appointments stay out.
-- [ ] Order by `scheduled_at`, then `id`.
+- [x] An appointment question may include future appointments the briefing hid. Soft-deleted appointments stay out.
+- [x] Order by `scheduled_at`, then `id`.
 
 **Feature tests:** `tests/Feature/Conversation/AskAppointmentsTest.php`
 

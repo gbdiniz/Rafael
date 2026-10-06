@@ -55,7 +55,8 @@ it('posts json_schema to the configured url and includes openrouter extras on th
             && data_get($body, 'model') === 'openai/gpt-4o-mini'
             && data_get($body, 'response_format.type') === 'json_schema'
             && data_get($body, 'provider.require_parameters') === true
-            && data_get($body, 'messages.1.content') === 'quais são minhas tarefas';
+            && str_contains((string) data_get($body, 'messages.1.content'), 'quais são minhas tarefas')
+            && data_get($body, 'response_format.json_schema.schema.properties.action') !== null;
     });
 });
 

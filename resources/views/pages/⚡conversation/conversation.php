@@ -1,11 +1,12 @@
 <?php
 
-use App\Actions\Conversation\AnswerQuestion;
 use App\Actions\Conversation\Briefing;
+use App\Actions\Conversation\HandleTurn;
 use App\Actions\Conversation\OpenConversation;
 use App\Contracts\TurnInterpreter;
-use App\Enums\TurnIntent;
 use App\Enums\VoiceTurnStatus;
+use App\Models\Record;
+use App\Models\User;
 use App\Models\VoiceTurn;
 use Illuminate\Support\Facades\App;
 use Livewire\Component;
@@ -19,6 +20,21 @@ new class extends Component
     public ?string $turnError = null;
 
     public ?string $lastTranscript = null;
+
+    /**
+     * @var array<string, mixed>|null
+     */
+    public ?array $proposal = null;
+
+    /**
+     * @var array<int, array<string, mixed>>
+     */
+    public array $matches = [];
+
+    /**
+     * @var array<string, mixed>|null
+     */
+    public ?array $pendingPatch = null;
 
     public function mount(OpenConversation $openConversation, Briefing $briefing): void
     {
@@ -35,15 +51,15 @@ new class extends Component
         $this->message = $briefing->handle($user, now());
     }
 
-    public function trackVoiceTurn(string $uuid, TurnInterpreter $interpreter, AnswerQuestion $answerQuestion): void
+    public function trackVoiceTurn(string $uuid, TurnInterpreter $interpreter, HandleTurn $handleTurn): void
     {
         $this->trackingTurnUuid = $uuid;
         $this->turnError = null;
         $this->lastTranscript = null;
-        $this->refreshTurnStatus($interpreter, $answerQuestion);
+        $this->refreshTurnStatus($interpreter, $handleTurn);
     }
 
-    public function refreshTurnStatus(TurnInterpreter $interpreter, AnswerQuestion $answerQuestion): void
+    public function refreshTurnStatus(TurnInterpreter $interpreter, HandleTurn $handleTurn): void
     {
         if ($this->trackingTurnUuid === null) {
             return;
@@ -84,8 +100,10 @@ new class extends Component
             return;
         }
 
+        $user = auth()->user();
+
         try {
-            $interpretation = $interpreter->interpret($turn);
+            $interpretation = $interpreter->interpret($turn, $this->interpreterContext($user));
         } catch (\Throwable) {
             $turn->update([
                 'error_message' => 'Não foi possível entender o que você disse.',
@@ -98,26 +116,49 @@ new class extends Component
 
         $this->lastTranscript = null;
 
-        if ($interpretation->intent === TurnIntent::Question) {
-            if ($interpretation->topic === null) {
-                $this->message = 'Não entendi se você quer as tarefas ou os compromissos.';
-            } else {
-                $this->message = $answerQuestion->handle(auth()->user(), $interpretation->topic);
-            }
+        $outcome = $handleTurn->handle(
+            $user,
+            $turn,
+            $interpretation,
+            $this->proposal,
+            $this->matches,
+            $this->pendingPatch,
+            $this->message,
+        );
 
-            $this->consume($turn);
-
-            return;
-        }
-
-        if ($interpretation->intent === TurnIntent::NotAboutTheBooks) {
-            $this->message = 'Eu só falo dos seus compromissos e tarefas.';
-            $this->consume($turn);
-
-            return;
-        }
+        $this->message = $outcome->message;
+        $this->proposal = $outcome->proposal;
+        $this->matches = $outcome->matches;
+        $this->pendingPatch = $outcome->pendingPatch;
 
         $this->consume($turn);
+    }
+
+    /**
+     * @return array{timezone: string, records: list<array<string, mixed>>, draft: ?array<string, mixed>, matches: list<array<string, mixed>>}
+     */
+    private function interpreterContext(User $user): array
+    {
+        $records = Record::query()
+            ->where('user_id', $user->id)
+            ->onTheBooks()
+            ->orderBy('scheduled_at')
+            ->orderBy('id')
+            ->get()
+            ->map(fn (Record $record) => [
+                'id' => $record->id,
+                'kind' => $record->kind->value,
+                'title' => $record->title,
+                'scheduled_at' => $record->scheduled_at?->timezone($user->timezone)->toIso8601String(),
+            ])
+            ->all();
+
+        return [
+            'timezone' => $user->timezone,
+            'records' => $records,
+            'draft' => $this->proposal,
+            'matches' => $this->matches,
+        ];
     }
 
     private function consume(VoiceTurn $turn): void

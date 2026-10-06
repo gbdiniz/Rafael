@@ -1,6 +1,8 @@
 <?php
 
 use App\Contracts\TurnInterpreter;
+use App\Enums\MutationAction;
+use App\Enums\RecordKind;
 use App\Enums\TurnIntent;
 use App\Interpretation;
 use App\Models\Record;
@@ -112,32 +114,35 @@ it('asks whether the question is about tasks or appointments when the topic is m
     expect(Record::query()->count())->toBe(0);
 });
 
-it('leaves the briefing unchanged when the interpreter returns a mutation draft', function () {
+it('leaves the books unchanged when a mutation draft is incomplete', function () {
     $user = User::factory()->create([
         'conversation_opened_at' => now(),
     ]);
 
     $turn = VoiceTurn::factory()->for($user)->completed()->create([
-        'transcript' => 'marca uma consulta amanhã',
+        'transcript' => 'marca uma consulta',
     ]);
 
     mock(TurnInterpreter::class)
         ->shouldReceive('interpret')
         ->once()
-        ->andReturn(new Interpretation(TurnIntent::MutationDraft));
+        ->andReturn(new Interpretation(
+            TurnIntent::MutationDraft,
+            action: MutationAction::Create,
+            kind: RecordKind::Appointment,
+            title: 'Consulta',
+        ));
 
-    $component = Livewire::actingAs($user)->test('pages::conversation');
-    $message = $component->get('message');
-
-    $component
+    Livewire::actingAs($user)
+        ->test('pages::conversation')
         ->call('trackVoiceTurn', $turn->uuid)
-        ->assertSet('message', $message);
+        ->assertSee('preciso do horário');
 
     expect($turn->fresh()->consumed_at)->not->toBeNull();
     expect(Record::query()->count())->toBe(0);
 });
 
-it('leaves the briefing unchanged when the interpreter returns yes or no', function (TurnIntent $intent) {
+it('leaves the briefing unchanged when yes or no arrives without a proposal', function (TurnIntent $intent) {
     $user = User::factory()->create([
         'conversation_opened_at' => now(),
     ]);
