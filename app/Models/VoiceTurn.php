@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\VoiceTurnStatus;
+use App\Enums\VoiceTurnStatus;
 use Database\Factories\VoiceTurnFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

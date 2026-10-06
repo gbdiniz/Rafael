@@ -1,9 +1,9 @@
 <?php
 
+use App\Enums\RecordKind;
 use App\Models\Record;
 use App\Models\User;
 use App\Models\VoiceTurn;
-use App\RecordKind;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 

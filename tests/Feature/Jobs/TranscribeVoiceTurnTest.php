@@ -1,11 +1,11 @@
 <?php
 
 use App\Contracts\Transcriber;
+use App\Enums\VoiceTurnStatus;
 use App\Exceptions\PermanentTranscriptionException;
 use App\Jobs\TranscribeVoiceTurn;
 use App\Models\User;
 use App\Models\VoiceTurn;
-use App\VoiceTurnStatus;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
 

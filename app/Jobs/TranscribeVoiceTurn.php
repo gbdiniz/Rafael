@@ -3,10 +3,10 @@
 namespace App\Jobs;
 
 use App\Contracts\Transcriber;
+use App\Enums\VoiceTurnStatus;
 use App\Exceptions\PermanentTranscriptionException;
 use App\Exceptions\TransientTranscriptionException;
 use App\Models\VoiceTurn;
-use App\VoiceTurnStatus;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Support\Facades\Storage;

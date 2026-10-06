@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\RecordKind;
+use App\Enums\RecordKind;
 use App\Records\LocalDay;
 use Database\Factories\RecordFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;

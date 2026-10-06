@@ -16,7 +16,7 @@
         class="flex flex-col items-center gap-3"
     >
         @if ($trackingTurnUuid)
-            <p class="text-sm text-ice/70">Transcrevendo...</p>
+            <p class="text-sm text-ice/70">Pensando...</p>
         @endif
 
         <x-talk-control />

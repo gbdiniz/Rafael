@@ -60,4 +60,21 @@ return [
         'timeout' => 60,
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Turn Interpreter
+    |--------------------------------------------------------------------------
+    |
+    | OpenAI-compatible chat completions. OpenRouter is the default URL.
+    |
+    */
+
+    'interpreter' => [
+        'url' => env('INTERPRETER_URL', 'https://openrouter.ai/api/v1/chat/completions'),
+        'api_key' => env('INTERPRETER_API_KEY'),
+        'model' => env('INTERPRETER_MODEL', 'openai/gpt-4o-mini'),
+        'connect_timeout' => 5,
+        'timeout' => 20,
+    ],
+
 ];

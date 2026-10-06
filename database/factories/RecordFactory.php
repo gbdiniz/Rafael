@@ -2,10 +2,10 @@
 
 namespace Database\Factories;
 
+use App\Enums\RecordKind;
 use App\Models\Record;
 use App\Models\User;
 use App\Models\VoiceTurn;
-use App\RecordKind;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

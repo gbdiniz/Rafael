@@ -1,9 +1,9 @@
 <?php
 
+use App\Enums\VoiceTurnStatus;
 use App\Models\Record;
 use App\Models\User;
 use App\Models\VoiceTurn;
-use App\VoiceTurnStatus;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Str;
 

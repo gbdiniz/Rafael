@@ -1,10 +1,10 @@
 <?php
 
+use App\Enums\VoiceTurnStatus;
 use App\Jobs\TranscribeVoiceTurn;
 use App\Models\Record;
 use App\Models\User;
 use App\Models\VoiceTurn;
-use App\VoiceTurnStatus;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Storage;
