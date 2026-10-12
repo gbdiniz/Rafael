@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Laravel (app, session auth, storage, records, queued transcription, Rafael’s replies, and later notifications), Livewire (conversation state and records), Alpine.js (click-to-talk, local capture state, and playback of his turn), Tailwind CSS, GSAP for speaking and capture motion, HTML/CSS/JS with no SPA framework, an installable PWA (manifest and service worker), a Whisper-compatible speech-to-text API, and speech synthesis for Rafael’s voice. Confirmed for this greenfield app. The synthesis provider is undecided.
+Laravel (app, session auth, storage, records, queued transcription, Rafael’s replies, and later notifications), Livewire (conversation state and records), Alpine.js (click-to-talk, local capture state, and playback of his turn), Tailwind CSS, GSAP for speaking and capture motion, HTML/CSS/JS with no SPA framework, an installable PWA (manifest and service worker), a Whisper-compatible speech-to-text API, and Piper speech synthesis for Rafael’s voice (`pt_BR-faber-medium` in the sibling Rafael-Piper repo). Laravel only stores `PIPER_URL`. Confirmed for this greenfield app.
 
 ## Users
 
@@ -53,7 +53,6 @@ After v1:
 Undecided implementation, which does not change the product’s meaning:
 
 - Which Whisper-compatible provider, and how the Laravel job is queued.
-- Which voice speaks for Rafael, and whether that audio is synthesized on the server or in the browser.
 - Hosting, beyond the HTTPS requirement.
 - The exact appointment and task columns in the schema.
 
@@ -63,7 +62,7 @@ Terminology: a record is an appointment (something that happens at a start time)
 
 The product name is Rafael. Interface copy is pt-BR. The interface is a small Rafael kit (tokens and a short component list), owned by this product, and Material 3 is outside the stack.
 
-The home is the conversation. Rafael speaks when the page opens. The bars icon is how Gabriel talks back: no label, click to start, click again to stop. The inbox list is not on this screen. The bookshelf, malote, space, and neumorphism directions are not the home. No logo is confirmed.
+The home is the conversation. Rafael speaks when the page opens. If the browser blocks that audio, a tap on the field plays it. There is no play button. The bars icon is how Gabriel talks back: no label, click to start, click again to stop. The inbox list is not on this screen. The bookshelf, malote, space, and neumorphism directions are not the home. No logo is confirmed.
 
 ## Evidence on Hand
 

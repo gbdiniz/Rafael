@@ -1,4 +1,5 @@
-<div class="flex min-h-screen flex-col items-center justify-center gap-8 px-6">
+<div>
+<div class="pointer-events-none relative z-20 flex min-h-screen flex-col items-center justify-center gap-8 px-6">
     @if ($turnError)
         <p class="max-w-md text-center text-sm text-ice/80">{{ $turnError }}</p>
     @endif
@@ -25,7 +26,7 @@
         @if ($trackingTurnUuid)
             wire:poll.2s="refreshTurnStatus"
         @endif
-        class="flex flex-col items-center gap-3"
+        class="pointer-events-auto relative z-30 flex flex-col items-center gap-3"
     >
         @if ($trackingTurnUuid)
             <p class="text-sm text-ice/70">Pensando...</p>
@@ -33,4 +34,32 @@
 
         <x-talk-control />
     </div>
+</div>
+
+<div
+    wire:ignore
+    x-data="speechPlayback({
+        streamUrl: @js(route('speech.stream')),
+        csrfToken: @js(csrf_token()),
+        speakOnLoad: @js(! $speechBlocked && $message !== ''),
+    })"
+    x-on:rafael-speak.window="schedulePlay()"
+    x-init="if (speakOnLoad) schedulePlay()"
+>
+    <div x-bind:hidden="! waitingForTap" hidden class="speech-wave pointer-events-none fixed inset-0 z-0"></div>
+    <button
+        type="button"
+        x-bind:hidden="! waitingForTap"
+        hidden
+        class="fixed inset-0 z-10 cursor-pointer border-0 bg-transparent p-0"
+        @click="tap()"
+        aria-label="Ouvir"
+    ></button>
+    <p
+        x-bind:hidden="! blocked"
+        hidden
+        x-text="failure"
+        class="pointer-events-none fixed inset-x-0 bottom-24 z-20 px-6 text-center text-sm text-ice/80"
+    ></p>
+</div>
 </div>

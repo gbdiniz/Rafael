@@ -9,3 +9,36 @@
     --color-void: #05070c;
     --color-ice: #d8f4ff;
 }
+
+[x-cloak] {
+    display: none !important;
+}
+
+.speech-wave {
+    background-color: var(--color-void);
+    background-image: linear-gradient(
+        120deg,
+        var(--color-void),
+        color-mix(in srgb, var(--color-ice) 40%, transparent),
+        var(--color-void)
+    );
+    background-size: 200% 200%;
+    animation: speech-wave 6s ease-in-out infinite;
+}
+
+@keyframes speech-wave {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .speech-wave {
+        animation: none;
+    }
+}

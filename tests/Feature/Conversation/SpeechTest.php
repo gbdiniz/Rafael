@@ -21,6 +21,17 @@ it('renders the reply as text when speech is blocked', function () {
         ->assertSee('Não foi possível falar.');
 });
 
+it('renders the reply as text when the piper url is missing', function () {
+    config(['rafael.piper.url' => '']);
+
+    $user = User::factory()->create();
+
+    Livewire::actingAs($user)
+        ->test('pages::conversation')
+        ->assertSee('Olá.')
+        ->assertSee('Não foi possível falar.');
+});
+
 it('does not store an audio file when speaking a reply', function () {
     Storage::fake('local');
     Storage::fake('public');

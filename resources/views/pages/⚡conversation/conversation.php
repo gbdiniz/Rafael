@@ -3,6 +3,7 @@
 use App\Actions\Conversation\Briefing;
 use App\Actions\Conversation\HandleTurn;
 use App\Actions\Conversation\OpenConversation;
+use App\Contracts\SpeechPhraser;
 use App\Contracts\SpeechSynthesizer;
 use App\Contracts\TurnInterpreter;
 use App\Enums\VoiceTurnStatus;
@@ -54,15 +55,15 @@ new class extends Component
         $this->speakReply($speech);
     }
 
-    public function trackVoiceTurn(string $uuid, TurnInterpreter $interpreter, HandleTurn $handleTurn, SpeechSynthesizer $speech): void
+    public function trackVoiceTurn(string $uuid, TurnInterpreter $interpreter, HandleTurn $handleTurn, SpeechSynthesizer $speech, SpeechPhraser $speechPhraser): void
     {
         $this->trackingTurnUuid = $uuid;
         $this->turnError = null;
         $this->lastTranscript = null;
-        $this->refreshTurnStatus($interpreter, $handleTurn, $speech);
+        $this->refreshTurnStatus($interpreter, $handleTurn, $speech, $speechPhraser);
     }
 
-    public function refreshTurnStatus(TurnInterpreter $interpreter, HandleTurn $handleTurn, SpeechSynthesizer $speech): void
+    public function refreshTurnStatus(TurnInterpreter $interpreter, HandleTurn $handleTurn, SpeechSynthesizer $speech, SpeechPhraser $speechPhraser): void
     {
         if ($this->trackingTurnUuid === null) {
             return;
@@ -129,7 +130,7 @@ new class extends Component
             $this->message,
         );
 
-        $this->message = $outcome->message;
+        $this->message = $this->spokenLine($outcome->message, $speechPhraser);
         $this->proposal = $outcome->proposal;
         $this->matches = $outcome->matches;
         $this->pendingPatch = $outcome->pendingPatch;
@@ -165,9 +166,33 @@ new class extends Component
         ];
     }
 
+    private function spokenLine(string $line, SpeechPhraser $speechPhraser): string
+    {
+        try {
+            $spoken = $speechPhraser->phrase($line);
+        } catch (\Throwable) {
+            return $line;
+        }
+
+        if ($spoken === '') {
+            return $line;
+        }
+
+        return $spoken;
+    }
+
     private function speakReply(SpeechSynthesizer $speech): void
     {
         $this->speechBlocked = ! $speech->speak($this->message);
+
+        if ($this->speechBlocked) {
+            session()->forget('rafael.speech');
+
+            return;
+        }
+
+        session(['rafael.speech' => $this->message]);
+        $this->dispatch('rafael-speak');
     }
 
     private function consume(VoiceTurn $turn): void

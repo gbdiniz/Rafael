@@ -46,9 +46,22 @@ components:
     backgroundColor: "transparent"
     textColor: "{colors.ice}"
     typography: "{typography.body}"
+  secretary-line:
+    backgroundColor: "transparent"
+    textColor: "{colors.ice}"
+    typography: "{typography.body}"
+  speech-fail:
+    backgroundColor: "transparent"
+    textColor: "{colors.ice}"
+    typography: "{typography.body}"
+  waiting-field:
+    backgroundColor: "{colors.void}"
+    textColor: "{colors.ice}"
 ---
 
 # Design System: Rafael
+
+The frames live in [Figma](https://www.figma.com/design/FA46jNBr6DsV8iXOI1kC6h).
 
 ## Overview
 
@@ -56,14 +69,16 @@ components:
 
 Rafael’s visual world is a near-black field and one ice-cyan mark. The home is the talk: five rounded bars sit alone in the center of the void. There is no wordmark, no inbox list, no holographic ring, and no labeled button. Presence is the bars; everything else is absence.
 
-Density is extreme sparsity. The palette is two values. Motion lives only inside the bars while Rafael is listening. Failure is plain pt-BR type under the control — named, recoverable, then gone again. The aesthetic philosophy is refusal: if it is not the talk, it does not appear.
+Density is extreme sparsity. The palette is two values. Motion lives inside the bars while Rafael is listening. When the browser blocks his voice, ice moves across the void until a tap; that motion is still only void and ice. Failure is plain pt-BR type under the line — named, recoverable, then gone again. The aesthetic philosophy is refusal: if it is not the talk or his line, it does not appear.
 
 **Key Characteristics:**
-- Full-bleed void field (`#05070c`) with no texture, gradient, or second surface
+- Full-bleed void field (`#05070c`). No texture, no third color, no second surface
+- His line is ice type, centered, above the control
 - One 88×88 ice control: five symmetric rounded bars (`#d8f4ff`)
-- Idle control unlabeled; aria-label only
-- A click starts the bars; another click returns them to rest
-- Mic denial is centered ice type below the control — no toast, modal, or chrome
+- Idle control unlabeled; aria-label only. No play icon
+- A click on the bars starts them; another click returns them to rest
+- A blocked voice is ice moving on void. A tap on the field plays the line and does not start the microphone. The bars stay above that tap
+- Mic denial and a failed voice are centered ice type — no toast, modal, or chrome
 
 ## Colors
 
@@ -78,7 +93,7 @@ Two colors only. Ice is the sole accent; void is the entire field.
 ### Named Rules
 **The Two-Value Rule.** Only void and ice. No third fill, tint wash, or brand accent on this world’s surfaces.
 
-**The Ice-Is-Signal Rule.** Ice appears only as the control, its focus ring, selection, or failure copy. It is never decorative ornament.
+**The Ice-Is-Signal Rule.** Ice appears as the control, his line, the waiting motion, focus, selection, or failure copy. It is never a third brand color and never a card.
 
 ## Typography
 
@@ -86,22 +101,22 @@ Two colors only. Ice is the sole accent; void is the entire field.
 **Body Font:** system-ui (with sans-serif fallback)
 **Label/Mono Font:** system-ui (same stack; heavier weight for titles)
 
-**Character:** Utility prose, not display identity. Type appears only when the microphone fails; idle home has no visible words.
+**Character:** Utility prose, not display identity. Type on the home is his line, or a failure. There is no wordmark.
 
 ### Hierarchy
 - **Label** (560, 16px, 1.4): Failure title (`Sem microfone`). Block display, 4px gap below.
 - **Body** (400, 16px, 1.4): Failure recovery line (`Permita o microfone para falar com Rafael.`). Centered, full width within side insets.
 
 ### Named Rules
-**The Silent Idle Rule.** No visible type on the idle home. Copy appears only for mic denial.
+**The Line-Only Type Rule.** Visible type is his line or a failure. No idle label on the bars, no play word, no wordmark.
 
 **The Bars-Are-Brand Rule.** Do not invent a display face or wordmark for the home. The five bars carry identity.
 
 ## Layout
 
-The spatial model is a single centered cell: full viewport height (`100dvh`), CSS grid `place-items: center`. The talk control is fixed at 88×88px and stays centered on phone (390×844) and desktop (1440×900) alike — no breakpoint restyle of size or position.
+The spatial model is a single centered column: full viewport height (`100dvh`). His line sits above the talk control. The talk control is fixed at 88×88px and stays centered on phone (390×844) and desktop (1440×900) alike — no breakpoint restyle of size or position.
 
-Failure copy sits absolutely at `top: calc(50% + 72px)` with `24px` side insets, centered. Focus outline sits `10px` outside the control. No columns, no nav chrome, no secondary regions.
+Failure copy sits under the line, centered, with `24px` side insets. Focus outline sits `10px` outside the control. No columns, no nav chrome, no secondary regions. When playback is blocked, the field itself is the tap target and the bars stay above it.
 
 ### Named Rules
 **The Centered Talk Rule.** The 88px bars remain the sole visual anchor at every viewport; do not pin them to corners or grow them with breakpoints.
@@ -111,7 +126,7 @@ Failure copy sits absolutely at `top: calc(50% + 72px)` with `24px` side insets,
 Flat. No box-shadows, no blur, no layered panels. Depth is not simulated; the void is continuous and the bars sit in it as color, not as lifted objects.
 
 ### Named Rules
-**The Flat Field Rule.** No shadows, glows, or ring frames. Recording state is bar motion, not elevation.
+**The Flat Field Rule.** No shadows, glows, or ring frames. Recording state is bar motion, not elevation. The waiting field is ice moving on void, not a lifted panel.
 
 ## Shapes
 
@@ -131,24 +146,39 @@ The only idle interactive element. Transparent hit target, ice-colored bars, poi
 - **Focus:** `2px` ice outline, `10px` offset
 - **Reduced motion:** animations off; bars at `opacity: 0.55` while recording
 
+### Secretary line
+His words, centered, ice, body weight. The greeting, the briefing, the rewritten reply, or the PHP line when the rewrite fails. No play icon beside it.
+
+### Waiting field
+Shown only while the browser has blocked playback.
+
+- **Field:** void, with ice drifting across it. No third color, no play glyph
+- **Tap:** the field plays the waiting line. It does not start the microphone
+- **Bars:** stay visible and above the tap. They remain the microphone
+- **Line:** stays readable on top of the motion
+
 ### Mic Denial
-Absolute failure block under the control when getUserMedia fails.
+Failure block under the line when getUserMedia fails.
 
 - **Title:** strong, weight 560, ice
 - **Body:** span, weight 400, ice
-- **Placement:** centered, `72px` below vertical center, `24px` horizontal inset
+- **Placement:** centered, `24px` horizontal inset
 - **State:** hidden until denial; no animation chrome
+
+### Speech failure
+One ice body line under his words: `Não foi possível falar. A mensagem está na tela.` Hidden until Piper fails. The words he would have said stay on screen.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep the home as void + one unlabeled 88px ice bars control.
-- **Do** use ice for bars, focus, selection, and mic-failure copy only.
+- **Do** keep the home as void, his ice line, and one unlabeled 88px ice bars control.
+- **Do** use only void and ice. The waiting motion is ice moving on void.
 - **Do** animate bars on click and stop on the next click; honor `prefers-reduced-motion`.
-- **Do** show pt-BR denial as title + recovery under the control when the mic is blocked.
+- **Do** show pt-BR denial under the line when the mic is blocked, and the speech-failure line when Piper fails.
 
 ### Don't:
 - **Don't** put the inbox list, date, logo, or wordmark on the home.
 - **Don't** wrap the bars in a holographic ring, glow, or second frame.
-- **Don't** add a visible idle label, badge, or kicker on the control.
+- **Don't** add a visible idle label, badge, play icon, or kicker on the control.
 - **Don't** introduce a third brand color or a card/panel surface on this field.
+- **Don't** let a tap on the waiting field start the microphone.

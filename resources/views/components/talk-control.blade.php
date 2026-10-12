@@ -20,7 +20,8 @@
     </button>
 
     <p
-        x-show="microphoneDenied"
+        x-bind:hidden="! microphoneDenied"
+        hidden
         class="max-w-md text-center text-sm text-ice"
         data-talk-microphone-denied
     >

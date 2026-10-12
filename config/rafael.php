@@ -77,4 +77,20 @@ return [
         'timeout' => 20,
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Piper
+    |--------------------------------------------------------------------------
+    |
+    | Base URL of the sibling Rafael-Piper service. The voice is chosen there.
+    |
+    */
+
+    'piper' => [
+        'url' => env('PIPER_URL', 'http://127.0.0.1:5000'),
+        'token' => env('PIPER_TOKEN'),
+        'connect_timeout' => 5,
+        'timeout' => 60,
+    ],
+
 ];

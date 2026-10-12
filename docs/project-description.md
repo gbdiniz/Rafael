@@ -25,7 +25,7 @@ Web only. No SPA framework. No native shell in this phase.
 - **HTML / CSS / JS** — no SPA framework
 - **PWA** — manifest and service worker. A phone home-screen icon opens the same conversation. HTTPS is required for the PWA, the microphone, and speech output
 - **Whisper-compatible API** — server-side speech-to-text via the separate [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) repo (self-hosted faster-whisper). Rafael queues transcription on Redis.
-- **Speech synthesis** — Rafael’s voice, server audio or the browser. The provider is undecided
+- **Speech synthesis** — Rafael’s voice is Piper, voice `pt_BR-faber-medium`, in the separate Rafael-Piper repo (the same split as Whisper). Laravel only stores `PIPER_URL` and proxies a stream. His replies are not stored as audio.
 
 Components in the kit:
 
@@ -46,7 +46,11 @@ Audio is uploaded over HTTPS, transcribed, then deleted. His replies are spoken 
 
 ## Core workflows
 
-**Open the app.** Rafael speaks first. The first visit is a greeting. Every later visit starts with today’s appointments and any earlier appointment that was never removed. Then he waits.
+**Open the app.** Rafael speaks first. The first visit is a greeting, spoken as written. Every later visit starts with today’s appointments and any earlier appointment that was never removed, spoken as written. Then he waits. If the browser blocks that audio, a tap on the field plays it and does not start the microphone. The bars stay the microphone.
+
+**After a voice turn.** PHP still writes the line. A second completion rewrites it for the ear. The screen and the voice use that rewrite, and every fact in the PHP line stays. If the completion fails, both use the PHP line. If Piper fails, the text stays and he says he could not speak.
+
+**How the audio moves.** Laravel puts the line in the session key `rafael.speech`. The browser POSTs to the authenticated speech route and cannot send the text. That route proxies Rafael-Piper `POST /synthesize/stream`. The body is a chunked WAV: a header with an unknown length, then PCM frames as Piper yields them. Stock Piper `POST /synthesize` is not this path. It returns one finished WAV. Nothing is written to Storage. A talk click resumes audio so a later reply can play. If the greeting is blocked, the field waits for a tap (`Ouvir`). The bars stay the microphone.
 
 **Click to talk.**
 

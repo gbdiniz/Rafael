@@ -12,6 +12,7 @@ Read the skill that matches the change before writing code. There is no existing
 
 | Change | Skill |
 |---|---|
+| A new feature: docs, then Figma, then code, then notes | `.agents/skills/feature-flow` |
 | PHP, Eloquent, migrations, jobs, HTTP, config | `.agents/skills/laravel-best-practices` |
 | Livewire pages, `wire:` directives, Alpine inside a Livewire page | `.agents/skills/livewire-development` |
 | Tests | `.agents/skills/testing-best-practices` |
@@ -19,7 +20,7 @@ Read the skill that matches the change before writing code. There is no existing
 
 - **Actions.** Create, change, remove, briefing, and answer are action classes with `handle()`. The Livewire page calls the action. No repository layer.
 - **Livewire 4.** The conversation is a full-page multi-file component: `php artisan make:livewire pages::conversation --mfc` creates `resources/views/pages/⚡conversation/conversation.php` and `conversation.blade.php`. Register it with `Route::livewire('/', 'pages::conversation')`. Do not use `--class`. `config/livewire.php` sets `make_command.type` to `mfc` and `make_command.emoji` to `true`. `AuthScreen`, `SecretaryTurn`, and `TalkControl` are Blade or Alpine pieces inside that page, not extra Livewire components. Alpine ships with Livewire 4: do not add an Alpine package. The recorder island is `wire:ignore` so a morph cannot destroy a recording. Lists use `wire:key`. Show `wire:loading` while a turn is transcribing. Validate inside the page action the same way a form request would.
-- **Boundaries.** Whisper runs in the separate [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) repo. Rafael only implements the `Transcriber` HTTP client; do not add Docker or Nginx for Whisper inside this repo. Speech synthesis and turn interpretation are contracts, bound in `AppServiceProvider`. Constructor-inject them. Everything else stays concrete.
+- **Boundaries.** Whisper runs in the separate [Rafael-Whisper](https://github.com/gbdiniz/Rafael-Whisper) repo. Piper runs in the sibling Rafael-Piper repo. Rafael only implements the HTTP clients; do not add Docker or Nginx for either service inside this repo. Speech synthesis, speech phrasing, and turn interpretation are contracts, bound in `AppServiceProvider`. Constructor-inject them. Everything else stays concrete.
 - **HTTP.** A guest on a browser route is redirected to login. The audio upload uses a form request with array rules. One user, so no policy matrix.
 - **Eloquent.** Local scopes for on-the-books, today, and missed. Every list has an explicit `orderBy`, with `id` as the tie-breaker. Cast `kind` and `status` with backed enums. `$fillable` only for attributes the app mass-assigns. Do not set `$guarded = []`.
 - **Migrations.** `php artisan make:migration`. `foreignId()->constrained()` plus the schema delete behavior (`restrictOnDelete` on `user_id`, `nullOnDelete` on `last_voice_turn_id`). Do not add a second index on a column the foreign key already indexes. Do not edit the shipped Laravel migrations. Runtime database is **MySQL**; Pest keeps SQLite `:memory:` in `phpunit.xml`.
@@ -506,6 +507,29 @@ Depends on Phase 5.1. **US-06.** Typed notes are out of v1.
 
 Bind a fake synthesizer with `Pest\Laravel\mock`. Do not assert the binding class name.
 
+### Phase 8.4 — He speaks with Piper
+
+Depends on Phase 8.2 and Phase 6. **US-02, US-03, US-06.**
+
+- [x] Opening greeting and briefing are spoken as PHP wrote them. No speech completion on `mount`.
+- [x] After `HandleTurn`, a second completion rewrites that line. The screen and the voice use the rewrite. Every fact in the PHP line stays. A failed completion keeps the PHP line.
+- [x] Piper runs in the sibling Rafael-Piper repo, voice `pt_BR-faber-medium`. Laravel stores `PIPER_URL` and proxies a stream. The browser cannot submit the text. No reply file is stored.
+- [x] Playback starts when the line exists. If the browser blocks it, ice moves on the void until a tap. That tap does not start the microphone. A new line stops the previous one.
+- [x] If Piper fails, the text stays and the page says `Não foi possível falar. A mensagem está na tela.`
+
+The stream is `POST /synthesize/stream`: a WAV header with an unknown length, then PCM. Stock `POST /synthesize` is not used. The line lives in the session key `rafael.speech`. The talk click resumes the page audio context. The Figma file is [Rafael](https://www.figma.com/design/FA46jNBr6DsV8iXOI1kC6h).
+
+**Feature tests:** `tests/Feature/Services/HttpSpeechPhraserTest.php`, `tests/Feature/Conversation/SpeechPhraseTest.php`, `tests/Feature/Conversation/SpeechStreamTest.php`
+
+- `it('returns the speech string from the completion')`
+- `it('shows the speech string after a voice turn')`
+- `it('keeps the php line when the speech completion fails')`
+- `it('does not phrase the opening line')`
+- `it('redirects a guest to login when streaming speech')`
+- `it('streams the session line and stores no audio file')`
+
+Turn tests that are not about speech keep asserting the PHP line. They do not call OpenRouter.
+
 ### Phase 8.3 — No typed notes
 
 - [x] The conversation has no text field and no route that saves a record without audio.
@@ -581,11 +605,11 @@ Do not implement these while building Phases 2–10. No feature tests until a la
 | Story | Phases |
 |---|---|
 | US-01 Log in | 3.1, 3.2 |
-| US-02 First greeting | 2.1, 4.2 |
-| US-03 Today and missed | 2.4, 2.5, 4.3 |
 | US-04 Click to talk | 5.1–5.7 |
 | US-05 Ask about tasks and appointments | 6.1–6.3 |
-| US-06 Clear failure | 8.1–8.3 |
+| US-02 First greeting | 2.1, 4.2, 8.4 |
+| US-03 Today and missed | 2.4, 2.5, 4.3, 8.4 |
+| US-06 Clear failure | 8.1–8.4 |
 | US-07 Create after yes | 7.1, 7.2 |
 | US-08 Change title, time, type | 7.3 |
 | US-09 Remove after yes | 7.4 |

@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import { unlockAudio } from './speech-playback';
 
 export function talkControl({ uploadUrl, csrfToken }) {
     return {
@@ -10,6 +11,8 @@ export function talkControl({ uploadUrl, csrfToken }) {
         bars: [],
 
         toggle() {
+            unlockAudio();
+
             if (this.recording) {
                 this.stop();
             } else {

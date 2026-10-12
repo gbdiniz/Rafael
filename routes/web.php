@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RecordController;
+use App\Http\Controllers\SpeechStreamController;
 use App\Http\Controllers\VoiceTurnController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,4 +29,5 @@ Route::middleware('auth')->group(function (): void {
     Route::livewire('/', 'pages::conversation')->name('conversation');
     Route::get('records', RecordController::class)->name('records.index');
     Route::post('voice-turns', [VoiceTurnController::class, 'store'])->name('voice-turns.store');
+    Route::post('speech', SpeechStreamController::class)->name('speech.stream');
 });

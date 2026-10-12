@@ -2,15 +2,19 @@
 
 namespace Tests;
 
+use App\Contracts\SpeechPhraser;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\Schema;
 use RuntimeException;
+use Tests\Fakes\EchoSpeechPhraser;
 
 abstract class TestCase extends BaseTestCase
 {
     protected function setUp(): void
     {
         parent::setUp();
+
+        $this->app->bind(SpeechPhraser::class, EchoSpeechPhraser::class);
 
         $connection = config('database.default');
         $driver = Schema::getConnection()->getDriverName();

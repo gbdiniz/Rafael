@@ -13,17 +13,19 @@ A day is Gabriel’s local calendar day. A missed appointment is one whose start
 
 **US-02. Hear a greeting the first time.** As Gabriel, I want Rafael to greet me the first time I open the app, so that an empty day is not recited at me.
 
-- The first open is a greeting only.
+- The first open is a greeting only. He speaks that greeting as it is written (`Olá.`).
 - He does not list appointments or tasks, and he does not explain the product.
 - Then he waits.
+- If the browser blocks that audio, the field waits for a tap. The tap plays the greeting. It does not start the microphone. There is no play button. The bars stay the microphone.
 
 **US-03. Hear today and what I missed.** As Gabriel, I want Rafael to tell me today’s appointments and any earlier appointment I never removed, so that I know what is on today’s books and what is still hanging.
 
-- This happens on every open after the first.
+- This happens on every open after the first. He speaks that briefing as it is written.
 - He includes every appointment whose start falls on today.
 - He includes every appointment whose start is before today and that was never removed.
 - He does not recite future days, and he does not recite tasks.
 - Then he waits.
+- If the browser blocks that audio, the same tap as US-02 plays the briefing and does not start the microphone.
 
 ## Talk
 
@@ -43,7 +45,10 @@ A day is Gabriel’s local calendar day. A missed appointment is one whose start
 **US-06. Hear a clear failure.** As Gabriel, I want to be told when the microphone or his voice is blocked, so that I know why the turn did not happen and what to do.
 
 - A denied microphone says that it is blocked and how to allow it.
-- If he cannot speak, that failure is said in words too.
+- If he cannot speak, the same words stay on screen and the line is `Não foi possível falar. A mensagem está na tela.`
+- After a voice turn, a second completion rewrites the line PHP already wrote. The screen and the voice use that rewrite. Every fact in the PHP line stays: the title, the time, and the ask for yes. It does not add a fact.
+- If that completion fails, the screen and the voice both use the PHP line.
+- The opening greeting and the briefing are not rewritten.
 - Typed notes without a microphone are not available.
 
 ## Change the books
