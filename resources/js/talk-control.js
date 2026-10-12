@@ -3,6 +3,7 @@ import gsap from 'gsap';
 export function talkControl({ uploadUrl, csrfToken }) {
     return {
         recording: false,
+        microphoneDenied: false,
         mediaRecorder: null,
         chunks: [],
         barTimeline: null,
@@ -17,7 +18,18 @@ export function talkControl({ uploadUrl, csrfToken }) {
         },
 
         async start() {
-            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            let stream;
+
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            } catch {
+                this.microphoneDenied = true;
+                this.recording = false;
+
+                return;
+            }
+
+            this.microphoneDenied = false;
             this.mediaRecorder = new MediaRecorder(stream);
             this.chunks = [];
 

@@ -415,7 +415,7 @@ Actions: `CreateRecord`, `ChangeRecord`, `RemoveRecord`, each with `handle()`. T
 
 ### Phase 7.1 — Proposal is not a row
 
-- [ ] `SecretaryTurn` repeats the proposal and waits. `records` is unchanged until yes.
+- [x] `SecretaryTurn` repeats the proposal and waits. `records` is unchanged until yes.
 
 **Feature tests:** `tests/Feature/Records/ProposalTest.php`
 
@@ -427,9 +427,9 @@ Assert with `assertDatabaseCount` or `expect()` on the original attributes. Do n
 
 ### Phase 7.2 — Create after yes
 
-- [ ] Appointment needs a title and a start time. Task needs a title; due is optional.
-- [ ] The repeat includes title, time, and type. Yes calls `CreateRecord`.
-- [ ] `last_voice_turn_id` points at the describing turn when that turn still exists.
+- [x] Appointment needs a title and a start time. Task needs a title; due is optional.
+- [x] The repeat includes title, time, and type. Yes calls `CreateRecord`.
+- [x] `last_voice_turn_id` points at the describing turn when that turn still exists.
 
 **Feature tests:** `tests/Feature/Records/CreateRecordTest.php`
 
@@ -444,9 +444,9 @@ The two task cases stay separate: the assertions differ.
 
 ### Phase 7.3 — Change title, time, or type
 
-- [ ] Yes updates the same row’s title, `scheduled_at`, and `kind`.
-- [ ] A type flip keeps the same `scheduled_at`.
-- [ ] A task with null `scheduled_at` is not flipped until a start time is supplied. Until then the row stays a task and he asks for the time.
+- [x] Yes updates the same row’s title, `scheduled_at`, and `kind`.
+- [x] A type flip keeps the same `scheduled_at`.
+- [x] A task with null `scheduled_at` is not flipped until a start time is supplied. Until then the row stays a task and he asks for the time.
 
 **Feature tests:** `tests/Feature/Records/ChangeRecordTest.php`
 
@@ -457,8 +457,8 @@ The two task cases stay separate: the assertions differ.
 
 ### Phase 7.4 — Remove after yes
 
-- [ ] He names the record. Yes calls `RemoveRecord`, which soft-deletes. No leaves the row.
-- [ ] A removed appointment is absent from the missed briefing and from answers.
+- [x] He names the record. Yes calls `RemoveRecord`, which soft-deletes. No leaves the row.
+- [x] A removed appointment is absent from the missed briefing and from answers.
 
 **Feature tests:** `tests/Feature/Records/RemoveRecordTest.php`
 
@@ -471,8 +471,8 @@ Use `assertSoftDeleted`. The briefing case calls `travelTo()`.
 
 ### Phase 7.5 — Several records match
 
-- [ ] When more than one on-the-books record matches, he names each match and writes nothing. He does not choose. The match list has `wire:key` on each row.
-- [ ] After Gabriel chooses, Phase 7.3 or Phase 7.4 still waits for yes.
+- [x] When more than one on-the-books record matches, he names each match and writes nothing. He does not choose. The match list has `wire:key` on each row.
+- [x] After Gabriel chooses, Phase 7.3 or Phase 7.4 still waits for yes.
 
 **Feature tests:** `tests/Feature/Records/DisambiguationTest.php`
 
@@ -487,7 +487,7 @@ Depends on Phase 5.1. **US-06.** Typed notes are out of v1.
 
 ### Phase 8.1 — Microphone blocked
 
-- [ ] A denied microphone is rendered in pt-BR: it is blocked, and how to allow it. No `voice_turns` row, because the failure happens before upload.
+- [x] A denied microphone is rendered in pt-BR: it is blocked, and how to allow it. No `voice_turns` row, because the failure happens before upload.
 
 **Feature tests:** `tests/Feature/Conversation/MicrophoneDeniedTest.php`
 
@@ -496,8 +496,8 @@ Depends on Phase 5.1. **US-06.** Typed notes are out of v1.
 
 ### Phase 8.2 — He cannot speak
 
-- [ ] `SpeechSynthesizer` contract. If synthesis is blocked, the same words are in the HTML, not only in audio.
-- [ ] The success path still stores no reply file (Phase 5.6).
+- [x] `SpeechSynthesizer` contract. If synthesis is blocked, the same words are in the HTML, not only in audio.
+- [x] The success path still stores no reply file (Phase 5.6).
 
 **Feature tests:** `tests/Feature/Conversation/SpeechTest.php`
 
@@ -508,7 +508,7 @@ Bind a fake synthesizer with `Pest\Laravel\mock`. Do not assert the binding clas
 
 ### Phase 8.3 — No typed notes
 
-- [ ] The conversation has no text field and no route that saves a record without audio.
+- [x] The conversation has no text field and no route that saves a record without audio.
 
 **Feature tests:** `tests/Feature/Conversation/TypedNoteTest.php`
 
@@ -523,8 +523,8 @@ Depends on Phase 4.1 and Phase 5.1. The installed icon opens the same conversati
 
 ### Phase 9.1 — Manifest and service worker
 
-- [ ] Manifest `start_url` is `/`. The service worker is served. Login is still required for the conversation.
-- [ ] HTTPS stays an operational requirement, not a table.
+- [x] Manifest `start_url` is `/`. The service worker is served. Login is still required for the conversation.
+- [x] HTTPS stays an operational requirement, not a table.
 
 **Feature tests:** `tests/Feature/Pwa/ManifestTest.php`
 
@@ -540,9 +540,9 @@ Depends on Phase 2.3 and Phase 2.4. Specified in the schema. Not implemented.
 
 ### Phase 10.1 — Prune after 7 days
 
-- [ ] `voice-turns:prune` hard-deletes every `voice_turns` row with `created_at` older than 7 days, in every status, including `uploaded` and `transcribing`.
-- [ ] The record’s `last_voice_turn_id` becomes null. `last_transcript` stays.
-- [ ] Newer rows stay.
+- [x] `voice-turns:prune` hard-deletes every `voice_turns` row with `created_at` older than 7 days, in every status, including `uploaded` and `transcribing`.
+- [x] The record’s `last_voice_turn_id` becomes null. `last_transcript` stays.
+- [x] Newer rows stay.
 
 **Feature tests:** `tests/Feature/Console/PruneVoiceTurnsTest.php`. `travelTo()` both sides of the cutoff. One test that creates one row per status is enough, because the result is the same. Do not add a dataset unless setup and assertions stay identical.
 
@@ -552,7 +552,7 @@ Depends on Phase 2.3 and Phase 2.4. Specified in the schema. Not implemented.
 
 ### Phase 10.2 — Schedule
 
-- [ ] `routes/console.php` schedules the command `daily()->withoutOverlapping()`.
+- [x] `routes/console.php` schedules the command `daily()->withoutOverlapping()`.
 
 **Feature tests:**
 

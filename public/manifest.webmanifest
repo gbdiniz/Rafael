@@ -1,0 +1,10 @@
+{
+    "name": "Rafael",
+    "short_name": "Rafael",
+    "description": "Conversa por voz com Rafael.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#050505",
+    "theme_color": "#050505"
+}

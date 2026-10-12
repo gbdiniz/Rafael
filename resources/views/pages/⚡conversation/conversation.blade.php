@@ -9,6 +9,10 @@
 
     <x-secretary-turn :message="$message" />
 
+    @if ($speechBlocked)
+        <p class="max-w-md text-center text-sm text-ice/80">Não foi possível falar. A mensagem está na tela.</p>
+    @endif
+
     @if (count($matches) > 0)
         <ul class="flex max-w-md flex-col gap-2 text-center text-sm text-ice/90">
             @foreach ($matches as $match)

@@ -3,6 +3,7 @@
 use App\Actions\Conversation\Briefing;
 use App\Actions\Conversation\HandleTurn;
 use App\Actions\Conversation\OpenConversation;
+use App\Contracts\SpeechSynthesizer;
 use App\Contracts\TurnInterpreter;
 use App\Enums\VoiceTurnStatus;
 use App\Models\Record;
@@ -36,7 +37,9 @@ new class extends Component
      */
     public ?array $pendingPatch = null;
 
-    public function mount(OpenConversation $openConversation, Briefing $briefing): void
+    public bool $speechBlocked = false;
+
+    public function mount(OpenConversation $openConversation, Briefing $briefing, SpeechSynthesizer $speech): void
     {
         App::setLocale('pt_BR');
 
@@ -44,22 +47,22 @@ new class extends Component
 
         if ($user->conversation_opened_at === null) {
             $this->message = $openConversation->handle($user);
-
-            return;
+        } else {
+            $this->message = $briefing->handle($user, now());
         }
 
-        $this->message = $briefing->handle($user, now());
+        $this->speakReply($speech);
     }
 
-    public function trackVoiceTurn(string $uuid, TurnInterpreter $interpreter, HandleTurn $handleTurn): void
+    public function trackVoiceTurn(string $uuid, TurnInterpreter $interpreter, HandleTurn $handleTurn, SpeechSynthesizer $speech): void
     {
         $this->trackingTurnUuid = $uuid;
         $this->turnError = null;
         $this->lastTranscript = null;
-        $this->refreshTurnStatus($interpreter, $handleTurn);
+        $this->refreshTurnStatus($interpreter, $handleTurn, $speech);
     }
 
-    public function refreshTurnStatus(TurnInterpreter $interpreter, HandleTurn $handleTurn): void
+    public function refreshTurnStatus(TurnInterpreter $interpreter, HandleTurn $handleTurn, SpeechSynthesizer $speech): void
     {
         if ($this->trackingTurnUuid === null) {
             return;
@@ -130,6 +133,7 @@ new class extends Component
         $this->proposal = $outcome->proposal;
         $this->matches = $outcome->matches;
         $this->pendingPatch = $outcome->pendingPatch;
+        $this->speakReply($speech);
 
         $this->consume($turn);
     }
@@ -159,6 +163,11 @@ new class extends Component
             'draft' => $this->proposal,
             'matches' => $this->matches,
         ];
+    }
+
+    private function speakReply(SpeechSynthesizer $speech): void
+    {
+        $this->speechBlocked = ! $speech->speak($this->message);
     }
 
     private function consume(VoiceTurn $turn): void

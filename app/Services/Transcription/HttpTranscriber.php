@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use RuntimeException;
+use Throwable;
 
 class HttpTranscriber implements Transcriber
 {
@@ -30,12 +31,20 @@ class HttpTranscriber implements Transcriber
             throw new PermanentTranscriptionException('O áudio gravado está vazio ou é curto demais.');
         }
 
-        $response = $this->client()
-            ->attach('audio_file', $contents, basename($turn->audio_path))
-            ->post($this->transcriptionUrl($turn));
+        $startedAt = hrtime(true);
+
+        try {
+            $response = $this->client()
+                ->attach('audio_file', $contents, basename($turn->audio_path))
+                ->post($this->transcriptionUrl($turn));
+        } catch (Throwable $exception) {
+            $this->logTranscription($turn, $startedAt, succeeded: false, message: $exception->getMessage());
+
+            throw $exception;
+        }
 
         if ($response->failed()) {
-            $this->throwForFailedResponse($response);
+            $this->throwForFailedResponse($response, $turn, $startedAt);
         }
 
         try {
@@ -44,7 +53,7 @@ class HttpTranscriber implements Transcriber
             throw new TransientTranscriptionException($exception->getMessage(), previous: $exception);
         } catch (RequestException $exception) {
             if ($exception->response !== null) {
-                $this->throwForFailedResponse($exception->response);
+                $this->throwForFailedResponse($exception->response, $turn, $startedAt);
             }
 
             throw new RuntimeException($exception->getMessage(), previous: $exception);
@@ -53,8 +62,24 @@ class HttpTranscriber implements Transcriber
         $transcript = $response->json('text');
 
         if (! is_string($transcript) || $transcript === '') {
+            $this->logTranscription(
+                $turn,
+                $startedAt,
+                succeeded: false,
+                status: $response->status(),
+                message: 'A transcrição retornou um texto vazio.',
+            );
+
             throw new RuntimeException('A transcrição retornou um texto vazio.');
         }
+
+        $this->logTranscription(
+            $turn,
+            $startedAt,
+            succeeded: true,
+            status: $response->status(),
+            audioBytes: strlen($contents),
+        );
 
         return $transcript;
     }
@@ -92,16 +117,19 @@ class HttpTranscriber implements Transcriber
         return $baseUrl.$separator.$query;
     }
 
-    private function throwForFailedResponse(Response $response): never
+    private function throwForFailedResponse(Response $response, VoiceTurn $turn, int $startedAt): never
     {
         $apiMessage = $response->json('error.message');
         $apiCode = $response->json('error.code');
 
-        Log::warning('Transcription request failed.', [
-            'status' => $response->status(),
-            'code' => $apiCode,
-            'message' => is_string($apiMessage) ? $apiMessage : $response->body(),
-        ]);
+        $this->logTranscription(
+            $turn,
+            $startedAt,
+            succeeded: false,
+            status: $response->status(),
+            message: is_string($apiMessage) ? $apiMessage : $response->body(),
+            code: is_string($apiCode) ? $apiCode : null,
+        );
 
         if ($response->status() === 401) {
             throw new PermanentTranscriptionException('Chave da API de transcrição inválida.');
@@ -129,5 +157,50 @@ class HttpTranscriber implements Transcriber
     private function userFacingMessage(string $apiMessage): string
     {
         return str($apiMessage)->limit(255, '')->toString();
+    }
+
+    private function logTranscription(
+        VoiceTurn $turn,
+        int $startedAt,
+        bool $succeeded,
+        ?int $status = null,
+        ?string $message = null,
+        ?string $code = null,
+        ?int $audioBytes = null,
+    ): void {
+        $context = [
+            'voice_turn_id' => $turn->id,
+            'duration_ms' => $this->elapsedMilliseconds($startedAt),
+            'model' => config('rafael.transcriber.model'),
+        ];
+
+        if ($status !== null) {
+            $context['status'] = $status;
+        }
+
+        if ($code !== null) {
+            $context['code'] = $code;
+        }
+
+        if ($message !== null) {
+            $context['message'] = $message;
+        }
+
+        if ($audioBytes !== null) {
+            $context['audio_bytes'] = $audioBytes;
+        }
+
+        if ($succeeded) {
+            Log::info('Transcription completed.', $context);
+
+            return;
+        }
+
+        Log::warning('Transcription request failed.', $context);
+    }
+
+    private function elapsedMilliseconds(int $startedAt): int
+    {
+        return (int) ((hrtime(true) - $startedAt) / 1_000_000);
     }
 }

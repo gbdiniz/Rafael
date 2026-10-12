@@ -19,6 +19,15 @@
         <span x-text="recording ? 'Parar' : 'Falar'"></span>
     </button>
 
+    <p
+        x-show="microphoneDenied"
+        class="max-w-md text-center text-sm text-ice"
+        data-talk-microphone-denied
+    >
+        <span class="block font-medium">Sem microfone</span>
+        Permita o microfone para falar com Rafael.
+    </p>
+
     <div
         x-ref="bars"
         data-talk-listening-bars
